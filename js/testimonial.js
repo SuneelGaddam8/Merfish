@@ -131,7 +131,7 @@ name: "Gauri Singh",
     img.alt = "Image " + (index + 1);
     img.classList.add("image");
     if (isActive) {
-      img.classList.add("active");
+      img.classList.add("activeimage");
     }
     img.onclick = function () {
       changeImage(index);

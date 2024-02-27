@@ -813,7 +813,7 @@ font-size: small;
     filter: blur(1px);
     transition: all 0.3s ease;
   }
-  .active {
+  .activeimage {
     width: 60px;
     height: 60px;
     border: 2px solid pink;
