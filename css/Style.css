@@ -1,5 +1,7 @@
 :root {
   --bg-color: rgba(216, 130, 56, 1);
+  --bg-orange-gradient: linear-gradient(to right, #EDBE9A, #DD7512);
+  --bg-green-gradient: linear-gradient(to right,rgb(135, 189, 178),rgb(214, 248, 241) );
   --bg-green: rgba(142, 186, 177, 1);
   --bg-white: #ffffff;
   --color-black: rgba(0, 0, 0, 1);
@@ -577,7 +579,7 @@
   }
 .main_body{
   height: 85vh;
-  padding-bottom: 10%;
+  padding-bottom: 50%;
 }
   .header_menu {
     display: none;
@@ -667,7 +669,7 @@ height: 85%;
   width: 90%;
   height: 150px;
   border-radius: 8px;
-  background-color: var(--bg-color);
+  background: var(--bg-orange-gradient);
   padding: 4px;
   display: flex;
   flex-direction: row;
@@ -678,7 +680,7 @@ height: 85%;
   width: 90%;
   height: 150px;
   border-radius: 8px;
-  background-color: var(--bg-color);
+  background: var(--bg-green-gradient);
   display: flex;
   flex-direction:row-reverse;
   justify-content: space-between;
@@ -755,7 +757,7 @@ font-size: small;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-bottom: 20%;
+  padding-bottom: 30%;
  }
  .view_managements:nth-child(2){
   margin-top: 0%;
@@ -779,4 +781,3 @@ font-size: small;
     width: 100%;
   }
 }
-

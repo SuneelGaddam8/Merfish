@@ -1,54 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merf-ish</title>
+    <link rel="stylesheet" href="./css/Style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Merf-ish</title>
-  <link rel="stylesheet" href="./css/Style.css" />
-</head>
-
-<body class="container">
-  <div class="header">
-    <div class="header_logo">
-      <img src="./assets/merfsh-logo.png" alt="merf-isy logo" />
-    </div>
-    <div class="header_menu">
-      <div class="header_options">
-        <a href="#home" onclick="homeHandler('home')" class="header_btn header_active">home</a>
-        <a href="#about" onclick="homeHandler('about')" class="header_btn">about us</a>
-        <a href="#management" onclick="homeHandler('management')" class="header_btn">management</a>
-        <a href="#academics" onclick="homeHandler('academics')" class="header_btn">academics</a>
-        <a href="#admissions" onclick="homeHandler('admissions')" class="header_btn">admission</a>
-        <a href="#gallery" onclick="homeHandler('gallery')" class="header_btn">gallery</a>
-        <a href="#faculty" onclick="homeHandler('faculty')" class="header_btn">faculty</a>
-        <a href="#clinic-app" onclick="homeHandler('clinicApp')" class="header_btn">clinic app</a>
-        <a href="#testimonials" onclick="homeHandler('testimonials')" class="header_btn">Testimonial</a>
-        <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn">MED-EL</a>
+  <body class="container">
+    <div class="header">
+      <div class="header_logo">
+        <img src="./assets/merfsh-logo.png" alt="merf-isy logo" />
+      </div>
+      <div class="header_menu">
+        <div class="header_options">
+          <a
+            href="#home"
+            onclick="homeHandler('home')"
+            class="header_btn header_active"
+            >home</a
+          >
+          <a href="#about" onclick="homeHandler('about')" class="header_btn"
+            >about us</a
+          >
+          <a
+            href="#management"
+            onclick="homeHandler('management')"
+            class="header_btn"
+            >management</a
+          >
+          <a
+            href="#academics"
+            onclick="homeHandler('academics')"
+            class="header_btn"
+            >academics</a
+          >
+          <a
+            href="#admissions"
+            onclick="homeHandler('admissions')"
+            class="header_btn"
+            >admission</a
+          >
+          <a href="#gallery" onclick="homeHandler('gallery')" class="header_btn"
+            >gallery</a
+          >
+          <a href="#faculty" onclick="homeHandler('faculty')" class="header_btn"
+            >faculty</a
+          >
+          <a
+            href="#clinic-app"
+            onclick="homeHandler('clinicApp')"
+            class="header_btn"
+            >clinic app</a
+          >
+          <a
+            href="#testimonials"
+            onclick="homeHandler('testimonials')"
+            class="header_btn"
+            >Testimonial</a
+          >
+          <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn"
+            >MED-EL</a
+          >
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a
+            href="#home"
+            onclick="homeHandler('home')"
+            class="header_btn header_active"
+            >home</a
+          >
+          <a href="#about" onclick="homeHandler('about')" class="header_btn"
+            >about us</a
+          >
+          <a
+            href="#management"
+            onclick="homeHandler('management')"
+            class="header_btn"
+            >management</a
+          >
+          <a
+            href="#academics"
+            onclick="homeHandler('academics')"
+            class="header_btn"
+            >academics</a
+          >
+          <a
+            href="#admissions"
+            onclick="homeHandler('admissions')"
+            class="header_btn"
+            >admission</a
+          >
+          <a href="#gallery" onclick="homeHandler('gallery')" class="header_btn"
+            >gallery</a
+          >
+          <a href="#faculty" onclick="homeHandler('faculty')" class="header_btn"
+            >faculty</a
+          >
+          <a
+            href="#clinic-app"
+            onclick="homeHandler('clinicApp')"
+            class="header_btn"
+            >clinic app</a
+          >
+          <a
+            href="#testimonials"
+            onclick="homeHandler('testimonials')"
+            class="header_btn"
+            >Testimonial</a
+          >
+          <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn"
+            >MED-EL</a
+          >
+        </div>
       </div>
     </div>
-    <div class="dropdown">
-      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#home" onclick="homeHandler('home')" class="header_btn header_active">home</a>
-        <a href="#about" onclick="homeHandler('about')" class="header_btn">about us</a>
-        <a href="#management" onclick="homeHandler('management')" class="header_btn">management</a>
-        <a href="#academics" onclick="homeHandler('academics')" class="header_btn">academics</a>
-        <a href="#admissions" onclick="homeHandler('admissions')" class="header_btn">admission</a>
-        <a href="#gallery" onclick="homeHandler('gallery')" class="header_btn">gallery</a>
-        <a href="#faculty" onclick="homeHandler('faculty')" class="header_btn">faculty</a>
-        <a href="#clinic-app" onclick="homeHandler('clinicApp')" class="header_btn">clinic app</a>
-        <a href="#testimonials" onclick="homeHandler('testimonials')" class="header_btn">Testimonial</a>
-        <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn">MED-EL</a>
-      </div>
-    </div>
-  </div>
-  <!-- home -->
-  <div class="main_body" id="home">
+    <!-- home -->
+    <div class="main_body" id="home">
 
     <div class="body_banner_admission_open">
       <h1>
@@ -289,11 +368,11 @@
 
       </div>
     </div>
-  </div> 
-  <!-- about -->
-<div class="main_body" id="about">about</div>
-  <!-- management -->
-  <div class="main_body " id="management">
+  </div>  
+    <!-- about -->
+    <div class="main_body" id="about">about</div> 
+    <!-- management -->
+ <div class="main_body " id="management">
     <div class="view_managements" id="view_managements" data-user="Mohan Kameswaran">
       <div class="banner_horizantal">
         <div class="banner_content" id="banner_content">
@@ -332,7 +411,6 @@
         </div>
         <div class="banner_profile">
           <img src="./assets/mohan-chairman.png" alt="" />
-          <!-- <span class="name_under_image">(Dr. Mohan Kameswaran)</span> -->
         </div>
       </div>
     </div>
@@ -375,7 +453,6 @@
         </div>
         <div class="banner_profile">
           <img src="./assets/indira-director-founder.jpg" alt="" />
-          <!-- <span class="name_under_image">(Mrs. Indiran <br>M. Kameswaran)</span> -->
         </div>
       </div>
     </div>
@@ -397,7 +474,6 @@
         </div>
         <div class="banner_profile">
           <img src="./assets/anand-director-founder.jpg" alt="" />
-          <!-- <span class="name_under_image">(Mrs. Indiran <br>M. Kameswaran)</span> -->
         </div>
       </div>
     </div>
@@ -422,22 +498,26 @@
         </div>
         <div class="banner_profile">
           <img src="./assets/jagannath-founder-director.jpg" alt="" />
-          <!-- <span class="name_under_image">(Dr. Mohan Kameswaran)</span> -->
         </div>
       </div>
     </div>
 
    
-  </div>
-  <div class="main_body" id="academics">academics</div>
+  </div>  
+
+     <div class="main_body" id="academics">academics</div>
   <div class="main_body" id="admissions">admissions</div>
   <div class="main_body" id="gallery">gallery</div>
   <div class="main_body" id="faculty">faculty</div>
   <div class="main_body" id="clinic-app">clinicApp</div>
-  <div class="main_body" id="testimonials">testimonials</div>
-  <div class="main_body" id="med-el">medel</div>
-</body>
-<script src="./js/index.js"></script>
-<script src="./js/header.js"></script>
 
+    <div class="main_body" id="testimonials">
+      
+    </div>
+
+    <div class="main_body" id="med-el">medel</div>
+  </body>
+  <script src="./js/index.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/testimonial.js"></script>
 </html>
