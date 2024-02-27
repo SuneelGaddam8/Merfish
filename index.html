@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Merf-ish</title>
   <link rel="stylesheet" href="./css/Style.css" />
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
 </head>
 
 <body class="container">
@@ -434,10 +438,33 @@
   <div class="main_body" id="gallery">gallery</div>
   <div class="main_body" id="faculty">faculty</div>
   <div class="main_body" id="clinic-app">clinicApp</div>
-  <div class="main_body" id="testimonials">testimonials</div>
+  <div class="main_body" id="testimonials">
+   
+    <div class="view_testimonials">
+        <div id="testimonials-image-text">
+            <div class="testimonials-description-container">
+                <!-- Description content will be dynamically added here -->
+              </div>
+              <div class="testimonials-description-name">
+              <h2></h2>
+             <p></p>
+        </div>
+            </div>
+        
+            <div class="button-container">
+              <span class="material-icons" id="backButton">navigate_before</span>
+              <span class="material-icons" id="nextButton">navigate_next</span>
+            </div>
+        
+            <div class="image-container" id="imageContainer">
+              <!-- Images will be dynamically added here -->
+            </div>
+          </div>
+        
+  </div>
   <div class="main_body" id="med-el">medel</div>
 </body>
 <script src="./js/index.js"></script>
 <script src="./js/header.js"></script>
-
+<script src="./js/testimonial.js"></script>
 </html>
