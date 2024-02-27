@@ -782,52 +782,55 @@ font-size: small;
   }
 }
 .view_testimonials{
-width: 98%;
-height: 90%;
-
-display: flex;
-flex-direction: column;
-text-align: justify;
-align-items: center;
-
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  height: 5%;
-  margin-bottom: 30px;
-  position: absolute;
-  bottom: 2px;
-}
-.image {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-  border-radius: 50%;
-  filter: blur(1px);
-  transition: all 0.3s ease;
-}
-.active {
-  width: 60px;
-  height: 60px;
-  border: 2px solid pink;
-  filter: none;
-  transform: scale(1.2);
-  z-index: 1;
-}
-#testimonials-image-text {
-  width: 80%;
- display: flex;
- flex-direction: column;
- gap:5px;
+  width: 98%;
   height: 90%;
-align-items: center;
- justify-content: center;
-}
-.testimonials-description-container {
+  
+  
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
+  
+  
+  }
+  
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 5%;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 2px;
+  }
+  .image {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+  }
+  .active {
+    width: 60px;
+    height: 60px;
+    border: 2px solid pink;
+    filter: none;
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  #testimonials-image-text {
+    width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+    height: 90%;
+  align-items: center;
+   justify-content: center;
+  }
+  .testimonials-description-container {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -836,8 +839,10 @@ width: 100%;
 overflow-y: auto;
 text-align:justify;
 
+
 line-height: 22px;
 }
+
 
 .material-icons {
  color: gainsboro;
@@ -859,7 +864,7 @@ height: 5px;
   }
 .description1 {
   color: green;
-  
+ 
  
 }
 .p1 {
@@ -871,7 +876,7 @@ height: 5px;
  gap: 10px;
 }
 .testimonials-description-name h2{
- font-weight: 700;   
+ font-weight: 700;  
  text-align: center;
  height: fit-content;
  width: 100%;
@@ -894,6 +899,7 @@ height: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+
 
 flex-direction: column;
 gap: 10px;
