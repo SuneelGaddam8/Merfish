@@ -131,7 +131,7 @@ name: "Gauri Singh",
     img.alt = "Image " + (index + 1);
     img.classList.add("image");
     if (isActive) {
-      img.classList.add("active");
+      img.classList.add("image_active");
     }
     img.onclick = function () {
       changeImage(index);
@@ -146,8 +146,8 @@ name: "Gauri Singh",
         <p class='p1'>${imageData.description}</p>
         ${imageData.readMore ? `<span id="read-more-btn" onclick="toggleReadMore()">Read more</span>` : ''}
       </div>
-      <h2>${imageData.name}</h2>
-      <p>${imageData.role}</p>
+      <h2 class="test_image_name">${imageData.name}</h2>
+      <p class="test_image_role">${imageData.role}</p>
     `;
   }
 
