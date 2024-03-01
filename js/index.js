@@ -5,6 +5,7 @@ function menuDropDown(x) {
 
 const d = new Date();
 let year = d.getFullYear();
+// document.getElementById('current_year').innerHTML=year;
 document.getElementById("year_view").innerHTML = year+"-"+parseFloat(year+1);
 
 
