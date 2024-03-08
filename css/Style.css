@@ -673,21 +673,22 @@
 /* management css properties */
 #management {
   height: fit-content;
+ 
 }
 .view_managements {
   width: 98%;
   min-height: 200px;
-  padding-top: 3%;
+  padding: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 9%;
+  margin-top: 12%;
 }
 .view_managements:nth-child(2) {
-  margin-top: 20%;
+  margin-top: 24%;
 }
 .view_managements:last-child {
-  margin: 0% 0% 6% 0%;
+  margin: 0% 0% 0% 0%;
 }
 .banner_horizantal {
   width: 80%;
@@ -838,13 +839,24 @@
   filter: blur(1px);
   transition: all 0.3s ease;
 }
+.image:hover{
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  filter: none;
+}
 .image_active {
   width: 60px;
   height: 60px;
-  border: 2px solid pink;
+  border: 1px solid rgb(2, 94, 66);
   filter: none;
   transform: scale(1.2);
   z-index: 1;
+}
+.image_active:hover{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
 }
 #testimonials-image-text {
   width: 80%;
@@ -863,6 +875,7 @@
   height: fit-content;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-family);
   text-align: justify;
 
   line-height: 25px;
@@ -882,12 +895,15 @@
   font-weight: 700;
   color: rgba(220, 220, 220, 0.842);
   position: relative;
-  margin-top: -30%;
 }
-
+.button-container i:hover{
+  color: #333;
+  cursor: pointer;
+}
 .description1 {
   color: green;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 30px;
 }
 .p1 {
   text-align: start;
@@ -897,10 +913,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: var(--font-family);
   gap: 10px;
+  font-size: 14px;
   margin-bottom: 50px;
 }
 .testimonials-description-name {
+
   width: fit-content;
 }
 .test_image_name {
@@ -908,29 +927,21 @@
   text-align: center;
   height: fit-content;
   width: 300px;
-  margin-bottom: 10px;
+  margin-top: -40px;
 }
+
 .test_image_role {
+  font-size: 12px;
   text-align: center;
   align-items: center;
   justify-content: center;
   height: fit-content;
-  width: 200px;
+  width: 250px;
 }
 .role-container {
   width: 100%;
   align-items: center;
   justify-content: center;
-}
-.testimonials-description-name {
-  height: 5%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-direction: column;
-  gap: 10px;
 }
 
 /* footer view */
