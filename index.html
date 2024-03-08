@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Merf-ish</title>
-    <link rel="stylesheet" href="./css/Style.css" />
-   
-    <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-/>
-  </head>
 
- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merf-ish</title>
+  <link rel="stylesheet" href="./css/Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
 
 <body class="container">
   <div class="header">
@@ -32,330 +28,316 @@
         <a href="#testimonials" onclick="homeHandler('testimonials')" class="header_btn">Testimonial</a>
         <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn">MED-EL</a>
       </div>
-    
-      <div class="dropdown">
-        <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        <div id="myDropdown" class="dropdown-content">
-          <a
-            href="#home"
-            onclick="homeHandler('home')"
-            class="header_btn header_active"
-            >home</a
-          >
-          <a href="#about" onclick="homeHandler('about')" class="header_btn"
-            >about us</a
-          >
-          <a
-            href="#management"
-            onclick="homeHandler('management')"
-            class="header_btn"
-            >management</a
-          >
-          <a
-            href="#academics"
-            onclick="homeHandler('academics')"
-            class="header_btn"
-            >academics</a
-          >
-          <a
-            href="#admissions"
-            onclick="homeHandler('admissions')"
-            class="header_btn"
-            >admission</a
-          >
-          <a href="#gallery" onclick="homeHandler('gallery')" class="header_btn"
-            >gallery</a
-          >
-          <a href="#faculty" onclick="homeHandler('faculty')" class="header_btn"
-            >faculty</a
-          >
-          <a
-            href="#clinic-app"
-            onclick="homeHandler('clinicApp')"
-            class="header_btn"
-            >clinic app</a
-          >
-          <a
-            href="#testimonials"
-            onclick="homeHandler('testimonials')"
-            class="header_btn"
-            >Testimonial</a
-          >
-          <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn"
-            >MED-EL</a
-          >
-        </div>
+
+
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home" onclick="homeHandler('home')" class="header_btn header_active">home</a>
+        <a href="#about" onclick="homeHandler('about')" class="header_btn">about us</a>
+        <a href="#management" onclick="homeHandler('management')" class="header_btn">management</a>
+        <a href="#academics" onclick="homeHandler('academics')" class="header_btn">academics</a>
+        <a href="#admissions" onclick="homeHandler('admissions')" class="header_btn">admission</a>
+        <a href="#gallery" onclick="homeHandler('gallery')" class="header_btn">gallery</a>
+        <a href="#faculty" onclick="homeHandler('faculty')" class="header_btn">faculty</a>
+        <a href="#clinic-app" onclick="homeHandler('clinicApp')" class="header_btn">clinic app</a>
+        <a href="#testimonials" onclick="homeHandler('testimonials')" class="header_btn">Testimonial</a>
+        <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn">MED-EL</a>
       </div>
     </div>
-    </div>
-
+  </div>
+  <div class="body_view">
     <!-- home -->
     <div class="main_body" id="home">
 
-    <div class="body_banner_admission_open">
-      <h1>
-        Admission open for the academic year <span id="year_view"></span>
-      </h1>
+      <div class="body_banner_admission_open">
+        <h1>
+          Admission open for the academic year <span id="year_view"></span>
+        </h1>
+      </div>
+      <div class="bgc_img_controller_div">
+        <div class="background_img_scroll">
+          <div class="slide_cards fade">
+            <div class="card_info">
+              <h1 style="font-size: 1.6rem; font-family: Poppins">
+                Enroll today
+              </h1>
+              <span style="font-family: Poppins">to join</span>
+              <div class="card_info_title">
+                <span>Bandwagon of expert speech and hearing</span>
+              </div>
+              <span style="font-size: 12px">the Professional of Tomorrow</span>
+              <button class="button_style">Enroll now</button>
+            </div>
+            <div class="bg_img">
+              <img src="./assets/bg-logo.png" alt="background image" />
+            </div>
+          </div>
+          <div class="slide_cards fade">
+            <div class="card_info">
+              <h1 style="font-size: 1.6rem; font-family: Poppins">
+                Enroll today
+              </h1>
+              <span style="font-family: Poppins">to join</span>
+              <div class="card_info_title">
+                <span>Bandwagon of expert speech and hearing</span>
+              </div>
+              <span style="font-size: 12px">the Professional of Tomorrow</span>
+              <button class="button_style">Enroll now</button>
+            </div>
+            <div class="bg_img">
+              <img src="./assets/college-admission-banner.jpg" alt="background image" />
+            </div>
+          </div>
+          <div class="slide_cards fade">
+            <div class="card_info">
+              <h1 style="font-size: 1.6rem; font-family: Poppins">
+                Enroll today
+              </h1>
+              <span style="font-family: Poppins">to join</span>
+              <div class="card_info_title">
+                <span>Bandwagon of expert speech and hearing</span>
+              </div>
+              <span style="font-size: 12px">the Professional of Tomorrow</span>
+              <button class="button_style">Enroll now</button>
+            </div>
+            <div class="bg_img">
+              <img src="./assets/library-logo.jpg" alt="background image" />
+            </div>
+          </div>
+          <div class="slide_cards fade">
+            <div class="card_info">
+              <h1 style="font-size: 1.6rem; font-family: Poppins">
+                Enroll today
+              </h1>
+              <span style="font-family: Poppins">to join</span>
+              <div class="card_info_title">
+                <span>Bandwagon of expert speech and hearing</span>
+              </div>
+              <span style="font-size: 12px">the Professional of Tomorrow</span>
+              <button class="button_style">Enroll now</button>
+            </div>
+            <div class="bg_img">
+              <img src="./assets/bg-logo.png" alt="background image" />
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+
+      <div class="courses">
+        <h1 class="header_title">what courses we offer ?</h1>
+        <div class="course_cards_group">
+          <div class="course_cards_view">
+            <div class="course_card">
+              <div class="course_card_header">
+                <span>B.Aslp</span>
+                <span class="graduation_type">ug</span>
+              </div>
+              <div class="course_card_duration">
+                <span>Duration: 36 months</span>
+                <span>15-20 classes/week</span>
+              </div>
+              <div class="course_card_learnMore">
+                <a href="#">learn more</a>
+              </div>
+            </div>
+
+            <div class="course_card">
+              <div class="course_card_header">
+                <span>m.Aslp</span>
+                <span class="graduation_type">pg</span>
+              </div>
+              <div class="course_card_duration">
+                <span>Duration: 36 months</span>
+                <span>15-20 classes/week</span>
+              </div>
+              <div class="course_card_learnMore">
+                <a href="#">learn more</a>
+              </div>
+            </div>
+
+            <div class="course_card">
+              <div class="course_card_header">
+                <span>msc.slp</span>
+                <span class="graduation_type">pg</span>
+              </div>
+              <div class="course_card_duration">
+                <span>Duration: 36 months</span>
+                <span>15-20 classes/week</span>
+              </div>
+              <div class="course_card_learnMore">
+                <a href="#">learn more</a>
+              </div>
+            </div>
+
+            <div class="course_card">
+              <div class="course_card_header">
+                <span>Msc. Audiology</span>
+                <span class="graduation_type">pg</span>
+              </div>
+              <div class="course_card_duration">
+                <span>Duration: 36 months</span>
+                <span>15-20 classes/week</span>
+              </div>
+              <div class="course_card_learnMore">
+                <a href="#">learn more</a>
+              </div>
+            </div>
+
+            <div class="course_card">
+              <div class="course_card_header">
+                <span>PGDAVT</span>
+                <span class="graduation_type">pg</span>
+              </div>
+              <div class="course_card_duration">
+                <span>Duration: 36 months</span>
+                <span>15-20 classes/week</span>
+              </div>
+              <div class="course_card_learnMore">
+                <a href="#">learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience_workers_count">
+        <div>
+          <span class="num" data-val="140">000</span>
+          <span>Doctors at work</span>
+        </div>
+        <div>
+          <span class="num" data-val="1400">000</span>
+          <span>satisfied patients</span>
+        </div>
+        <div>
+          <span class="num" data-val="500">000</span>
+          <span>Bed facility</span>
+        </div>
+        <div>
+          <span class="num" data-val="80">000</span>
+          <span>available hospitals</span>
+        </div>
+      </div>
+
+      <div class="clinical_service">
+        <h1 class="header_title">Clinical Services</h1>
+        <div class="clinical_service_view">
+          <img src="./assets/clinicalService.png" alt="Description of the image" />
+          <div class="clinical_service_view_data">
+            <span>Our clinical services are designed to cater to your unique
+              healthcare needs with professionalism, expertise, and
+              dedication.</span>
+            <button class="button_style">More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="why_choose_merf_ish">
+        <h1 class="header_title">why choose MERF-ISH ?</h1>
+        <div class="reason_cards_group">
+          <div class="reason_cards_view">
+            <div class="reason_cards">
+              <img src="./assets/Vector.png" alt="Vector" />
+              <span>One of the Leading Centers in the world for “Hearing
+                Restoration”</span>
+            </div>
+            <div class="reason_cards">
+              <img src="./assets/ic_baseline-hearing.png" alt="ic_baseline-hearing" />
+              <span>Biggest and most advanced hearing implant center in the
+                world</span>
+            </div>
+            <div class="reason_cards">
+              <img src="./assets/Vector-nook&corner.png" alt="Vector-nook&corner" />
+
+              <span>Extensive Out Reach Programme to serve the people in nook &
+                corner of the state</span>
+            </div>
+            <div class="reason_cards">
+              <img src="./assets/file-icons_service-fabric.png" alt="Vector-nook&corner" />
+
+              <span>Only Institute in India to be a member of HEARING Network</span>
+            </div>
+            <div class="reason_cards">
+              <img src="./assets/grommet-icons_user-expert.png" alt="Vector-nook&corner" />
+
+              <span>Facilities and activities to network with International
+                Experts</span>
+            </div>
+            <div class="reason_cards">
+              <img src="./assets/ri_group-line.png" alt="Vector-nook&corner" />
+              <span>Experienced and Competent Faculty, who are passionate in
+                Teaching</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why_choose_merf_ish">
+        <h1 class="header_title">Testimonials</h1>
+        <div class="testimonial_view">
+          <div class="testimonial_view_card">
+            <div class="testmonial_image">
+              <img src="./assets/user_testimonial_1.png" alt="no" />
+            </div>
+            <div class='testimonial_content'>
+              <div class="testimonial_content_about">
+                <strong> Tychicus Dinakaran <br /><span>Speech And Language Pathologist, Al Maha Centre</span></strong>
+                <a href="#">learn more</a>
+              </div>
+              <div class="testimonial_content_quote"><strong>“Come into the field if you have as strong Inner motivation
+                  to make a Difference”</strong></div>
+            </div>
+          </div>
+          <div class="testimonial_view_card">
+            <div class="testmonial_image">
+              <img src="./assets/user-2.png" alt="no" />
+            </div>
+            <div class='testimonial_content'>
+              <div class="testimonial_content_about">
+                <strong> Tychicus Dinakaran <br /><span>Speech And Language Pathologist, Al Maha Centre</span></strong>
+                <a href="#">learn more</a>
+              </div>
+              <div class="testimonial_content_quote"><strong>“Come into the field if you have as strong Inner motivation
+                  to make a Difference”</strong></div>
+            </div>
+          </div>
+
+          <button class="button_style">More Testimonials</button>
+
+        </div>
+      </div>
     </div>
-    <div class="bgc_img_controller_div">
-      <div class="background_img_scroll">
-        <div class="slide_cards fade">
-          <div class="card_info">
-            <h1 style="font-size: 1.6rem; font-family: Poppins">
-              Enroll today
-            </h1>
-            <span style="font-family: Poppins">to join</span>
-            <div style="
-                  background: rgba(102, 78, 59, 1);
-                  font-size: 1.2rem;
-                  width: 200px;
-                  text-align: center;
-                  color: white;
-                  padding: 4px;
-                ">
-              <span>Bandwagon of expert speech and hearing</span>
-            </div>
-            <span style="font-size: 12px">the Professional of Tomorrow</span>
-            <button class="button_style">Enroll now</button>
-          </div>
-          <div class="bg_img">
-            <img src="./assets/bg-logo.png" alt="background image" />
-          </div>
-        </div>
-        <div class="slide_cards fade">
-          <div class="card_info">a</div>
-          <div class="bg_img">
-            <img src="./assets/college-admission-banner.jpg" alt="background image" />
-          </div>
-        </div>
-        <div class="slide_cards fade">
-          <div class="card_info">a</div>
-          <div class="bg_img">
-            <img src="./assets/library-logo.jpg" alt="background image" />
-          </div>
-        </div>
-        <div class="slide_cards fade">
-          <div class="card_info">a</div>
-          <div class="bg_img">
-            <img src="./assets/bg-logo.png" alt="background image" />
-          </div>
-        </div>
-      </div>
-      <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </div>
-
-    <div class="courses">
-      <h1 class="header_title">what courses we offer ?</h1>
-      <div class="course_cards_group">
-        <div class="course_cards_view">
-          <div class="course_card">
-            <div class="course_card_header">
-              <span>B.Aslp</span>
-              <span class="graduation_type">ug</span>
-            </div>
-            <div class="course_card_duration">
-              <span>Duration: 36 months</span>
-              <span>15-20 classes/week</span>
-            </div>
-            <div class="course_card_learnMore">
-              <a href="#">learn more</a>
-            </div>
-          </div>
-
-          <div class="course_card">
-            <div class="course_card_header">
-              <span>m.Aslp</span>
-              <span class="graduation_type">pg</span>
-            </div>
-            <div class="course_card_duration">
-              <span>Duration: 36 months</span>
-              <span>15-20 classes/week</span>
-            </div>
-            <div class="course_card_learnMore">
-              <a href="#">learn more</a>
-            </div>
-          </div>
-
-          <div class="course_card">
-            <div class="course_card_header">
-              <span>msc.slp</span>
-              <span class="graduation_type">pg</span>
-            </div>
-            <div class="course_card_duration">
-              <span>Duration: 36 months</span>
-              <span>15-20 classes/week</span>
-            </div>
-            <div class="course_card_learnMore">
-              <a href="#">learn more</a>
-            </div>
-          </div>
-
-          <div class="course_card">
-            <div class="course_card_header">
-              <span>Msc. Audiology</span>
-              <span class="graduation_type">pg</span>
-            </div>
-            <div class="course_card_duration">
-              <span>Duration: 36 months</span>
-              <span>15-20 classes/week</span>
-            </div>
-            <div class="course_card_learnMore">
-              <a href="#">learn more</a>
-            </div>
-          </div>
-
-          <div class="course_card">
-            <div class="course_card_header">
-              <span>PGDAVT</span>
-              <span class="graduation_type">pg</span>
-            </div>
-            <div class="course_card_duration">
-              <span>Duration: 36 months</span>
-              <span>15-20 classes/week</span>
-            </div>
-            <div class="course_card_learnMore">
-              <a href="#">learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience_workers_count">
-      <div>
-        <span class="num" data-val="140">000</span>
-        <span>Doctors at work</span>
-      </div>
-      <div>
-        <span class="num" data-val="1400">000</span>
-        <span>satisfied patients</span>
-      </div>
-      <div>
-        <span class="num" data-val="500">000</span>
-        <span>Bed facility</span>
-      </div>
-      <div>
-        <span class="num" data-val="80">000</span>
-        <span>available hospitals</span>
-      </div>
-    </div>
-
-    <div class="clinical_service">
-      <h1 class="header_title">Clinical Services</h1>
-      <div class="clinical_service_view">
-        <img src="./assets/clinicalService.png" alt="Description of the image" />
-        <div class="clinical_service_view_data">
-          <span>Our clinical services are designed to cater to your unique
-            healthcare needs with professionalism, expertise, and
-            dedication.</span>
-          <button class="button_style">More</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="why_choose_merf_ish">
-      <h1 class="header_title">why choose MERF-ISH ?</h1>
-      <div class="reason_cards_group">
-        <div class="reason_cards_view">
-          <div class="reason_cards">
-            <img src="./assets/Vector.png" alt="Vector" />
-            <span>One of the Leading Centers in the world for “Hearing
-              Restoration”</span>
-          </div>
-          <div class="reason_cards">
-            <img src="./assets/ic_baseline-hearing.png" alt="ic_baseline-hearing" />
-            <span>Biggest and most advanced hearing implant center in the
-              world</span>
-          </div>
-          <div class="reason_cards">
-            <img src="./assets/Vector-nook&corner.png" alt="Vector-nook&corner" />
-
-            <span>Extensive Out Reach Programme to serve the people in nook &
-              corner of the state</span>
-          </div>
-          <div class="reason_cards">
-            <img src="./assets/file-icons_service-fabric.png" alt="Vector-nook&corner" />
-
-            <span>Only Institute in India to be a member of HEARING Network</span>
-          </div>
-          <div class="reason_cards">
-            <img src="./assets/grommet-icons_user-expert.png" alt="Vector-nook&corner" />
-
-            <span>Facilities and activities to network with International
-              Experts</span>
-          </div>
-          <div class="reason_cards">
-            <img src="./assets/ri_group-line.png" alt="Vector-nook&corner" />
-            <span>Experienced and Competent Faculty, who are passionate in
-              Teaching</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="why_choose_merf_ish">
-      <h1 class="header_title">Testimonials</h1>
-      <div class="testimonial_view">
-        <div class="testimonial_view_card">
-          <div class="testmonial_image">
-            <img src="./assets/user_testimonial_1.png" alt="no" />
-          </div>
-          <div class='testimonial_content'>
-            <div class="testimonial_content_about">
-              <strong> Tychicus Dinakaran <br /><span>Speech And Language Pathologist, Al Maha Centre</span></strong>
-              <a href="#">learn more</a>
-            </div>
-            <div class="testimonial_content_quote"><strong>“Come into the field if you have as strong Inner motivation
-                to make a Difference”</strong></div>
-          </div>
-        </div>
-        <div class="testimonial_view_card">
-          <div class="testmonial_image">
-            <img src="./assets/user-2.png" alt="no" />
-          </div>
-          <div class='testimonial_content'>
-            <div class="testimonial_content_about">
-              <strong> Tychicus Dinakaran <br /><span>Speech And Language Pathologist, Al Maha Centre</span></strong>
-              <a href="#">learn more</a>
-            </div>
-            <div class="testimonial_content_quote"><strong>“Come into the field if you have as strong Inner motivation
-                to make a Difference”</strong></div>
-          </div>
-        </div>
-
-        <button class="button_style">More Testimonials</button>
-
-      </div>
-    </div>
-  </div>  
     <!-- about -->
-    <div class="main_body" id="about">about</div> 
+    <div class="main_body" id="about">about</div>
     <!-- management -->
- <div class="main_body " id="management">
-    <div class="view_managements" id="view_managements" data-user="Mohan Kameswaran">
-      <div class="banner_horizantal">
-        <div class="banner_content" id="banner_content">
-          <div class="banner_content_header">
-            <h1 class="header_title">Dr. Mohan Kameswaran</h1>
-            <span>(Founder)</span>
-          </div>
-          <p class="banner_content_about">
-            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong> Dr. MOHAN
-              KAMESWARAN</strong> is a leading ENT Surgeon in India and a recipient of
-            the “PADMASHRI” award from the Government of India in 2006. For
-            his contribution in the field of ENT and the Hearing impaired, he
-            was conferred “INDO-AUSTRALIAN AWARD FOR MERITORIOUS SERVICE’ by
-            Indo-Australian Association, Chennai. He was honored by His
-            Excellency, President of Srilanka for ‘PIONEERING THE COCHLEAR
-            IMPLANT PROGRAM IN SRILANKA’.
+    <div class="main_body " id="management">
+      <div class="view_managements" id="view_managements" data-user="Mohan Kameswaran">
+        <div class="banner_horizantal">
+          <div class="banner_content" id="banner_content">
+            <div class="banner_content_header">
+              <h1 class="header_title">Dr. Mohan Kameswaran</h1>
+              <span>(Founder)</span>
+            </div>
+            <p class="banner_content_about">
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong> Dr. MOHAN
+                KAMESWARAN</strong> is a leading ENT Surgeon in India and a recipient of
+              the “PADMASHRI” award from the Government of India in 2006. For
+              his contribution in the field of ENT and the Hearing impaired, he
+              was conferred “INDO-AUSTRALIAN AWARD FOR MERITORIOUS SERVICE’ by
+              Indo-Australian Association, Chennai. He was honored by His
+              Excellency, President of Srilanka for ‘PIONEERING THE COCHLEAR
+              IMPLANT PROGRAM IN SRILANKA’.
               He was awarded with ‘AWARD FOR EXCELLENCE’ by His Excellency,
               The Governor of Kerala. He was also conferred ‘FOR THE SAKE OF
               HONOUR AWARD’ by Rotary Club of Madras Esplanade, Chennai.
@@ -373,31 +355,31 @@
               of repute was a natural course of action by this Stalwart. Hence
               starting MERF Institute of Speech and Hearing was the extension
               of vision envisaged by Dr. Mohan Kameswaran.
-            
-          </p>
-        </div>
-        <div class="banner_profile">
-          <img src="./assets/mohan-chairman.png" alt="" />
+
+            </p>
+          </div>
+          <div class="banner_profile">
+            <img src="./assets/mohan-chairman.png" alt="" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="view_managements" id="view_managements" data-user="Kameswaran">
-      <div class="banner_horizantal">
-        <div class="banner_content" id="banner_content">
-          <div class="banner_content_header">
-            <h1 class="header_title">Mrs. indira M. Kameswaran</h1>
-            <span>(Founder Director)</span>
-          </div>
-          <p class="banner_content_about">
-            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <strong>Dr. MOHAN
-              KAMESWARAN</strong> is a leading ENT Surgeon in India and a recipient of
-            the “PADMASHRI” award from the Government of India in 2006. For
-            his contribution in the field of ENT and the Hearing impaired, he
-            was conferred “INDO-AUSTRALIAN AWARD FOR MERITORIOUS SERVICE’ by
-            Indo-Australian Association, Chennai. He was honored by His
-            Excellency, President of Srilanka for ‘PIONEERING THE COCHLEAR
-            IMPLANT PROGRAM IN SRILANKA’.
+      <div class="view_managements" id="view_managements" data-user="Kameswaran">
+        <div class="banner_horizantal">
+          <div class="banner_content" id="banner_content">
+            <div class="banner_content_header">
+              <h1 class="header_title">Mrs. indira M. Kameswaran</h1>
+              <span>(Founder Director)</span>
+            </div>
+            <p class="banner_content_about">
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <strong>Dr. MOHAN
+                KAMESWARAN</strong> is a leading ENT Surgeon in India and a recipient of
+              the “PADMASHRI” award from the Government of India in 2006. For
+              his contribution in the field of ENT and the Hearing impaired, he
+              was conferred “INDO-AUSTRALIAN AWARD FOR MERITORIOUS SERVICE’ by
+              Indo-Australian Association, Chennai. He was honored by His
+              Excellency, President of Srilanka for ‘PIONEERING THE COCHLEAR
+              IMPLANT PROGRAM IN SRILANKA’.
               He was awarded with ‘AWARD FOR EXCELLENCE’ by His Excellency,
               The Governor of Kerala. He was also conferred ‘FOR THE SAKE OF
               HONOUR AWARD’ by Rotary Club of Madras Esplanade, Chennai.
@@ -415,95 +397,434 @@
               of repute was a natural course of action by this Stalwart. Hence
               starting MERF Institute of Speech and Hearing was the extension
               of vision envisaged by Dr. Mohan Kameswaran.
-          
-          </p>
-        </div>
-        <div class="banner_profile">
-          <img src="./assets/indira-director-founder.jpg" alt="" />
+
+            </p>
+          </div>
+          <div class="banner_profile">
+            <img src="./assets/indira-director-founder.jpg" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="view_managements" id="view_managements" data-user="ANAND KUMAR">
-      <div class="banner_horizantal">
-        <div class="banner_content" id="banner_content">
-          <div class="banner_content_header">
-            <h1 class="header_title">Dr. R.S. Anand kumar</h1>
-            <span>(Founder Director)</span>
+      <div class="view_managements" id="view_managements" data-user="ANAND KUMAR">
+        <div class="banner_horizantal">
+          <div class="banner_content" id="banner_content">
+            <div class="banner_content_header">
+              <h1 class="header_title">Dr. R.S. Anand kumar</h1>
+              <span>(Founder Director)</span>
+            </div>
+            <p class="banner_content_about">
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong>Dr. R.S. ANAND KUMAR,B.Sc, MS, DLO</strong> has
+              over 30 yrs
+              experience in ENT and Head & Neck surgery. He is a Senior ENT consultant and his interests are in the
+              field
+              of Cochlear implantation, Laser surgery, Endoscopic sinus surgery and Skull base surgery. He has conducted
+              several workshops, camps. Being the Academic Director, he directs the postgraduate program of training for
+              doctors at Madras ENT Research Foundation (P) Ltd.
+              </span>
+            </p>
           </div>
-          <p class="banner_content_about">
-            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong>Dr. R.S. ANAND KUMAR,B.Sc, MS, DLO</strong> has over 30 yrs
-            experience in ENT and Head & Neck surgery. He is a Senior ENT consultant and his interests are in the field
-            of Cochlear implantation, Laser surgery, Endoscopic sinus surgery and Skull base surgery. He has conducted
-            several workshops, camps. Being the Academic Director, he directs the postgraduate program of training for
-            doctors at Madras ENT Research Foundation (P) Ltd.
+          <div class="banner_profile">
+            <img src="./assets/anand-director-founder.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="view_managements" id="view_managements" data-user="JAGANNATH">
+        <div class="banner_horizantal">
+          <div class="banner_content" id="banner_content">
+            <div class="banner_content_header">
+              <h1 class="header_title">Dr. M. jagannath</h1>
+              <span>(Founder)</span>
+            </div>
+            <p class="banner_content_about">
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong>Dr. M. JAGANNATH,MD, DA</strong> has more than
+              30 years experience
+              in the field of Anesthesia.His interest is in the field of anesthesia for Cochlear Implantation for deaf
+              children. He has maximum number of such cases to his credit, the highest in the country. He is also the
+              first to anaesthetize a patient for “Brain Stem Implant” in Chennai, which was the first of its kind in
+              South East Asia. He heads the Dept. of Anesthesia at Madras ENT Research Foundation (P) Ltd.
+
+
+              </span>
+            </p>
+          </div>
+          <div class="banner_profile">
+            <img src="./assets/jagannath-founder-director.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="main_body" id="academics">
+      <div class="academic_view">
+        <h4 class="academic_title">B.ASLP</h4>
+        <h2 class="academic_title_full_form">Bachelor in Audiology and Speech Language Pathology</h2>
+        <div class="academic_about_course">
+          <p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           Bachelor in Audiology and Speech Language Pathology (B.ASLP) is a four-year programme (including one year of internship) that focuses on the relevant knowledge and training required to prepare skilled audiologists and speech-language pathologists. The programme also offers integrated interdisciplinary content with relevant aspects of various subjects such as anatomy, neurology, psychology and more.          </p>
+        </div>
+        
+        <div class="academic_about_course_uses academic_about_course_uses2">
+          <h2>Programme Outcomes</h2>
+          <p>
+            <strong>Understanding of Concepts  </strong>
+            <span> During the programme, the students will learn about the concepts of speech, language, communication, hearing and disability.
+            </span>
+          </p>
+          <p>
+            <strong>Diagnostic Skills  </strong><span> Students will be trained to diagnose and assess the disorders related to speech, language, swallowing and hearing.</span>
+          </p>
+          <p>
+            <strong>Practical Training  </strong>
+          <span>
+            During the internship, the students will be trained by professionals and provided with the opportunity to work with patients.
+          </span>
+          </p>
+        </div>
+        <div class="academic_logo_durations">
+          <img src="./assets/merfsh-logo.png" alt="" srcset="">
+          <div>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span><Strong>Duration :</Strong> 48 months</span>
+          </div>
+          <div>
+            <svg class="chalkboard_teacher" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M208 352c-2.4 0-4.8 .4-7.1 1.1C188 357.3 174.4 360 160 360c-14.4 0-28-2.7-41-6.9-2.3-.7-4.7-1.1-7.1-1.1C49.9 352-.3 402.5 0 464.6 .1 490.9 21.7 512 48 512h224c26.3 0 47.9-21.1 48-47.4 .3-62.1-49.9-112.6-112-112.6zm-48-32c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zM592 0H208c-26.5 0-48 22.3-48 49.6V96c23.4 0 45.1 6.8 64 17.8V64h352v288h-64v-64H384v64h-76.2c19.1 16.7 33.1 38.7 39.7 64H592c26.5 0 48-22.3 48-49.6V49.6C640 22.3 618.5 0 592 0z"/></svg>            
+              <span><Strong>Classes :</Strong> 15-20/week</span>
+          </div>
+        </div>
+        <div class="academic_admission_date">
+          <h3>Last date of admission: February 28</h3>
+          <h3>Limited seats available</h3>
+          <button class="button_style" style="text-transform: uppercase;">download brochure</button>
+        </div>
+      </div>
+      <div class="academic_view">
+        <h4 class="academic_title">M.ASLP</h4>
+        <h2 class="academic_title_full_form">Master in Audiology and Speech Language Pathology</h2>
+        <div class="academic_about_course">
+          <p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           Master in Audiology and Speech Language Pathology is a two-year postgraduate paramedical degree program. The M. ASLP course emphasises on the deep study of audio and speech language pathology. This study helps students in identifying the problems and disorders related to human speech, language, and hearing.</p>
+        </div>
+        
+        <div class="academic_about_course_uses">
+          <h2>Why Choose M.ASLP?</h2>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Master in Audiology and Speech Language Pathology provides students to study human language, speech, and hearing disorders. They are taught several techniques and methodologies to treat patients suffering from speech, language, and hearing disorders. Upon the completion of the M.ASLP programme, students can work in rehabilitation clinics, research centers, schools, and several other places.
+          </p>
+        </div>
+        <div class="academic_logo_durations">
+          <img src="./assets/merfsh-logo.png" alt="" srcset="">
+          <div>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span><Strong>Duration :</Strong> 24 months</span>
+          </div>
+          <div>
+            <svg class="chalkboard_teacher" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M208 352c-2.4 0-4.8 .4-7.1 1.1C188 357.3 174.4 360 160 360c-14.4 0-28-2.7-41-6.9-2.3-.7-4.7-1.1-7.1-1.1C49.9 352-.3 402.5 0 464.6 .1 490.9 21.7 512 48 512h224c26.3 0 47.9-21.1 48-47.4 .3-62.1-49.9-112.6-112-112.6zm-48-32c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zM592 0H208c-26.5 0-48 22.3-48 49.6V96c23.4 0 45.1 6.8 64 17.8V64h352v288h-64v-64H384v64h-76.2c19.1 16.7 33.1 38.7 39.7 64H592c26.5 0 48-22.3 48-49.6V49.6C640 22.3 618.5 0 592 0z"/></svg>            
+              <span><Strong>Classes :</Strong> 15-20/week</span>
+          </div>
+        </div>
+        <div class="academic_admission_date">
+          <h3>Last date of admission: February 28</h3>
+          <h3>Limited seats available</h3>
+          <button class="button_style" style="text-transform: uppercase;">download brochure</button>
+        </div>
+      </div>
+      <div class="academic_view">
+        <h4 class="academic_title">M.Sc. (SLP)</h4>
+        <h2 class="academic_title_full_form">Master of Science (Speech-Language Pathology)</h2>
+        <div class="academic_about_course">
+          <p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           A two-year postgraduate programme, Master of Science (Speech Language Pathology) focuses on imparting advanced knowledge about the assessment and management of speech, language and swallowing disorders. In accordance with the recommendations of the RCI, New Delhi, the programme is designed to provide theoretical, clinical and research skills to create professional experts in the field.        </div>
+        
+        <div class="academic_about_course_uses">
+          <h2>Programme Outcomes</h2>
+          <h4>Students of M.Sc. (SLP) program will be equipped with knowledge and skills to</h4>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            function as teachers and researchers in institutions of higher learning,
+            </span>
+
+          </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            diagnose and manage disorders of speech, language, and swallowing across life span,
+            </span>
+
+          </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            counsel and guide persons with disorders of speech, language and swallowing as well as their family members,    </span>      </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            implement rehabilitation programs for persons with speech, language and swallowing disorders,     </span>     </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            to function as the disability certification authority in the field,</span>
+          </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            liaise with professionals in allied fields and other stake holders,
+            </span>
+          </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            implement prevention and public education programs, </span>         <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            undertake advocacy measures on behalf of and for persons with speech, language and swallowing disorders,
+            </span>
+            <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            advise government and other institutions on legal and policy issues related to persons with communication disorders, and
+            </span>
+
+          </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            to establish and manage institutions in the field.
             </span>
           </p>
         </div>
-        <div class="banner_profile">
-          <img src="./assets/anand-director-founder.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="view_managements" id="view_managements" data-user="JAGANNATH">
-      <div class="banner_horizantal">
-        <div class="banner_content" id="banner_content">
-          <div class="banner_content_header">
-            <h1 class="header_title">Dr. M. jagannath</h1>
-            <span>(Founder)</span>
+        <div class="academic_logo_durations">
+          <img src="./assets/merfsh-logo.png" alt="" srcset="">
+          <div>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span><Strong>Duration :</Strong> 24 months</span>
           </div>
-          <p class="banner_content_about">
-            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong>Dr. M. JAGANNATH,MD, DA</strong> has more than 30 years experience
-            in the field of Anesthesia.His interest is in the field of anesthesia for Cochlear Implantation for deaf
-            children. He has maximum number of such cases to his credit, the highest in the country. He is also the
-            first to anaesthetize a patient for “Brain Stem Implant” in Chennai, which was the first of its kind in
-            South East Asia. He heads the Dept. of Anesthesia at Madras ENT Research Foundation (P) Ltd.
-
-
-            </span>
-          </p>
+          <div>
+            <svg class="chalkboard_teacher" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M208 352c-2.4 0-4.8 .4-7.1 1.1C188 357.3 174.4 360 160 360c-14.4 0-28-2.7-41-6.9-2.3-.7-4.7-1.1-7.1-1.1C49.9 352-.3 402.5 0 464.6 .1 490.9 21.7 512 48 512h224c26.3 0 47.9-21.1 48-47.4 .3-62.1-49.9-112.6-112-112.6zm-48-32c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zM592 0H208c-26.5 0-48 22.3-48 49.6V96c23.4 0 45.1 6.8 64 17.8V64h352v288h-64v-64H384v64h-76.2c19.1 16.7 33.1 38.7 39.7 64H592c26.5 0 48-22.3 48-49.6V49.6C640 22.3 618.5 0 592 0z"/></svg>            
+              <span><Strong>Classes :</Strong> 15-20/week</span>
+          </div>
         </div>
-        <div class="banner_profile">
-          <img src="./assets/jagannath-founder-director.jpg" alt="" />
+        <div class="academic_admission_date">
+          <h3>Last date of admission: February 28</h3>
+          <h3>Limited seats available</h3>
+          <button class="button_style" style="text-transform: uppercase;">download brochure</button>
         </div>
       </div>
+
+      <div class="academic_view">
+        <h4 class="academic_title">MSc. AUDIOLOGY</h4>
+        <h2 class="academic_title_full_form">Master of Science in Audiology</h2>
+        <div class="academic_about_course">
+          <p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           M.Sc. in Audiology is a postgraduate course in the science that explores hearing, balance, and related disorders. Practitioners of this science who treat those with hearing loss and proactively prevent related damage are Audiologists. The course is also available in the online mode. This is a 2- year long course spread over 4 semesters. Audiology is a specialized field of study. The program is designed to train students in the techniques that are required for communication with patients who have impaired hearing and other related sensory disorders.        </div>
+        
+        <div class="academic_about_course_uses">
+          <h2>Career Prospects</h2>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            Successful postgraduates of the course are hired in capacities such as Linguist, Rehabilitation Counselor, Audiologist, Sign Language Interpreter, Program Director, Language Specialist, Speech Pathologist, University Professors, Audiology Researcher, Consultant, Speech Language Pathologist Assistant, Hearing Assessment Specialist, Audiologist Assistant, Direct Care Staff, Licensed Speech Language Pathologist, Audiology Technical Training Specialist, Audiology Assistant/ Medical Assistant, Clinic Services Representative, Audiology Technician, Health Technician, Speech/Audiology Specialist, Mental Health, Substance Abuse Social Worker, Interpreter and Translator, Physical Therapist Assistant etc.
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            Audiology Experts are hired in establishment such as Long-term Care Facilities, Hospitals, Research Labs, Rehabilitation Centers, College/ University Clinics, Industry Home Health Agencies, Nursing Care Facilities, State or Government Agencies, Centers for Persons with Developmental Disabilities, Public or Private Schools, Private Practice, Community Clinics, Health Department, Adult Day Care Facilities, among others.          </p>
+        </div>
+        <div class="academic_logo_durations">
+          <img src="./assets/merfsh-logo.png" alt="" srcset="">
+          <div>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span><Strong>Duration :</Strong> 24 months</span>
+          </div>
+          <div>
+            <svg class="chalkboard_teacher" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M208 352c-2.4 0-4.8 .4-7.1 1.1C188 357.3 174.4 360 160 360c-14.4 0-28-2.7-41-6.9-2.3-.7-4.7-1.1-7.1-1.1C49.9 352-.3 402.5 0 464.6 .1 490.9 21.7 512 48 512h224c26.3 0 47.9-21.1 48-47.4 .3-62.1-49.9-112.6-112-112.6zm-48-32c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zM592 0H208c-26.5 0-48 22.3-48 49.6V96c23.4 0 45.1 6.8 64 17.8V64h352v288h-64v-64H384v64h-76.2c19.1 16.7 33.1 38.7 39.7 64H592c26.5 0 48-22.3 48-49.6V49.6C640 22.3 618.5 0 592 0z"/></svg>            
+              <span><Strong>Classes :</Strong> 15-20/week</span>
+          </div>
+        </div>
+        <div class="academic_admission_date">
+          <h3>Last date of admission: February 28</h3>
+          <h3>Limited seats available</h3>
+          <button class="button_style" style="text-transform: uppercase;">download brochure</button>
+        </div>
+      </div>
+
+      <div class="academic_view">
+        <h4 class="academic_title">PGDAVT</h4>
+        <h2 class="academic_title_full_form">Post Graduate Diploma Course in Auditory Verbal Therapy.</h2>
+        <div class="academic_about_course">
+          <p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+           The aim of the Post Graduate Diploma Course in Auditory Verbal Therapy is to train
+           and equip professionals in the fields of Speech & Hearing and Special Education with
+           knowledge and skillsto practice auditory verbal therapy with young children with deafness
+           and hard of hearing as a part of the early intervention program. The course further aims to
+           facilitate professionals in setting up of early intervention centers staffed by therapists who
+           have the requisite skills to work with deaf and hard of hearing children.         
+        <div class="academic_about_course_uses">
+          <h3>The objectives of this program are to </h3>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            impart knowledge in modern technology and its significance in the practice of
+            educating children with hearing impairment
+            </span>
+
+          </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            identify the principles and practices of auditory verbal therapy and related services     
+          </span>     </p>
+        
+            <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">develop skills and competencies for practicing auditory verbal therapy as a part of
+              the early intervention services for young children with hearing impairment,</span>          </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">
+            promote speech-language development and education of young hearing impaired
+            children, and      </span>    </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span"> promote parent - teacher empowerment  </span>        </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span"> develop skills and competencies in students for practicing AVT as a part of early
+            intervention for young hearing impaired children, and     </span>     </p>
+          <p>
+            <strong><i class="fa fa-check" aria-hidden="true"></i> </strong>&nbsp;
+            <span class="academic_about_course_uses_p_span">to teach the need and significance of practice of AVT in India      </span>    </p>
+        </div>
+        <div class="academic_logo_durations">
+          <img src="./assets/merfsh-logo.png" alt="" srcset="">
+          <div>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span><Strong>Duration :</Strong> 12 months</span>
+          </div>
+          <div>
+            <svg class="chalkboard_teacher" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M208 352c-2.4 0-4.8 .4-7.1 1.1C188 357.3 174.4 360 160 360c-14.4 0-28-2.7-41-6.9-2.3-.7-4.7-1.1-7.1-1.1C49.9 352-.3 402.5 0 464.6 .1 490.9 21.7 512 48 512h224c26.3 0 47.9-21.1 48-47.4 .3-62.1-49.9-112.6-112-112.6zm-48-32c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zM592 0H208c-26.5 0-48 22.3-48 49.6V96c23.4 0 45.1 6.8 64 17.8V64h352v288h-64v-64H384v64h-76.2c19.1 16.7 33.1 38.7 39.7 64H592c26.5 0 48-22.3 48-49.6V49.6C640 22.3 618.5 0 592 0z"/></svg>            
+              <span><Strong>Classes :</Strong> 15-20/week</span>
+          </div>
+        </div>
+        <div class="academic_admission_date">
+          <h3>Last date of admission: February 28</h3>
+          <h3>Limited seats available</h3>
+          <button class="button_style" style="text-transform: uppercase;">download brochure</button>
+        </div>
+      </div>
+
     </div>
+  </div>
 
-   
-  </div>  
-
-     <div class="main_body" id="academics">academics</div>
-  <div class="main_body" id="admissions">admissions</div>
-  <div class="main_body" id="gallery">gallery</div>
-  <div class="main_body" id="faculty">faculty</div>
-  <div class="main_body" id="clinic-app">clinicApp</div>
+    <div class="main_body" id="admissions">admissions</div>
+    <div class="main_body" id="gallery">gallery</div>
+    <div class="main_body" id="faculty">faculty</div>
+    <div class="main_body" id="clinic-app">clinicApp</div>
 
     <div class="main_body" id="testimonials">
       <div class="view_testimonials">
-        <div id="testimonials-image-text">
-            <div class="testimonials-description-container">
-                <!-- Description content will be dynamically added here -->
-              </div>
-              <div class="testimonials-description-name">
-              <h2></h2>
-             <p></p>
+       
+
+        <div class="image-container" id="imageContainer">
+          <!-- Images will be dynamically added here -->
         </div>
-            </div>
-       
-            <div class="button-container">
-              <span class="material-icons" id="backButton">navigate_before</span>
-              <span class="material-icons" id="nextButton">navigate_next</span>
-            </div>
-       
-            <div class="image-container" id="imageContainer">
-              <!-- Images will be dynamically added here -->
-            </div>
+        <div class="button-container">
+          <i id="backButton" class='fa fa-angle-left' ></i>
+          <i id="nextButton" class='fa fa-angle-right'></i>
+        </div>
+        <div class="testimonials-description-name">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div id="testimonials-image-text">
+          <div class="testimonials-description-container">
           </div>
+        </div>
+
+       
+      </div>
     </div>
 
     <div class="main_body" id="med-el">medel</div>
-  </body>
-  <script src="./js/index.js"></script>
-  <script src="./js/header.js"></script>
-  <script src="./js/testimonial.js"></script>
+    <!-- footer view -->
+    <div class="footer_view">
+     <div class="footer_view_home">
+      <div class="footer_view_nav">
+        <a href="">
+          Home
+        </a><a href="">Student Experience</a><a href="">about us</a><a href="">help center</a><a href="">self
+          disclosure</a><a href="">blogs</a><a href="">placements</a><a href="">privacy policy</a><a href="">terms &
+          conditions</a><a href="">refund policy</a>
+      </div>
+      <div class="footer_view_online_courses">
+        <span>online courses</span>
+        <div class="footer_view_online_courses_sub">
+          <h4>under graduate programs</h4>
+          <ul>
+            <li>Bachelor in Audiology and Speech-Language Pathology (B.ASLP)</li>
+          </ul>
+        </div>
+        <div class="footer_view_online_courses_sub">
+          <h4>post graduate programs</h4>
+          <ul>
+            <li>Master in Audiology and Speech Language Pathology (M.ASLP)</li>
+            <li>Master of Science and Speech-Language Pathology (MSc.SLP)</li>
+            <li>Master of Science in Audiology (MSc. AUDIOLOGY)</li>
+            <li>Pannalal Girdharlal Dayanand Anglo-Vedic (PGDAVT)</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="footer_view_social_media">
+        <span>campus programs follow us on</span>
+        <div class="footer_view_social_media_child">
+          <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+          <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248" class="fa fa-linkedin"></a>
+          <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+        </div>
+        <div class="footer_view_address">
+          <section>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <address>
+              No-1, I Cross Street, Off. II Main Road,   Raja Annamalaipuram,Chennai – 600 028.
+            </address>
+          </section>
+          <section>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span> + 91 44-24 311 416 </span>
+          </section>
+          <section>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span> merfmk30@yahoo.com </span>
+          </section>
+        </div>
+      </div>
+     </div>
+      <div class="footer_view_copy_rights">
+        <span>&copy; MERF Institute of Speech & Hearing 
+          <!-- <span id="current_year"></span>  -->
+        </span>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+
+<script src="./js/index.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/testimonial.js"></script>
+
 </html>
