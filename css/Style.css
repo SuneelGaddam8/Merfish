@@ -814,6 +814,54 @@
   flex-direction: column;
   text-align: justify;
   align-items: center;
+  
+  }
+  
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 5%;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 2px;
+  }
+  .image {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+  }
+  .activeimage {
+    width: 60px;
+    height: 60px;
+    border: 2px solid pink;
+    filter: none;
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  #testimonials-image-text {
+    width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+    height: 90%;
+  align-items: center;
+   justify-content: center;
+  }
+  .testimonials-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 95%;
+width: 100%;
+overflow-y: auto;
+text-align:justify;
+=======
   justify-content: center;
 }
 
