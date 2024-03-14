@@ -124,14 +124,50 @@ name: "Gauri Singh",
       container.appendChild(nextImage);
     }
   }
+  var styles={
+    width:'40px',
+    height:'40px'
+  }
 
   function createImageElement(imageData, index, isActive = false) {
     const img = document.createElement("img");
     img.src = imageData.url;
     img.alt = "Image " + (index + 1);
     img.classList.add("image");
+    const container = document.querySelectorAll("#imageContainer img");
     if (isActive) {
       img.classList.add("image_active");
+      img.setAttribute('id','image_active')
+    }
+   
+      img.addEventListener("mouseenter", mouseEnter);
+    img.addEventListener("mouseleave", mouseLeave);
+    
+        
+    function mouseEnter() {
+      const element=document.getElementById('image_active');
+    //   ('[name="image_active"]').hover(function() {
+    //     var class_names = $(this).attr('class');
+    //     var class_name = class_names.split( ' ' ); 
+    //     var c = parseInt( class_name[0] );
+    //    alert( c );
+    //  });
+
+      element.style.width = "40px";
+element.style.height = "40px";
+element.style.margin = "10px";
+element.style.borderRadius = "50%";
+element.style.filter = "blur(1px)";
+element.style.transition = "all 0.3s ease";
+element.style.cursor = "pointer";
+
+      img.classList.add('hover_image')
+
+    }
+    
+    function mouseLeave() {
+      img.classList.remove("hover_image");
+      displayImages()
     }
     img.onclick = function () {
       changeImage(index);
