@@ -1,14 +1,15 @@
 const imageUrls = [
-'    https://www.pexels.com/photo/green-and-blue-peacock-feather-674010/'];
+ "./assets/image_container/merfish-banner.png",
+];
 
   const videoUrls = [
-    "https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    "https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4"
+    "ec1eS4kNwf4",
+    "Sebx3Q2GKE0"
   ];
 
   // Function to render images
   function renderImages() {
-    const container = document.getElementById("imageContainer");
+    const container = document.getElementById("imageGallery");
     imageUrls.forEach(url => {
       const img = document.createElement("img");
       img.src = url;
@@ -19,11 +20,12 @@ const imageUrls = [
 
   // Function to render videos
   function renderVideos() {
-    const container = document.getElementById("videoContainer");
-    videoUrls.forEach(url => {
-      const video = document.createElement("video");
-      video.src = url;
-      video.controls = true;
+    const url="https://www.youtube.com/embed/"
+    const container = document.getElementById("videoGallery");
+    videoUrls.forEach(urlId => {
+      const video = document.createElement("iframe");
+      video.src = url+urlId;
+      video.allowFullscreen = true;
       video.classList.add("item", "video");
       container.appendChild(video);
     });
