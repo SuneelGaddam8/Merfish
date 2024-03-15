@@ -11,6 +11,16 @@
 </head>
 
 <body class="container">
+<div class="header_nav">
+  <div>
+    <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+    <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248" class="fa fa-linkedin"></a>
+    <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>  </div>
+  <div>
+    <span>Careers</span>|<span>How you can help us</span>|<span>Feedback</span>|<span>Contact</span>
+  </div>
+</div>
   <div class="header">
     <div class="header_logo">
       <img src="./assets/merfsh-logo.png" alt="merf-isy logo" />
@@ -27,6 +37,7 @@
         <a href="#clinic-app" onclick="homeHandler('clinicApp')" class="header_btn">clinic app</a>
         <a href="#testimonials" onclick="homeHandler('testimonials')" class="header_btn">Testimonial</a>
         <a href="#med-el" onclick="homeHandler('med-el')" class="header_btn">MED-EL</a>
+        <a href=""><button class="button_style apply_admission">Apply Now for Admission</button></a>
       </div>
 
 
@@ -51,6 +62,7 @@
       </div>
     </div>
   </div>
+
   <div class="body_view">
     <!-- home -->
      <div class="main_body" id="home">
@@ -317,7 +329,7 @@
 
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- about -->
     <div class="main_body" id="about">about</div>
     <!-- management -->
@@ -740,7 +752,7 @@
       </div>
       </div>
       <div class="admission_content">
-        <div class="admission_content_title">Admission <script>document.write( new Date().getFullYear() );</script></div>
+        <div class="admission_content_title"><strong>Admission <script>document.write( new Date().getFullYear() );</script></strong></div>
        <div class="admission_content_list">
         <ol class="admission_content_ol">
           <li>Applicant login (To edit application form and upload additional files <a href="#">click here</a></li>
@@ -758,38 +770,38 @@
         <h2><strong>Why to choose Merf-ish</strong></h2>
        <div class="why_choose_merfish_cards">
         <div class="why_choose_merfish_card">
-          <div>
+          <div class="why_choose_bg img_bg_1">
             <img src="./assets/admission_assets/Building.png" alt="">
           </div>
           <span>One of the Leading Centers in the world for “Hearing Restoration”</span>
         </div>
         <div class="why_choose_merfish_card">
-          <div>
+          <div class="why_choose_bg img_bg_2">
             <img src="./assets/admission_assets/Hearing.png" alt="">
           </div>
           <span>Biggest and most advanced hearing implant center in the world</span>
         </div>
         <div class="why_choose_merfish_card">
-          <div>
+          <div class="why_choose_bg img_bg_3">
             <img src="./assets/admission_assets/Handshake Heart.png" alt="">
           </div>
           <span>Extensive Out Reach Programme to serve the people in nook & corner of the state</span>
         </div>
         <div class="why_choose_merfish_card">
-          <div>
+          <div class="why_choose_bg img_bg_4">
             <img src="./assets/admission_assets/Centralized Network.png" alt="">
           </div>
           <span>Only Institute in India to be a member of HEARING Network</span>
         </div>
 
         <div class="why_choose_merfish_card">
-          <div>
+          <div class="why_choose_bg img_bg_5">
             <img src="./assets/admission_assets/Popular Man.png" alt="">
           </div>
           <span>Facilities and activities to network with International Experts</span>
         </div>
         <div class="why_choose_merfish_card">
-          <div>
+          <div class="why_choose_bg img_bg_6">
             <img src="./assets/admission_assets/Training.png" alt="">
           </div>
           <span>Experienced and Competent Faculty, who are passionate in Teaching</span>
@@ -806,11 +818,19 @@
       </div>
 
       <div class="video_Image_container">
-        <div class="imageContainer" id="imageContainer">
-          <!-- Images will be rendered here -->
+        <div class="imageGallery" id="imageGallery">
         </div>
-        <div class="videoContainer" id="videoContainer">
-          <!-- Videos will be rendered here -->
+        <div class="videoGallery" id="videoGallery">
+        </div>
+      </div>
+
+      <div class="academic_facilities">
+        <h3>Our Academic Facilities</h3>
+        <div class="image_gallery_facilities" >
+          <img class="img_item" src="./assets/image_container/facilities-1.png" alt="" srcset="">
+          <img class="img_item" src="./assets/image_container/facilities-2.png" alt="" srcset="">
+          <img class="img_item" src="./assets/image_container/facilities-3.png" alt="" srcset="">
+          <img class="img_item" src="./assets/image_container/facilities-4.png" alt="" srcset="">
         </div>
       </div>
     </div>
@@ -845,61 +865,39 @@
     <!-- footer view -->
     <div class="footer_view">
      <div class="footer_view_home">
-      <div class="footer_view_nav">
-        <a href="">
-          Home
-        </a><a href="">Student Experience</a><a href="">about us</a><a href="">help center</a><a href="">self
-          disclosure</a><a href="">blogs</a><a href="">placements</a><a href="">privacy policy</a><a href="">terms &
-          conditions</a><a href="">refund policy</a>
-      </div>
-      <div class="footer_view_online_courses">
-        <span>online courses</span>
-        <div class="footer_view_online_courses_sub">
-          <h4>under graduate programs</h4>
-          <ul>
-            <li>Bachelor in Audiology and Speech-Language Pathology (B.ASLP)</li>
-          </ul>
+      <div class="footer_view_service">
+        <div class="footer_view_logo">
+          <img  src="./assets/merfsh-logo.png" alt="">
         </div>
-        <div class="footer_view_online_courses_sub">
-          <h4>post graduate programs</h4>
-          <ul>
-            <li>Master in Audiology and Speech Language Pathology (M.ASLP)</li>
-            <li>Master of Science and Speech-Language Pathology (MSc.SLP)</li>
-            <li>Master of Science in Audiology (MSc. AUDIOLOGY)</li>
-            <li>Pannalal Girdharlal Dayanand Anglo-Vedic (PGDAVT)</li>
-
-          </ul>
+        <div class="footer_view_options">
+          <span class="footer_option">Home </span>
+          <span class="footer_option">Gallery</span>
+          <span class="footer_option">About us </span>
+          <span class="footer_option">management </span>
+          <span class="footer_option">clinic</span>
+          <span class="footer_option">contact</span>
+          <span class="footer_option">academics</span>
+          <span class="footer_option">clinic app</span>
+          <span class="footer_option">FAQs</span>
+          <span class="footer_option">admission</span>
+          <span class="footer_option">testimonial</span>
+          <span class="footer_option">faculty</span>
+          <span class="footer_option">research</span>
         </div>
       </div>
-      <div class="footer_view_social_media">
-        <span>campus programs follow us on</span>
-        <div class="footer_view_social_media_child">
-          <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
-          <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
-          <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248" class="fa fa-linkedin"></a>
-          <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
-        </div>
-        <div class="footer_view_address">
-          <section>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <address>
-              No-1, I Cross Street, Off. II Main Road,   Raja Annamalaipuram,Chennai – 600 028.
-            </address>
-          </section>
-          <section>
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <span> + 91 44-24 311 416 </span>
-          </section>
-          <section>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <span> merfmk30@yahoo.com </span>
-          </section>
+      <div class="footer_view_social_media_body">
+        <h4>Connect with us : </h4>
+        <div class="footer_view_social_media">
+            <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+            <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
         </div>
       </div>
+ 
      </div>
       <div class="footer_view_copy_rights">
-        <span>&copy; MERF Institute of Speech & Hearing 
-          <!-- <span id="current_year"></span>  -->
+        <span>MERF-ISH &copy; copyright <script>document.write( new Date().getFullYear() );</script>.Incl.,All right reserved
         </span>
       </div>
     </div>
