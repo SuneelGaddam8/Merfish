@@ -851,8 +851,11 @@
 
       <div class="video_Image_container">
         <div class="imageGallery" id="imageGallery">
+          <img class="img_item" src="./assets/image_container/merfish-banner.png" />
         </div>
         <div class="videoGallery" id="videoGallery">
+          <iframe src="https://www.youtube.com/embed/ec1eS4kNwf4" allowfullscreen class="item video"></iframe>
+          <iframe src="https://www.youtube.com/embed/Sebx3Q2GKE0" allowfullscreen class="item video"></iframe>
         </div>
       </div>
 
@@ -895,7 +898,7 @@ class="video-container">
       <img  src="./assets/gallery-assets/gallery-clinic9.png" alt="Image 9">
     </div>
     <div class="gallery-button-container">
-    <button class="gallery-button" onclick="showAll('.gimage-container')">Show All</button>
+    <button class="gallery-button" id="button" onclick="showAll('.gimage-container')">Show All</button>
     </div>
     
     <div class="gallery-clinic">
@@ -913,7 +916,7 @@ class="video-container">
       <img  src="./assets/gallery-assets/AcademicFacilities9.png" alt="Image 9">
     </div>
     <div class="gallery-button-container">
-    <button class="gallery-button" onclick="showAll('.g-Acadamic-container')">Show All </button>
+    <button class="gallery-button" id="button1" onclick="showAll('.g-Acadamic-container')">Show All </button>
   </div>
   <div class="gallery-clinic">
     <h1 class="gallery-clinic-heading">Community Based Services</h1>
@@ -930,7 +933,7 @@ class="video-container">
     <img  src="./assets/gallery-assets/Community9.png" alt="Image 9">
   </div>
   <div class="gallery-button-container">
-  <button class="gallery-button" onclick="showAll('.g-community-container')">Show All </button>
+  <button class="gallery-button" id="button2" onclick="showAll('.g-community-container')">Show All </button>
 </div>
 <div class="gallery-clinic">
   <h1 class="gallery-clinic-heading">Research & Presentation</h1>
@@ -947,7 +950,7 @@ class="video-container">
   <img  src="./assets/gallery-assets/Research9.png" alt="Image 9">
 </div>
 <div class="gallery-button-container">
-<button class="gallery-button" onclick="showAll('.g-Research-container')">Show All </button>
+<button class="gallery-button" id="button3" onclick="showAll('.g-Research-container')">Show All </button>
 </div>
 </div>
     <div class="main_body" id="faculty">
@@ -1225,7 +1228,7 @@ class="video-container">
         <div class="rotated-div3"></div>
       </div>
       <div class="testimonial-showmore-container">
-      <button class="testimonial-showmore" onclick="showMore()" id="showMoreButton">See more</button>
+      <button class="testimonial-showmore" onclick="showMore()" id="showMoreButton">See More</button>
     </div>
 
       <div class="video-container">
