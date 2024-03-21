@@ -1,4 +1,4 @@
-window.onload = function() {
+ window.onload = function() {
     showInitial('.gimage-container', 2);
     showInitial('.g-Acadamic-container', 2);
     showInitial('.g-community-container', 2);

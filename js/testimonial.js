@@ -100,123 +100,9 @@ name: "Gauri Singh",
 
 ];
 
-//   let currentIndex = 0;
 
-//   function displayImages() {
-//     const container = document.getElementById("imageContainer");
-//     container.innerHTML = "";
-
-//     // Display the previous image if available
-//     if (currentIndex > 0) {
-//       const prevIndex = currentIndex - 1;
-//       const prevImage = createImageElement(images[prevIndex], prevIndex);
-//       container.appendChild(prevImage);
-//     }
-
-//     // Display the active image
-//     const activeImage = createImageElement(images[currentIndex], currentIndex, true);
-//     container.appendChild(activeImage);
-
-//     // Display the next image if not the last image
-//     if (currentIndex < images.length - 1) {
-//       const nextIndex = currentIndex + 1;
-//       const nextImage = createImageElement(images[nextIndex], nextIndex);
-//       container.appendChild(nextImage);
-//     }
-//   }
-//   var styles={
-//     width:'40px',
-//     height:'40px'
-//   }
-
-//   function createImageElement(imageData, index, isActive = false) {
-//     const img = document.createElement("img");
-//     img.src = imageData.url;
-//     img.alt = "Image " + (index + 1);
-//     img.classList.add("image");
-//     const container = document.querySelectorAll("#imageContainer img");
-//     if (isActive) {
-
-//       img.classList.add("activeimage");
-//       img.classList.add("image_active");
-//       img.setAttribute('id','image_active')
-//     }
-   
-//       img.addEventListener("mouseenter", mouseEnter);
-//     img.addEventListener("mouseleave", mouseLeave);
-    
-        
-//     function mouseEnter() {
-//       const element=document.getElementById('image_active');
-//     //   ('[name="image_active"]').hover(function() {
-//     //     var class_names = $(this).attr('class');
-//     //     var class_name = class_names.split( ' ' ); 
-//     //     var c = parseInt( class_name[0] );
-//     //    alert( c );
-//     //  });
-
-//       element.style.width = "40px";
-// element.style.height = "40px";
-// element.style.margin = "10px";
-// element.style.borderRadius = "50%";
-// element.style.filter = "blur(1px)";
-// element.style.transition = "all 0.3s ease";
-// element.style.cursor = "pointer";
-
-//       img.classList.add('hover_image')
-
-//     }
-    
-//     function mouseLeave() {
-//       img.classList.remove("hover_image");
-//       displayImages()
-//     }
-//     img.onclick = function () {
-//       changeImage(index);
-//     };
-//     return img;
-//   }
-
-//   function displayImageText(imageData) {
-//     const imageText = document.getElementById("testimonials-image-text");
-//     imageText.innerHTML = `
-//       <div class="testimonials-description-container ${imageData.readMore ? 'expand' : ''}">
-//       <h2 class="test_image_name">${imageData.name}</h2>
-//       <p class="test_image_role">${imageData.role}</p>  
-//       <p class='p1'>${imageData.description}</p>
-//         ${imageData.readMore ? `<span id="read-more-btn" onclick="toggleReadMore()">Read more</span>` : ''}
-//       </div>
-     
-//     `;
-//   }
-
-//   // function toggleReadMore() {
-//   //   const descriptionContainer = document.querySelector('.testimonials-description-container');
-//   //   descriptionContainer.classList.toggle('expand');
-//   // }
-
-//   function changeImage(index) {
-//     currentIndex = index;
-//     displayImages();
-//     displayImageText(images[index]);
-//   }
-
-//   document.getElementById("backButton").addEventListener("click", () => {
-//     if (currentIndex > 0) {
-//       changeImage(currentIndex - 1);
-//     }
-//   });
-
-//   document.getElementById("nextButton").addEventListener("click", () => {
-//     if (currentIndex < images.length - 1) {
-//       changeImage(currentIndex + 1);
-//     }
-//   });
-
-//   displayImages();
-//   displayImageText(images[currentIndex]);
 const container = document.getElementById('testimonialsContainer');
-    const showMoreButton = document.querySelector('button');
+    const showMoreButton = document.getElementById('showMoreButton')
 
     let showingAll = false;
 
@@ -274,7 +160,7 @@ const container = document.getElementById('testimonialsContainer');
     function showMore() {
       showingAll = !showingAll;
       renderTestimonials();
-      showMoreButton.style.display = showingAll ? 'none' : 'block';
+      showMoreButton.textContent = showingAll ? 'See Less' : 'See More';
     }
 
     function toggleDescription(card, descriptionContainer, fullDescription, readMoreButton) {
@@ -287,7 +173,12 @@ const container = document.getElementById('testimonialsContainer');
         readMoreButton.textContent = 'Read More';
       }
     }
-
+    window.onload = function() {
+ 
+      showMore();
+   
+  
+    };
     renderTestimonials();
 
 let videos = document.querySelectorAll('.tvideo');
