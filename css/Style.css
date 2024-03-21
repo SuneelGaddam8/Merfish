@@ -228,7 +228,7 @@
 
   right: 0;
 
-  top: 12vh;
+  top: 15vh;
 
   background-color: var(--bg-white);
 
@@ -1102,6 +1102,7 @@
 /* management css properties */
 
 #management {
+  padding-top: 2%;
   height: fit-content;
 }
 
@@ -1701,7 +1702,6 @@
   justify-content: flex-start;
 
   gap: 20px;
- position: sticky;
 }
 
 .academic_about_course p,
@@ -1990,17 +1990,17 @@ height: fit-content;
   width: fit-content;
   height: fit-content;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 .admission_view_flow_card{
-  width: 80px;
+  width: 120px;
   height: 80px;
   background: var(--bg-white);
   color: #000000;
-  font-size: 10px;
+  font-size: 8px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -2012,6 +2012,34 @@ height: fit-content;
 .arowIcon{
   width: 30px;
   height: 20px;
+}
+
+@media only screen and (max-width: 630px) {
+  .admission_view_flow_card{
+    font-size: 8px;
+    width: 80px;
+    height: 80px;
+  }
+  .admission_view_flow_card img{
+    width: 20px;
+    height: 20px;
+  }
+  .admission_view_flow h1{
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+  .admission_view_flow{
+    justify-content: center;
+    align-items: center;
+  }
+  .form-control{
+    font-size: 12px;
+  }
+  .arowIcon{
+    width: 11px;
+    height: 9px;
+  }
 }
 .admission_view_flow_offered{
   background: var(--bg-white);
@@ -2035,6 +2063,17 @@ place-items: center;
   gap: 20px;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 370px) {
+  .admission_view_flow_card{
+    font-size: 8px;
+    width: 70px;
+    height: 80px;
+  }
+  .admission_view_flow_card img{
+    width: 20px;
+    height: 20px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .seperateSlash{
