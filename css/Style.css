@@ -230,7 +230,7 @@
 
   right: 0;
 
-  top: 12vh;
+  top: 15vh;
 
   background-color: var(--bg-white);
 
@@ -728,7 +728,7 @@
 .button_style {
   background: var(--bg-orange);
 
-  border-radius: 40px;
+  border-radius: 20px;
 
   font-family: var(--font-family);
 
@@ -1104,6 +1104,7 @@
 /* management css properties */
 
 #management {
+  padding-top: 2%;
   height: fit-content;
 }
 
@@ -1704,7 +1705,6 @@ z-index: 1;
   justify-content: flex-start;
 
   gap: 20px;
-
   position: relative; /* Ensure relative positioning */
   z-index: 0; 
 }
@@ -1895,129 +1895,230 @@ color: white;
 /* admission view style components */
 
 .admission_view {
-  margin-top: -2%;
 
   width: 100%;
-
-  height: fit-content;
-
-  padding-top: 50px;
-
-  background-image: url("../assets/admission_assets/bg-color.png");
+ min-height: 400px;
+ max-height: fit-content;
+  background-image: url("../assets/admission_bg.png");
 
   background-repeat: no-repeat;
 
   background-size: cover;
 
-  display: flex;
-
-  flex-direction: row;
-
-  flex-wrap: wrap;
-
-  align-items: center;
-
-  justify-content: space-between;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
 }
-
-.admission_view_img {
-  width: 300px;
-
-  height: 350px;
-
-  margin-left: 8%;
-
-  /* margin-bottom: -3px; */
+.admission_view_left{
+  width: 100%;
+  height: 98%;
+  background-color: #00000038;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  gap: 20px;
+  padding: 4px;
+  color: var(--bg-white);
 }
-
-.admission_view_img_content {
-  width: 55%;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  gap: 10px;
-
-  font-weight: 700;
-}
-
-.hurry_content {
-  font-size: 2rem;
-
+.admission_view_title{
+  font-size: 40px;
   text-align: center;
+  width: 80%;
+}
+.admission_view_form{
+  padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: fit-content;
+}
+.admission_view_form_box{
+  background: var(--bg-white);
+  width: 80%;
+  height: 80%;
+  border-radius: 8px; 
+  padding: 20px;
+  font-size: 14px;
+}
 
-  color: #2a560b;
-
+.admission_form{
+  width: 100%;
+  height: 100%;
   display: flex;
-
   flex-direction: column;
+  gap: 10px;
+  color: #646060;
+}
+.admission_form input,.input,.admission_form select{
+  padding: 6px 2px;
+  border: none;
+  outline: none;
+  width: 95%;
+  border-bottom: 1px solid #646060;
+  color: #646060;
+}
+.admission_form select{
+ min-width: fit-content;
+}
+.admission_form div input{
+  width: fit-content;
+  height: fit-content;
+}
+.admission_form div{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
-.hurry_content span:first-child {
-  color: white;
-
-  font-size: 1.8rem;
+.admission_view_flow,.admission_view_flow_offered{
+  background: linear-gradient(93.12deg, #587D66 0%, #98D3AD 100%);
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: var(--bg-white);
+  margin-top: -20px;
+}
+.admission_view_flow h1{
+  font-size: 36px;
+}
+.admission_view_flow_icons{
+  display: flex ;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  gap: 5px;
+}
+.admission_view_flow_card{
+  width: 120px;
+  height: 80px;
+  background: var(--bg-white);
+  color: #000000;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.admission_view_flow_card img{
+  width: 30px;
+  height: 30px;
+}
+.arowIcon{
+  width: 30px;
+  height: 20px;
 }
 
-.hurry_content strong {
-  font-size: 4rem;
+@media only screen and (max-width: 630px) {
+  .admission_view_flow_card{
+    font-size: 8px;
+    width: 80px;
+    height: 80px;
+  }
+  .admission_view_flow_card img{
+    width: 20px;
+    height: 20px;
+  }
+  .admission_view_flow h1{
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+  .admission_view_flow{
+    justify-content: center;
+    align-items: center;
+  }
+  .form-control{
+    font-size: 12px;
+  }
+  .arowIcon{
+    width: 11px;
+    height: 9px;
+  }
 }
-
+.admission_view_flow_offered{
+  background: var(--bg-white);
+  color: #557661;
+}
+.admission_view_flow_offeredPrograms{
+  width: 300px;
+  height: 50px;
+display: grid;
+place-items: center;
+  border: 1px solid #557661;
+  text-align: center;
+  padding: 4px;
+  border-radius: 10px;
+}
+.admission_view_flow_offered_cards{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 370px) {
+  .admission_view_flow_card{
+    font-size: 8px;
+    width: 70px;
+    height: 80px;
+  }
+  .admission_view_flow_card img{
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .seperateSlash{
+    width: 2px;
+    height: 40px;
+    background-image: url('../assets/applicationProcess/line.png');
+  }
+}
 @media only screen and (max-width: 900px) {
-  .admission_view_img {
-    width: 200px;
-
-    height: 250px;
-
-    margin-left: 8%;
+.admission_view{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+}
+.seperateSlash{
+  background: none;
   }
+.admission_view_title{
+  font-size: 30px;
+}
 
-  .hurry_content {
-    font-size: 1.6rem;
-  }
-
-  .hurry_content strong {
-    font-size: 3rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
-  .admission_view_img {
-    width: 200px;
-
-    height: 250px;
-
-    margin-left: 5%;
+  .admission_view_title{
+    font-size: 25px;
   }
-
-  .hurry_content {
-    font-size: 1rem;
-  }
-
-  .hurry_content strong {
-    font-size: 2rem;
-  }
+  .seperateSlash{
+    background: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-  .admission_view_img {
-    width: 150px;
-
-    height: 200px;
-
-    margin-left: 3%;
+  .admission_view_title{
+    font-size: 20px;
   }
-
-  .hurry_content {
-    font-size: 1rem;
-  }
-
-  .hurry_content strong {
-    font-size: 1.7rem;
-  }
+  .seperateSlash{
+    background: none;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -2026,22 +2127,12 @@ color: white;
 
     justify-content: center;
   }
-
-  .admission_view_img {
-    width: 150px;
-
-    height: 200px;
-
-    margin-left: 3%;
+  .admission_view_title{
+    font-size: 16px;
   }
-
-  .hurry_content {
-    font-size: 1rem;
-  }
-
-  .hurry_content strong {
-    font-size: 1.7rem;
-  }
+  .seperateSlash{
+    background: none;
+    }
 }
 
 .admission_content {
