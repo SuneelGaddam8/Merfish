@@ -898,7 +898,7 @@ class="video-container">
       <img  src="./assets/gallery-assets/gallery-clinic9.png" alt="Image 9">
     </div>
     <div class="gallery-button-container">
-    <button class="gallery-button" id="button" onclick="showAll('.gimage-container')">Show All</button>
+    <button class="gallery-button" id="button" onclick="showAll('.gimage-container',this)">Show All</button>
     </div>
     
     <div class="gallery-clinic">
@@ -916,7 +916,7 @@ class="video-container">
       <img  src="./assets/gallery-assets/AcademicFacilities9.png" alt="Image 9">
     </div>
     <div class="gallery-button-container">
-    <button class="gallery-button" id="button1" onclick="showAll('.g-Acadamic-container')">Show All </button>
+    <button class="gallery-button" id="button1" onclick="showAll('.g-Acadamic-container',this)">Show All </button>
   </div>
   <div class="gallery-clinic">
     <h1 class="gallery-clinic-heading">Community Based Services</h1>
@@ -933,7 +933,7 @@ class="video-container">
     <img  src="./assets/gallery-assets/Community9.png" alt="Image 9">
   </div>
   <div class="gallery-button-container">
-  <button class="gallery-button" id="button2" onclick="showAll('.g-community-container')">Show All </button>
+  <button class="gallery-button" id="button2" onclick="showAll('.g-community-container',this)">Show All </button>
 </div>
 <div class="gallery-clinic">
   <h1 class="gallery-clinic-heading">Research & Presentation</h1>
@@ -950,24 +950,27 @@ class="video-container">
   <img  src="./assets/gallery-assets/Research9.png" alt="Image 9">
 </div>
 <div class="gallery-button-container">
-<button class="gallery-button" id="button3" onclick="showAll('.g-Research-container')">Show All </button>
+<button class="gallery-button" id="button3" onclick="showAll('.g-Research-container',this)">Show All </button>
 </div>
 </div>
     <div class="main_body" id="faculty">
+      <div class="faculty" id="faculty-gallery-container">
       <h2 class="faculty-heading">Faculty</h2>
-      <div class="gallery-clinic">
+      <div class="gallery-clinic1">
         <h1 class="gallery-clinic-heading">Department of Audiology</h1>
       </div>
       <div class="faculty-image-container ">
-       
-        <div class="faculty-image-card " id="faculty-card-1">
-          <img  src="./assets/faculty/audiology-1.png" alt="Image 1">
-          <h2>Prof. Ranjith Rajeswaran</h2>
-          <p> <span>PROFESSOR </span> PRINCIPAL & MANAGING DIRECTOR</p>
-          <p class="hidden">Membership: ABC Association</p>
-          <p class="hidden">Qualification: PhD in Audiology</p>
+        
+        <div class="faculty-image-card " id="faculty-image-card" onclick="viewFacultyDetails('Prof. Ranjith Rajeswaran')">
+         
+         
+            <img src="./assets/faculty/audiology-1.png" alt="Image 1">
+            <h2>Prof. Ranjith Rajeswaran</h2>
+            <p><span>PROFESSOR</span> PRINCIPAL & MANAGING DIRECTOR</p>
+        
         </div>
-        <div class="faculty-image-card ">
+      
+        <div class="faculty-image-card "  onclick="viewFacultyDetails('Ms.Saranyaa G')">
           <img  src="./assets/faculty/audiology-2.png" alt="Image 1">
           <h2>Ms.Saranyaa G</h2>
           <p>ASSOCIATE PROFESSOR</p>
@@ -1028,22 +1031,21 @@ class="video-container">
         
         </div>
       </div>
-      <div class="gallery-clinic">
+      <div class="gallery-clinic1">
         <h1 class="gallery-clinic-heading">Department of Speech Language Pathology</h1>
       </div>
       <div class="faculty-image-container ">
        
         <div class="faculty-image-card ">
           <img  src="./assets/faculty/LanguagePathology1.png" alt="Image 1">
-          <h2>Prof. Ranjith Rajeswaran</h2>
-          <p> <span>PROFESSOR </span> PRINCIPAL & MANAGING DIRECTOR</p>
-          <p class="hidden">Membership: ABC Association</p>
-                    <p class="hidden">Qualification: PhD in Audiology</p>
+          <h2>Prof. Dr. AmirthaVarshini M J</h2>
+          <p> VICE PRINCIPAL/ PROFESSOR</p>
+          
         </div>
         <div class="faculty-image-card ">
           <img  src="./assets/faculty/LanguagePathology2.png" alt="Image 1">
-          <h2>Prof. Dr. AmirthaVarshini M J</h2>
-          <p> VICE PRINCIPAL/ PROFESSOR</p>
+          <h2>Dr. Aravind Kannan</h2>
+          <p> PROFESSOR</p>
         
         </div>
         <div class="faculty-image-card ">
@@ -1078,11 +1080,9 @@ class="video-container">
         </div>
         
       
-        <div class="faculty-details-container" id="faculty-details">
-          <!-- Details will be dynamically inserted here -->
+        
       </div>
-      </div>
-      <div class="gallery-clinic">
+      <div class="gallery-clinic1">
         <h1 class="gallery-clinic-heading">Department of Otorhinolaryngoglogy (ENT), Head & Neck Surgery</h1>
       </div>
       <div class="faculty-image-container ">
@@ -1141,7 +1141,7 @@ class="video-container">
       </div>
        
      
-      <div class="gallery-clinic">
+      <div class="gallery-clinic1">
         <h1 class="gallery-clinic-heading">Faculty of Statistics & Research Methodology</h1>
       </div>
       <div class="faculty-image-container ">
@@ -1160,7 +1160,7 @@ class="video-container">
         </div>
        
       </div>
-      <div class="gallery-clinic">
+      <div class="gallery-clinic1">
         <h1 class="gallery-clinic-heading">Faculty of Psychology</h1>
       </div>
       <div class="faculty-image-container ">
@@ -1173,7 +1173,7 @@ class="video-container">
         </div>
         
       </div>
-      <div class="gallery-clinic">
+      <div class="gallery-clinic1">
         <h1 class="gallery-clinic-heading">Faculty of Pediatrics</h1>
       </div>
       <div class="faculty-image-container ">
@@ -1192,10 +1192,17 @@ class="video-container">
         </div>
        
       </div>
-         <div class="faculty-details-container" id="faculty-details">
-            <!-- Details will be dynamically inserted here -->
-        </div>
     </div>
+    <div class="faculty-details-container" id="faculty-details-container" style="display: none;">
+      <div class="faculty-details-image">
+        <!-- Image and other details -->
+    </div>
+    <div class="faculty-details-info">
+        <!-- Membership and about details -->
+    </div>
+  </div>
+    </div>
+    
     <div class="main_body" id="clinic-app">clinicApp</div>
 
     <div class="main_body" id="testimonials">
