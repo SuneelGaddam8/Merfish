@@ -102,7 +102,7 @@ name: "Gauri Singh",
 
 
 const container = document.getElementById('testimonialsContainer');
-    const showMoreButton = document.getElementById('showMoreButton')
+    const toggleButton = document.getElementById('showMoreButton')
 
     let showingAll = false;
 
@@ -146,7 +146,7 @@ const container = document.getElementById('testimonialsContainer');
 
         container.appendChild(card);
       }
-    }
+    }renderTestimonials()
 
     function truncateDescription(description) {
       const maxLength = 200; // Maximum length of truncated description
@@ -157,10 +157,21 @@ const container = document.getElementById('testimonialsContainer');
       return truncatedText;
     }
 
-    function showMore() {
+    
+
+    function showMoreTestimonials() {
+      
+    toggleButton.addEventListener('click', function() {
       showingAll = !showingAll;
       renderTestimonials();
-      showMoreButton.textContent = showingAll ? 'See Less' : 'See More';
+    
+      if (toggleButton.textContent === 'See More') {
+        toggleButton.textContent = 'See Less';
+      } else {
+        toggleButton.textContent = 'See More';
+      }
+    });
+  
     }
 
     function toggleDescription(card, descriptionContainer, fullDescription, readMoreButton) {
@@ -173,13 +184,9 @@ const container = document.getElementById('testimonialsContainer');
         readMoreButton.textContent = 'Read More';
       }
     }
-    window.onload = function() {
- 
-      showMore();
+
+
    
-  
-    };
-    renderTestimonials();
 
 let videos = document.querySelectorAll('.tvideo');
 let beforeVideos = [
