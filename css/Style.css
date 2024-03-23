@@ -230,7 +230,7 @@
      z-index: 1;
   right: 0;
 
-  top: 15vh;
+  top: 10vh;
 
   background-color: var(--bg-white);
 
@@ -1778,7 +1778,9 @@ z-index: 1;
   margin-bottom: 10px;
   background-color: #F6FBFA;
   z-index: -1;
+  height: fit-content;
 }
+
 .academic_view {
   width: 85%;
 
@@ -2807,7 +2809,7 @@ font-weight: 600;
   margin-bottom: 20px;
   font-size: 24px;
   font-family: Verdana, Geneva, sans-serif;
-  
+  cursor: pointer;
 }
 .testimonial-showmore-container{
   width: 90%;
@@ -3019,21 +3021,22 @@ flex-wrap: wrap;
 .about_home_view_content div{
   line-height: 30px;
   text-align: justify;
+
 }
 .about_home_view_content_title{
-  font-size: 24px;
+  font-size: 20px;
 
 }
 .about_home_view_circles{
   position: absolute;
   width: 100%;
 }
-.circle-1,.circle-2,.circle-3{
+.circle-1,.circle-2,.circle-3,.circle-4,.circle-5,.circle-6,.circle-7{
   position: relative;
 width: 100%;
 }
 
-.circle-div1,.circle-div2,.circle-div3{
+.circle-div1,.circle-div2,.circle-div3,.circle-div4,.circle-div5,.circle-div6,.circle-div7{
   position: absolute;
   width: 200px;
   height: 150px;
@@ -3045,23 +3048,42 @@ width: 100%;
 }
 
 .circle-div1{
-  top: 80px;
+  top: 40px;
   right: -80px;
  
 }
 .circle-div2{
-  top: 300px;
+  top: 400px;
   left: -60px;
   width: 250px;
 }
 
 
 .circle-div3{
-  top: 900px;
+  top: 800px;
   right: -40px;
  
 }
-
+.circle-div4{
+  top: 1200px;
+  left: -80px;
+ 
+}
+.circle-div5{
+  top: 1600px;
+  right: -60px;
+  width: 250px;
+}
+.circle-div6{
+  top: 2000px;
+  left: -60px;
+  width: 250px;
+}
+.circle-div7{
+  top: 2400px;
+  right: -40px;
+  width: 250px;
+}
 @media screen and (max-width:600px) {
   .about_home_view_title{
     width: fit-content;
