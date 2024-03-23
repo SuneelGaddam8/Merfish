@@ -160,19 +160,15 @@ const container = document.getElementById('testimonialsContainer');
     
 
     function showMoreTestimonials() {
-      
-    toggleButton.addEventListener('click', function() {
       showingAll = !showingAll;
       renderTestimonials();
-    
-      if (toggleButton.textContent === 'See More') {
-        toggleButton.textContent = 'See Less';
-      } else {
-        toggleButton.textContent = 'See More';
-      }
-    });
   
-    }
+      if (showingAll) {
+          toggleButton.textContent = 'See Less';
+      } else {
+          toggleButton.textContent = 'See More';
+      }
+  }
 
     function toggleDescription(card, descriptionContainer, fullDescription, readMoreButton) {
       card.classList.toggle('expanded');
