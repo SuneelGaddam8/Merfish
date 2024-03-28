@@ -614,6 +614,7 @@
   gap: 20px;
 
   font-family: var(--font-family);
+  line-height: 30px;
 }
 
 .experience_workers_count div {
@@ -633,9 +634,12 @@
 
   font-weight: 700;
 }
+.experience_workers_count div span{
+  text-align: center;
+}
 
 .experience_workers_count div span:first-child {
-  font-size: 44px;
+  font-size: 34px;
 }
 
 .experience_workers_count div span:last-child {
@@ -2534,7 +2538,6 @@ border-bottom: 1px solid var(--border-green-color);
 .gallery-clinic-heading{
   width: fit-content;
   height: fit-content;
-  padding: 4px;
   background-color: #dd7512;
   color: white;
   font-size: 30px;
@@ -2853,7 +2856,7 @@ align-items: center;
 gap:20px;
 }
 /* faculty */
-#faculty {
+#faculty ,.faculty{
   width: 100%;
 margin-bottom: 10px;
 display: flex;
@@ -2861,13 +2864,6 @@ flex-direction: column;
 font-family: Verdana, Geneva, sans-serif;
 align-items: center;
 justify-content: center;
-}
-.faculty{
-  width: 100%;
-  margin-bottom: 10px;
- 
-  font-family: Verdana, Geneva, sans-serif;
-  
 }
 .faculty-heading{
   width: 100%;
@@ -2887,7 +2883,6 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 flex-wrap: wrap;
-place-items: center;
 gap:20px;
 }
 .faculty-image-card{
@@ -3111,9 +3106,14 @@ width: 100%;
   width: 95%;
   height: fit-content;
 padding: 10px;
+padding-left: 0;
 border-bottom: 1px solid var(--border-green-color);
-}
 
+}
+.gallery-clinic1 h1{
+  padding: 4px;
+  border-radius: 4px;
+}
 
 
 /* faculty style components */
