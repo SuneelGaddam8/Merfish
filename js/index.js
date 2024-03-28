@@ -1,16 +1,11 @@
-function menuDropDown(x) {
-  x.classList.toggle("change");
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-const d = new Date();
-let year = d.getFullYear();
-// document.getElementById('current_year').innerHTML=year;
-document.getElementById("year_view").innerHTML = year+"-"+parseFloat(year+1);
 
 
 let slideIndex = 1;
-showSlides(slideIndex)
+document.addEventListener('DOMContentLoaded', function() {
+  showSlides(slideIndex)
+  countRatedDigits()
+});
+
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -54,7 +49,8 @@ function showSlides() {
 }
 
 // auto count numbers of feedbacks or experience candidates
-let valueDisplays=document.querySelectorAll(".num");
+function countRatedDigits(params) {
+  let valueDisplays=document.querySelectorAll(".num");
 let interval=1000;
 
 valueDisplays.forEach(value=>{
@@ -72,33 +68,36 @@ let counter =setInterval(function(){
 },duration)
 
 })
+}
 
 
- var idName=document.getElementsByClassName('main_body')
- homeHandler('home')
+var header = document.getElementsByClassName("header_options");
+var btns = document.getElementsByTagName('a');
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("header_active");
+  current[0].className = current[0].className.replace("header_active", "");
+  this.className= "header_btn header_active";
+  });
+}
+var idName=document.getElementsByClassName('main_body')
+homeHandler('home')
 function homeHandler(value){
-  for (let index = 0; index < idName.length; index++) {
-    if(value===idName[index].getAttribute('id')){
-      idName[index].style.display="flex";
-     
-    }
-    else{
-      idName[index].style.display="none"
-    }
+ for (let index = 0; index < idName.length; index++) {
+   if(value===idName[index].getAttribute('id')){
+     idName[index].style.display="flex";
     
-  }
-  // header hide after selected
+   }
+   else{
+     idName[index].style.display="none"
+   }
+   
+ }
+ // header hide after selected
 document.getElementById('menuBtn').classList.remove('change');
-  document.getElementById("myDropdown").classList.remove("show");
+ document.getElementById("myDropdown").classList.remove("show");
 }
 
-changeImage()
 
-function changeImage() {   
-  var BackgroundImg=['./assets/gallery-assets/AcademicFacilities2.png','./assets/gallery-assets/AcademicFacilities3.png','./assets/gallery-assets/AcademicFacilities4.png'];
-  var i = Math.floor((Math.random() * 3));
-  var bgImg = document.getElementById('admissionView');
-bgImg.style.backgroundImage = "url('"+BackgroundImg[i]+"')";
-bgImg.style.backgroundSize='cover'
-  setTimeout(changeImage, 2000);
-}
+
+

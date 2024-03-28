@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merf-ish</title>
+  <link rel="stylesheet" href="../css/Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body class="container">
+    <div class="header_nav">
+        <div>
+          <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+          <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+            class="fa fa-linkedin"></a>
+          <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+        </div>
+        <div>
+          <span>Careers</span>|<span>How you can help us</span>|<span>Feedback</span>|<span>Contact</span>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header_logo">
+          <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+        </div>
+        <div class="header_menu">
+          <div class="header_options">
+            <a href="./home.html"  class="header_btn ">home</a>
+            <a href="./about.html"  class="header_btn">about us</a>
+            <a href="./management.html"  class="header_btn">management</a>
+            <a href="./academics.html"  class="header_btn">academics</a>
+            <a href="./admission.html"  class="header_btn">admission</a>
+            <a href="./gallery.html"  class="header_btn">gallery</a>
+            <a href="./faculty.html" class="header_btn">faculty</a>
+            <a href="./clinicApp.html"  class="header_btn">clinic app</a>
+            <a href="./testimonial.html"  class="header_btn">Testimonial</a>
+            <a href="./medEl.html"  class="header_btn">MED-EL</a>
+            <a href=""><button class="button_style apply_admission">Apply Now for Admission</button></a>
+          </div>
+    
+    
+        </div>
+        <div class="dropdown">
+          <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./home.html"  class="header_btn ">home</a>
+            <a href="./about.html"  class="header_btn">about us</a>
+            <a href="./management.html"  class="header_btn">management</a>
+            <a href="./academics.html"  class="header_btn">academics</a>
+            <a href="./admission.html"  class="header_btn">admission</a>
+            <a href="./gallery.html"  class="header_btn">gallery</a>
+            <a href="./faculty.html" class="header_btn">faculty</a>
+            <a href="./clinicApp.html"  class="header_btn">clinic app</a>
+            <a href="./testimonial.html"  class="header_btn">Testimonial</a>
+            <a href="./medEl.html"  class="header_btn">MED-EL</a>
+            <a href=""><button class="button_style apply_admission">Apply Now for Admission</button></a>
+          </div>
+        </div>
+      </div>
+
+  <div class="body_view">
+    <div class="main_body" id="admissions">
+        <div class="admission_view" id="admissionView">
+          <div class="admission_view_left">
+            <div class="admission_view_title">Elevate Your Career in Speech and Hearing</div>
+            <div>Admission are open now!</div>
+            <div class="button_style">Apply Now</div>
+          </div>
+          <div id="admissionForm" class="admission_view_form">
+            <div class="admission_view_form_box">
+              <div class="admission_form">
+                <input id="name" type="text" placeholder="Enter Name">
+                <input id="email" type="email" pattern="[^ @]*@[^ @]*" required placeholder="Enter e-mail address">
+                <input id="mobile" type="tel" name="telphone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"
+                  title="Enter valid contact number" placeholder="Enter your contact number" required />
+                <div style="display: flex; flex-direction: row; gap: 10px; width: fit-content;">
+  
+                  <select class="form-control" id="inputState" onchange='stateHandler()'>
+                    <option value="SelectState">Select State</option>
+                    <option value="Andra Pradesh">Andra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madya Pradesh">Madya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttaranchal">Uttaranchal</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadeep">Lakshadeep</option>
+                    <option value="Pondicherry">Pondicherry</option>
+                  </select>
+                  <select class="form-control" id="inputDistrict">
+                    <option value=''>Select city</option>
+                  </select>
+                </div>
+                <select name="degrees" id="degreeList" onchange="degreeProgramHandler()">
+                  <option value="">Select Degree</option>
+                  <option value="Bachelor's Degree">Bachelor's Degree</option>
+                  <option value="Master's Degree">Master's Degree</option>
+                  <option value="PhD">PhD</option>
+                </select>
+                <select name="programs" id="programList">
+                  <option value="">Select Program</option>
+                </select>
+                <div style="width: fit-content; height: fit-content; display: flex; flex-direction: row; gap: 10px;">
+  
+                  <input type="text" value=" " id="captcha" onload="generate()"
+                    style="background:#D9D0C8;font-size: 24px; height: 20px;text-align: center; width: 150px; color: black;"
+                    readonly>
+  
+                  <input type="text" id="enteredCaptcha" value='' oninput="hideError()" class="input"
+                    style="height: 20px;">
+                  <i class="fa fa-refresh" aria-hidden="true" style="font-size: 10px; cursor: pointer; margin-top: 20px;"
+                    onclick="generate()"></i>
+                  <div id="captcha-error-message" class="captcha-error-message" style="display: none; color: red;">invalid
+                    captcha</div>
+                </div>
+                <div style="width: 100%; display: grid; place-items: center;"">
+                  <div style=" width: 90%;">
+                  <input type="checkbox" id="formTermsConditions">
+                  <span style="line-height: 20px;"> I agree to receive an information regarding my submitted application
+                    by signing up on Merf-Ish
+                    group of institute
+                  </span>
+                </div>
+                <div id="error-message" class="error-message" style="display: none; color: red;">Please accept
+                  terms&conditions</div>
+  
+                <div onclick="admissionSubmitHandler()" class="button_style"
+                  style="width: 80%; color:white; text-align: center;">Register</div>
+                <div style="width: 80%; text-align: center;">Already have an account ? |<a href=""
+                    style="margin-left: -10px;">Log in</a></div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+      </div>
+      <div class="admission_view_flow">
+        <h1>Application Process</h1>
+        <div class="admission_view_flow_icons">
+          <div class="admission_view_flow_card">
+            <img src="../assets/applicationProcess/userIcon.png" alt="" srcset="">
+            <span>Register yourself</span>
+          </div>
+          <img class="arowIcon" src="../assets/applicationProcess/arrowIcon.png" alt="" srcset="">
+          <div class="admission_view_flow_card">
+            <img src="../assets/applicationProcess/fillApplication.png" alt="" srcset="">
+            <span>Fill application Form</span>
+          </div>
+          <img class="arowIcon" src="../assets/applicationProcess/arrowIcon.png" alt="" srcset="">
+          <div class="admission_view_flow_card">
+            <img src="../assets/applicationProcess/UploadIcon.png" alt="" srcset="">
+            <span>Upload Required Documents</span>
+          </div>
+          <img class="arowIcon" src="../assets/applicationProcess/arrowIcon.png" alt="" srcset="">
+          <div class="admission_view_flow_card">
+            <img src="../assets/applicationProcess/paymentIcon.png" alt="" srcset="">
+            <span>Pay application fee</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="admission_view_flow_offered">
+        <h1>Programs Offered</h1>
+        <div class="admission_view_flow_offered_cards">
+          <div class="admission_view_flow_offeredPrograms">Bachelor in Audiology and Speech Language Pathology B.ASLP
+          </div>
+          <div class="admission_view_flow_offeredPrograms">Master in Audiology and Speech Language Pathology M.ASLP</div>
+          <div class="admission_view_flow_offeredPrograms">Master of Science (Speech-Language Pathology) M.Sc.SLP</div>
+          <div class="admission_view_flow_offeredPrograms">Master in Audiology and Speech Language Pathology M.ASLP</div>
+          <div class="admission_view_flow_offeredPrograms">Master of Science (Speech-Language Pathology) M.Sc.SLP</div>
+        </div>
+      </div>
+  
+      <div class="admission_content">
+        <div class="admission_content_title"><strong>Admission
+            <script>document.write(new Date().getFullYear());</script>
+          </strong></div>
+        <div class="admission_content_list">
+          <ol class="admission_content_ol">
+            <li>Applicant login (To edit application form and upload additional files <a href="#">click here</a></li>
+            <li>Student login  <a href="#">click here</a></li>
+            <li>Applicant login (To edit application form and upload additional files <a href="#">click here</a></li>
+          </ol>
+          <ul>
+            <li>For BASLP, MASLP, MSc Audiology, PGDAVT, MSc SLP <a href="#">click here</a></li>
+            <li>For Undergraduate Course B.ASLP <a href="#">click here</a></li>
+            <li>For Post Graduate Course M.sc Audiology <a href="#">click here</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="why_choose_merfish">
+        <h2><strong>Why to choose Merf-ish</strong></h2>
+        <div class="why_choose_merfish_cards">
+          <div class="why_choose_merfish_card">
+            <div class="why_choose_bg">
+              <img src='../assets/admission_assets/Building.png' alt="" srcset="">
+            </div>
+            <span>One of the Leading Centers in the world for “Hearing Restoration”</span>
+          </div>
+          <div class="why_choose_merfish_card">
+            <div class="why_choose_bg img_bg_2">
+              <img src="../assets/admission_assets/Hearing.png" alt="">
+            </div>
+            <span>Biggest and most advanced hearing implant center in the world</span>
+          </div>
+          <div class="why_choose_merfish_card">
+            <div class="why_choose_bg img_bg_3">
+              <img src="../assets/admission_assets/Handshake Heart.png" alt="">
+            </div>
+            <span>Extensive Out Reach Programme to serve the people in nook & corner of the state</span>
+          </div>
+          <div class="why_choose_merfish_card">
+            <div class="why_choose_bg img_bg_4">
+              <img src="../assets/admission_assets/Centralized Network.png" alt="">
+            </div>
+            <span>Only Institute in India to be a member of HEARING Network</span>
+          </div>
+  
+          <div class="why_choose_merfish_card">
+            <div class="why_choose_bg img_bg_5">
+              <img src="../assets/admission_assets/Popular Man.png" alt="">
+            </div>
+            <span>Facilities and activities to network with International Experts</span>
+          </div>
+          <div class="why_choose_merfish_card">
+            <div class="why_choose_bg img_bg_6">
+              <img src="../assets/admission_assets/Training.png" alt="">
+            </div>
+            <span>Experienced and Competent Faculty, who are passionate in Teaching</span>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="admission_view_quote">
+        <span><strong>&ldquo;</strong>
+          Being in the forefront of the Cochlear Implant revolution in India, MERF has one of the largest case loads and
+          one of the best equipped facilities in the field of Audiology and Speech-Language Pathology in the world.
+          <strong>&rdquo;</strong>
+        </span>
+      </div>
+  
+      <div class="video_Image_container">
+        <div class="imageGallery" id="imageGallery">
+          <img class="img_item" src="../assets/image_container/merfish-banner.png" />
+        </div>
+        <div class="videoGallery" id="videoGallery">
+          <iframe src="https://www.youtube.com/embed/ec1eS4kNwf4" allowfullscreen class="item video"></iframe>
+          <iframe src="https://www.youtube.com/embed/Sebx3Q2GKE0" allowfullscreen class="item video"></iframe>
+        </div>
+      </div>
+  
+      <div class="academic_facilities">
+        <h3>Our Academic Facilities</h3>
+        <div class="image_gallery_facilities">
+          <img class="img_item" src="../assets/image_container/facilities-1.png" alt="" srcset="">
+          <img class="img_item" src="../assets/image_container/facilities-2.png" alt="" srcset="">
+          <img class="img_item" src="../assets/image_container/facilities-3.png" alt="" srcset="">
+          <img class="img_item" src="../assets/image_container/facilities-4.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+    <div class="footer_view">
+        <div class="footer_view_home">
+          <div class="footer_view_service">
+            <div class="footer_view_logo">
+              <img src="../assets/merfsh-logo.png" alt="">
+            </div>
+            <div class="footer_view_options">
+              <span class="footer_option">Home </span>
+              <span class="footer_option">Gallery</span>
+              <span class="footer_option">About us </span>
+              <span class="footer_option">management </span>
+              <span class="footer_option">clinic</span>
+              <span class="footer_option">contact</span>
+              <span class="footer_option">academics</span>
+              <span class="footer_option">clinic app</span>
+              <span class="footer_option">FAQs</span>
+              <span class="footer_option">admission</span>
+              <span class="footer_option">testimonial</span>
+              <span class="footer_option">faculty</span>
+              <span class="footer_option">research</span>
+            </div>
+          </div>
+          <div class="footer_view_social_media_body">
+            <h4>Connect with us : </h4>
+            <div class="footer_view_social_media">
+              <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+              <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+              <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+                class="fa fa-linkedin"></a>
+              <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+            </div>
+          </div>
+    
+        </div>
+        <div class="footer_view_copy_rights">
+          <span>MERF-ISH &copy; copyright
+            <script>document.write(new Date().getFullYear());</script>.Incl.,All right reserved
+          </span>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script src="../js/statesAndCities.js"></script>
+<script src="../js/degreeAndPrograms"></script>
+<script src="../js/formSubmit.js"></script>
+<script src="../js/header.js"></script>
+</html>

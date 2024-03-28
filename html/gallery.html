@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merf-ish</title>
+  <link rel="stylesheet" href="../css/Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body class="container">
+    <div class="header_nav">
+        <div>
+          <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+          <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+            class="fa fa-linkedin"></a>
+          <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+        </div>
+        <div>
+          <span>Careers</span>|<span>How you can help us</span>|<span>Feedback</span>|<span>Contact</span>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header_logo">
+          <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+        </div>
+        <div class="header_menu">
+          <div class="header_options">
+            <a href="./home.html"  class="header_btn ">home</a>
+            <a href="./about.html"  class="header_btn">about us</a>
+            <a href="./management.html"  class="header_btn">management</a>
+            <a href="./academics.html"  class="header_btn">academics</a>
+            <a href="./admission.html"  class="header_btn">admission</a>
+            <a href="./gallery.html"  class="header_btn">gallery</a>
+            <a href="./faculty.html" class="header_btn">faculty</a>
+            <a href="./clinicApp.html"  class="header_btn">clinic app</a>
+            <a href="./testimonial.html"  class="header_btn">Testimonial</a>
+            <a href="./medEl.html"  class="header_btn">MED-EL</a>
+            <a href=""><button class="button_style apply_admission">Apply Now for Admission</button></a>
+          </div>
+    
+    
+        </div>
+        <div class="dropdown">
+          <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./home.html"  class="header_btn ">home</a>
+            <a href="./about.html"  class="header_btn">about us</a>
+            <a href="./management.html"  class="header_btn">management</a>
+            <a href="./academics.html"  class="header_btn">academics</a>
+            <a href="./admission.html"  class="header_btn">admission</a>
+            <a href="./gallery.html"  class="header_btn">gallery</a>
+            <a href="./faculty.html" class="header_btn">faculty</a>
+            <a href="./clinicApp.html"  class="header_btn">clinic app</a>
+            <a href="./testimonial.html"  class="header_btn">Testimonial</a>
+            <a href="./medEl.html"  class="header_btn">MED-EL</a>
+            <a href=""><button class="button_style apply_admission">Apply Now for Admission</button></a>
+          </div>
+        </div>
+      </div>
+
+  <div class="body_view">
+    <div class="main_body" id="gallery">
+        <h2 class="gallery-heading">Gallery</h2>
+        <div class="video_container">
+          <div class="video_gallery_container">
+    
+            <iframe src="https://www.youtube.com/embed/ec1eS4kNwf4" allowfullscreen class="item video"></iframe>
+            <iframe src="https://www.youtube.com/embed/Sebx3Q2GKE0" allowfullscreen class="item video"></iframe>
+    
+          </div>
+        </div>
+    
+        <div class="gallery-clinic">
+          <h1 class="gallery-clinic-heading">Clinic</h1>
+        </div>
+    
+        <div class="image_container" id="clinicImageContainer">
+          <img src="../assets/gallery-assets/gallery-clinic1.png" alt="Image 1">
+          <img src="../assets/gallery-assets/gallery-clinic2.png" alt="Image 2">
+          <img src="../assets/gallery-assets/gallery-clinic3.png" alt="Image 3">
+          <img src="../assets/gallery-assets/gallery-clinic4.png" alt="Image 4" id="responsiveImg" class="">
+          <img src="../assets/gallery-assets/gallery-clinic5.png" alt="Image 5" class="hidden">
+          <img src="../assets/gallery-assets/gallery-clinic6.png" alt="Image 6" class="hidden">
+          <img src="../assets/gallery-assets/gallery-clinic7.png" alt="Image 7" class="hidden">
+          <img src="../assets/gallery-assets/gallery-clinic8.png" alt="Image 8" class="hidden">
+          <img src="../assets/gallery-assets/gallery-clinic9.png" alt="Image 9" class="hidden">
+        </div>
+        <div class="gallery_button_container">
+          <button class="gallery_button" id="toggleButton" onclick="showAll()">Show All</button>
+        </div>
+    
+        <div class="gallery-clinic">
+          <h1 class="gallery-clinic-heading">Academic Facilities</h1>
+        </div>
+        <div class="image_container" id="academicImageContainer">
+          <img src="../assets/gallery-assets/AcademicFacilities1.png" alt="Image 1">
+          <img src="../assets/gallery-assets/AcademicFacilities2.png" alt="Image 2">
+          <img src="../assets/gallery-assets/AcademicFacilities3.png" alt="Image 3">
+          <img src="../assets/gallery-assets/AcademicFacilities4.png" alt="Image 4" id="responsiveImg2" class="">
+          <img src="../assets/gallery-assets/AcademicFacilities5.png" alt="Image 5" class="hidden">
+          <img src="../assets/gallery-assets/AcademicFacilities6.png" alt="Image 6" class="hidden">
+          <img src="../assets/gallery-assets/AcademicFacilities7.png" alt="Image 7" class="hidden">
+          <img src="../assets/gallery-assets/AcademicFacilities8.png" alt="Image 8" class="hidden">
+          <img src="../assets/gallery-assets/AcademicFacilities9.png" alt="Image 9" class="hidden">
+        </div>
+        <div class="gallery_button_container">
+          <button class="gallery_button" id="toggle2" onclick="showAllAcademics()">Show All</button>
+        </div>
+    
+        <div class="gallery-clinic">
+          <h1 class="gallery-clinic-heading">Community Based Services</h1>
+        </div>
+        <div class="image_container" id="serviceImageContainer">
+          <img src="../assets/gallery-assets/Community1.png" alt="Image 1">
+          <img src="../assets/gallery-assets/Community2.png" alt="Image 2">
+          <img src="../assets/gallery-assets/Community3.png" alt="Image 3">
+          <img src="../assets/gallery-assets/Community4.png" alt="Image 4" id="responsiveImg3" class="">
+          <img src="../assets/gallery-assets/Community5.png" alt="Image 5" class="hidden">
+          <img src="../assets/gallery-assets/Community6.png" alt="Image 6" class="hidden">
+          <img src="../assets/gallery-assets/Community7.png" alt="Image 7" class="hidden">
+          <img src="../assets/gallery-assets/Community8.png" alt="Image 8" class="hidden">
+          <img src="../assets/gallery-assets/Community9.png" alt="Image 9" class="hidden">
+        </div>
+        <div class="gallery_button_container">
+          <button class="gallery_button" id="toggle3" onclick="showAllServices()">Show All</button>
+        </div>
+    
+        <div class="gallery-clinic">
+          <h1 class="gallery-clinic-heading">Research & Presentation</h1>
+        </div>
+        <div class="image_container" id="researchImageContainer">
+          <img src="../assets/gallery-assets/Research1.png" alt="Image 1">
+          <img src="../assets/gallery-assets/Research2.png" alt="Image 2">
+          <img src="../assets/gallery-assets/Research3.png" alt="Image 3">
+          <img src="../assets/gallery-assets/Research4.png" alt="Image 4" id="responsiveImg4" class="">
+          <img src="../assets/gallery-assets/Research5.png" alt="Image 5" class="hidden">
+          <img src="../assets/gallery-assets/Research6.png" alt="Image 6" class="hidden">
+          <img src="../assets/gallery-assets/Research7.png" alt="Image 7" class="hidden">
+          <img src="../assets/gallery-assets/Research9.png" alt="Image 8" class="hidden">
+          <img src="../assets/gallery-assets/Research9.png" alt="Image 9" class="hidden">
+        </div>
+        <div class="gallery_button_container">
+          <button class="gallery_button" id="toggle4" onclick="showAllResearch()">Show All</button>
+        </div>
+      </div>
+    <div class="footer_view">
+        <div class="footer_view_home">
+          <div class="footer_view_service">
+            <div class="footer_view_logo">
+              <img src="../assets/merfsh-logo.png" alt="">
+            </div>
+            <div class="footer_view_options">
+              <span class="footer_option">Home </span>
+              <span class="footer_option">Gallery</span>
+              <span class="footer_option">About us </span>
+              <span class="footer_option">management </span>
+              <span class="footer_option">clinic</span>
+              <span class="footer_option">contact</span>
+              <span class="footer_option">academics</span>
+              <span class="footer_option">clinic app</span>
+              <span class="footer_option">FAQs</span>
+              <span class="footer_option">admission</span>
+              <span class="footer_option">testimonial</span>
+              <span class="footer_option">faculty</span>
+              <span class="footer_option">research</span>
+            </div>
+          </div>
+          <div class="footer_view_social_media_body">
+            <h4>Connect with us : </h4>
+            <div class="footer_view_social_media">
+              <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+              <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+              <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+                class="fa fa-linkedin"></a>
+              <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+            </div>
+          </div>
+    
+        </div>
+        <div class="footer_view_copy_rights">
+          <span>MERF-ISH &copy; copyright
+            <script>document.write(new Date().getFullYear());</script>.Incl.,All right reserved
+          </span>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="../js/gallery.js"></script>
+<script src="../js/header.js"></script>
+
+</html>
