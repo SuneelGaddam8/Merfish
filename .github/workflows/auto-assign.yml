@@ -1,7 +1,7 @@
 name: Auto Assign
 on:
   push:
-    branches: [samplle-dev]
+    branches: [sample-dev]
   
 jobs:
   run:

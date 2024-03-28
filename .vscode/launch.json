@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "C:\\Users\\sunee.DESKTOP-J9ANFT9\\projects\\Merfish\\html\\index.html"
+            "file": "C:\\Users\\sunee.DESKTOP-J9ANFT9\\projects\\Merfish\\index.html"
         }
     ]
 }
