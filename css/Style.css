@@ -2880,35 +2880,36 @@ justify-content: center;
  padding-top: 20px;
 }
  .faculty-image-container{
-  width: 95%;
+  width: 100%;
   height: fit-content;
  padding: 10px;
-display: grid;
-grid-template-columns: repeat(4,1fr);
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+place-items: center;
 gap:20px;
 }
 .faculty-image-card{
-  width: 90%;
-  height: 90%;
+  width:180px;
+  height: 180px;
   align-items: center;
   padding: 15px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 12px;
+  border-radius: 10px;
   background-color: #ECF3F3;
 }
-.faculty-image-card h2{
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-}
+
 .faculty-image-card img{
-  width: 190.22px;
-  height: 209px;
+  width:80px;
+  height: 80px;
 }
 .faculty-image-card p{
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   font-weight: 400;
   display: flex;
@@ -2916,7 +2917,6 @@ gap:20px;
   gap:2;
 }
 .faculty_view_link{
-  text-decoration: none;
   color: black;
 }
 .faculty_view_link:hover{
@@ -2936,7 +2936,6 @@ gap:20px;
 .faculty-image-container{
   width: 95%;
   height: fit-content;
- 
 display: grid;
 grid-template-columns:  auto auto auto;
 gap:20px;
@@ -2954,8 +2953,8 @@ gap:20px;
   gap:20px;
   }
   .faculty-image-card img{
-    width: 150px;
-    height: 209px;
+    width: 100px;
+    height: 100px;
   }
   .gallery-clinic-heading{
     font-size: 1.5rem;
