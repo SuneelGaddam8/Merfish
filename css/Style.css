@@ -511,12 +511,13 @@
 
 .course_cards_view,
 .reason_cards_view {
-  width: 90vw;
+  width: 100vw;
 
   height: fit-content;
 
   display: flex;
-
+ flex-direction: row;
+ flex-wrap: wrap;
   justify-content: space-around;
 
   align-items: center;
@@ -904,8 +905,6 @@
   .reason_cards_view {
     width: 90vw;
 
-    flex-wrap: wrap;
-
     gap: 40px;
   }
 
@@ -927,9 +926,6 @@
   .course_cards_view,
   .reason_cards_view {
     width: 100vw;
-
-    flex-wrap: wrap;
-
     gap: 30px;
   }
 
