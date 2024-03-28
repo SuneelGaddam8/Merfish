@@ -2891,8 +2891,8 @@ place-items: center;
 gap:20px;
 }
 .faculty-image-card{
-  width:180px;
-  height: 180px;
+  width:200px;
+  height: 200px;
   align-items: center;
   padding: 15px;
   justify-content: center;
@@ -2905,8 +2905,8 @@ gap:20px;
 }
 
 .faculty-image-card img{
-  width:80px;
-  height: 80px;
+  width:100px;
+  height: 100px;
 }
 .faculty-image-card p{
   font-size: 10px;
