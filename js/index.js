@@ -57,9 +57,10 @@ valueDisplays.forEach(value=>{
   let startValue=0;
   let endValue=parseInt(value.getAttribute('data-val'));
  let duration=endValue<100?
- 60:endValue<500?40:endValue<800?10:endValue<2000?1:endValue>2000?5:1;
+ 60:endValue<500?40:endValue<800?10:endValue<3000?7:1;
    
 let counter =setInterval(function(){
+  
   startValue+=1;
   value.textContent=startValue+"+";
   if (startValue==endValue) {

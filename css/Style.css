@@ -468,8 +468,8 @@
 
 .courses,
 .why_choose_merf_ish {
-  margin: 40px 0px;
 
+  width: 95%;
   display: flex;
 
   flex-direction: column;
@@ -478,9 +478,9 @@
 
   align-items: center;
 
-  gap: 20px;
+  gap: 40px;
+  padding-bottom: 20px;
 
-  width: 100%;
 }
 
 .header_title {
@@ -501,33 +501,28 @@
 
 .course_cards_group,
 .reason_cards_group {
-  width: 100%;
-
+  width: 90%;
   display: flex;
-
-  justify-content: center;
-
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .course_cards_view,
 .reason_cards_view {
-  width: 100vw;
-
-  height: fit-content;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  justify-content: space-around;
-
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-
+  justify-content: center;
+  height: fit-content;
   gap: 40px;
 }
 
 .course_card {
   background: var(--bg-white);
-
-  width: 310px;
+min-width: 300px;
+  width: 25%;
 
   height: 100px;
 
@@ -602,27 +597,22 @@
 
 .experience_workers_count {
   width: 100%;
-
-display: grid;
-grid-template-columns: repeat(3,1fr);
-justify-content: center;
-
-  gap: 20px;
-  line-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
   font-family: var(--font-family);
   line-height: 30px;
 }
 
 .experience_workers_count div {
-  width: 30%;
-
+  width: 20%;
+  min-width: 150px;
   display: flex;
-
+  min-height: 80px;
   flex-direction: column;
-
-  /* justify-content: center; */
-
   text-transform: capitalize;
 
   color: var(--color-orange);
@@ -900,6 +890,8 @@ justify-content: center;
     width: 90vw;
    display: flex;
    flex-direction: row;
+   justify-content: center;
+   align-items: center;
    flex-wrap: wrap;
     gap: 40px;
   }
@@ -913,6 +905,7 @@ justify-content: center;
     width: 100vw;
      display: flex;
      flex-direction: row;
+     justify-content: center;
     flex-wrap: wrap;
 
     gap: 20px;
@@ -923,15 +916,13 @@ justify-content: center;
   .course_cards_view,
   .reason_cards_view {
     width: 100vw;
-    display: flex;
-   flex-direction: row;
    flex-wrap: wrap;
     gap: 30px;
   }
 
   .course_card,
   .reason_cards {
-    width: calc(50%-40px);
+    width: 40%;
   }
 
   .background_img_scroll {
