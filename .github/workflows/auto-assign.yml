@@ -1,9 +1,8 @@
 name: Auto Assign
 on:
-  issues:
-    types: [opened]
-  pull_request:
-    types: [opened]
+  push:
+    branches: [samplle-dev]
+  
 jobs:
   run:
     runs-on: ubuntu-latest
