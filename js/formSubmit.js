@@ -80,3 +80,13 @@ function validateForm() {
   function hideError(params) {
     document.getElementById('captcha-error-message').style.display = 'none';
   }
+  changeImage()
+
+  function changeImage() {   
+    var BackgroundImg=['../assets/gallery-assets/AcademicFacilities2.png','../assets/gallery-assets/AcademicFacilities3.png','../assets/gallery-assets/AcademicFacilities4.png'];
+    var i = Math.floor((Math.random() * 3));
+    var bgImg = document.getElementById('admissionView');
+  bgImg.style.backgroundImage = "url('"+BackgroundImg[i]+"')";
+  bgImg.style.backgroundSize='cover'
+    setTimeout(changeImage, 2000);
+  }

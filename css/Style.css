@@ -2887,7 +2887,6 @@ display: grid;
 grid-template-columns: repeat(4,1fr);
 gap:20px;
 }
-
 .faculty-image-card{
   width: 90%;
   height: 90%;
@@ -2915,6 +2914,14 @@ gap:20px;
   display: flex;
   flex-direction: column;
   gap:2;
+}
+.faculty_view_link{
+  text-decoration: none;
+  color: black;
+}
+.faculty_view_link:hover{
+  color: rgba(165, 42, 42, 0.829);
+  text-decoration: underline;
 }
 @media only screen and (max-width: 1100px) {
   .faculty-image-card img{
@@ -2970,17 +2977,7 @@ gap:20px;
 }
 
 
-#faculty-details-container {
-  padding: 20px;
-  display:none;
-  width: 100%;
-  min-height: 400px;
-  height: fit-content;
- display:flex;
-flex-wrap: wrap;
- 
 
-}
 
 
 .faculty-details-image {
@@ -3116,4 +3113,89 @@ width: 100%;
   height: fit-content;
 padding: 10px;
 border-bottom: 1px solid var(--border-green-color);
+}
+
+
+
+/* faculty style components */
+.body_faculty{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0;
+}
+#faculty-details-container{
+  padding-bottom: 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--bg-light-green-transparent);
+  padding: 0;
+}
+.back_arrow_btn{
+  width: max-content;
+  padding: 2px 8px;
+}
+.back_arrow_btn i{
+  width: 100px;
+  cursor: pointer;
+}
+
+.view_faculty_info{
+  display: block;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.faculty_details_container_logo{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  gap: 5px;
+  padding: 20px;
+   border-right: 1px solid black;
+  line-height: 20px;
+}
+.faculty_details_container_logo img{
+  width: 180px;
+  height: 200px;
+}
+.faculty_details_container_logo span{
+  width: 150px;
+  text-align: center;
+}
+.faculty_details_container_about{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  gap: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  line-height: 25px;
+}
+.faculty_about_bar{
+  width: 70%;
+  padding: 4px;
+  background-color: var(--bg-orange);
+  color: var(--bg-white);
+  text-align: center;
+}
+@media screen and (max-width:1160px) {
+  .faculty_details_container_logo,.faculty_details_container_about{
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faculty_details_container_about div{
+    width: 95%;
+  }
 }
