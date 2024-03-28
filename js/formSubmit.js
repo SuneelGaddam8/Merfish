@@ -88,5 +88,6 @@ function validateForm() {
     var bgImg = document.getElementById('admissionView');
   bgImg.style.backgroundImage = "url('"+BackgroundImg[i]+"')";
   bgImg.style.backgroundSize='cover'
+  
     setTimeout(changeImage, 2000);
   }

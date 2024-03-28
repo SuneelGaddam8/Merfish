@@ -1,8 +1,12 @@
 name: Auto Assign
 on:
   push:
+
     branches: [sample-dev]
   
+
+    branches: [simple-dev]
+
 jobs:
   run:
     runs-on: ubuntu-latest
