@@ -102,18 +102,15 @@ name: "Gauri Singh",
 
 
 const container = document.getElementById('testimonialsContainer');
-    const toggleButton = document.getElementById('showMoreButton')
 
-    let showingAll = false;
-
-    function renderTestimonials() {
-      const limit = showingAll ? images.length : 6;
+let testimonialIndex=0;
+    function renderTestimonials(n) {
       container.innerHTML = '';
-      for (let i = 0; i < limit; i++) {
+      for (let i = n; i < n+2; i++) {
         const image = images[i];
         const card = document.createElement('div');
         card.classList.add('card');
-
+        card.classList.add('testimonial_card_active')
         const descriptionContainer = document.createElement('div');
         descriptionContainer.classList.add('description-container');
         const truncatedDescription = truncateDescription(image.description);
@@ -129,6 +126,8 @@ const container = document.getElementById('testimonialsContainer');
           };
           card.appendChild(readMoreButton);
         }
+
+
 
         const detailsContainer = document.createElement('div');
         detailsContainer.classList.add('details');
@@ -146,8 +145,8 @@ const container = document.getElementById('testimonialsContainer');
 
         container.appendChild(card);
       }
-    }renderTestimonials()
-
+    }
+    renderTestimonials(testimonialIndex)
     function truncateDescription(description) {
       const maxLength = 200; // Maximum length of truncated description
       if (description.length <= maxLength) {
@@ -157,19 +156,7 @@ const container = document.getElementById('testimonialsContainer');
       return truncatedText;
     }
 
-    
-
-    function showMoreTestimonials() {
-      showingAll = !showingAll;
-      renderTestimonials();
   
-      if (showingAll) {
-          toggleButton.textContent = 'See Less';
-      } else {
-          toggleButton.textContent = 'See More';
-      }
-  }
-
     function toggleDescription(card, descriptionContainer, fullDescription, readMoreButton) {
       card.classList.toggle('expanded');
       if (card.classList.contains('expanded')) {
@@ -205,5 +192,20 @@ function showBefore() {
 function showAfter() {
   for (let i = 0; i < videos.length; i++) {
     videos[i].src = afterVideos[i];
+  }
+}
+
+function prevTestimonial() {
+  if (testimonialIndex!==0) {
+    testimonialIndex-=1
+    renderTestimonials(testimonialIndex);
+  }
+
+}
+
+function nextTestimonial() {
+  if (testimonialIndex+1<images.length) {
+  testimonialIndex+=1
+  renderTestimonials(testimonialIndex);
   }
 }

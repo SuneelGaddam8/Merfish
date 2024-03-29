@@ -98,7 +98,3 @@ function homeHandler(value){
 document.getElementById('menuBtn').classList.remove('change');
  document.getElementById("myDropdown").classList.remove("show");
 }
-
-
-
-
