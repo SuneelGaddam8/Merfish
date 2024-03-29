@@ -1505,8 +1505,12 @@ align-items: center;
   padding-left: 50px;
 }
 .footer_view_options span{
-  min-width: 150px;
-  max-width: 200px;
+  width: 150px;
+}
+@media screen and (max-width:500px) {
+  .footer_view_options span{
+    width: 100px;
+  }
 }
 .footer_view_social_media_body {
   width: 100%;
@@ -2497,7 +2501,7 @@ margin-top: 300px;
 .card {
   color: #6f6c90;
   border-radius: 20px;
-  min-width: 400px;
+  min-width: 300px;
   width: 45%;
 
   box-sizing: border-box;
@@ -2704,7 +2708,8 @@ margin-top: 300px;
 }
 .faculty-image-card {
   width: 200px;
-  height: 200px;
+  min-height: 200px;
+  max-height: max-content;
   align-items: center;
   padding: 15px;
   justify-content: center;
@@ -2715,7 +2720,11 @@ margin-top: 300px;
   border-radius: 10px;
   background-color: #ecf3f3;
 }
-
+@media screen and (max-width:595px) {
+  .faculty-image-card {
+    width: 260px;
+  }
+}
 .faculty-image-card img {
   width: 100px;
   height: 100px;

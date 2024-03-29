@@ -100,13 +100,33 @@ name: "Gauri Singh",
 
 ];
 
-
+let initialSizeOfTestimonials=2
+function widthcalculator(width){
+  if (width<799) {
+    initialSizeOfTestimonials=1
+    const card=document.querySelectorAll('.card');
+    card.forEach(card=>{
+      card.classList.remove('testimonial_card_active')
+    })
+    
+  }
+  renderTestimonials(0)
+}
+window.addEventListener('load', function() {
+  const width = window.innerWidth;
+   widthcalculator(width)
+})
+window.addEventListener('resize', function() {
+  const width = window.innerWidth;
+  widthcalculator(width)
+})
 const container = document.getElementById('testimonialsContainer');
 
 let testimonialIndex=0;
     function renderTestimonials(n) {
       container.innerHTML = '';
-      for (let i = n; i < n+2; i++) {
+     
+      for (let i = n; i < n+initialSizeOfTestimonials; i++) {
         const image = images[i];
         const card = document.createElement('div');
         card.classList.add('card');
@@ -146,7 +166,7 @@ let testimonialIndex=0;
         container.appendChild(card);
       }
     }
-    renderTestimonials(testimonialIndex)
+    
     function truncateDescription(description) {
       const maxLength = 200; // Maximum length of truncated description
       if (description.length <= maxLength) {
