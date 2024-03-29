@@ -267,7 +267,7 @@
 .body_view {
   width: 100vw;
 
-  height: 83vh;
+  height: 85vh;
 
   overflow-y: auto;
 
@@ -330,7 +330,7 @@
 .background_img_scroll {
   width: 100%;
 
-  height: 350px;
+  height: 450px;
 
   /* padding: 30px 0px; */
 
@@ -361,8 +361,8 @@
 .slide_card_in {
   background: rgba(87, 122, 100, 1);
   height: 100%;
-  width: 100%;
-  clip-path: circle(100% at 15% 50%);
+  width: 90%;
+  clip-path: circle(100% at 0% 50%);
  
 }
 .active_header{
@@ -1440,9 +1440,8 @@ gap: 4px;
 }
 
 .footer_view_home {
-  padding: 50px 200px 10px 200px;
-
-  width: fit-content;
+padding: 30px 0px 0px 0px;  
+  width: 80%;
 
   display: flex;
 
@@ -1459,16 +1458,17 @@ gap: 4px;
   flex-direction: row;
 
   justify-content: center;
-
+align-items: center;
   flex-wrap: wrap;
 
   text-transform: capitalize;
 
-  gap: 20px;
+  gap: 30px;
 }
 
 .footer_view_service span:hover {
   cursor: pointer;
+  color: var(--bg-orange);
 }
 
 .footer_view_logo {
@@ -1496,17 +1496,18 @@ gap: 4px;
 }
 
 .footer_view_options {
-  width: max-content;
-
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
+  width: 500px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
   gap: 20px;
-
   padding-left: 50px;
 }
-
+.footer_view_options span{
+  min-width: 150px;
+  max-width: 200px;
+}
 .footer_view_social_media_body {
   width: 100%;
 
@@ -1514,7 +1515,7 @@ gap: 4px;
 
   flex-direction: row;
 
-  justify-content: center;
+  justify-content: end;
 
   gap: 5px;
 }
@@ -1525,13 +1526,8 @@ gap: 4px;
 
 .footer_view_social_media {
   width: auto;
-
   display: flex;
-
   flex-direction: row;
-
-  height: 100%;
-
   gap: 20px;
 }
 
@@ -2625,17 +2621,19 @@ margin-top: 300px;
   cursor: pointer;
 }
 .testimonial-showmore-container {
-  width: 90%;
+  width: 100%;
   border-bottom: 1px solid #96ac8a;
-  align-items: end;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
   display: flex;
+  padding: 20px;
   gap: 20px;
 }
 .prev_testimonials,
 .next_testimonials {
   cursor: pointer;
   color: rgb(160, 157, 157);
+  font-size: 34px;
 }
 .prev_testimonials:hover,
 .next_testimonials:hover {
