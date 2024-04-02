@@ -12,60 +12,69 @@
 </head>
 
 <body class="container">
-    <div class="header_nav">
-        <div>
-          <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
-          <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
-          <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
-            class="fa fa-linkedin"></a>
-          <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
-        </div>
-        <div>
-          <span>Careers</span>|<span>How you can help us</span>|<span>Feedback</span>|<span>Contact</span>
-        </div>
-      </div>
-      <div class="header">
-        <div class="header_logo">
-          <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
-        </div>
-        <div class="header_menu">
-          <div class="header_options">
-            <a href="../index.html"  class="header_btn ">home</a>
-            <a href="./about.html"  class="header_btn">about us</a>
-            <a href="./management.html"  class="header_btn">management</a>
-            <a href="./academics.html"  class="header_btn header_active">Courses </a>
-            <a href="./admission.html"  class="header_btn">admission</a>
-            <a href="./gallery.html"  class="header_btn">gallery</a>
-            <a href="./faculty.html" class="header_btn">faculty</a>
-            <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-            <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-            <a href="./medEl.html"  class="header_btn">MED-EL</a>
-            <a href="http://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-          </div>
-    
-    
-        </div>
-        <div class="dropdown">
-          <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="../index.html"  class="header_btn ">home</a>
-            <a href="./about.html"  class="header_btn">about us</a>
-            <a href="./management.html"  class="header_btn">management</a>
-            <a href="./academics.html"  class="header_btn header_active">courses </a>
-            <a href="./admission.html"  class="header_btn">admission</a>
-            <a href="./gallery.html"  class="header_btn">gallery</a>
-            <a href="./faculty.html" class="header_btn">faculty</a>
-            <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-            <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-            <a href="./medEl.html"  class="header_btn">MED-EL</a>
-            <a href="http://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-          </div>
-        </div>
-      </div>
+  <div class="header_nav">
+    <div></div>
+     <div>
+    <span><a href="./Contact.html">Contact</a></span>
+     </div>
+   </div>
+   <div class="header">
+     <div class="header_logo">
+       <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+     </div>
+     <div class="header_menu">
+       <div class="header_options">
+         <a href="../index.html"  class="header_btn ">home</a>
+         <a href="./about.html"  class="header_btn ">about us</a>
+         <a href="./management.html"  class="header_btn">management</a>
+         <a href="./academics.html"  class="header_btn header_active">courses</a>
+         <a href="./admission.html"  class="header_btn">admission</a>
+         <a href="./gallery.html"  class="header_btn">gallery</a>
+         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
+           <a class="header_btn research_btn">research</a>
+           <ul class="research_drop_down" id="research_drop_down" style="display: none;">
+             <li><a href="./ResearchAudiology.html">Audiology</a></li>
+             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
+             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
+           </ul>
+         </div>
+         <a href="./faculty.html" class="header_btn">faculty</a>
+         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
+         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
+         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
+       </div>
+ 
+ 
+     </div>
+     <div class="dropdown">
+       <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+       </div>
+       <div id="myDropdown" class="dropdown-content">
+         <a href="../index.html"  class="header_btn ">home</a>
+         <a href="./about.html"  class="header_btn header_active">about us</a>
+         <a href="./management.html"  class="header_btn">management</a>
+         <a href="./academics.html"  class="header_btn">academics</a>
+         <a href="./admission.html"  class="header_btn">admission</a>
+         <a href="./gallery.html"  class="header_btn">gallery</a>
+         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
+           <a  class="header_btn research_btn">research</a>
+           <ul id="mobile_research_dropDown" style="display: none;">
+             <li><a href="./ResearchAudiology.html">Audiology</a></li>
+             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
+             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
+           </ul>
+         </div>
+         <a href="./faculty.html" class="header_btn">faculty</a>
+         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
+         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
+         <a href="./medEl.html"  class="header_btn">MED-EL</a>
+         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
+       </div>
+     </div>
+   </div>
 
   <div class="body_view">
     <div class="main_body" id="academics">
@@ -136,7 +145,7 @@
           </div>
           <div class="academic_admission_date">
   
-            <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
+            <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
           </div>
         </div>
        
@@ -169,7 +178,7 @@
           </div>
           <div class="academic_admission_date">
   
-            <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
+            <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
           </div>
         </div>
   
@@ -259,7 +268,7 @@
   
           <div class="academic_admission_date">
   
-            <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
+            <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
           </div>
         </div>
   
@@ -308,7 +317,7 @@
           <div class="academic_admission_date">
   
             <!-- <h3>Limited seats available</h3> -->
-            <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
+            <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
             <!-- <h3>Last date of admission:<Strong> February 28 </Strong></h3> -->
           </div>
         </div>
@@ -392,7 +401,7 @@
           <div class="academic_admission_date">
   
             <!-- <h3>Limited seats available</h3> -->
-            <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
+            <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
             <!-- <h3>Last date of admission:<Strong> February 28 </Strong></h3> -->
           </div>
   
@@ -478,7 +487,7 @@
           <div class="academic_admission_date">
   
             <!-- <h3>Limited seats available</h3> -->
-            <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
+            <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-transform: uppercase;">Apply Now</a>
             <!-- <h3>Last date of admission:<Strong> February 28 </Strong></h3> -->
           </div>
   

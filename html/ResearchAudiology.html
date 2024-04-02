@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merf-ish</title>
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js"></script>
+  </head>
+
+  <body class="container">
+    <div class="header_nav">
+      <div></div>
+      <div>
+        <span><a href="./Contact.html">Contact</a></span>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header_logo">
+        <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+      </div>
+      <div class="header_menu">
+        <div class="header_options">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">courses</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn header_active">research</a>
+            <ul
+              class="research_drop_down"
+              id="research_drop_down"
+              style="display: none"
+            >
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn header_active">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">academics</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn">research</a>
+            <ul id="mobile_research_dropDown" style="display: none">
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="./medEl.html" class="header_btn">MED-EL</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="body_view">
+      <div class="main_body">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <h1 style="width: 90%; text-align: left">Paper Published</h1>
+          <ol
+            style="
+              width: 90%;
+              line-height: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              font-size: 13px;
+            "
+          >
+            <li>
+              <strong>Chandarsekaran P</strong>, Rexton V,
+              <strong>Ranjith R</strong>, Varshini P, Prabhavathi B, and
+              <strong>Ramyasri Cherukuri</strong>; Development of Eustachian
+              tube dysfunction questionnaire-child edition, Otolaryngology open
+              access; 2023.
+            </li>
+            <li>
+              Aster Franz Miranda,
+              <strong>Saranyaa G, Divya S, Ranjith R, Deepika J;</strong> The
+              Role Of Audiologists And Speech Language Pathologists In The
+              Assessment And Management Of Neonates: Neonatologists Perspective;
+              International Journal of Research and Analytical Reviews
+              (IJRAR),Vol.9, Issue 4, 839-844, October 2022
+            </li>
+            <li>
+              <strong
+                >Deepika Jayachandran, Ranjith Rajeswaran, Saranyaa
+                Gunalan;</strong
+              >
+              Quality of Sound in Post - Lingual Cochlear Implantees;
+              International Journal of Science and Research (IJSR) Volume 11
+              Issue 11, November 2022
+            </li>
+            <li>
+              Rajavenkat, S., Umashankar, A., &
+              <strong>Chandrasekaran, P. C.</strong> (2021). Bionic hearing in
+              auditory neuropathy spectrum disorder: A systematic review. Indian
+              Journal of Otology, 27(4), 169.
+            </li>
+            <li>
+              Elanthendral Chandrasekhar;
+              <strong>Saranyaa Gunalan; Deepika Jayachandran;</strong> Priyanka
+              Sivakumaran; Outcomes of desensitization therapy in Hyperacusis: A
+              single case report; Open journal of Clinical & Medical Case
+              Reports, 2021
+            </li>
+            <li>
+              Anusha MN, Sathveeka,<strong>
+                Maria J, Sangeetha Ganesan, Saranyaa Gunalan</strong
+              >
+              Communication Challenges and Implementation of Telepractice for
+              Children with HI during lockdown – A Parental Perspective; Journal
+              of Clinical and Diagnostic Research, 2021
+            </li>
+            <li>
+              <strong>Deepika Jayachandran</strong> & Oviya MP P300 in Children
+              with Early and Late Cochlear Implantation;
+              <span style="font-style: italic"
+                >International Journal of Science and Research (IJSR) Volume 10
+                Issue 10, October, 2021</span
+              >
+            </li>
+            <li>
+              <strong>Pachaiappan. C, Sri CR,</strong> Menon HR et.al. A case
+              study of audiological test battery in a paediatric patient with
+              Klippel Feil syndrome. Int J Health Sci Res. 2021; 11(10): 245-249
+            </li>
+            <li>
+              Abishek Umashankar, Lakshmanabharathi,<strong>
+                Pachaiappan Chandrasekar</strong
+              >, Prashanth Prabhu ;Threshold of octave masking as a tool to
+              explain cochlear non linearity, Auditory and vestibular research;
+              2021
+            </li>
+            <li>
+              <strong>Rajeswaran, R.</strong>, Tavora-Vieira, D., Mertens, G.,
+              Dillon, M., Narayan, S., Kameswaran, M., & Kurz, A. Audiological
+              practice and COVID‐19: recommendations that audiological centers
+              can use to maintain the safety and quality of service—expert
+              opinion; European Archives of Oto-Rhino-Laryngology; 2021
+            </li>
+            <li>
+              Vijayakumar, K., <strong>Gunalan, S.,</strong> & Rajeswaran, R;
+              Development of Minimal Pair Test in Tamil (MPT-T); Journal of
+              Clinical and Diagnostic Research., 15(9), MC01-MC04, 2021
+            </li>
+            <li>
+              Abishek Umashankar,
+              <strong>Deepika Jayachandran (2020)</strong> Investigating the
+              recovery properties of Auditory Nerve Fibres at Different cochlear
+              Regions using Electrically Evoked Compound Action potential;
+              <span style="font-style: italic"
+                >Journal of Clinical and Diagnostic Research. 2020 Oct,
+                Vol-14(10), 2020</span
+              >
+            </li>
+            <li>
+              <strong>Pachaiappan Chandrasekaran;</strong> Spatial hearing
+              handicap index development and validation, International journal
+              of creative research thoughts, 2020
+            </li>
+            <li>
+              <strong>Pachaiappan Chandrasekaran,</strong> Sivaranjani
+              Balasubramanian, <strong>Cherukuri Ramyasri</strong> Analysis of
+              phonology in Tamil speaking cochlear Implantees, World wide
+              journal of multidisciplinary research and development, 2020
+            </li>
+            <li>
+              <strong>Pachaiappan Chandrasekaran, Ranjith Rajeswaran,</strong>
+              Amritha, Maryum Thabassum, Elakiya Elango; Outcomes in Children
+              with Cochlear Implants: Parental Perspectives in Indian Context;
+              International Journal of Research and Analytical Reviews; 2020
+            </li>
+            <li>
+              <strong>Pachaiappan Chandrasekaran</strong>, Elakiya Elango,
+              Maryum Thabassum, Subashini Suresh; The Advantages of Having Tone
+              Burst Auditory Brainstem Response in Finding Hearing in Patients
+              with Cerebellopontine Angle Tumor- A Case Study; International
+              Journal of Health Sciences and Research, Volume 7, Issue 4; 2020
+            </li>
+            <li>
+              Armstrong, S.,<strong> Gunalan, S., & Rajeswaran, R;</strong>
+              Investigating The VOR Gain Function In Normal Hearing, Indian
+              Journal Of Applied Research, 28-29, 2019
+            </li>
+            <li>
+              Abishek Umashankar & <strong>Deepika Jayachandran</strong>.
+              Measurement of cochlear implant outcomes in Goldenhar syndrome: A
+              case report;
+              <span style="font-style: italic"
+                >Indian Journal of case reports, Volume 5, Issue , 2019</span
+              >
+            </li>
+            <li>
+              <strong>Ranjith R, Kameswaran, M;</strong> Auditory brainstem
+              implantation (ABI) in children without neurofibromatosis type II
+              (NF2): communication performance and safety after 24 months of
+              use; Cochlear Implants International; 2019
+            </li>
+            <li>
+              <strong>Ranjith Rajeswaran,</strong> Yetisurya Sasikumar,
+              <strong
+                >Jennifer Ramesh, Pachaiappan Chandrasekaran, Mohan
+                Kameswaran</strong
+              >; Correlation between eABR and CAEP in children with Auditory
+              Brainstem Implant; International Journal of Scientific and
+              Research Publications; Volume 9, Issue 12; 2019
+            </li>
+            <li>
+              KR Rahul ,
+              <strong>Deepika Jayachandran , Ranjith Rajeswaran</strong>,
+              Abishek Umashankar , Auditory and preverbal skill improvement
+              between early and late cochlear implantees: evidence from little
+              ear questionnaire;
+              <span style="font-style: italic"
+                >Journal of Clinical and Diagnostic Research, Volume 13, Issue
+                1, 2019</span
+              >
+            </li>
+            <li>
+              <strong>Deepika Jayachandran , Ranjith Rajeswaran,</strong>
+              Abishek Umashankar & Rahul (2019), Adaptation of LITTLEARS
+              auditory Questionnaire in Tamil,
+              <span style="font-style: italic"
+                >European Journal of Special Education Research, Volume 4, Issue
+                4; 2019</span
+              >
+            </li>
+            <li>
+              <strong>Ranjith Rajeswaran,</strong> Oviya Kalai,
+              <strong>Deepika Jayachandran</strong>, Profiling Long-term
+              Outcomes in children with Auditory Brainstem Implant,<span
+                style="font-style: italic"
+                >International Journal of Scientific and Research Publications.
+                Volume 9, Issue 12; 2019</span
+              >
+            </li>
+            <li>
+              Anusha M N, <strong>Pachaiappan Chandrasekaran;</strong> Hearing
+              loss: A sequela of prematurity- case study; International journal
+              of scientific and research publications; 2019
+            </li>
+            <li>
+              Selvaraj, A.,
+              <strong>Rajeswaran, R., & Jayachandran, D.</strong> Development of
+              Dichotic Word Test in Tamil Speaking Children;<span
+                style="font-style: italic"
+                >Languages In India 13-24, 2018</span
+              >
+            </li>
+            <li>
+              Vijayakumar, K., Hassan, I., <strong>Jayachandran, D.</strong>, &
+              Shamangi, N. Audiological Findings in Individual with Glomus
+              Tympanicum – A Case Report,<span style="font-style: italic"
+                >Indian Journal of case reports , 4(1)43-45, 2018</span
+              >
+            </li>
+            <li>
+              <strong>Ranjith R, Kameswaran, M;</strong> Relationship between
+              eABR and communication outcomes in children with auditory
+              brainstem implant; Journal of Hearing Sciences; 2018
+            </li>
+            <li>
+              Vidya Ramkumar, Akilan Rajendran, Roopa Nagarajan, Subramaniyan
+              Balasubramaniyan,
+              <strong>Dhulase Krithega Suresh;</strong> Identification and
+              Management of Middle Ear Disorders in a Rural Cleft Care Program:
+              A Telemedicine Approach; American Journal of Audiology Volume 27,
+              Issue 3S; 2018
+            </li>
+            <li>
+              Ganesan, Purushothaman, Jason Schmiedge, Vinaya Manchaiah, Simham
+              Swapna, <strong>Subhashini Dhandayutham,</strong> and
+              Purushothaman Pavanjur Kothandaraman; Ototoxicity: A Challenge in
+              diagnosis and treatment; Journal of Audiology & Otology; 2018
+            </li>
+            <li>
+              Jayachandran, D., Nagaraja, M. Y., &
+              <strong>Gunalan, S;</strong> Change of cortical auditory evoked
+              potentials on different. Hearing aid gain- preliminary study; Asia
+              Pacific Journal of Research, 1(LV), 149-153, 2017
+            </li>
+            <li>
+              Anthony, <strong>P., Jayachandran, D.</strong>, Selvaraj, A., &
+              P., S. R. Effect of Reference Electrode Placement on Measuring
+              cVEMP – Preliminary Study.
+              <span style="font-style: italic"
+                >International Journal of Scientific Research and Publication
+                7(11) 490- 493, 2017</span
+              >
+            </li>
+            <li>
+              Gunesh Rajan , <strong>Ranjith R, Kameswaran, M</strong> et al.,
+              Hearing preservation cochlear implantation in children: The
+              HEARRING Group consensus and practice guide; 2017
+            </li>
+            <li>
+              Dayse Távora-Vieira, <strong>Ranjith R, Kameswaran, M</strong> et
+              al., Towards a unified testing framework for single sided deafness
+              studies – A Consensus paper; Audiology and Neurotology; 2017
+            </li>
+            <li>
+              Rajasekaran, A, K., Mariappan, N, K., &
+              <strong> Gunalan, S;</strong> Effect & Intervention of Hearing
+              loss in Children: A short review; International Journal of
+              Pediatric Nursing 2(2).87-91, 2016
+            </li>
+            <li>
+              Artur Lorens, <strong>Ranjith R, Kameswaran, M </strong>et al.,
+              Patient management for cochlear implant recipients in audiology
+              department – A practice review; Cochlear Implants International;
+              2016
+            </li>
+          </ol>
+          <h1 style="width: 90%; text-align: left">Paper Presented</h1>
+          <table class="research_audiology_table">
+            <thead>
+              <th>S.NO</th>
+              <th>CONFERENCE ATTENDED</th>
+              <th>YEAR</th>
+              <th>TITLE OF THE PAPER PRESENTED</th>
+              <th>AUTHORS</th>
+              <th>AWARD</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>
+                  Audiological Profile in Single-Sided Michel Aplasia– A Single
+                  Case Report
+                </td>
+                <td>Siva Sankaran K, Deepika J</td>
+                <td><strong>2ndBest Presentation</strong></td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>
+                  An Audiological Characteristics and Findings in Individual
+                  with C3 Dip
+                </td>
+                <td>Siva Sankaran K, Deepika J</td>
+                <td><strong></strong></td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>
+                    Hearing and Mitochondrial Disease– A Single Case Report	
+                </td>
+                <td>Siva Sankaran K, Deepika J</td>
+                <td><strong></strong></td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>
+                    Hearing loss in Individual with Thalassemia		
+                </td>
+                <td>Siva Sankaran K, Deepika J</td>
+                <td><strong></strong></td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>
+                    Refractory Properties of Auditory Nerve in The Post-lingual Cochlear Implantees	                </td>
+                <td>Siva Sankaran K, Deepika J</td>
+                <td><strong></strong></td>
+              </tr>
+
+              <tr>
+                <td>6.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>Absorbance effect of wideband tympanometry in cochlear implants children-A comparative study</td>
+                <td>Pachaiappan C	</td>
+                <td><strong></strong></td>
+              </tr>
+              <tr>
+                <td>7.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>Review of reading and writing skills of Indian cochlear Implantees and comparison with western population	</td>
+                <td>Pachaiappan C	</td>
+                <td><strong></strong></td>
+              </tr>
+              <tr>
+                <td>8.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>Comparison of audiometric screening criteria for the identification of noise induced hearing loss in adolescence	</td>
+                <td>Pachaiappan C	</td>
+                <td><strong></strong></td>
+              </tr>
+              <tr>
+                <td>9.</td>
+                <td>4TH TASLPACON and ISAM</td>
+                <td>2023</td>
+                <td>Audiological findings and aided performance in individuals with auditory neuropathy spectrum disorder	</td>
+                <td>Pachaiappan C C H Ramya	</td>
+                <td><strong>3rd Prize
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>10.</td>
+                <td>CIGICON</td>
+                <td>2022</td>
+                <td>Tone and speech evoked ESRT in individuals with Cochlear Implants	</td>
+                <td>Asvitha R	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+              <tr>
+                <td>11.</td>
+                <td>CIGICON</td>
+                <td>2022</td>
+                <td>Quality of sound in post -lingual cochlear implantees	</td>
+                <td>Asvitha R	</td>
+                <td><strong>3rd Prize
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>12.</td>
+                <td>CIGICON</td>
+                <td>2021</td>
+                <td>Refractory PropertiesofAuditory nerveinthepostlingualcochlear Implantees	</td>
+                <td>Saranyaa G, Deepika J, Ranjith Rajeswaran, Asvitha	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+              <tr>
+                <td>13.</td>
+                <td>19th National conference of the Cochlear Implant group of India-CIGICON	</td>
+                <td>2021</td>
+                <td>Audiological benefits and performance improvements of ADHER in patients with unilateral hearing loss	</td>
+                <td>Pachaiappan C	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>14.</td>
+                <td>19th National conference of the Cochlear Implant group of India-CIGICON	</td>
+                <td>2021</td>
+                <td>Parental knowledge and understanding of care and maintenance of cochlear implant device	</td>
+                <td>Pachaiappan C	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>15.</td>
+                <td>AUDISHCON	</td>
+                <td>2021</td>
+                <td>Hearing &Mitochondriopathy – A single case report	</td>
+                <td>Saranyaa G, Ranjith Rajeswaran, Deepika J	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>16.</td>
+                <td>CIGICON 2021 (virtual) – 12 – 14 November 2021.	</td>
+                <td>2021</td>
+                <td>Optimization of frequency band table in adult using cochlear implant	</td>
+                <td>Deepika J, Ranjith Rajeswaran, Asvitha	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>17.</td>
+                <td>CIGICON 2021 (virtual) – 12 – 14 November 2021.		</td>
+                <td>2021</td>
+                <td>E-Poster The relationship between the tone and speech evoked ESRT Measures in both ipsilateral & Contra lateral ear.	</td>
+                <td>Deepika J, Ranjith Rajeswaran, Asvitha	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>18.</td>
+                <td>51st ISHACON, 10th - 12th February 2019, conducted by Indian Speech & Hearing Association at NIMHANS, Bengaluru	</td>
+                <td>2019</td>
+                <td>Exploring the recovery properties of the auditory nerve fibres at different cochlear regions using ECAP.	</td>
+                <td>Deepika J, Ranjith Rajeswaran	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>19.</td>
+                <td>17TH CIGICON, Annual conference of cochlear to implant group of India 11th to 13th October 2019, Mumbai.	</td>
+                <td>2019</td>
+                <td>Refractory property of the auditory nerve in pre lingual cochlear implantee.	</td>
+                <td>Deepika J, Ranjith Rajeswaran, Aishwarya V	</td>
+                <td><strong>2ndBest Oral Presentation
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>20.</td>
+                <td>17TH CIGICON, Annual conference of cochlear to implant group of India 11th to 13th October 2019, Mumbai.	</td>
+                <td>2019</td>
+                <td>P300 in cochlear implantees	</td>
+                <td>Deepika J, Ranjith Rajeswaran	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+
+
+              <tr>
+                <td>21.</td>
+                <td>16th Annual conference of cochlear to implant group of India, 29th November 2018 to 1st December 2018 at Deltin, Daman.	</td>
+                <td>2018</td>
+                <td>Relationship between ECAP, ESRT with behavioral MAP in individuals with Cochlear implants	</td>
+                <td>Deepika J, Ranjith Rajeswaran	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>22.</td>
+                <td>16th Annual conference of cochlear to implant group of India, 29th November 2018 to 1st December 2018 at Deltin, Daman.	</td>
+                <td>2018</td>
+                <td>Little ears Auditory Questionnaire in early and late Cochlear implantees		</td>
+                <td>Deepika J, Ranjith Rajeswaran	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>23.</td>
+                <td>CIGICON</td>
+                <td>2017</td>
+                <td>P300 in early & late cochlear implantees.	</td>
+                <td>Deepika J	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>24.</td>
+                <td>CIGICON</td>
+                <td>2016</td>
+                <td>Cochlear Implant in Single Sided Deafness – A tight casestudyonoutcomes	</td>
+                <td>Saranyaa G</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>25.</td>
+                <td>TAN-ISHACON	</td>
+                <td>2016</td>
+                <td>“Can objectives measures be used for mapping of children with Cochlear implants“</td>
+                <td>Deepika J	</td>
+                <td><strong>2ndBest Oral Presentation
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>26.</td>
+                <td>CIGICON</td>
+                <td>2014</td>
+                <td>Vestibularfunctionin childrenwithCochlearImplant(CI) - A pilot study		</td>
+                <td>Saranyaa G	</td>
+                <td><strong>
+                </strong></td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+        </div>
+        <div class="footer_view">
+          <div class="footer_view_home">
+            <div class="footer_view_service">
+              <div class="footer_view_logo">
+                <img src="../assets/merfsh-logo.png" alt="" />
+              </div>
+              <div class="footer_view_options">
+                <span class="footer_option">Home </span>
+                <span class="footer_option">Gallery</span>
+                <span class="footer_option">About us </span>
+                <span class="footer_option">management </span>
+                <span class="footer_option">clinic</span>
+                <span class="footer_option">contact</span>
+                <span class="footer_option">academics</span>
+                <span class="footer_option">clinic app</span>
+                <span class="footer_option">FAQs</span>
+                <span class="footer_option">admission</span>
+                <span class="footer_option">testimonial</span>
+                <span class="footer_option">faculty</span>
+                <span class="footer_option">research</span>
+              </div>
+            </div>
+            <div class="footer_view_social_media_body">
+              <h4>Connect with us :</h4>
+              <div class="footer_view_social_media">
+                <a
+                  href="https://www.facebook.com/MERFISH1"
+                  class="fa fa-facebook"
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg"
+                  class="fa fa-play"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+                  class="fa fa-linkedin"
+                ></a>
+                <a
+                  href="https://twitter.com/Merfish4"
+                  class="fa fa-twitter"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_view_copy_rights">
+            <span
+              >MERF-ISH &copy; copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              .Incl.,All right reserved
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/testimonial.js"></script>
+  <script src="../js/header.js"></script>
+</html>

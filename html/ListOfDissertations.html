@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merf-ish</title>
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js"></script>
+  </head>
+
+  <body class="container">
+    <div class="header_nav">
+      <div></div>
+      <div>
+        <span><a href="./Contact.html">Contact</a></span>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header_logo">
+        <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+      </div>
+      <div class="header_menu">
+        <div class="header_options">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">courses</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn header_active">research</a>
+            <ul
+              class="research_drop_down"
+              id="research_drop_down"
+              style="display: none"
+            >
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn header_active">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">academics</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn">research</a>
+            <ul id="mobile_research_dropDown" style="display: none">
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="./medEl.html" class="header_btn">MED-EL</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="body_view">
+      <div class="main_body">
+        <div
+          style="
+          margin-top: 20px;
+          width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+        <h4>LIST OF DISSERTATIONS</h4>
+          <table class="research_audiology_table">
+            <thead style="color: brown;">
+              <th>S.NO</th>
+              <th>BATCH/YEAR	</th>
+              <th>REGISTER NO	</th>
+              <th>TOTAL NO OF DISSERTATIONS</th>
+            </thead>
+         <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="#year-2020—2022">2020-2022</a></td>
+            <td>430320506001 to 430320506019</td>
+            <td>19
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="#year-2019-2021">2019-2021</a></td>
+            <td>431913001 to 431913020	</td>
+            <td>20
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="#year-2018-2020">2018-2020</a></td>
+            <td>431813001 to 431813020	</td>
+            <td>20
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="#year-2017-2019">2017-2019</a></td>
+            <td>431713001 to 431713004,
+              431713006 to 431713020</td>
+            <td>19
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="#year-2016-2018">2016-2018</a></td>
+            <td>431613001 to 431613018	</td>
+            <td>18
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="#year-2015-2017">2015-2017</a></td>
+            <td>431513001 to 431513015	</td>
+            <td>15
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="#year-2014-2016">2014-2016</a></td>
+            <td>431413001 to 431413010	</td>
+            <td>10
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><a href="#year-2013-2015">2013-2015</a></td>
+            <td>431313001 to 431313006	</td>
+            <td>06
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><a href="#year-2012-2014">2012-2014</a></td>
+            <td>431213001 to 431213005	</td>
+            <td>05
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><a href="#year-2011-2013">2011-2013</a></td>
+            <td>43111901 to 43111919	</td>
+            <td>19
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><a href="#year-2010-2012">2010-2012</a></td>
+            <td>43101001 to 43101009	</td>
+            <td>09
+            </td>
+          </tr>
+          <tr style="color: brown;">
+            <td></td>
+            <td></td>
+            <td>Total no- of dissertations	</td>
+            <td>160
+            </td>
+          </tr>
+         </tbody>
+          </table>
+
+          <span style="color: #C00000; margin-top: 10px;" id="year-2020—2022" >YEAR: 2020—2022</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>AADITYA SINGH	</td>
+            <td>430320506001	</td>
+            <td>Monitoring the resonance property of middle ear with wideband Tympanometry in Cochlear Implantees	</td>
+            <td>Prof. Ranjith R/ Mr.Pachaiappan C
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>AKHILA SANTHOSH		</td>
+            <td>430320506002	</td>
+            <td>Training Neonatal Nurses to Evaluate Distress During Preterm Infant Feeding	</td>
+            <td>Dr. Aravind Kannan
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>GAURI SINGH	</td>
+            <td>430320506003		</td>
+            <td>Relationship between ECAP and behavioral responses in subjects with ABI		</td>
+            <td>Prof. Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>GUNJAN CHAUHAN	</td>
+            <td>430320506004		</td>
+            <td>Validation Of Spatial Hearing Handicap Index In SSD: Tamil Version	</td>
+            <td>Prof. Ranjith R/ Mr.Pachaiappan C</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>HRIDYA RAJAGOPAL	</td>
+            <td>430320506005			</td>
+            <td>Reading Readiness Tool in Malayalam	</td>
+            <td>Prof. Dr. AmirthaVarshini M J
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>INDRESH CHANDELE	</td>
+            <td>430320506006				</td>
+            <td>Characteristics Of Electrically Evoked Compound Action Potential (eCAP) in Subjects with Auditory Brainstem Implant (ABI).	</td>
+            <td>Prof. Ranjith R/ Ms. Deepika J
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>INDULEKHA S B	</td>
+            <td>430320506007					</td>
+            <td>Effect Of Video Modeling in Improving Verbs in Children With ASD	</td>
+            <td>Dr. Aravind Kannan
+
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>MADHUVAISHNAVI P	</td>
+            <td>430320506008				</td>
+            <td>Validation Of Swallowing Screening Protocol in Post-Acute Care	</td>
+            <td>Prof. Dr. AmirthaVarshini M J/ Ms. Divya S
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>NIKHILA A		</td>
+            <td>430320506009					</td>
+            <td>Microstructural Analysis of Aided vs Unaided Narratives in Individuals with Post Stroke Aphasia – A Comparative Study	</td>
+            <td>Prof. Dr. AmirthaVarshini M J/ Ms. Maria J
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>K.RAJESH	</td>
+            <td>430320506010					</td>
+            <td>Practices in Programming Cochlear Implant by an Audiologist in India	</td>
+            <td>Prof. Ranjith R/ Mr.Pachaiappan C
+            </td>
+          </tr>
+
+          <tr>
+            <td>11.</td>
+            <td>RESHMI KRISHNAN	</td>
+            <td>430320506011						</td>
+            <td>Infant cry Analysis using LingWAVES	</td>
+            <td>Prof. Dr. AmirthaVarshini M J/ Ms. Divya S
+            </td>
+          </tr> <tr>
+            <td>12.</td>
+            <td>SACHU S P	</td>
+            <td>430320506012					</td>
+            <td>Knowledge on indications of Hearing loss among non-medical students: A Survey Study	</td>
+            <td>Prof. Ranjith R/ Ms. Anusha Rao S
+            </td>
+          </tr> <tr>
+            <td>13.</td>
+            <td>SATYA GIRISH POKALA	</td>
+            <td>430320506013						</td>
+            <td>Feasibility Study on Universal Newborn Hearing Screening Standards in Chennai – MERFISH Pilot Study	</td>
+            <td>Prof Ranjith R/ Ms. Saranyaa G
+
+            </td>
+          </tr> 
+          
+          <tr>
+            <td>14.</td>
+            <td>SHAHEENA	</td>
+            <td>430320506014					</td>
+            <td>The effect of usage of facemasks on the perceptual and acoustic characteristics of voice	</td>
+            <td>Prof. Dr. AmirthaVarshini M J
+
+            </td>
+          </tr> <tr>
+            <td>15.</td>
+            <td>SHRUTHI R	</td>
+            <td>430320506015					</td>
+            <td>Semantic Feature Production– A Comparison Between Young Adults and Geriatrics	</td>
+            <td>Prof. Dr. AmirthaVarshini M J / Ms. Maria J
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>16.</td>
+            <td>SHUBHAMSAHU</td>
+            <td>430320506016					</td>
+            <td>Pediatric feeding practices and children’s eating behavior in India	</td>
+            <td>Prof. Dr. AmirthaVarshini M J/ Ms. Divya S
+            </td>
+          </tr> <tr>
+            <td>17.</td>
+            <td>SUBASHINI S		</td>
+            <td>430320506017					</td>
+            <td>Pediatric feeding practices and children’s eating behavior in India	</td>
+            <td>Prof. Dr. AmirthaVarshini M J/ Ms. Divya S
+
+            </td>
+          </tr><tr>
+            <td>18.</td>
+            <td>SWATI SOLANKI V		</td>
+            <td>430320506018					</td>
+            <td>The Effect of Frequency Allocation Tables on Pitch Perception in Post-Lingual Cochlear Implant users	</td>
+            <td>Prof. Ranjith R/ Ms. DhulaseKrithega
+
+
+            </td>
+          </tr> <tr>
+            <td>19.</td>
+            <td>YUVA YOGA SHREE B	</td>
+            <td>430320506019					</td>
+            <td>Macrostructural and Microstructural Analysis in Individuals with Parkinson’s Disease	</td>
+            <td>Prof. Dr. AmirthaVarshini M J / Ms. Maria J
+            </td>
+          </tr>
+
+        </tbody>
+          </table>
+
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2019-2021" >YEAR: 2019—2021</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>AKSHAY KRISHNAN</td>
+            <td>431913001		</td>
+            <td>Development And Validation Of Cognition And Language Assessment Tool In Tamil (CLAT-T) for Adults And Geriatrics.	</td>
+            <td>Prof. Amirtha Varshini / Ms.Maria.J
+
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>ASTER FRANZ MIRANDA	</td>
+            <td>431913002	</td>
+            <td>The Role Of Audiologists And Speech Language Pathologists In The Assessment And Management Of Neonates : Neonatologists Perspective		</td>
+            <td>Mr. R. Ranjith / Ms. Saranyaa. G / Ms. Divya. S
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>ASVITHA</td>
+            <td>431913003		</td>
+            <td>Relationship Between Tone And Speech Evoked ESRT Measured In Both Ipsilateral And Contralateral Ear.	</td>
+            <td>Mr. R. Ranjith / Ms.Deepika Jayachandran
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>DHILIP.C.M	</td>
+            <td>431913004			</td>
+            <td>Validation Of Acoustic Voice Quality Index In Tamil	</td>
+            <td>Prof. Amirtha Varshini / Ms. Rishabha Priya
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>HIRAMMAYEE.B	</td>
+            <td>431913005			</td>
+            <td>Reading Readiness Tool In Tamil (Rrtt)	</td>
+            <td>Prof. Amirtha Varshini
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>JEO BABY	</td>
+            <td>431913006				</td>
+            <td>Comparison of EABR and ECAP In Children With Auditory Brainstem Implant	</td>
+            <td>Mr.R. Ranjith / Ms. Dhulase Krithega
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>KIRTHANA .M	</td>
+            <td>431913007					</td>
+            <td>Predicting Spiral Ganglion Cell Population In Subjects With Cochlear Implant	</td>
+            <td>Mr.R. Ranjith / Ms. Dhulase Krithega
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>KOWSIKA DEVI .B	</td>
+            <td>431913008					</td>
+            <td>Macrolinguistic and microlinguistic performance discourse abilities in Tamil speaking adults and geriatrics – A comparison across age range	</td>
+            <td>Prof. Amirtha Varshini / Ms.Maria.J
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>MANISH PODDAR	</td>
+            <td>431913009					</td>
+            <td>Adaptation And Validation Of Vocal Fatigue Index In Hindi(VFI-H)	</td>
+            <td>Prof. Amirtha Varshini / Ms. Rishabha Priya
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>MANSHA PARMAR	</td>
+            <td>431913010					</td>
+            <td>Parental Knowledge And Understanding of Care And Maintenance of Cochlear Implant Device In Hearing Impaired Population	</td>
+            <td>Mr. R. Ranjith& Mr.Pachaiappan
+            </td>
+          </tr>
+
+          <tr>
+            <td>11.</td>
+            <td>NARENDIRAN.V	</td>
+            <td>431913011						</td>
+            <td>Speech Language Pathologist Views and their Reported Practices on Therapy Materials.	</td>
+            <td>Dr. Aravind Kannan
+
+            </td>
+          </tr> <tr>
+            <td>12.</td>
+            <td>NAVEEN SONI		</td>
+            <td>431913012					</td>
+            <td>Audiological Services And Recommendations During The COVID-19 Pandemic: A Systematic Review.	</td>
+            <td>Mr.R. Ranjith / Mr.Pachaiappan
+
+            </td>
+          </tr> <tr>
+            <td>13.</td>
+            <td>PRASANTH ANTONY.J	</td>
+            <td>431913013						</td>
+            <td>Vestibular Function Post Cochlear Implantation In Pediatric Population: A Systematic Review.	</td>
+            <td>Mr.R. Ranjith / Ms.Jennifer
+            </td>
+          </tr> 
+          
+          <tr>
+            <td>14.</td>
+            <td>PRATHEEBA.S		</td>
+            <td>431913014					</td>
+            <td>Extended Tamil Phonological Awareness Skills Screening Test [E-TPASST]	</td>
+            <td>Prof. Amirtha Varshini
+
+            </td>
+          </tr> <tr>
+            <td>15.</td>
+            <td>PRIYA VADHANA	</td>
+            <td>431913015					</td>
+            <td>Awareness About Communication Disorder Among The Parents Of Neonates	</td>
+            <td>Mr.R. Ranjith / Mr.Sanjeev Radhakrishnan
+
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>16.</td>
+            <td>SANTHOSHI.R	</td>
+            <td>431913016					</td>
+            <td>Advantages And Limitations of Remote Programming In Individuals With Cochlear Implant	</td>
+            <td>Mr.R. Ranjith / Ms. Dhulase Krithega
+            </td>
+          </tr> <tr>
+            <td>17.</td>
+            <td>SHATAJ ALIAS AVINASH	</td>
+            <td>431913017					</td>
+            <td>Survey On Awareness About The Field Of Audiology And Speech Language Pathology Among Higher Secondary School Students And Teachers	</td>
+            <td>Mr.R. Ranjith / Mr.Sanjeev Radhakrishnan
+
+
+            </td>
+          </tr><tr>
+            <td>18.</td>
+            <td>SUJITHA.S		</td>
+            <td>431913018					</td>
+            <td>Characteristics Of Voice In Cochlear Implantees Across Age	</td>
+            <td>Prof. Amirtha Varshini
+
+            </td>
+          </tr> 
+          <tr>
+            <td>19.</td>
+            <td>SUMANTRA. M.S	</td>
+            <td>431913019						</td>
+            <td>Cepstral Analysis Of Voice In Norm Phonics –A Preliminary Study In Tamil Speaking Population	</td>
+            <td>Prof. Amirtha Varshini / Ms. Rishabha Priya
+            </td>
+          </tr>
+
+          <tr>
+            <td>20.</td>
+            <td>SUNIRA IRENE SAGANA.K		</td>
+            <td>431913020						</td>
+            <td>Development of lexical inventory in Tamil speaking primary school children.	</td>
+            <td>Prof. Amirtha Varshini / Ms.Sangeetha.G
+            </td>
+          </tr>
+
+        </tbody>
+          </table>
+
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2018-2020" >YEAR: 2018-2020</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>AARTHI.A	</td>
+            <td>431813001		</td>
+            <td>Profiling intra-cochlear impedance measurements in subjects with cochlear implant		</td>
+            <td>Mr.R. Ranjith / Ms.Dhulase krithega
+
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>AISHWARIYA.P	</td>
+            <td>4318133002	</td>
+            <td>Acoustic Analysis Of Diadochokinetic Motion In Typically Developing Children Between Three Years To Six Years	</td>
+            <td>Mr.R. Ranjith / Ms.Sangeetha Ganesan
+
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>ALAKKATTOR SWETA SARMAN	</td>
+            <td>431813003		</td>
+            <td>Knowledge About (Central)Auditory Processing Disorder Among School Teachers	</td>
+            <td>Mr.R. Ranjith / Ms.Saranyaa .G
+
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>AMBAR GUPTA	</td>
+            <td>431813004			</td>
+            <td>Efficacy of Newborn Hearing Screening In Hospital Based Screening Program	</td>
+            <td>Mr.R. Ranjith <br>
+              Mr.Adithya Nair
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>ANUSHA RAO.S	</td>
+            <td>431813005				</td>
+            <td>Adaptation and Validation of Voice Activity and Participation Profile In Tamil(VAPP-T)	</td>
+            <td>Mr. R. Ranjith <br>
+              Ms.Rishabha Priya.S
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>CIBI SIDDARTH.R	</td>
+            <td>431813006					</td>
+            <td>Evaluation of Normal Deglutition Using Surface Electromyography(SEMG)	</td>
+            <td>Mr.R. Ranjith / Ms.Divya.s
+
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>DEEPTHI.PR		</td>
+            <td>431813007						</td>
+            <td>Predicting The Auditory And Non Auditory Responses Using EABR In ABI-Systematic Review	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>ISHWARYA.R	</td>
+            <td>431813008					</td>
+            <td>Adaptation Of Verbal Behavior Milestones Assessment Placement Program In Tamil(VB-MAPP-T)	</td>
+            <td>Dr.Aravind Kannan
+
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>JAMUNA.D	</td>
+            <td>431813009						</td>
+            <td>Refractory Properties of Auditory Nerve In Postlingual Cochlear Implantees	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>JAYALAKSHMI P.B	</td>
+            <td>431813010					</td>
+            <td>Comparison of Acoustic Characteristics of Nasal And Oral Segments In Hearing Aid And Cochlear Implant Users-A Preliminary Study	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Rishabha Priya.S
+            </td>
+          </tr>
+
+          <tr>
+            <td>11.</td>
+            <td>JURUSHA BIJU	</td>
+            <td>431813011						</td>
+            <td>Sensitivity of Swallow Screen Protocol(SSP) In Acute Care	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Divya.s
+
+            </td>
+          </tr> <tr>
+            <td>12.</td>
+            <td>KONINTI SRILATHA	</td>
+            <td>431813012					</td>
+            <td>Profiling Long Term Auditory Outcomes of Children With Auditory Brainstem Implant	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+            </td>
+          </tr> <tr>
+            <td>13.</td>
+            <td>LINNET.C		</td>
+            <td>431813013						</td>
+            <td>Translation And Validation of Voice Disorder Outcome Profile(VDOP) In Malayalam	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Sangeetha Ganesan
+            </td>
+          </tr> 
+          
+          <tr>
+            <td>14.</td>
+            <td>MATHEW NISHATH .A	</td>
+            <td>431813014						</td>
+            <td>Testing And Validation of Web-Based Audiometer	</td>
+            <td>	Mr.R.Ranjith <br>
+              Mr.Aditya Nair
+
+            </td>
+          </tr> <tr>
+            <td>15.</td>
+            <td>NIKITHA JOSE	</td>
+            <td>431813015					</td>
+            <td>Customizing CI programming Based on Frequency Allocation Tables	</td>
+            <td>Mr.R. Ranjith <br>
+              Mr.Sanjeev.MR
+
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>16.</td>
+            <td>NITHYA.B	</td>
+            <td>431813016					</td>
+            <td>Knowledge About Noise-Induced Hearing Loss among Dental Professionals	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Saranyaa.G
+            </td>
+          </tr> <tr>
+            <td>17.</td>
+            <td>SHERLY.K	</td>
+            <td>431813017					</td>
+            <td>Development Of Symptom Specific Dysphagia Quality of Life Measures In Tamil (SSDQOL-T)- Self Rating Questionnaire	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Divya. S
+
+
+            </td>
+          </tr><tr>
+            <td>18.</td>
+            <td>SRI JANANI.Y	</td>
+            <td>431813018					</td>
+            <td>Preparedness To Provide Speech And Language Therapy Services Among New Graduates	</td>
+            <td>Dr.Aravind kannan
+            </td>
+          </tr> 
+          <tr>
+            <td>19.</td>
+            <td>SUMAN MAJI		</td>
+            <td>431813019						</td>
+            <td>Awareness About Audiology And Speech Language Pathology Among Medical Students In Chennai City	</td>
+            <td>Mr.R.Ranjith <br>
+              Mr.Sanjeev.MR
+            </td>
+          </tr>
+
+          <tr>
+            <td>20.</td>
+            <td>VASANTHI.M		</td>
+            <td>431813020						</td>
+            <td>Knowledge Of Dysphagia Among Nurses –In Indian Context</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Divya. S
+            </td>
+          </tr>
+
+        </tbody>
+          </table>
+
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2017-2019" >YEAR: 2017-2019</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>AISHWARYA.V	</td>
+            <td>431713001			</td>
+            <td>Refractory Properties Of Auditory Nerve In Prelingual Cochlear Implantees.	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>ANJANAA.M		</td>
+            <td>431713002	</td>
+            <td>Evaluation of Vocal Fatigue: A Comparison Between Subjective and Objective Methods In Teachers, Singers And Singing Teachers		</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Rishabha Priya. S
+
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>HEMAVATHY.R	</td>
+            <td>431713003		</td>
+            <td>Parents ‘perception on Autism Spectrum Disorder(ASD): A focus Group Discussion Study		</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Divya.S
+
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>INDRHRA PRIYADHARSHINI.V	</td>
+            <td>431713004			</td>
+            <td>Translation and Validation of Dysphagia Handicap Index in Tamil (DHI-T)	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Rishabha Priya. S
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>KAVITHA.V	</td>
+            <td>431713006				</td>
+            <td>Development Of Minimal Pair Test In Tamil(MPT –T) To Assess Speech Perception In Typically Developing Children And Paediatric Cochlear Implantees	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Saranyaa.G
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>KAVITHA SHRI. J.S	</td>
+            <td>431713007					</td>
+            <td>Quality of Sound In Post-Lingual Cochlear Implantees	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>LAKSHMI PRIYA .S.M	</td>
+            <td>431713008						</td>
+            <td>Adaptation Of Stroke And Aphasia Quality of Life Scale(SAQOL) To Tamil	</td>
+            <td>Dr.Aravind Kannan <br>
+              Mr.R.Ranjith
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>MERIN MARIUM	</td>
+            <td>431713009					</td>
+            <td>Comparing Pragmatic Abilities In Typically Developing Children And Children With Cochlear Implants		</td>
+            <td>Dr.Aravind Kannan  <br>
+              Mr.R.Ranjith
+
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>OVIYA.K	</td>
+            <td>431713010						</td>
+            <td>Profiling Long Term Outcomes of Children With Auditory Brainstem Implants	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>OVIYA.M.P	</td>
+            <td>431713011					</td>
+            <td>Modes of Communication in Auditory braimstem Implantees		</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+            </td>
+          </tr>
+
+          <tr>
+            <td>11.</td>
+            <td>PATRICIA.N	</td>
+            <td>431713012							</td>
+            <td>Survey Of Aphasia Rehabilitation	</td>
+            <td>Dr.Aravind Kannan <br>
+              Mr.R.Ranjith
+            </td>
+          </tr> <tr>
+            <td>12.</td>
+            <td>PAVITHRA.S	</td>
+            <td>431713013					</td>
+            <td>Cognitive communicative aspects in children with intellectual developmental disorder	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Divya.S
+            </td>
+          </tr> <tr>
+            <td>13.</td>
+            <td>SHANMUGA PREETHI.V		</td>
+            <td>431713014						</td>
+            <td>Development of Bedside Aphasia Battery In Tamil(BAB-T)	</td>
+            <td>
+              Ms.Divya.S <br>Mr.R.Ranjith
+            </td>
+          </tr> 
+          
+          <tr>
+            <td>14.</td>
+            <td>SHINNY IRENE.P	</td>
+            <td>431713015						</td>
+            <td>Survey on Evidence Based Service Delivery By Speech Language Pathologist	</td>
+            <td>	Dr.Aravind Kannan <br>
+              Mr.R.Ranjith
+            </td>
+          </tr> <tr>
+            <td>15.</td>
+            <td>SRINIVASAN K.B	</td>
+            <td>431713016					</td>
+            <td>Translation And Validation of Satisfaction With Amplification Device In Daily Life In Tamil For Post-Lingual Adult Cochlear Implant Users	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Amritha G
+
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>16.</td>
+            <td>SRIVIDYA.S	</td>
+            <td>431713017					</td>
+            <td>Development of Manual of Swallowing Assessment For Individuals With Cognitive Impairment(MSACI)	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Divya.S
+            </td>
+          </tr> <tr>
+            <td>17.</td>
+            <td>VERONICA.S	</td>
+            <td>431713018					</td>
+            <td>Optimization of Frequency Band Tables In Adults Using Cochlear Implant	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+
+
+            </td>
+          </tr><tr>
+            <td>18.</td>
+            <td>VIDHYADHARINI.D	</td>
+            <td>431713019					</td>
+            <td>Relationship Between The Screening Checklist For Auditory Processing (SCAP)Scores And Scholastic Performance In Children</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+            </td>
+          </tr> 
+          <tr>
+            <td>19.</td>
+            <td>YAASHWANTH HARI .K.S	</td>
+            <td>431713020						</td>
+            <td>Testing And Validation of Prototype <br>
+              Version of Computer Based Audiometer	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+
+            </td>
+          </tr>
+
+          
+
+        </tbody>
+          </table>
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2016-2018" >YEAR: 2016-2018</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>ABINAYA.M		</td>
+            <td>431613001			</td>
+            <td>Profile of Physiological And Psychophysical Measures In Single Sided Deafness With Cochlear Implant.		</td>
+            <td>Mr.R.Ranjith
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>ANITA REGI	</td>
+            <td>431613002	</td>
+            <td>Development Of Confrontation Naming Task In Tamil For Children Between 3 To 8 Years Of Age.		</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Divya.S
+
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>ASWIN.A	</td>
+            <td>431613003		</td>
+            <td>Intra Operative Monitoring Of Cochlear Function Using Advance Art- A Preliminary Study On Feasibility And Possibility.</td>
+            <td>Mr.R.Ranjith 
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>ASWINI.V	</td>
+            <td>431613004			</td>
+            <td>Development And Adaptation Of Cognitive Linguistic Assessment Protocol In Tamil: An Adaptation Of Clap In Kannada.		</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Jasmine Lydia .S
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>DEEPIKA.J		</td>
+            <td>431613005					</td>
+            <td>A Preliminary Study On Frequency Resolution Using Psychophysical Tuning Curves And Differential Limen For Frequency In Post Lingual Cochlear Implant Users.		</td>
+            <td>Mr.R.Ranjith <br>
+              Mr.Narendra Kumar.M
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>SHALINI.D	</td>
+            <td>431613006					</td>
+            <td>Factors Influencing Long Term Outcomes Of Cochlear Implant Under State (TNCMCHIS)And Self-Funded Scheme.	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Subhashini.D
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>GAYATHRI.P	</td>
+            <td>431613007							</td>
+            <td>Mental Health And Psycap In Individuals With Stuttering.	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Jasmine Lydia .S
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>JENNIFER.R	</td>
+            <td>431613008					</td>
+            <td>Subjective Assessment Of Vestibular Function In Children.	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Saranyaa.G
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>KEERTHANA.M	</td>
+            <td>431613009						</td>
+            <td>Auditory And Visual Working Memory In Children Using Cochlear Implants: A Preliminary Investigation.		</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Subhashini.D
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>LINTO ANTONY	</td>
+            <td>431613010					</td>
+            <td>“A Retrospective Study On Average Stimulation Level And Estimation Of Map Stabilization In Pre Lingual Cochlear Implantees”.	</td>
+            <td>Mr.R.Ranjith <br>
+              Amritha.G
+            </td>
+          </tr>
+
+          <tr>
+            <td>11.</td>
+            <td>MEENAKSHI.P	</td>
+            <td>431613011							</td>
+            <td>Subjective Assessment Of Vestibular Function In Children With Cochlear Implant- A Preliminary Study.	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Saranyaa.G
+            </td>
+          </tr> <tr>
+            <td>12.</td>
+            <td>MOHAMMED ELIYAS	</td>
+            <td>431613012					</td>
+            <td>Test Retest Reliability Of Absolute Amplitude In DPOAE.</td>
+            <td>Mr.R.Ranjith <br>
+              Mr.Narendra Kumar.M
+            </td>
+          </tr> <tr>
+            <td>13.</td>
+            <td>PALIPU PRATHIBA	</td>
+            <td>431613013						</td>
+            <td>Pre And Post Comparison Of Fine Structure DPOAE On Music Listening In Young Adults.		</td>
+            <td>
+              Mr.R.Ranjith <br>
+Ms.Vineetha Mary Varghese
+            </td>
+          </tr> 
+          
+          <tr>
+            <td>14.</td>
+            <td>PRIYANKA	</td>
+            <td>431613014						</td>
+            <td>Children’s Communicative Cognition Assessment Battery: Development Of The 3 CAB In Tamil.	</td>
+            <td>	Mr.R.Ranjith <br>
+              Ms.Jasmine Lydia .S
+            </td>
+          </tr> <tr>
+            <td>15.</td>
+            <td>RAHUL K.R	</td>
+            <td>431613015					</td>
+            <td>Adaptation Of Littlears Auditory Questionnaire In Tamil.		</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Deepika Jayachandran
+
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>16.</td>
+            <td>RESHMA	</td>
+            <td>431613016					</td>
+            <td>Development And Validation Of Indian
+              Questionnaire For Feeding Assessment For Children With Autism Spectrum Disorder (IQFA-ASD)	</td>
+            <td>Mr.R.Ranjith & Ms.Jasmine Lydia .S
+            </td>
+          </tr> <tr>
+            <td>17.</td>
+            <td>SIVA.G	</td>
+            <td>431613017					</td>
+            <td>Barriers Faced By Audiologist In Practicing Auditory Habilitation Through Telerehabilitation	</td>
+            <td>Dr.Aravind Kannan <br>
+              Mr.R.Ranjith
+            </td>
+          </tr><tr>
+            <td>18.</td>
+            <td>VINEETHA</td>
+            <td>431613018					</td>
+            <td>Acoustic Analysis Of Stop Consonant Vowel (CV) Production In Children Using Cochlear Implants And Normal Hearing Children.	</td>
+            <td>Mr.R.Ranjith <br>
+              Ms.Jasmine Lydia .S
+            </td>
+          </tr> 
+          
+        </tbody>
+          </table>
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2015-2017" >YEAR: 2015-2017</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Abirami.A	</td>
+            <td>431513001			</td>
+            <td>Long-term outcomes of CI in children with inner ear malformations and cochlear nerve anamolies	</td>
+            <td>Mr.Ranjith R / Subhashini D
+
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Ali Fathima.S	</td>
+            <td>431513002	</td>
+            <td>Psychophysical tuning curves in CI children		</td>
+            <td>Mr.Ranjith R / Mr.Narendra Kumar M
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Anita Phoebe		</td>
+            <td>431513003		</td>
+            <td>Profiling outcomes in clients with bimodal hearing	</td>
+            <td>Mr.Ranjith R / Mr. Narendra Kumar M
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Anitha.S		</td>
+            <td>431513004			</td>
+            <td>Dichotic word testing in Tamil speaking children			</td>
+            <td>Mr.Ranjith R / Ms. Deepika J
+
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Anjusha.M	</td>
+            <td>431513005					</td>
+            <td>P300 in children with CI		</td>
+            <td>Mr.Ranjith R / Ms.Deepika J
+
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>Ansu Sarah		</td>
+            <td>431513006					</td>
+            <td>Correlation between EABR and communication outcomes in children with ABI	</td>
+            <td>Mr.Ranjith R / Mr.Aditya Nair
+
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>Arjun Gopal	</td>
+            <td>431513007								</td>
+            <td>Binaural summation in B/ L CI using objective measures	</td>
+            <td>Mr.Ranjith R / Mr.Narendra Kumar M
+
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>Desteena Abraham	</td>
+            <td>431513008					</td>
+            <td>Profiling outcomes in children with B/l CI		</td>
+            <td>Mr.Ranjith R /
+
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>Elanthendral.C		</td>
+            <td>431513009						</td>
+            <td>Development of associative and scene prime target stimulus material for visual confrontation naming in Tamil		</td>
+            <td>Mr.Ranjith R / Ms.Prajna
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>Mamali Sahoo	</td>
+            <td>431513010					</td>
+            <td>Role of Fine Structure Processing in speech perception in CI	</td>
+            <td>Mr.Ranjith R / Mr.Narendra Kumar M
+            </td>
+          </tr>
+
+          <tr>
+            <td>11.</td>
+            <td>Nandini.M	</td>
+            <td>431513011							</td>
+            <td>Profiling vestibular function in children with cochlear anamolies		</td>
+            <td>Mr.Ranjith R / Ms.Saranyaa G
+
+            </td>
+          </tr> <tr>
+            <td>12.</td>
+            <td>Pachaiappan.C		</td>
+            <td>431513012					</td>
+            <td>Outcomes in children witn CI: Parental perspectives in Indian context	</td>
+            <td>Mr.Ranjith R / Ms.Amritha
+
+            </td>
+          </tr> <tr>
+            <td>13.</td>
+            <td>Rebeka Sabu		</td>
+            <td>431513013						</td>
+            <td>Feeding aspects in typically developing children and children with Autism Spectrum Disorder in Indian context		</td>
+            <td>
+              Mr.Ranjith R / Ms. Jasmine Lydia
+
+            </td>
+          </tr> 
+          
+          <tr>
+            <td>14.</td>
+            <td>Sam.A		</td>
+            <td>431513014						</td>
+            <td>Investigating the VOR gain function in normal hearing subjects		</td>
+            <td>	Mr.Ranjith R / Ms.Saranyaa G
+
+            </td>
+          </tr> <tr>
+            <td>15.</td>
+            <td>Sangeetha.G		</td>
+            <td>431513015					</td>
+            <td>Second formant transition of stop consonant vowel production in children with normal hearing and children using CI	</td>
+            <td>Mr.Ranjith R / Ms.Jasmine Lydia
+
+            </td>
+          </tr> 
+        </tbody>
+          </table>
+
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2014-2016" >YEAR: 2014-2016</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Mr. Adithya Nair	</td>
+            <td>431413001			</td>
+            <td>A comparative study between early and conventional switch-on dates for subjects with cochlear – a plot study	</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Mr.David Prabhakaran	</td>
+            <td>431413002	</td>
+            <td>Profiling outcomes in subject with single sided deafness (SSD) using cochlear implant	</td>
+            <td>Mr.Ranjith R / Ms.Saranyaa G
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Ms. Jaicy Thomas	</td>
+            <td>431413003		</td>
+            <td>Visual evoked potential – A Normative study	</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Mr. Nimesh	</td>
+            <td>431413004			</td>
+            <td>Investigating Differential limen for frequency and intensity in normal hearing subject.	</td>
+            <td>Mr.Ranjith R / Mr.Narendra Kumar
+
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Ms.Ramla Ismail	</td>
+            <td>431413005					</td>
+            <td>	Measuring cross modal plasticity <br>
+              Using Visual evoked potentials(VEP) in children with cochlear implant		</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>Ms. Sharmila N	</td>
+            <td>431413006					</td>
+            <td>Phonological sensitivity in children With Learning Disability.	</td>
+            <td>Ms.Amirtha Varshini
+
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>Ms. Sheena Joseph	</td>
+            <td>431413007								</td>
+            <td>Awareness of learning Disability Among Teachers in Different Boards of Education	</td>
+            <td>Ms.Amirtha Varshini
+
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>Mr. Unni Krishnan	</td>
+            <td>431413008					</td>
+            <td>Perception Of just noticeable difference in Children with cochlear Implant.	</td>
+            <td>Mr.Ranjith R / Mr.Narendra Kumar
+
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>Ms. Vineetha Mary	</td>
+            <td>431413009						</td>
+            <td>Visual evoked potentials in Congenitally Deaf Children.		</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>Ms. Yeti Surya	</td>
+            <td>431413010					</td>
+            <td>Correlation between ABR and CAEP In Auditory Brainstem Implants.	</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+
+        </tbody>
+          </table>
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2013-2015" >YEAR: 2013-2015</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Mr.Apdul Kapoor	</td>
+            <td>431313001			</td>
+            <td>Effect Of Rate On Electrically Evoked Auditory Brainstem Response In Different Cochlear Regions	</td>
+            <td>Mr.Ranjith R <br>
+              Mr.Narendra Kumar
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Mr.Jayachandran	</td>
+            <td>431313002	</td>
+            <td>Outcomes Of Children With Auditory Brain Stem Implantation-An Indian Perspective		</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Mr.Jothilal Dass	</td>
+            <td>431313003		</td>
+            <td>Monitoring Maturation Of Auditory Cortex In Children With Cochlear Implantation Under Tamilnadu Chief Minister’s Comprehensive Health Insurance Scheme	</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Ms.Kiruthika	</td>
+            <td>431313004			</td>
+            <td>Maximum Phonation Frequency Range Of Indian Adult Population – A Normative Study		</td>
+            <td>Ms.Sharanya Krishnan
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Ms. Sowmya Kaushik	</td>
+            <td>431313005					</td>
+            <td>	A Preliminary Investigation Of The Vocal Behaviors And Characteristics Of Hindi Priests		</td>
+            <td>Ms.Sharanya Krishnan
+
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>6.</td>
+            <td>Ms.Vinitha Surya		</td>
+            <td>431313006					</td>
+            <td>Tamilnadu Chief Minister’s Comprehensive Health Insurance Scheme-First Outcome Audit On Cochlear Implantation	</td>
+            <td>Mr.Ranjith R
+
+            </td>
+          </tr>
+
+        </tbody>
+          </table>
+
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2012-2014" >YEAR: 2012-2014</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Ms.Abirami.S		</td>
+            <td>431213001			</td>
+            <td>Development of speech intelligibility in typically developing Tamil speaking children		</td>
+            <td>Dr.S.Powlin / Ms.Preethy
+
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Ms.Deepthi Vivek.V		</td>
+            <td>431213002	</td>
+            <td>Semantic memory in dementia of Alzheimer’s type		</td>
+            <td>Ms.Amirthavarshini.M.J
+
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Mr.Poovendhan.A	</td>
+            <td>431213003		</td>
+            <td>Satisfaction with hearing aid-A self reporting questionnaire in Tamil		</td>
+            <td>Mr.Ranjith / Ms.Saranyaa . G
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Mr.SenthilMurugan.N	</td>
+            <td>431213004			</td>
+            <td>Vocal and non-vocal habits in bus conductors-A self reporting questionnaire	</td>
+            <td>Dr.S.Powlin / Ms.Sharanya Krishnan
+
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Ms.Srimathy	</td>
+            <td>431213005					</td>
+            <td>	Relationship between Intra-operative & post-Operative & ABR in subjects with auditory brainstem implant		</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+        </tbody>
+          </table>
+
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2011-2013" >YEAR: 2011-2013</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Mr.Ajith kumar			</td>
+            <td>43111901			</td>
+            <td>Phonological awareness skills in children with cochlear implants.</td>
+            <td>Ms.Amirtha Varshini M J
+
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Mr.Anju Elsa Varghese	</td>
+            <td>43111902	</td>
+            <td>Awareness of learning disability among teachers.		</td>
+            <td>Dr.S.Powlin
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Ms. Anna Jose	</td>
+            <td>43111903		</td>
+            <td>Predicting Electrode placement using cortical auditory evoked potentials in children with auditory brainstem implant.		</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Mr.Bhaskar Dey	</td>
+            <td>43111904			</td>
+            <td>Prevalence of voice disorders among children.		</td>
+            <td>Ms.Amirtha Varshini <br>
+              Ms.Sharanya Krishnan
+
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Ms.Caroline Karunya	</td>
+            <td>43111905					</td>
+            <td>	Development of speaking situation checklist for adults with stuttering (AWS)-a pilot study.			</td>
+            <td>Ms. Vedha Sorubini
+
+            </td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Mr.Dipendu Das		</td>
+            <td>43111906					</td>
+            <td>	Vestibular function in children with cochlear implants –A pilot study.		</td>
+            <td>Dr. Aravind Kumar <br>
+              C.Hari
+            </td>
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td>Mr.Jawahar		</td>
+            <td>43111907					</td>
+            <td>	Vocal and non-vocal habits, in primary and middle school teachers –a self reporting questionnaire.			</td>
+            <td>Ms. Vedha Sorubini
+
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>Ms.Maria. J		</td>
+            <td>43111908					</td>
+            <td>	An intervention program for improving Phonological sensitivity skills.			</td>
+            <td>Ms.Amirtha Varshini M J
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>Mr.Narendra Kumar.M	</td>
+            <td>43111909					</td>
+            <td>	Electrically evoked auditory brainstem response in complete cochlear coverage.			</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td>Mr.Philip Thomas		</td>
+            <td>43111910					</td>
+            <td>	Music perception using IOS based Hearing aids			</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>11.</td>
+            <td>Mr. Piyush Choudhary		</td>
+            <td>43111911					</td>
+            <td>	Gaps in noise (GIN) test in younger children –A preliminary study.		</td>
+            <td>Dr. Aravind Kumar
+
+            </td>
+          </tr>
+          <tr>
+            <td>12.</td>
+            <td>Mr.Rajiv kumar		</td>
+            <td>43111912					</td>
+            <td>	Effect of auditory deprivation on auditory visual integration in cochlear implants users.			</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>13.</td>
+            <td>Mr.Ram Karthik.M		</td>
+            <td>43111913					</td>
+            <td>	Development of ambiguity in sentence processing in bilinguals.			</td>
+            <td>Ms.Amirtha Varshini M J
+
+            </td>
+          </tr>
+          <tr>
+            <td>14.</td>
+            <td>Ms.Sathya.P.T		</td>
+            <td>43111914					</td>
+            <td>	Comparison of space in children with down’s syndrome and typically developing children.			</td>
+            <td>Dr.S.Powlin
+            </td>
+          </tr>
+          <tr>
+            <td>15.</td>
+            <td>Ms.Sruthi.S		</td>
+            <td>43111915					</td>
+            <td>	Acoustic voice analysis in children with cochlear implant and typically developing children.			</td>
+            <td>Ms.Vedha Sorubini
+            </td>
+          </tr>
+          <tr>
+            <td>16.</td>
+            <td>Ms.Stephy Antony	</td>
+            <td>43111916					</td>
+            <td>	Effects of Temporal variations on vowel identification skills in children using cochlear implants and typically developing children.			</td>
+            <td>Dr.S.Powlin
+            </td>
+          </tr>
+          <tr>
+            <td>17.</td>
+            <td>Mr.Tanika Mahato	</td>
+            <td>43111917					</td>
+            <td>	Rate of speech Bengali speaking young adults.				</td>
+            <td>Dr.S.Powlin
+
+            </td>
+          </tr>
+          <tr>
+            <td>18.</td>
+            <td>Mr.Vikas		</td>
+            <td>43111918					</td>
+            <td>	Comparison of speech perception in noise with different noise reduction programs in cochlear implant users				</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>19.</td>
+            <td>Mr.Ganesh Raj.G		</td>
+            <td>43111919					</td>
+            <td>	Effect of mobile phone usage on vestibular system –A Vamp study			</td>
+            <td>Dr.Aravind Kumar <br>
+              Ms.Saranyaa G
+            </td>
+          </tr>
+        </tbody>
+          </table>
+
+          <span style="color: #C00000; margin-bottom: 0px; margin-top: 10px;" id="year-2010-2012" >YEAR: 2010-2012</span>
+          <table class="research_audiology_table">
+            <thead style="color: #FF3399;">
+              <th>S.NO</th>
+              <th>NAME	</th>
+              <th>REGISTER No.		</th>
+              <th>TITLE OF DISSERTATION	</th>
+              <th>GUIDE / CO -GUIDE
+              </th>
+            </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Mr. Anika Agarwala				</td>
+            <td>43101001		</td>
+            <td>Temporal processing in individuals Using cochlear implant	</td>
+            <td>Mr.Ranjith & Ms.Muthu selvi
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Mr. Anup Kumar		</td>
+            <td>43101002	</td>
+            <td>Co-relation between behavioral PTA Thresholds and CAEP thresholds	</td>
+            <td>Mr.Ranjith R
+
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Ms. Anusha	</td>
+            <td>43101003		</td>
+            <td>Amplitude changes in electrically evoked compound action potential (ECAP) at different cochlear regions.	</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Mr. Chandrashekar Reddy	</td>
+            <td>43101004			</td>
+            <td>Clinical applications of aided cortical auditory evoked potentials in pediatric auditory Brainstem Implanters – a preliminary study.	</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Ms. Priyadharshini.D	</td>
+            <td>43101005					</td>
+            <td>Current perspectives of parents and professionals regarding the use of augmentative and alternative communication systems for children with autism spectrum disorders.			</td>
+            <td>Ms.Chitra Thadathil
+            </td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Mr. Rishi Gupta	</td>
+            <td>43101006					</td>
+            <td>	Refractory properties of auditory never Fiber at different regions in the cochlea.		</td>
+            <td>Mr.Ranjith R
+            </td>
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td>Ms. Ruth Deborah	</td>
+            <td>43101007					</td>
+            <td>	Standardization of the screening tool for identifying children with deviant voice characteristics in Indian population.				</td>
+            <td>Ms. Vedha Sorubini
+
+            </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>Ms. Surabhi Srivastava	</td>
+            <td>43101008					</td>
+            <td>	Changes in response characteristics of cortical auditory evoked potentials in bilateral cochlear Implanters.			</td>
+            <td>Mr.Ranjith R
+
+            </td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td>Mr.Tychicus	</td>
+            <td>43101009					</td>
+            <td>	Tamil phonological awareness skill screening test.				</td>
+            <td>Ms.Amirtha Varshini M J
+            </td>
+          </tr>
+         
+        </tbody>
+          </table>
+
+
+        </div>
+        <div class="footer_view">
+          <div class="footer_view_home">
+            <div class="footer_view_service">
+              <div class="footer_view_logo">
+                <img src="../assets/merfsh-logo.png" alt="" />
+              </div>
+              <div class="footer_view_options">
+                <span class="footer_option">Home </span>
+                <span class="footer_option">Gallery</span>
+                <span class="footer_option">About us </span>
+                <span class="footer_option">management </span>
+                <span class="footer_option">clinic</span>
+                <span class="footer_option">contact</span>
+                <span class="footer_option">academics</span>
+                <span class="footer_option">clinic app</span>
+                <span class="footer_option">FAQs</span>
+                <span class="footer_option">admission</span>
+                <span class="footer_option">testimonial</span>
+                <span class="footer_option">faculty</span>
+                <span class="footer_option">research</span>
+              </div>
+            </div>
+            <div class="footer_view_social_media_body">
+              <h4>Connect with us :</h4>
+              <div class="footer_view_social_media">
+                <a
+                  href="https://www.facebook.com/MERFISH1"
+                  class="fa fa-facebook"
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg"
+                  class="fa fa-play"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+                  class="fa fa-linkedin"
+                ></a>
+                <a
+                  href="https://twitter.com/Merfish4"
+                  class="fa fa-twitter"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_view_copy_rights">
+            <span
+              >MERF-ISH &copy; copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              .Incl.,All right reserved
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/testimonial.js"></script>
+  <script src="../js/header.js"></script>
+</html>

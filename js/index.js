@@ -51,17 +51,28 @@ function showSlides() {
 // auto count numbers of feedbacks or experience candidates
 function countRatedDigits(params) {
   let valueDisplays=document.querySelectorAll(".num");
-let interval=1000;
+let interval=10;
 
 valueDisplays.forEach(value=>{
   let startValue=0;
   let endValue=parseInt(value.getAttribute('data-val'));
- let duration=endValue<100?
- 60:endValue<500?40:endValue<800?10:endValue<3000?7:1;
+ let duration=Math.floor(interval/endValue);
    
 let counter =setInterval(function(){
+  if (endValue>2000) {
+    startValue+=10;
+  }
+  else  if (endValue>1000) {
+    startValue+=5;
+  }
+  else  if (endValue>400) {
+    startValue+=2;
+  }
+
+  else {
+    startValue+=1;
+  }
   
-  startValue+=1;
   value.textContent=startValue+"+";
   if (startValue==endValue) {
     clearInterval(counter)
@@ -98,3 +109,4 @@ function homeHandler(value){
 document.getElementById('menuBtn').classList.remove('change');
  document.getElementById("myDropdown").classList.remove("show");
 }
+

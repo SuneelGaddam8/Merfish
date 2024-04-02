@@ -5,7 +5,7 @@ const images = [
       " <div class='description'><span class='description1'> “Best Experience”</span>  <span>   Since my childhood I had exposure with children suffering with Cerebral palsy, Speech and Hearing Disorders etc. My Mother was in charge of a special Needs children home in Vellore, so I had chance to see how therapists treated children. My Ambition to become a speech pathologist and an Audiologist started from that point of time in my Life. </span> <span>   <strong>MERF – ISH </strong> is definitely an ideal place to learn and a chance to grow in both career as well as personal Development. MERF is a place with a wholistic well rounded education and a chance to build close relationships with everyone. Being the first batch of MASLP, I am a proud MERF-ISH Student. My Sincere gratitude to the Institute for letting me study and learn.<span></div>",
     name: "Tychicus Dinakaran",
     role: "Speech And Language  Pathologist , Al Maha Centre",
-    
+   
   },
   {
     url: "../assets/testimonial-CarolineKarunya.png",
@@ -57,7 +57,7 @@ const images = [
   },
   {
     url: "../assets/t10.png",
-    description: "<div class='description'>  <span class='description1'>“ The forum for me to outshine and ace in my career ” </span> I often mention that all I have now is thanks to MERF-ISH, particularly Prof. R. Ranjith. Without gazing at a watch, I can proudly say with confidence that I meticulously examined patients while working with MERF-ISH's top-notch faculties. I'm confident that it is a top-notch institution with a diversified workload. Once you get admitted in MERF-ISH, I really think that everything is achievable. The true experience of MERF-ISH is that the key to success is hard effort without any quick cuts. Friendly lecturers and the icing on top, Prof. Ranjith sir, have undoubtedly impacted my perspective of Audiology. Most importantly, Dr. Mohan and Backbone of the MERF, Indira Ma'am, have my deepest gratitude </div>",
+    description: "<div class='description'>  <span class='description1'>“ The forum for me to outshine and ace in my career ” </span> I often mention that all I have now is thanks to MERF-ISH, particularly Prof. R. Ranjith. Without gazing at a watch, I can proudly say with confidence that I meticulously examined patients while working with MERF-ISH's top-notch faculties. I'm confident that it is a top-notch institution with a diversified workload. Once you get admitted in MERF-ISH, I really think that everything is achievable. The true experience of MERF-ISH is that the key to success is hard effort without any quick cuts. Friendly lecturers and the icing on top, Prof. Ranjith sir, have undoubtedly impacted my perspective of Audiology. Most importantly, Dr. Mohan and Backbone of the MERF, Indira Ma'am, have my deepest gratitude </div>",
     name: "SHANTHANU",
     role: "Director: Pranah The Healing Tree",
   },
@@ -93,50 +93,33 @@ name: "Gauri Singh",
   },
   {
     url: "../assets/t16.png",
-    description: "<div class='description'> <span class='description1'>“ MERF-ISH prepared me well for the challenges of the workplace. ” </span>  Are you looking to pursue a career in speech and hearing sciences? Look no further than the MERF Institute of Speech and Hearing! This institute offers a comprehensive B. ASLP degree program that provides the perfect blend of theoretical knowledge and hands-on clinical exposure in Audiology and Speech-Language Pathology which involves in the assessment, diagnosis, treatment, and rehabilitation of communication and hearing disorders. As a graduate of this program, I can personally attest to the quality of education and training provided at MERF-ISH. The experienced faculty, state-of-the-art facilities, and diverse patient population allow the students to develop a deep understanding of speech and hearing sciences and its practical applications. Thanks to the theoretical and clinical knowledge I gained at MERF Institute of Speech and Hearing, I was able to secure a placement in a well known clinical setup. The rigorous curriculum and hands-on clinical experience provided by MERF-ISH prepared me well for the challenges of the workplace. As a graduate of Audiology and Speech-Language Pathology, you’d be offered a range of career opportunities in various settings, including hospitals, clinics, schools, universities, research labs, and private practices. Enroll at MERF Institute of Speech and Hearing today and embark on a rewarding career in the field of speech and hearing sciences!  </div>",
+    description: "<div class='description'> <span class='description1'>“ MERF-ISH prepared me well for the challenges of the workplace. ” </span>  Are you looking to pursue a career in speech and hearing sciences? Look no further than the MERF Institute of Speech and Hearing! This institute offers a comprehensive B. ASLP degree program that provides the perfect blend of theoretical knowledge and hands-on clinical exposure in Audiology and Speech-Language Pathology which involves in the assessment, diagnosis, treatment, and rehabilitation of communication and hearing disorders. As a graduate of this program, I can personally attest to the quality of education and training provided at MERF-ISH. The experienced faculty, state-of-the-art facilities, and diverse patient population allow the students to develop a deep understanding of speech and hearing sciences and its practical applications. Thanks to the theoretical and clinical knowledge I gained at MERF Institute of Speech and Hearing, I was able to secure a placement in a well known clinical setup. The rigorous curriculum and hands-on clinical experience provided by MERF-ISH prepared me well for the challenges of the workplace. As a graduate of Audiology and Speech-Language Pathology, you’d be offered a range of career opportunities in various settings, including hospitals, clinics, schools, universities, research labs, and private practices. Enroll at MERF Institute of Speech and Hearing today and embark on a rewarding career in the field of speech and hearing sciences!  </div>",
     name: "M.N. ANUSHA",
     role: "B.ASLP (2018-22)",
   },
-
+ 
 ];
-
-let initialSizeOfTestimonials=2
-function widthcalculator(width){
-  if (width<799) {
-    initialSizeOfTestimonials=1
-    const card=document.querySelectorAll('.card');
-    card.forEach(card=>{
-      card.classList.remove('testimonial_card_active')
-    })
-    
-  }
-  renderTestimonials(0)
-}
-window.addEventListener('load', function() {
-  const width = window.innerWidth;
-   widthcalculator(width)
-})
-window.addEventListener('resize', function() {
-  const width = window.innerWidth;
-  widthcalculator(width)
-})
+ 
+ 
 const container = document.getElementById('testimonialsContainer');
-
-let testimonialIndex=0;
-    function renderTestimonials(n) {
+    const toggleButton = document.getElementById('showMoreButton')
+ 
+    let showingAll = false;
+ 
+    function renderTestimonials() {
+      const limit = showingAll ? images.length : 6;
       container.innerHTML = '';
-     
-      for (let i = n; i < n+initialSizeOfTestimonials; i++) {
+      for (let i = 0; i < limit; i++) {
         const image = images[i];
         const card = document.createElement('div');
         card.classList.add('card');
-        card.classList.add('testimonial_card_active')
+ 
         const descriptionContainer = document.createElement('div');
         descriptionContainer.classList.add('description-container');
         const truncatedDescription = truncateDescription(image.description);
         descriptionContainer.innerHTML = truncatedDescription;
         card.appendChild(descriptionContainer);
-
+ 
         if (truncatedDescription !== image.description) {
           const readMoreButton = document.createElement('div');
           readMoreButton.classList.add('read-more');
@@ -146,27 +129,25 @@ let testimonialIndex=0;
           };
           card.appendChild(readMoreButton);
         }
-
-
-
+ 
         const detailsContainer = document.createElement('div');
         detailsContainer.classList.add('details');
-
+ 
         const imageElement = document.createElement('img');
         imageElement.src = image.url;
         detailsContainer.appendChild(imageElement);
-
+ 
         const nameRoleElement = document.createElement('div');
         nameRoleElement.classList.add('name-role');
         nameRoleElement.innerHTML = `<span class="image-name">${image.name}</span><br><span class="image-role">${image.role}</span>`;
         detailsContainer.appendChild(nameRoleElement);
-
+ 
         card.appendChild(detailsContainer);
-
+ 
         container.appendChild(card);
       }
-    }
-    
+    }renderTestimonials()
+ 
     function truncateDescription(description) {
       const maxLength = 200; // Maximum length of truncated description
       if (description.length <= maxLength) {
@@ -175,8 +156,20 @@ let testimonialIndex=0;
       const truncatedText = description.slice(0, maxLength) + '...';
       return truncatedText;
     }
-
-  
+ 
+   
+ 
+    function showMoreTestimonials() {
+      showingAll = !showingAll;
+      renderTestimonials();
+ 
+      if (showingAll) {
+          toggleButton.textContent = 'See Less';
+      } else {
+          toggleButton.textContent = 'See More';
+      }
+  }
+ 
     function toggleDescription(card, descriptionContainer, fullDescription, readMoreButton) {
       card.classList.toggle('expanded');
       if (card.classList.contains('expanded')) {
@@ -187,10 +180,10 @@ let testimonialIndex=0;
         readMoreButton.textContent = 'Read More';
       }
     }
-
-
+ 
+ 
    
-
+ 
 let videos = document.querySelectorAll('.tvideo');
 let beforeVideos = [
   "https://www.youtube.com/embed/Jt8s2-uxqtw",
@@ -202,30 +195,16 @@ let afterVideos = [
   "https://www.youtube.com/embed/Ilg5_7SzRrY",
   "https://www.youtube.com/embed/NTCKKNLOxdE"
 ];
-
+ 
 function showBefore() {
   for (let i = 0; i < videos.length; i++) {
     videos[i].src = beforeVideos[i];
   }
 }
-
+ 
 function showAfter() {
   for (let i = 0; i < videos.length; i++) {
     videos[i].src = afterVideos[i];
   }
 }
-
-function prevTestimonial() {
-  if (testimonialIndex!==0) {
-    testimonialIndex-=1
-    renderTestimonials(testimonialIndex);
-  }
-
-}
-
-function nextTestimonial() {
-  if (testimonialIndex+1<images.length) {
-  testimonialIndex+=1
-  renderTestimonials(testimonialIndex);
-  }
-}
+YouTube

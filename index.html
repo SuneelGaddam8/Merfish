@@ -13,15 +13,9 @@
 
 <body class="container">
     <div class="header_nav">
+       <div></div>
         <div>
-          <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
-          <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
-          <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
-            class="fa fa-linkedin"></a>
-          <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
-        </div>
-        <div>
-          <span>Careers</span>|<span>How you can help us</span>|<span>Feedback</span>|<span>Contact</span>
+       <span><a href="./html/Contact.html">Contact</a></span>
         </div>
       </div>
       <div class="header">
@@ -36,11 +30,18 @@
             <a href="./html/academics.html"  class="header_btn">courses</a>
             <a href="./html/admission.html"  class="header_btn">admission</a>
             <a href="./html/gallery.html"  class="header_btn">gallery</a>
+            <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
+              <a class="header_btn research_btn">research</a>
+              <ul class="research_drop_down" id="research_drop_down" style="display: none;">
+                <li><a href="./html/ResearchAudiology.html">Audiology</a></li>
+                <li><a href="./html/ResearchSLP.html">Speech Language Pathology</a></li>
+                <li><a href="./html/ListOfDissertations.html">List of Dissertations Done</a></li>
+              </ul>
+            </div>
             <a href="./html/faculty.html" class="header_btn">faculty</a>
             <a href="./html/clinicApp.html"  class="header_btn">clinic app</a>
             <a href="./html/testimonial.html"  class="header_btn">Testimonial</a>
-            <a href="./html/medEl.html"  class="header_btn">MED-EL</a>
-            <a href="http://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
+            <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
           </div>
     
     
@@ -58,11 +59,19 @@
             <a href="./html/academics.html"  class="header_btn">academics</a>
             <a href="./html/admission.html"  class="header_btn">admission</a>
             <a href="./html/gallery.html"  class="header_btn">gallery</a>
+            <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
+              <a  class="header_btn research_btn">research</a>
+              <ul id="mobile_research_dropDown" style="display: none;">
+                <li><a href="./html/ResearchAudiology.html">Audiology</a></li>
+                <li><a href="./html/ResearchSLP.html">Speech Language Pathology</a></li>
+                <li><a href="./html/ListOfDissertations.html">List of Dissertations Done</a></li>
+              </ul>
+            </div>
             <a href="./html/faculty.html" class="header_btn">faculty</a>
             <a href="./html/clinicApp.html"  class="header_btn">clinic app</a>
             <a href="./html/testimonial.html"  class="header_btn">Testimonial</a>
             <a href="./html/medEl.html"  class="header_btn">MED-EL</a>
-            <a href="http://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
+            <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
           </div>
         </div>
       </div>
@@ -88,7 +97,7 @@
                       <strong style="font-size:36px ;">ADMISSIONS</strong> <span style="font-size: 24px;">Are now open for </span>
                       <span style="font-size: 27px; font-style: italic;">Year <script>document.write(new Date().getFullYear()+"-"+parseInt(new Date().getFullYear()+1))</script></span>
                       <div  style="margin-top:20px">
-                        <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none;">APPLY NOW</a>
+                        <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none;">APPLY NOW</a>
                       </div>
                     </div>
   
@@ -109,7 +118,7 @@
                        <span style="width: 300px; font-size: 20px; text-align: center;">                        Join us to change life for people around the world For Admission & Know more.
                       </span>
                         <div  style="margin-top:20px">
-                          <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none;">APPLY NOW</a>
+                          <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none;">APPLY NOW</a>
                         </div>
                       </div>
     
@@ -129,7 +138,7 @@
                         <div class="slide_content">
                          <span style="width: 300px; font-size: 20px; text-align: center;">Join us on the journey towards a rewarding career</span>
                           <div  style="margin-top:20px">
-                            <a href="http://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none;">APPLY NOW</a>
+                            <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none;">APPLY NOW</a>
                           </div>
                         </div>
       

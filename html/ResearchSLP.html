@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merf-ish</title>
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js"></script>
+  </head>
+
+  <body class="container">
+    <div class="header_nav">
+      <div></div>
+      <div>
+        <span><a href="./Contact.html">Contact</a></span>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header_logo">
+        <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+      </div>
+      <div class="header_menu">
+        <div class="header_options">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">courses</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn header_active">research</a>
+            <ul
+              class="research_drop_down"
+              id="research_drop_down"
+              style="display: none"
+            >
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn header_active">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">academics</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn">research</a>
+            <ul id="mobile_research_dropDown" style="display: none">
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="./medEl.html" class="header_btn">MED-EL</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="body_view">
+      <div class="main_body">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+          "
+        >
+          <h1 style="width: 90%; text-align: left">Paper Published</h1>
+          <ol
+            style="
+              width: 90%;
+              line-height: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              font-size: 13px;
+            "
+          >
+           <li><strong>Maria, J.,</strong> Anusha, M. N., & Sathveeka, S. (2022). Procedural discourse production in children with specific learning disorder (SLD). <span style="font-style: italic;">Journal of Child Language Acquisition and Development-JCLAD, 519-533.</span></li>
+           <li><strong>Jaya Lakshmi P B, Anusha Rao S, Mathew Nishanth A;</strong> Voice Profile and Prognosis in Pediatric Penetrating Vocal Injury; International Journal of Research and Analytic Reviews (IJRAR), 2022
+        </li>
+           <li><strong>Maria J, Samyuktha N,</strong> Yuva Yoga Shree B et.al. Discourse analysis in Tamil speaking individuals with Parkinson’s Disease. International Journal of Science & Healthcare Research. 2021; 6(4): 11-16. DOI: https://doi.org/10.52403/ijshr.20211003</li>
+           <li><strong>Maria J,</strong> Kowsika Devi Baskar, V. Thiruvalluvan, Aravind Kannan; Conversational Discourse Analysis In Tamil Speaking Individuals – A Comparison Across Age Range; International Journal of Research and Analytical Reviews (IJRAR) www.ijrar.org  September 2021, Volume 8, Issue 3; (E-ISSN 2348-1269, P- ISSN 2349-5138)</li>
+           <li><strong>Maria J</strong>, Yuva Yoga Shree B, <strong>Samyuktha</strong>, Aswini V and Vaishali Prabhu; Macro linguistic and Micro linguistic Performance in Individuals with Parkinson’s Disease - A Comparison Based on Duration after Onset; Journal of Neurosurgery Imaging and Techniques JNSIT, 6(S1): 10 www.scitcentral.com; April 2021</li>
+           <li><strong>Maria, J.,</strong> Baskar, K. D., & Krishnan, A. (2021). Macrostructural and microstructural discourse abilities in children with hearing impairment. <span style="font-style: italic;">Journal of Child Language Acquisition and Development-JCLAD, 176-188.</span> </li>
+           <li>Anusha, M. N., Sathveeka., <strong>Maria, J., Sangeetha, G., & Saranyaa, G.</strong> (2021). Communication Challenges and Implementation of Telepractice for Children with Hearing Impairment during Lockdown-A Parental Perspective. Journal of Clinical & Diagnostic Research, 15(4).
+        </li>
+           <li>Pavithra Saravanan, <strong>Divya Sivagnanapandian; </strong>Cognitive communication skills in children with Intellectual Developmental Disorders; International Journal of Indian Psychology; 2021
+        </li>
+           <li>Pachaiappan C, Sowmiya G, Sri CR. Identifying pattern of disfluencies in school going Tamil and English medium children. Int J Health Sci Res. 2020; 10(7):139-143.
+        </li>
+           <li><strong>Maria J, Sangeetha G,</strong> Akshay Krishnan, Kowsika Devi Baskar; Efficacy of vocabulary bombardment in a client with Broca's aphasia - a single case study. Volume - 9 | Issue - 12 | December - 2020 | PRINT ISSN No. 2277 - 8179 | DOI : 10.36106/ijsr
+        </li>
+           <li>Venkat S. R, Elango E. & <strong>Maria J.</strong> (2020). Autism spectrum disorder and lockdown – a parental survey on communication and related aspects. International Journal of Indian Psychology, 8(4), 555-559. DIP:18.01.070/20200804, DOI:10.25215/0804.070 
+        </li>
+           <li><strong>Divya, P. S.</strong>, Vijay, A., & Ganesh, A. (2020). Role of speech-language pathologist in tracheostomy care–A case study. <span style="font-style: italic;">Indian Journal of Medical Sciences, 71(2), 97-99.</span>
+        </li>
+           <li><strong>Amirtha Varshini MJ,</strong> A. V., Ramkarthik, M., & <strong> Maria, J</strong>. Development of Bilingual Ambiguity Resolution. International Journal of Scientific and Research Publications, Volume 10, Issue 7, July 2020 239, ISSN 2250-3153; DOI: 10.29322/IJSRP.10.07.2020.p10329; http://dx.doi.org/10.29322/IJSRP.10.07.2020.p10329
+        </li>
+           <li><strong>C. Pachaiappan, Sangeetha.G</strong>, Sivaranjani Balasubramanian, <strong>Cherukuri Ramya Sri;</strong> Treating functional aphonia: a case study. Int J Health Sci Res. 2020; 10(5):107-110.
+        </li>
+           <li><strong>Divya PS,</strong> Venkat SR, Ramasamy K; An Insight to Vocal Hygiene In Lawyers – A Survey; Lexlife Journal of Law and Governance; 2020
+        </li>
+           <li><strong>Divya PS,</strong> Elango E, Kumar JS. Awareness of autism spectrum disorder among non-medical students - a survey. International Journal of Research and Review. 2019; 6(6):60-63.
+        </li>
+           <li>Akshaya Rangarajan, Jasmine Lydia Selvaraj, Divya Perumal Santhanam (2019). The voice-related quality of life: a study on the reliability and validity of the Tamil version. <span style="font-style: italic;">Clinical Medicine Insights: Ear, Nose and Throat, 12, 1179550619831049.</span>
+        </li>
+           <li><strong>Rishabha Priya,</strong> Sangeetha Ganesan; Profiling Speech, Language And Swallowing Characteristics In Infantile Pompe Disease – A Single Case Study; International Journal of Scientific Research, Volume 8, Issue 6; 2019
+        </li>
+           <li><strong>Divya Sivagnanapandian</strong>, Sangeetha Ganesan; Rehabilitation of Swallowing and Voice in Medial Medullary Infarct- A Case Study; International Journal of Scientific Research. Volume 8, Issue 6; 2019
+        </li>
+           <li><strong>P. B., Jaya Lakshmi; S., Anusha Rao; A., Mathew Nishanth</strong>; B., Krishna Prasanth; N., Aravindha Babu; Dyslexia awareness among school teachers; Indian journal of public health research and development (Nov 2019, vol. 10, No. 11)
+        </li>
+           <li><strong>Subramanian AR</strong>, Divya PS, Chandran Y. A single case study on palatal palsy. Int J Health Sci Res. 2019; 9(7):282-284.
+        </li>
+           <li>Gupta A,<strong> Divya PS,</strong> Nishanth M et.al. Speech and language profile for acute disseminated encephalomyelitis (ADEM) post varicella zoster infection: a case study. International Journal of Research and Review. 2019; 6(7):59-63.
+        </li>
+           <li><strong>Divya PS,</strong> Venkat SR, Ramasamy K. An insight to vocal hygiene for radio jockeys - a survey. Int J Health Sci Res. 2019; 9(9):201-205.
+        </li>
+           <li><strong>Divya Sivagnanapandian;</strong> Management of Oropharyngeal Dysphagia Secondary to surgical Excision of Vestibular Schwannoma- A Single Case Study; Global Journal for Research Analysis. Volume 7, Issue 5; 2018
+        </li>
+           <li>Akshaya Rangarajan, <strong> Divya Santhanam; </strong>A Single case study on Velocardial facial Syndrome; International Journal of Scientific Research, Volume 7, Issue 9; 2018
+        </li>
+           <li>Akshaya Rangarajan, Divya Perumal Santhanam, Jasmine Lydia Selvaraj (2020). Translation and validation of Tamil version of singing voice handicap index-10 (TSVHI-10). <span style="font-style: italic;">Journal of Voice, 34(1), 158-e9.</span>
+        </li>
+          </ol>
+          <h1 style="width: 90%; text-align: left">Paper Presented</h1>
+          <table class="research_audiology_table">
+            <thead>
+              <th>S.NO</th>
+              <th>CONFERENCE ATTENDED</th>
+              <th>YEAR</th>
+              <th>TITLE OF THE PAPER PRESENTED</th>
+              <th>AUTHORS</th>
+              <th>AWARD</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Elucidating the diversities in Dysphagia assessment and management–HCC FLASH SERIES 2022	</td>
+                <td>2022</td>
+                <td>
+                    Salience of swallow assessment post fitting of Tracheo-Esophageal Prosthesis in Totallaryngectomy	
+                </td>
+                <td>Jaya Lakshmi, Anusha Rao S, Mathew Nishanth A	</td>
+                <td><strong>3rdBest Oral PaperAward
+                </strong></td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Elucidating the diversities in Dysphagia assessment and management–HCC FLASH SERIES 2022	</td>
+                <td>2022</td>
+                <td>
+                    Knowledge about Dysphagia among Geriatrics	
+                </td>
+                <td>Maria J, Amirtha Varshini M J	</td>
+                <td><strong>2ndBest Poster
+                </strong></td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Elucidating the diversities in Dysphagia assessment and management–HCC FLASH SERIES 2022	</td>
+                <td>2022</td>
+                <td>
+                    Dysphagia in Parkinson’s plus	
+                </td>
+                <td>AntionettePavithra S	</td>
+                <td><strong>3rd Best Poster
+                </strong></td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>Elucidating the diversities in Dysphagia assessment and management–HCC FLASH SERIES 2022	</td>
+                <td>2022</td>
+                <td>
+                    Assessment Protocol for Micro Aspiration in Dysphagia		
+                </td>
+                <td>AntionettePavithra S	</td>
+                <td><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>Elucidating the diversities in Dysphagia assessment and management–HCC FLASH SERIES 2022	</td>
+                <td>2022</td>
+                <td>
+                    A Comprehensive case report on Psychogenic Dysphagia	</td>
+                <td>Maria J, Amirtha Varshini M J, Sangeetha G	</td>
+                <td><strong>-</strong></td>
+              </tr>
+
+              <tr>
+                <td>6.</td>
+                <td>Elucidating the diversities in Dysphagia assessment and management–HCC FLASH SERIES 2022	</td>
+                <td>2022</td>
+                <td>A pediatric case report on dysphagia in a De Novo Mutant Axonal Motor Neuropathy	</td>
+                <td>Anusha Rao S	</td>
+                <td><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td>7.</td>
+                <td>Elucidating the diversities in Dysphagia assessment and management–HCC FLASH SERIES 2022	</td>
+                <td>2022</td>
+                <td>Symptoms of Dysphagia in Individuals with Parkinson’s Disease across various post onset duration	</td>
+                <td>Maria J, Amirtha Varshini M J, Anusha Rao S	</td>
+                <td><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td>8.</td>
+                <td>NCORE Cerebral palsy – Together we care	</td>
+                <td>2022</td>
+                <td>A pediatric case report on Speech, Language and Swallowing difficulties in a De Novo Mutant Axonal Motor Neuropathy	</td>
+                <td>Anusha Rao S	</td>
+                <td><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td>9.</td>
+                <td>2nd International Webinar on Dementia and Dementia Care, Scientex Conferences	</td>
+                <td>2022</td>
+                <td>Macrostructural and Microstructural Performance in Individuals with Parkinson’s Disease - A Comparison Based on post onset duration	</td>
+                <td>Maria J	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>10.</td>
+                <td>AOCNR 2021 – Virtual Conference	</td>
+                <td>2021</td>
+                <td>Discourse analysis in Individuals with Parkinson’s Disease – E-Poster	</td>
+                <td>Maria J	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+              <tr>
+                <td>11.</td>
+                <td>SciTech Central Neurology 2021 – Virtual Conference	</td>
+                <td>2021</td>
+                <td>Macro linguistic and Micro linguistic Performance in Individuals with Parkinson’s Disease - A Comparison Based on Duration after Onset	</td>
+                <td>Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>12.</td>
+                <td>AOCNR</td>
+                <td>2021</td>
+                <td>Systematic Approach and Comprehensive Management of Traumatic Brain Injury-A Case Study	</td>
+                <td>Sangeetha G	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+              <tr>
+                <td>13.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020	</td>
+                <td>Development Of Phonological Awareness Skills In Tamil	</td>
+                <td>Amirtha Varshini M J,Maria J	/td>
+                <td><strong>Best Paper
+
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>14.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Efficacy of Intervention Program To Improve Phonological Sensitivity Skills In Below Average Scholastic Performers.	</td>
+                <td>Maria J, Amirtha Varshini M J	</td>
+                <td><strong>2ndBest Paper
+
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>15.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Concept Of Spoken Word And Rhyming Skills In Cochlear Implantees.	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>16.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Syllable Awareness In Children With Language Learning Disability	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>Best Poster
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>17.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Development Of Ambiguity In Bilinguals	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>18.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Understanding Language Learning Disability – A Comparative Study Among Teachers Of Various Boards Of Education	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>19.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Narrative Discourse In Children With Hearing Impairment	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>3rd Best poster
+
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>20.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Homonym And Homophone In Children with Language Learning Disability		</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+
+
+              <tr>
+                <td>21.</td>
+                <td>HCC FLASH SERIES V – TRICHY		</td>
+                <td>2020</td>
+                <td>Ambiguity Resolution In Children With Hearing Impairment	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>22.</td>
+                <td>International Conference on Multiple Disability		</td>
+                <td>2020</td>
+                <td>Opportunities and Challenges in Livelihood of person with MD – Public view	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>Best Poster
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>23.</td>
+                <td>International Conference on Multiple Disability		</td>
+                <td>2020</td>
+                <td>Vocational Training services and post training opportunities for PWD – A Parental Outlook	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>24.</td>
+                <td>International Conference on Multiple Disability		</td>
+                <td>2020</td>
+                <td>Highlighting the provision and facilities provided by employers for persons with differential ability in children		</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>25.</td>
+                <td>International Conference on Multiple Disability		</td>
+                <td>2020</td>
+                <td>Providing job opportunities for persons with MD – attitude and perception of Employers	</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>26.</td>
+                <td>International Conference on Multiple Disability		</td>
+                <td>2020</td>
+                <td>Independent living and sustainable development in children with MD – Parental Perspective</td>
+                <td>Amirtha Varshini M J, Maria J		</td>
+                <td><strong>Best Poster
+                </strong></td>
+              </tr>
+
+
+
+              <tr>
+                <td>27.</td>
+                <td>HCC FLASH Series V	</td>
+                <td>2020</td>
+                <td>
+                    Adaptation and Validation of Modified Checklist for Autism in Toddlers - revised in Tamil	
+                </td>
+                <td>P S Divya		</td>
+                <td><strong>3rd Best Poster
+
+                </strong></td>
+              </tr>
+              <tr>
+                <td>28.</td>
+                <td>HCC FLASH Series V	</td>
+                <td>2020</td>
+                <td>
+                    Knowledge on Specific Learning Disability among General Population	
+                </td>
+                <td>P S Divya		</td>
+                <td><strong>2ndBest Poster
+                </strong></td>
+              </tr>
+              <tr>
+                <td>29.</td>
+                <td>HCC FLASH Series V	</td>
+                <td>2020</td>
+                <td>
+                    Effectiveness of Phonological skill assessment test (PAST) in Indian Population	                </td>
+                    <td>P S Divya		</td>
+                    <td><strong>-
+                </strong></td>
+              </tr>
+              <tr>
+                <td>30.</td>
+                <td>HCC FLASH Series V	</td>
+                <td>2020</td>
+                <td>
+                    Development of screener for Specific Learning Disability	                </td>
+                <td>P S Divya		</td>
+                <td><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td>31.</td>
+                <td>All India Level e Poster competition		</td>
+                <td>2020</td>
+                <td>
+                    COVID – 19 awareness Drive		</td>
+                <td>PS Divya	</td>
+                <td><strong>2nd Prize
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>32.</td>
+                <td>51st ISHACON	</td>
+                <td>2019</td>
+                <td>Disfluencies among Bilingual Young Adults – A Comparison between Introvert and Extrovert Personality types at, Bangalore.	</td>
+                <td>Jasmine Lydia, RishabhaPriya	</td>
+                <td><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td>33.</td>
+                <td>Conference on Medical Speech Language Pathology In Acute Care	</td>
+                <td>2019	</td>
+                <td>Awareness of Stroke among the general population – A survey	</td>
+                <td>PS Divya		</td>
+                <td><strong>2nd Best Paper                </strong></td>
+              </tr>
+              <tr>
+                <td>34.</td>
+                <td>Conference on Medical Speech Language Pathology In Acute Care	</td>
+                <td>2019	</td>
+                <td>Speech and swallowing profile in Lateral Medullary Syndrome (Wallenberg's syndrome)		</td>
+                <td>PS Divya		</td>
+                <td><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td>35.</td>
+                <td>Conference on Medical Speech Language Pathology In Acute Care	</td>
+                <td>2019	</td>
+                <td>Role of Speech Language Pathologist in Tracheostomy		</td>
+                <td>PS Divya		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>36.</td>
+                <td>Conference on Medical Speech Language Pathology In Acute Care	</td>
+                <td>2019	</td>
+                <td>Role of Speech Language Pathologist in Laryngectomy	</td>
+                <td>PS Divya		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+              <tr>
+                <td>37.</td>
+                <td>FLASH II Series		</td>
+                <td>2018</td>
+                <td>Single case study on Velocardial facial syndrome	</td>
+                <td>PS Divya		</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>38.</td>
+                <td>Flash Series III.	</td>
+                <td>2018</td>
+                <td>A single case study on Palatal Palsy	</td>
+                <td>PS Divya, Anusha Rao S	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+              <tr>
+                <td>39.</td>
+                <td>Autism Beyond Core Therapies conference at St Isabel’s Hospital, Chennai	</td>
+                <td>2018		</td>
+                <td>Voice characteristics in children with Autism: a comparative study with voice of typically developed children	</td>
+                <td>Jasmine Lydia, RishabhaPriya	</td>
+                <td><strong>-</strong></td>
+              </tr>
+
+              <tr>
+                <td>40.</td>
+                <td>FLASH II Series Holy Cross College, Trichy	</td>
+                <td>2018	</td>
+                <td>Change in fundamental frequency using cochlear implant and in typically developing children	</td>
+                <td>Jasmine Lydia, Subhashini S	</td>
+                <td><strong>Best Poster
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>41.</td>
+                <td>Autism Beyond Core Therapies conference at St Isabel’s Hospital, Chennai	</td>
+                <td>2018	</td>
+                <td>Awareness and attitude of trained Carnatic singers towards music therapy for children with ASD	</td>
+                <td>Jasmine Lydia	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>42.</td>
+                <td>Autism Beyond Core Therapies conference at St Isabel’s Hospital, Chennai	</td>
+                <td>2018	</td>
+                <td>Parental mental health and impact on family functioning of children with Autism Spectrum Disorder and typically developing children: an Indian Perspective	</td>
+                <td>Jasmine Lydia	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+
+              <tr>
+                <td>43.</td>
+                <td>National conference on Autism – Evidence based practice in Autism at National SRM college of occupational therapy, Chennai	</td>
+                <td>2018	</td>
+                <td>Adaptation and Validation of modified checklist for autism in toddlers revised M CHAT –R in Tamil	</td>
+                <td>Jasmine Lydia, P S Divya	</td>
+                <td><strong>Best Paper
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>44.</td>
+                <td>National conference on Autism – Evidence based practice in Autism at National SRM college of occupational therapy, Chennai	</td>
+                <td>2018</td>
+                <td>Study on behavioral sensory and communication aspects related to feeding difficulties in children with ASD	</td>
+                <td>Jasmine Lydia	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>45.</td>
+                <td>FLASH III series	</td>
+                <td>2018</td>
+                <td>Comparative study on Voice and Children using CI, ABI and Normal Hearing	</td>
+                <td>Jasmine Lydia	</td>
+                <td><strong>-
+
+                </strong></td>
+              </tr>
+
+              <tr>
+                <td>46.</td>
+                <td>FLASH III series	</td>
+                <td>2018</td>
+                <td>Voice characteristics of client with severe Dysarthria due to extra pontine demyelination A single case study	</td>
+                <td>Jasmine Lydia	</td>
+                <td><strong>-
+                </strong></td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+        <div class="footer_view">
+          <div class="footer_view_home">
+            <div class="footer_view_service">
+              <div class="footer_view_logo">
+                <img src="../assets/merfsh-logo.png" alt="" />
+              </div>
+              <div class="footer_view_options">
+                <span class="footer_option">Home </span>
+                <span class="footer_option">Gallery</span>
+                <span class="footer_option">About us </span>
+                <span class="footer_option">management </span>
+                <span class="footer_option">clinic</span>
+                <span class="footer_option">contact</span>
+                <span class="footer_option">academics</span>
+                <span class="footer_option">clinic app</span>
+                <span class="footer_option">FAQs</span>
+                <span class="footer_option">admission</span>
+                <span class="footer_option">testimonial</span>
+                <span class="footer_option">faculty</span>
+                <span class="footer_option">research</span>
+              </div>
+            </div>
+            <div class="footer_view_social_media_body">
+              <h4>Connect with us :</h4>
+              <div class="footer_view_social_media">
+                <a
+                  href="https://www.facebook.com/MERFISH1"
+                  class="fa fa-facebook"
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg"
+                  class="fa fa-play"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+                  class="fa fa-linkedin"
+                ></a>
+                <a
+                  href="https://twitter.com/Merfish4"
+                  class="fa fa-twitter"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_view_copy_rights">
+            <span
+              >MERF-ISH &copy; copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              .Incl.,All right reserved
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/testimonial.js"></script>
+  <script src="../js/header.js"></script>
+</html>
