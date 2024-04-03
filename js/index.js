@@ -93,6 +93,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 var idName=document.getElementsByClassName('main_body')
+
 homeHandler('home')
 function homeHandler(value){
  for (let index = 0; index < idName.length; index++) {

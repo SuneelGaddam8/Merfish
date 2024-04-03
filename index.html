@@ -70,7 +70,6 @@
             <a href="./html/faculty.html" class="header_btn">faculty</a>
             <a href="./html/clinicApp.html"  class="header_btn">clinic app</a>
             <a href="./html/testimonial.html"  class="header_btn">Testimonial</a>
-            <a href="./html/medEl.html"  class="header_btn">MED-EL</a>
             <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
           </div>
         </div>
@@ -96,9 +95,8 @@
                     <div class="slide_content">
                       <strong style="font-size:36px ;">ADMISSIONS</strong> <span style="font-size: 24px;">Are now open for </span>
                       <span style="font-size: 27px; font-style: italic;">Year <script>document.write(new Date().getFullYear()+"-"+parseInt(new Date().getFullYear()+1))</script></span>
-                      <div  style="margin-top:20px">
-                        <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none;">APPLY NOW</a>
-                      </div>
+                  
+                        <a href="https://merfish.org/online/#/admission-new" class="button_style" style="text-decoration: none; margin-top: 20px;">APPLY NOW</a>
                     </div>
   
                 </div>
@@ -355,8 +353,12 @@
 </div>
 <div class="why_choose_merf_ish">
   <h1 class="header_title">Testimonials</h1>
-  <div class="testimonial_view">
-    <div class="testimonial_view_card">
+  <div class="testimonial_arrow_icons" id="up_test">
+  <div onclick="prevTestimonial()" class="fa fa-angle-up" style="font-size:48px; cursor: pointer;">	
+  </div>
+</div>
+  <div class="testimonial_view" id="view_home_testimonials" >
+    <div class="testimonial_view_card view_testimonial"  >
       <div class="testmonial_image">
         <img src="./assets/user_testimonial_1.png" alt="no" />
       </div>
@@ -369,7 +371,7 @@
             to make a Difference”</strong></div>
       </div>
     </div>
-    <div class="testimonial_view_card">
+    <div class="testimonial_view_card view_testimonial" >
       <div class="testmonial_image">
         <img src="./assets/user-2.png" alt="no" />
       </div>
@@ -381,10 +383,248 @@
         <div class="testimonial_content_quote"><strong>“Wonderful clinical exposure ! ”</strong></div>
       </div>
     </div>
+   
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/testimonal-SmartyMerin.png" style="width: 140px; height: 140px; border-radius: 50%;border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Smarty Merin <br /><span>Doctor Of Audiology, Student Salus University, Pennsylvania</span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“Quality of care & Best Staff”</strong></div>
+      </div>
+    </div>
 
-    <a href="./html/testimonial.html" class="button_style">More Testimonials</a>
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/merfish4.jpg" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Adithya Nair <br /><span>Audiologist, Australia.</span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“Recognition among all the recruiters globally” </strong></div>
+      </div>
+    </div>
 
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/merfish5.png" style="width: 140px; height: 140px; border-radius: 50%;border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong>Kalpana D Kumar<br /><span>Founder - Kare Therapy Center</span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“faculties of MERF-ISH is incomparable”</strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new" >
+      <div class="testmonial_image">
+        <img src="./assets/merfish6.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Shruthi <br /><span>Speech – Language Pathologist, Swabodhini School For Special Need Children</span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“learn more and work better”        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new" >
+      <div class="testmonial_image">
+        <img src="./assets/t7.png" style="width: 140px; height: 140px; border-radius: 50%;border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong>Linto Antony
+            <br /><span>Regional Audiologist, West Sonova Hearing
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“Opened door to many opportunities”
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t8.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Nimesh Devassia
+            <br /><span>Senior Specialist – Cochlear Implant At MED-EL India PVT LTD
+
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“Wonderful institution to expand your knowledge & clinical expertise”
+
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t9.png" style="width: 140px; height: 140px; border-radius: 50%;border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong>Tanika Mahato
+            <br /><span>Assistant Professor, MERF-ISH
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“best sense of hearing professional community in the nation.”
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t10.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> SHANTHANU
+            <br /><span>Director: Pranah The Healing Tree
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“ The forum for me to outshine and ace in my career ”
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t11.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Sujith
+            <br /><span>Hearing Care Centre, Kochi, Kerala. CEO & Chief Clinical Audiologist
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“The experience which leads to theconfidence”
+
+        </strong></div>
+      </div>
+    </div>
+    
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t12.jpg" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Gauri Singh
+
+            <br /><span>Clinical Audiologist, Narayana Hospital DLF–III,SEC-24, Gurugram
+
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“Diverse range of people you’ll meet”
+
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t13.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Hariram Rajeev Menon
+
+            <br /><span>Audiologist & Speech Language Pathologist (2018-22)
+
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“Diverse range of people you’ll meet”
+
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t14.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Rubaiya
+
+            <br /><span>
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“More practical based & informative”
+
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new" >
+      <div class="testmonial_image">
+        <img src="./assets/t15.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> Parvious
+            <br /><span>Audiologist & Speech Language Pathologist (2018-22)
+
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“Quality of care & Best Staff”
+
+        </strong></div>
+      </div>
+    </div>
+
+    <div class="testimonial_view_card testimonial_view_card_new"  >
+      <div class="testmonial_image">
+        <img src="./assets/t16.png" style="width: 140px; height: 140px; border-radius: 50%; border: 2px solid rgb(101, 177, 152);" alt="no" />
+      </div>
+      <div class='testimonial_content'>
+        <div class="testimonial_content_about">
+          <strong> M.N. ANUSHA
+
+            <br /><span>B.ASLP (2018-22)
+
+            </span></strong>
+         
+        </div>
+        <div class="testimonial_content_quote"><strong>“ MERF-ISH prepared me well for the challenges of the workplace. ”
+
+        </strong></div>
+      </div>
+    </div>
+
+
+
+
+   
   </div>
+  <div class="testimonial_arrow_icons" id="down_test">
+    <div onclick="nextTestimonial()" class="fa fa-angle-down "    style="font-size:48px;  cursor: pointer;">	
+    </div>
+  </div>
+
+  <a href="./html/testimonial.html" class="button_style">More Testimonials</a>
+
 </div>
     </div>
     <div class="footer_view">
@@ -394,19 +634,19 @@
               <img src="./assets/merfsh-logo.png" alt="">
             </div>
             <div class="footer_view_options">
-              <span class="footer_option">Home </span>
-              <span class="footer_option">Gallery</span>
-              <span class="footer_option">About us </span>
-              <span class="footer_option">management </span>
-              <span class="footer_option">clinic</span>
-              <span class="footer_option">contact</span>
-              <span class="footer_option">academics</span>
-              <span class="footer_option">clinic app</span>
-              <span class="footer_option">FAQs</span>
-              <span class="footer_option">admission</span>
-              <span class="footer_option">testimonial</span>
-              <span class="footer_option">faculty</span>
-              <span class="footer_option">research</span>
+              <span class="footer_option"><a href="index.html" class="anchor_link_tag">Home</a> </span>
+              <span class="footer_option"><a href="./html/gallery.html" class="anchor_link_tag">Gallery</a></span>
+              <span class="footer_option"><a href="./html/about.html" class="anchor_link_tag"> About us </a></span>
+              <span class="footer_option"><a href="./html/management.html" class="anchor_link_tag"> management </a> </span>
+              <!-- <span class="footer_option"><a href="./html/clinicApp.html" class="anchor_link_tag"> clinic </a></span> -->
+              <span class="footer_option"><a href="./html/Contact.html" class="anchor_link_tag"> contact</a></span>
+              <span class="footer_option"><a href="./html/academics.html" class="anchor_link_tag"> academics </a></span>
+              <span class="footer_option"><a href="./html/clinicApp.html" class="anchor_link_tag"> clinic app </a></span>
+              <span class="footer_option"><a href="./html/admission.html" class="anchor_link_tag"> admission </a></span>
+              <span class="footer_option"><a href="./html/testimonial.html" class="anchor_link_tag">testimonial</a></span>
+              <span class="footer_option"><a href="./html/faculty.html" class="anchor_link_tag"> faculty </a></span>
+              <span class="footer_option"><a href="./html/ResearchAudiology.html" class="anchor_link_tag">research </a></span>
+              <span></span>
             </div>
           </div>
           <div class="footer_view_social_media_body">
