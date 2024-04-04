@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ms. Pavithra</title>
-    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="../css/Style.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   </head>
   <body class="container">
     <div class="header_nav">
@@ -14,61 +15,95 @@
        </div>
      </div>
      <div class="header">
-       <div class="header_logo">
-         <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
-       </div>
-       <div class="header_menu">
-         <div class="header_options">
-           <a href="../index.html"  class="header_btn ">home</a>
-           <a href="./about.html"  class="header_btn header_active">about us</a>
-           <a href="./management.html"  class="header_btn">management</a>
-           <a href="./academics.html"  class="header_btn">courses</a>
-           <a href="./admission.html"  class="header_btn">admission</a>
-           <a href="./gallery.html"  class="header_btn">gallery</a>
-           <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-             <a class="header_btn research_btn">research</a>
-             <ul class="research_drop_down" id="research_drop_down" style="display: none;">
-               <li><a href="./ResearchAudiology.html">Audiology</a></li>
-               <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-               <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-             </ul>
-           </div>
-           <a href="./faculty.html" class="header_btn">faculty</a>
-           <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-           <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-           <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-         </div>
-   
-   
-       </div>
-       <div class="dropdown">
-         <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-           <div class="bar1"></div>
-           <div class="bar2"></div>
-           <div class="bar3"></div>
-         </div>
-         <div id="myDropdown" class="dropdown-content">
-           <a href="../index.html"  class="header_btn ">home</a>
-           <a href="./about.html"  class="header_btn header_active">about us</a>
-           <a href="./management.html"  class="header_btn">management</a>
-           <a href="./academics.html"  class="header_btn">academics</a>
-           <a href="./admission.html"  class="header_btn">admission</a>
-           <a href="./gallery.html"  class="header_btn">gallery</a>
-           <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-             <a  class="header_btn research_btn">research</a>
-             <ul id="mobile_research_dropDown" style="display: none;">
-               <li><a href="./ResearchAudiology.html">Audiology</a></li>
-               <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-               <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-             </ul>
-           </div>
-           <a href="./faculty.html" class="header_btn">faculty</a>
-           <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-           <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-           <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-         </div>
-       </div>
-     </div>
+      <div class="header_logo">
+        <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+      </div>
+      <div class="header_menu">
+        <div class="header_options">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">courses</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn">research</a>
+            <ul
+              class="research_drop_down"
+              id="research_drop_down"
+              style="display: none"
+            >
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn header_active">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn ">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">academics</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn">research</a>
+            <ul id="mobile_research_dropDown" style="display: none">
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn header_active">faculty</a>
+          <a href="./clinicApp.html" class="header_btn">clinic app</a>
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
 
      
     <div class="body_view body_faculty">
@@ -79,10 +114,10 @@
             alt=""
             srcset=""
           />
-          <strong>Ms. Pavithra</strong>
+          <strong>Ms. Antoinette Pavithra S</strong>
           <div>
-            Qualification- BASLP, DSE-Db <br />Designation- Clinical Supervisor
-            <br />
+            Qualification - BASLP, DSE-Db <br><br />Designation - Clinical Supervisor
+            <br><br />
             CRR No.- B 13663
           </div>
         </div>
@@ -96,7 +131,7 @@
             in Assessment and Treatment of Communication Disorders.
           </div>
           <div>
-            <strong>Work Experience</strong>
+            <strong class="testimonial_faculty_title">Work Experience</strong>
             <ul>
               <li>Clarke school for the deaf, Audiologist-Speech language pathologist - July 2010 to May 2011</li>
               <li>Kumaran Hospital-Ashok pillar, Consultant Speech language pathologist - January 2011 to February 2012</li>
@@ -115,6 +150,194 @@
               <li>Uma educational trust-Kakinada; 2) Mathura educational trust-Banglore; 3) Bethany institute-Shillong - October 2019 to present</li>
               <li>MERF-Institute of Speech and Hearing, Clinical Supervisor-Department of Speech Language Pathology - January 19th 2022 to present</li>
             </ul>
+          </div>
+          <div>
+            <strong class="testimonial_faculty_title">ACHIEVEMENTS / RESEARCH PAPERS PRESENTED </strong>
+            <table class="research_audiology_table" style="width: 100%">
+              <h4 style="width: 100%; text-align: center;">LIST OF SCIENTIFIC PAPERS              </h4>
+              <thead>
+                <th>S.No</th>
+                <th>Conference Title	 </th>
+                <th>National / International	 </th>
+                <th>Date </th>
+                <th>Title of the Paper	
+                </th>
+                <th>Mode of presentation	</th>
+                <th>Awards</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                   1
+                  </td>
+                  <td>Elucidating the Diversity in Dysphagia Assessment and Management	</td>
+                  <td>National
+                  </td>
+                  <td>November 10th to 12th	
+                  </td>
+                  <td>Dysphagia in Parkinson’s plus	</td>
+                  <td>Poster</td>
+                  <td>3rd prize
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   2
+                  </td>
+                  <td>Elucidating the Diversity in Dysphagia Assessment and Management	</td>
+                  <td>National
+                  </td>
+                  <td>November 10th to 12th	
+                  </td>
+                  <td>Assessment Protocol for Micro Aspiration in Dysphagia		</td>
+                  <td>Poster</td>
+                  <td>-
+                  </td>
+                </tr>
+  
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <strong class="testimonial_faculty_title">LIST OF CONFERENCES / WORKSHOPS / SEMINARS ATTENDED
+
+            </strong>
+            <table class="research_audiology_table" style="width: 100%">
+              <thead>
+                <th>S.No</th>
+             
+                <th>Date </th>
+                <th>Title of the Conference/ Workshop/ Seminar	
+                </th>
+                <th>Hosted by / Held at	</th>
+                <th>National / International
+                </th>
+              </thead>
+              <tbody>
+               <tr>
+                <td>1</td>
+                <td>20-24th September 2010	</td>
+                <td>Different Approaches to communication For Persons with Disabilities	</td>
+                <td>The Clarke School for the Deaf,,Mentally Challenged and Deafblind-Chennai	</td>
+                <td>National
+                </td>
+               </tr>
+               <tr>
+                <td>2</td>
+
+                <td>27 June 2016	</td>
+                <td>One day Workshop on Deafblindness	</td>
+                <td>The Clarke School for the Deaf,,Mentally Challenged and Deafblind And State Resorce cum training centre,chennai	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>3</td>
+                <td>16th July 2017	</td>
+                <td>“Basic Life support Programme”	</td>
+                <td>St.Isabel’s Hospital Chennai	</td>
+                <td>Closed Group
+                </td>
+               </tr>
+               <tr>
+                <td>4</td>
+                <td>9th July 2017	</td>
+                <td>“Early Identification of children at risk of Autism Spectrum Disorder”	</td>
+                <td>Nishta Centre of Excellence and National Institute For Empowerment of Persons with Disabilities	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>5</td>
+                <td>10th December 2017	</td>
+                <td>“Developing Reading Skills in young children-An integrated approach” by on	</td>
+                <td>Nishta Centre of Excellence	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>6</td>
+                <td>March 2018	</td>
+                <td>AUTCON 2018 “Autism-Beyond Core Therapies”	</td>
+                <td>Nishta Centre of Excellence	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>7</td>
+                <td>21st September 2018	</td>
+                <td>“High Risk Infant Follow up”	</td>
+                <td>Nishta Centre of Excellence	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>8</td>
+                <td>21st September 2018	</td>
+                <td>“Evidence Based Practice”	</td>
+                <td>Nishta Centre of Excellence	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>9</td>
+                <td>22nd and 23rd September 2018	</td>
+                <td>NCORE 2018-Perspectives in Pediatric Neuro-Hablitation	</td>
+                <td>Nishta Centre of Excellence	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>10</td>
+                <td>24th February 2019	</td>
+                <td>‘Traumatic Brain Injury”	</td>
+                <td>JH Rehablitation,Chennai	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>11</td>
+                <td>March 2nd 2019	</td>
+                <td>AUTCON 2019-Optimizing outcomes by applying research to practice	</td>
+                <td>Nishta Centre of Excellence At Raman Hall,IIT Madras	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>12</td>
+                <td>28 and 29th September 2019	</td>
+                <td>NCORE 2019-Assesments in early intervention	</td>
+                <td>Nishta Centre of Excellence	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>13</td>
+                <td>1st March 2020	</td>
+                <td>AUTCON 2020 “Components of Comprehensive Care for Autism”	</td>
+                <td>Nishta Centre of Excellence And GDBP chapter IAP ( Growth Development and Behavioral Pediatrics)	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>14</td>
+                <td>8 to 12th March 2021	</td>
+                <td>Online training on Mental Health for Mentor’s and Senior Professionals	</td>
+                <td>Sense International India ICHARS Support Foundation and Healing Dove Foundation	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>15</td>
+                <td>3rd April 2022	</td>
+                <td>AUTCON 2022 “Components of Comprehensive Care for Autism”	</td>
+                <td>Nishta Centre of Excellence At Iris Hotel T.nagar	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>16</td>
+                <td>August 1st, 3rd , 5th,17th, 18th -2022	</td>
+                <td>Foundational and Contemporary Approaches to Adult Dysphagia Management	</td>
+                <td>MERF-ISH	</td>
+                <td>National</td>
+               </tr>
+               <tr>
+                <td>17</td>
+                <td>October 15th and 16th -2022	</td>
+                <td>NCORE conference - Cerebral palsy-Together we care	</td>
+                <td>Nishta integrated center of excellence	</td>
+                <td>National</td>
+               </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

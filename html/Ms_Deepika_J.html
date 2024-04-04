@@ -1,159 +1,767 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ms. Deepika J</title>
-    <link rel="stylesheet" href="../css/Style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ms. Deepika J</title>
+  <link rel="stylesheet" href="../css/Style.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
+
 <body class="container">
   <div class="header_nav">
     <div></div>
-     <div>
-    <span><a href="./Contact.html">Contact</a></span>
-     </div>
-   </div>
-   <div class="header">
-     <div class="header_logo">
-       <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
-     </div>
-     <div class="header_menu">
-       <div class="header_options">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">courses</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a class="header_btn research_btn">research</a>
-           <ul class="research_drop_down" id="research_drop_down" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
- 
- 
-     </div>
-     <div class="dropdown">
-       <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-         <div class="bar1"></div>
-         <div class="bar2"></div>
-         <div class="bar3"></div>
-       </div>
-       <div id="myDropdown" class="dropdown-content">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">academics</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a  class="header_btn research_btn">research</a>
-           <ul id="mobile_research_dropDown" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
-     </div>
-   </div>
+    <div>
+      <span><a href="./Contact.html">Contact</a></span>
+    </div>
+  </div>
+  <div class="header">
+    <div class="header_logo">
+      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    </div>
+    <div class="header_menu">
+      <div class="header_options">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">courses</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()" style="width: fit-content">
+          <a class="header_btn research_btn">research</a>
+          <ul class="research_drop_down" id="research_drop_down" style="display: none">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html">List of Dissertations Done</a>
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn ">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">academics</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()" style="width: fit-content">
+          <a class="header_btn research_btn">research</a>
+          <ul id="mobile_research_dropDown" style="display: none">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html">List of Dissertations Done</a>
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a>
+      </div>
+    </div>
+  </div>
 
-   
-    <div class="body_view body_faculty">
-        <div class="faculty_details_container" id="faculty-details-container">
-            <div class="faculty_details_container_logo">
-                <img src="../assets/faculty/Ms. Deepika J.png" alt="" srcset="">
-                <strong>Ms. Deepika J</strong>
-                <div>Qualification - B.sc Speech and Hearing; M.Sc in Audiology. <br> Designation - Associate Professor / Clinical Co-ordinator <br> CRR No.- A43005</div>
-      
-              </div>
-              <div class="faculty_details_container_about">
-                <div class="faculty_about_bar">About</div>
-                <div>Ms. Deepika J, presently an Associate Professor in the Department of Audiology and the Clinical Co-ordinator at MERF-ISH has an experience of over 9 years in the field specialized in Diagnostic test procedures in Audiology, Implantable Hearing devices and Diagnosis and Management of Tinnitus and Hyperacusis.</div>
-                <div>
-                  <strong>Work Experience</strong>
-                  <div>Grade II Clinical Supervisor at Samvaad Institute of Speech and Hearing, Bangalore 32.01.07.2011 to 27.07.20121 year 1 month <br> Audiologist Grade I at All India institute of Speech & Hearing09.10.2014 to 08.10.20151 year Lecturer at MERF Institute of Speech & Hearing, Chennai 28.02.11.2015 to 01.11.20161 year Assistant Professor at MERF Institute of Speech & Hearing, Chennai 28.2.11.2016 to 01.11.20226 years <br> Associate Professor at MERF Institute of Speech & Hearing, Chennai 28.From 02.11.2022Till date</div>
-                </div>
-                <div>
-                  <strong>Examinership</strong>
-                  
+
+  <div class="body_view body_faculty">
+    <div class="faculty_details_container" id="faculty-details-container">
+      <div class="faculty_details_container_logo">
+        <img src="../assets/faculty/Ms. Deepika J.png" alt="" srcset="">
+        <strong>Ms. Deepika J</strong>
+        <div>Qualification  - B.sc Speech and Hearing; M.Sc in Audiology. <br><br> Designation  - Associate Professor /
+          Clinical Co-ordinator <br><br> CRR No.- A43005</div>
+
+      </div>
+      <div class="faculty_details_container_about">
+        <div class="faculty_about_bar">About</div>
+        <div>Ms. Deepika J, presently an Associate Professor in the Department of Audiology and the Clinical
+          Co-ordinator at MERF-ISH has an experience of over 9 years in the field specialized in Diagnostic test
+          procedures in Audiology, Implantable Hearing devices and Diagnosis and Management of Tinnitus and Hyperacusis.
+        </div>
+        <div>
+          <strong class="testimonial_faculty_title">Work Experience</strong>
+
+        </div>
+        <div>
+          <table class="research_audiology_table">
+            <thead>
+              <th>S.NO </th>
+              <th>Place & position of work </th>
+              <th>Duration</th>
+              <th>Years of Experience </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Grade II Clinical Supervisor at Samvaad Institute of Speech and Hearing, Bangalore 32. </td>
+                <td>01.07.2011 to 27.07.2012 </td>
+                <td>1 year 1 month
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>Audiologist Grade I at All India institute of Speech & Hearing </td>
+                <td>09.10.2014 to 08.10.2015 </td>
+                <td>1 year
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>Lecturer at MERF Institute of Speech & Hearing, Chennai 28. </td>
+                <td>02.11.2015 to 01.11.2016 </td>
+                <td>1 year
+                </td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>Assistant Professor at MERF Institute of Speech & Hearing, Chennai 28. </td>
+                <td>2.11.2016 to 01.11.2022 </td>
+                <td>6 years
+
+                </td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <td>Associate Professor at MERF Institute of Speech & Hearing, Chennai 28. </td>
+                <td>From 02.11.2022 </td>
+                <td>Till date
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <strong class="testimonial_faculty_title">PG Dissertation:
+          </strong>
+          <ol>
+            <li>“Relationship between behavioral Outcome and Aided cortical potentials in Hearing aid users” Under the
+              guidance of
+              <strong>Prof. P. Manjula, Department of Audiology AIISH, Mysore.2014.</strong>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <strong class="testimonial_faculty_title">PhD Thesis:
+          </strong>
+          <ol>
+            <li>Received Eligibility for PhD at TN DR MGR Medical University titled <strong
+                style="font-style: italic;">“The Relationship between behavioral outcomes and cortical responses in
+                post-lingual cochlear implantees” under Guidance of Prof Dr Mohan Kameswaran and Co-Guidance of Prof Dr.
+                R.S Anand Kumar.</strong>
+
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <strong class="testimonial_faculty_title">Membership:
+
+          </strong>
+          <br>
+          <span>
+            <strong>Rehabilitation Council of India - A43005 <br>
+
+              Indian Speech and Hearing Association (ISHA) - L15102667 <br>
+
+              Cochlear Implant Group of India (CIGI) - 566</strong>
+          </span>
+        </div>
+
+        <div>
+          <strong class="testimonial_faculty_title">Subjects of Interest </strong>
+          <ul>
+            <li>Diagnostic Audiology – Behavioral Tests
+
+            </li>
+            <li>Diagnostic Audiology – Physiological Tests.
+            </li>
+            <li>Technology in Management of hearing impairment I & II
+            </li>
+            <li>Community oriented professional practice.
+            </li>
+            <li>Advancements in management of hearing impairment
+            </li>
+            <li>Implantable Hearing devices.
+            </li>
+            <li>Speech perception & its disorders.
+            </li>
+            <li>Neurophysiology of Hearing.
+            </li>
+            <li>Electrophysiological Assessment.
+            </li>
+          </ul>
+        </div>
+
+
+        <div>
+          <strong class="testimonial_faculty_title">Examiner at various institution: </strong>
+          <ul>
+            <li>Madras Medical College, Chennai
+
+            </li>
+            <li>NIEPMD, Chennai.
+            </li>
+            <li>CMC Vellore.
+            </li>
+            <li>SRM, Kancheepuram
+            </li>
+            <li>AVMC, Puducherry.
+            </li>
+            <li>Holy Cross, Trichy
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <strong class="testimonial_faculty_title">ACHIEVEMENTS / RESEARCH PAPERS PRESENTED </strong>
+          <table class="research_audiology_table" style="width: 100%">
+            <thead>
+              <th>S.No</th>
+              <th>CONFERENCE ATTENDED </th>
+              <th>YEAR </th>
+              <th>TITLE OF THE PAPER PRESENTED
+              </th>
+              <th>AWARD</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>
+                  6th TAN-ISHACON 2017 (CRE) held at Puducherry
+                </td>
+                <td>18th – 19th November 2016.
+                </td>
+                <td>
                   <ul>
-                    <li>Madras Medical College, Chennai</li>
-                    <li>NIEPMD, Chennai.</li>
-                    <li>CMC Vellore.</li>
-                    <li>SRM, Kancheepuram</li>
-                    <li>AVMC, Puducherry.</li>              
-                    <li>Holy Cross, Trichy</li>
-                  </ul>
-                </div>
-                <div>
-                  <strong>Conferences / workshops attended</strong>
-                  <ul>
-                    <li>Advance Level cochlear implant update organized by Madras ENT Research Foundation on 24th April 2016.
+                    <li>“Can objectives measures be used for mapping of children with Cochlear implants?
                     </li>
-                    <li>Advanced Cochlear Implant Update organized by Madras ENT Research Foundation, 2nd October 2016.</li>
-                    <li>2nd AUDISHCON 2017, Hearing Instruments – An Update (CRE) Held at DR SRC-ISH, Bengaluru, 9th to 11th March 2017</li>
-                    <li>Assessment and Management Of Vestibular Disorders (CRE) Held at AlISH Mysuru, 6th – 7th April 2017</li>
-                    <li>National Seminar on Management of CAPD Held at AIISH Mysuru, October 5th 2017</li>
-                    <li>50th Indian Speech and Hearing Association – ISHACON 2018 Held at AIISH Mysuru, 5th to 7th January 2018.</li>
-                    <li>Evolving Consensus in Pediatric ABI” ABI Workshop held at MERF, Chennai, 8th to 9th February 2018</li>
                   </ul>
-                </div>
-              </div>
+                </td>
+                <td><strong>2nd Prize for Oral Presentation
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>
+                  15th annual conference of Cochlear Implant Group of India– CIGICON Vishakhapatnam.
+                </td>
+                <td>2nd to 4th November 2017
+
+                </td>
+                <td>
+                  <ul>
+                    <li>Oral presentation on P300 in early & late cochlear implantees.
+
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>
+                  16th Annual conference of cochlear to implant group of India, 29th November 2018 to 1st December 2018
+                  at Deltin, Daman.
+                </td>
+                <td>29th November 2018 to 1st December 2018
+
+                </td>
+                <td>
+                  <ul>
+                    <li>Oral presentation on Relationship between ECAP, ESRT with behavioral MAP in individuals with
+                      Cochlear implants
+
+                    </li>
+                    <li>Oral presentation on Little ears Auditory Questionnaire in early and late Cochlear implantees
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>
+                  51st ISHACON, 10th - 12th February 2019, conducted by Indian Speech & Hearing Association at NIMHANS,
+                  Bengaluru
+                </td>
+                <td>10th - 12th February 2019.
+
+                </td>
+                <td>
+                  <ul>
+                    <li>Poster presentation on exploring the recovery properties of the auditory nerve fibres at
+                      different cochlear regions using ECAP.
+
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+                  </strong></td>
+              </tr>
+              <tr>
+                <td rowspan="2">5.</td>
+                <td rowspan="2">
+                  17TH CIGICON, Annual conference of cochlear to implant group of India 11th to 13th October 2019,
+                  Mumbai.
+                </td>
+                <td rowspan="2">11th to 13th October
+
+                </td>
+                <td>
+                  <ul>
+                    <li>Oral presentation on Refractory property of the auditory nerve in pre lingual cochlear
+                      implantee.
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>2nd Prize
+
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>Oral presentation on Refractory property of the auditory nerve in pre lingual cochlear
+                      implantee.
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>6.</td>
+                <td>
+                  CIGICON 2021 (virtual) – 12 – 14 November 2021.
+                </td>
+                <td>12 – 14 November 2021.
+
+                </td>
+                <td>
+                  <ul>
+                    <li>Oral presentation on Optimization of frequency band table in adult using cochlear implant
+
+                    </li>
+                    <li>E-Poster The relationship between the tone and speech evoked ESRT Measures in both ipsilateral &
+                      Contra lateral ear.
+
+                    </li>
+                    <li>E-Poster Refractory properties of the auditory nerve in the postlingual cochlear implantees
+
+
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>7.</td>
+                <td>
+                  National CRE Webinar on Medical audiology: perspectives from partnerships- Organized by SRCISH,
+                  Bangalore.
+                </td>
+                <td>13th to 17th December 2021
+
+                </td>
+                <td>
+                  <ul>
+                    <li>Oral Presentation on Hearing and Mitochonriopathy – A single case report.
+
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+                  </strong></td>
+              </tr>
+              <tr>
+                <td rowspan="2">8.</td>
+                <td rowspan="2">
+                  19th CIGICON at Delhi
+                </td>
+                <td rowspan="2">4th to 6th Nov 2022
+
+                </td>
+                <td>
+                  <ul>
+                    <li>“Can objectives measures be used for mapping of children with Cochlear implants?
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>Quality of sound in post -lingual cochlear implantees (EPoster Presentation)
+                </td>
+                <td><strong>3rd Prize.
+                  </strong></td>
+              </tr>
+              <tr>
+                <td rowspan="2">9.</td>
+                <td rowspan="2">
+                  TASLPACON 2023- Hyderabad
+                </td>
+                <td rowspan="2">Jan 27th to 29th Jan
+
+                </td>
+                <td>
+                  <ul>
+                    <li>Audiological profile in single-sided Michel aplasia– a single case report
+
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>2nd Prize
+                  </strong></td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>Oral Presentation an Audiological Characteristics and Findings in Individual with C3.
+
+                    </li>
+                    <li>Oral Presentation Hearing and mitochondrial disease– a single case report.
+                    </li>
+                    <li>Hearing loss in Individual with Thalassemia.
+                    </li>
+                    <li>Refractory properties of auditory nerve in the postlingual cochlear implantees
+                    </li>
+                  </ul>
+                </td>
+                <td><strong>--
+                  </strong></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="footer_view">
-          <div class="footer_view_home">
-            <div class="footer_view_service">
-              <div class="footer_view_logo">
-                <img src="../assets/merfsh-logo.png" alt="">
-              </div>
-              <div class="footer_view_options">
-                <span class="footer_option"><a href="../index.html" class="anchor_link_tag">Home</a> </span>
-                <span class="footer_option"><a href="./gallery.html" class="anchor_link_tag">Gallery</a></span>
-                <span class="footer_option"><a href="./about.html" class="anchor_link_tag"> About us </a></span>
-                <span class="footer_option"><a href="./management.html" class="anchor_link_tag"> management </a> </span>
-                <span class="footer_option"><a href="./Contact.html" class="anchor_link_tag"> contact</a></span>
-                <span class="footer_option"><a href="./academics.html" class="anchor_link_tag"> academics </a></span>
-                <span class="footer_option"><a href="./clinicApp.html" class="anchor_link_tag"> clinic app </a></span>
-                <span class="footer_option"><a href="./admission.html" class="anchor_link_tag"> admission </a></span>
-                <span class="footer_option"><a href="./testimonial.html" class="anchor_link_tag">testimonial</a></span>
-                <span class="footer_option"><a href="./faculty.html" class="anchor_link_tag"> faculty </a></span>
-                <span class="footer_option"><a href="./ResearchAudiology.html" class="anchor_link_tag">research </a></span>
-                <span></span>
-              </div>
-            </div>
-            <div class="footer_view_social_media_body">
-              <h4>Connect with us : </h4>
-              <div class="footer_view_social_media">
-                <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
-                <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
-                  class="fa fa-linkedin"></a>
-                <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
-              </div>
-            </div>
-      
-          </div>
-          <div class="footer_view_copy_rights">
-            <span>MERF-ISH &copy; copyright
-              <script>document.write(new Date().getFullYear());</script>.Incl.,All right reserved
-            </span>
-          </div>
+        <div>
+          <strong class="testimonial_faculty_title">Published Articles</strong>
+          <table class="research_audiology_table" style="width: 100%">
+            <thead>
+              <th>S.No</th>
+              <th>Article </th>
+              <th>Journal </th>
+              <th>Year
+              </th>
+              <th>Impact Factor </th>
+              <th>National / International </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>Jayachandran, D</strong>., Nagaraja, M. Y., & Gunalan, S. Change of cortical auditory evoked
+                  potentials on different. Hearing aid gain- preliminary study </td>
+                <td style="font-style: italic;">Asia Pacific Journal of Research, 1(LV). 149-153. </td>
+                <td>2017</td>
+                <td>6.58</td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Anthony, P., <strong>Jayachandran, D.</strong>, Selvaraj, A., & P., S. R. Effect of Reference
+                  Electrode Placement on Measuring cVEMP – Preliminary Study. </td>
+                <td style="font-style: italic;">International Journal of Scientific Research and Publication 7(11) 490-
+                  493. </td>
+                <td>2017</td>
+                <td>6.6</td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Vijayakumar, K., Hassan, I., <strong>Jayachandran, D.</strong>, & Shamangi, N. Audiological Findings
+                  in Individual with Glomus Tympanicum – A Case Report </td>
+                <td style="font-style: italic;">Indian Journal of case reports , 4(1)43-45. </td>
+                <td>2018</td>
+                <td>1</td>
+                <td>National</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Selvaraj, A., Rajeswaran, R., & <strong>Jayachandran, D.</strong> Development of Dichotic Word Test
+                  in Tamil Speaking Children </td>
+                <td style="font-style: italic;">Languages In India 13-24. </td>
+                <td>2018</td>
+                <td>-</td>
+                <td>National</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Abishek Umashankar & <strong> Deepika Jayachandran</strong>. Measurement of cochlear implant
+                  outcomes in Goldenhar syndrome: A case report, </td>
+                <td style="font-style: italic;">Indian Journal of case reports, Volume 5, Issue 5 </td>
+                <td>2019</td>
+                <td>1</td>
+                <td>National</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>KR Rahul , <strong> Deepika Jayachandran</strong> , Ranjith Rajeswaran, Abishek Umashankar ,
+                  Auditory and preverbal skill improvement between early and late cochlear implantees: evidence from
+                  little ear questionnaire, </td>
+                <td style="font-style: italic;">Journal of Clinical and Diagnostic Research, Volume 13, Issue 1 </td>
+                <td>2019</td>
+                <td>1.14 </td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><strong> Deepika Jayachandran</strong>, Ranjith Rajeswaran, Abishek Umashankar & Rahul (2019),
+                  Adaptation of LITTLEARS auditory Questionnaire in Tamil, </td>
+                <td style="font-style: italic;">European Journal of Special Education Research, Volume 4, Issue 4. </td>
+                <td>2019</td>
+                <td>3.78</td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Ranjith Rajeswaran, Oviya Kalai, <strong>Deepika Jayachandran,</strong> Profiling Long-term Outcomes
+                  in children with Auditory Brainstem Implant, </td>
+                <td style="font-style: italic;">International Journal of Scientific and Research Publications. Volume 9,
+                  Issue 12. </td>
+                <td>2019</td>
+                <td>6.6</td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Abishek Umashankar, <strong>Deepika Jayachandran (2020)</strong> Investigating the recovery
+                  properties of Auditory Nerve Fibres at Different cochlear Regions using Electrically Evoked Compound
+                  Action potential. </td>
+                <td style="font-style: italic;">Journal of Clinical and Diagnostic Research. 2020 Oct, Vol-14(10) </td>
+                <td>2020</td>
+                <td>1.14</td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><strong>Deepika Jayachandran</strong> & Oviya MP P300 in Children with Early and Late Cochlear
+                  Implantation </td>
+                <td style="font-style: italic;">International Journal of Science and Research (IJSR) Volume 10 Issue 10,
+                  October </td>
+                <td>2021</td>
+                <td>7.4 </td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Elanthendral Chandrasekhar; Saranyaa Gunalan; <strong>Deepika Jayachandran</strong>; Priyanka
+                  Sivakumaran Outcomes of desensitization therapy in Hyperacusis: A single case report </td>
+                <td style="font-style: italic;">Open journal of Clinical & Medical Case Reports </td>
+                <td>2021</td>
+                <td>2.8 </td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Aster F M, Saranyaa G, Divya S, Ranjith R & <strong>Deepika J</strong> The role of audiologists and
+                  speech Language pathologists in the Assessment and management of Neonates: neonatologists’ perspective
+                </td>
+                <td style="font-style: italic;">International journal of research and analytical reviews IJRAR October
+                  Volume 9, Issue 4 </td>
+                <td>2022</td>
+                <td>5.75 </td>
+                <td>International</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td><strong>Deepika Jayachandran</strong>, Ranjith Rajeswaran, Saranyaa Gunalan Quality of Sound in Post
+                  - Lingual Cochlear Implantees </td>
+                <td style="font-style: italic;">International Journal of Science and Research (IJSR)
+                  <br> Volume 11 Issue 11, November 2022
+                </td>
+                <td>2022</td>
+                <td>7.4</td>
+                <td>International</td>
+              </tr>
+
+
+            </tbody>
+          </table>
         </div>
+        <div>
+          <strong class="testimonial_faculty_title">Conferences / Webinars / Seminars / Workshops Attended </strong>
+          <ol>
+            <li>Advance Level cochlear implant update organized by Madras ENT Research Foundation on 24th April 2016.
+            </li>
+            <li>Advanced Cochlear Implant Update organized by Madras ENT Research Foundation, 2nd October 2016.</li>
+            <li>2nd AUDISHCON 2017, Hearing Instruments – An Update (CRE) Held at DR SRC-ISH, Bengaluru, 9th to
+              11th March 2017</li>
+            <li>Assessment and Management Of Vestibular Disorders (CRE) Held at AlISH Mysuru, 6th – 7th April 2017</li>
+            <li>National Seminar on Management of CAPD Held at AIISH Mysuru, October 5th 2017</li>
+            <li>50th Indian Speech and Hearing Association – ISHACON 2018 Held at AIISH Mysuru, 5th to 7th January 2018.
+            </li>
+            <li>Evolving Consensus in Pediatric ABI” ABI Workshop held at MERF, Chennai, 8th to 9th February 2018</li>
+
+            <li>Workshop on Early Identification of Children at risk of autism Spectrum Disorder – NISHTA Held at
+              Chennai, March 4th 2018.
+            </li>
+            <li>AUDISHCON 2018 – New frontiers in Audiology 27th -29th September, 2018 at Dr.S.R.Chandrasekhar Institute
+              of Speech and Hearing, 27th -29th September.
+            </li>
+            <li>Workshop “fitting cochlear implants: from science to practice Making Strong Foundation – Science Of
+              Bionic Hearing” 9th January to 11th January, 2019 at MERFISH, 9th January to 11th January, 2019
+            </li>
+            <li>Cochlear update on managing complex cases, 13 to 15th March 2019, Cochlear Mumbai, 13 to 15th March
+              2019.
+            </li>
+            <li>Life Long Learning 2nd National Workshop On Teaching Learning Pedagogy For Teachers Of Audiology & SLP,
+              1st - 3rd August 2019, Kasturba Medical College – Mangalore, 1st - 3rd August 2019.
+            </li>
+            <li>2nd Fitting Cochlear Implants Conference : From Science to Practice, 27th to 29th February 2020,
+              Conducted by MERF ISH (P) Ltd in association to MERF(P) Ltd., 27th to 29th February 2020.
+            </li>
+            <li>Online CRE program on “Recent Trends in Hearing Restoration” 16th May 2020, Conducted by MERF ISH, 16th
+              May 2020.
+            </li>
+            <li>HEARRING Online Round Table Discussion titled “Audiology Services during COVID 19”, 26th June, 2020 by
+              MERF(P) Ltd and HEARRING group, 19”, 26th June, 2020.
+            </li>
+            <li>Cochlear Implant Systems Training, 29th – 30th July, 2020, MED EL.
+            </li>
+            <li>CIGI Virtual Seminar Series : Adjustment of Stimulation Timing in Bimodal Cochlear Implant/Hearing Aid
+              users – Effect on sound Localization &Clinical Challenges and Solutions : Beyond Textbook, 15th Oct 2020
+              by CIGI.
+            </li>
+            <li>CIGI Virtual Seminar Series: Using Telepractice to deliver family centred Early Intervention for
+              children with hearing loss &Teletherapy, A perspective – Today and beyond 17th Oct 2020.
+            </li>
+            <li>UNLEASH series 3rd to 25th September 2021.
+            </li>
+            <li>Refresher course for rehabilitation professionals of speech & hearing AVT November 15th 2021 to Jan 31st
+              2022.
+            </li>
+            <li>3rd Fitting Cochlear Implants Conference : From Science to Practice, 16th to 18th February 2023,
+              Conducted by MERF ISH (P) Ltd in association to MERF(P) Ltd.
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <strong class="testimonial_faculty_title">Dissertations Guided: </strong>
+          <ol>
+            <li>Dichotic word testing in Tamil speaking children – <strong>Anitha S</strong>
+
+            </li>
+            <li>P300 in children with CI –<strong>Anjusha M</strong>
+            </li>
+            <li>Adaptation of Littlears Auditory Questionnaire in Tamil. - <strong>Rahul KR</strong>
+            </li>
+            <li>Refractory Properties of Auditory Nerve in Prelingual Cochlear Implantees- <strong>Aishwarya V</strong>
+            </li>
+            <li>Quality of Sound in Post-Lingual Cochlear Implantees- <strong>Kavitha Shree.</strong>
+            </li>
+            <li>Profiling Long Term Outcomes of Children with Auditory Brainstem Implants- <strong>Oviya Kalai</strong>
+
+            </li>
+            <li>Modes of Communication in Auditory brainstem Implantees- <strong> MP Oviya</strong>
+            </li>
+
+            <li>Optimization of Frequency Band Tables In Adults Using Cochlear Implant- <strong>Veronica S</strong>
+
+            </li>
+            <li>Relationship between the Screening Checklist For Auditory Processing (SCAP) Scores And Scholastic
+              Performance In Children- <strong>VidhyaDharini</strong>.
+
+            </li>
+            <li>Testing and Validation of Prototype Version of Computer Based Audiometer- <strong>Yahswanth
+                Hari</strong>.
+
+            </li>
+            <li>Predicting the Auditory and Non Auditory Responses Using EABR In ABI-Systematic Review –
+                <strong>Deepthi Pr</strong>
+              </strong>
+            </li>
+            <li>Refractory Properties of Auditory Nerve In Postlingual Cochlear Implantees- <strong>Jamuna D</strong>
+
+            </li>
+            <li>Profiling Long Term Auditory Outcomes of Children with Auditory Brainstem Implant- <strong> Konniti
+                Srilatha.</strong>
+
+            </li>
+            <li>Relationship Between Tone And Speech Evoked ESRT Measured In Both Ipsilateral And Contralateral Ear. -
+              <strong>Asvitha R</strong>.
+
+            </li>
+            <li>Characteristics of Electrically Evoked Compound Action Potential in Subjects with Auditory Brainstem
+              Implant- <strong>Indresh C</strong>
+            </li>
+          </ol>
+        </div>
+
+
+      </div>
+
+      <div class="footer_view">
+        <div class="footer_view_home">
+          <div class="footer_view_service">
+            <div class="footer_view_logo">
+              <img src="../assets/merfsh-logo.png" alt="">
+            </div>
+            <div class="footer_view_options">
+              <span class="footer_option"><a href="../index.html" class="anchor_link_tag">Home</a> </span>
+              <span class="footer_option"><a href="./gallery.html" class="anchor_link_tag">Gallery</a></span>
+              <span class="footer_option"><a href="./about.html" class="anchor_link_tag"> About us </a></span>
+              <span class="footer_option"><a href="./management.html" class="anchor_link_tag"> management </a> </span>
+              <span class="footer_option"><a href="./Contact.html" class="anchor_link_tag"> contact</a></span>
+              <span class="footer_option"><a href="./academics.html" class="anchor_link_tag"> academics </a></span>
+              <span class="footer_option"><a href="./clinicApp.html" class="anchor_link_tag"> clinic app </a></span>
+              <span class="footer_option"><a href="./admission.html" class="anchor_link_tag"> admission </a></span>
+              <span class="footer_option"><a href="./testimonial.html" class="anchor_link_tag">testimonial</a></span>
+              <span class="footer_option"><a href="./faculty.html" class="anchor_link_tag"> faculty </a></span>
+              <span class="footer_option"><a href="./ResearchAudiology.html" class="anchor_link_tag">research
+                </a></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="footer_view_social_media_body">
+            <h4>Connect with us : </h4>
+            <div class="footer_view_social_media">
+              <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+              <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+              <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+                class="fa fa-linkedin"></a>
+              <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer_view_copy_rights">
+          <span>MERF-ISH &copy; copyright
+            <script>document.write(new Date().getFullYear());</script>.Incl.,All right reserved
+          </span>
+        </div>
+      </div>
     </div>
 </body>
 <script src="../js/header.js"></script>
+
 </html>

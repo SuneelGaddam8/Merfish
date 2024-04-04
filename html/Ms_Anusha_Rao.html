@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ms. Anusha Rao</title>
+    <title>Ms. Anusha Rao</title> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="../css/Style.css" />
 </head>
 <body class="container">
@@ -14,79 +15,113 @@
      </div>
    </div>
    <div class="header">
-     <div class="header_logo">
-       <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
-     </div>
-     <div class="header_menu">
-       <div class="header_options">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">courses</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a class="header_btn research_btn">research</a>
-           <ul class="research_drop_down" id="research_drop_down" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
- 
- 
-     </div>
-     <div class="dropdown">
-       <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-         <div class="bar1"></div>
-         <div class="bar2"></div>
-         <div class="bar3"></div>
-       </div>
-       <div id="myDropdown" class="dropdown-content">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">academics</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a  class="header_btn research_btn">research</a>
-           <ul id="mobile_research_dropDown" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
-     </div>
-   </div>
+    <div class="header_logo">
+      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    </div>
+    <div class="header_menu">
+      <div class="header_options">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">courses</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul
+            class="research_drop_down"
+            id="research_drop_down"
+            style="display: none"
+          >
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn ">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">academics</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul id="mobile_research_dropDown" style="display: none">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
     
     <div class="body_view body_faculty">
         <div class="faculty_details_container" id="faculty-details-container">
             <div class="faculty_details_container_logo">
                 <img src="../assets/faculty/ms_anusha_rao.png" alt="" srcset="">
                 <strong>Ms. Anusha Rao</strong>
-                <div>Qualification- BASLP, MASLP <br> Designation- Grade I Clinical Supervisor / Lecturer <br>CRR No.- A60966</div>
+                <div>Qualification  - BASLP, MASLP <br><br> Designation - Grade I Clinical Supervisor / Lecturer <br><br>CRR No.- A60966</div>
       
               </div>
               <div class="faculty_details_container_about">
                 <div class="faculty_about_bar">About</div>
                 <div>Ms. Anusha Rao, with an experience of 2 years in the field is the Research Co-ordinator at MERF-ISH. Her major area of interest is in Assessment and Management of individuals with Dysphagia, Voice Disorders, Adult Language Disorder, Motor Speech Disorders and Fluency disorders, Diagnostic Audiology, Tele rehabilitation services and Material development.</div>
                 <div>
-                  <strong>Work Experience</strong>
+                  <strong class="testimonial_faculty_title">Work Experience</strong>
                   <ul><li>MERF Institute of Speech and Hearing (April 2021 – till date) Grade I Clinical Supervisor / Lecturer</li></ul>
                 </div>
                 <div>
-                  <strong>Conferences & Seminar</strong>
+                  <strong class="testimonial_faculty_title">Conferences & Seminar</strong>
                   <ul>
                     <li>Dysphagia Awareness month webinar series – 2021
                     </li>
@@ -97,13 +132,114 @@
                    
                   </ul>
                 </div>
+
                 <div>
-                    <strong>PG Dissertation:</strong>
-                    <ul>
-                      <li>High-Frequency Hearing Loss in Individuals with Hypertension</li>
-                     
-                     
-                    </ul>
+                  <strong class="testimonial_faculty_title">ACHIEVEMENTS / RESEARCH PAPERS PRESENTED </strong>
+                  <table class="research_audiology_table" style="width: 100%">
+                    <thead>
+                      <th>CONFERENCE ATTENDED </th>
+                      <th>YEAR </th>
+                      <th>TITLE OF THE PAPER PRESENTED </th>
+                      <th>AWARD
+        
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          NCORE Cerebral palsy – Together we care	
+                        </td>
+                        <td>2022</td>
+                        <td>A pediatric case report on Speech, Language and Swallowing difficulties in a De Novo Mutant Axonal Motor Neuropathy	
+                        </td>
+                        <td>-
+                        </td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">
+                          Elucidating the diversities in Dysphagia assessment and management	
+                        </td>
+                        <td rowspan="3">2022</td>
+                        <td>Symptoms of dysphagia in individuals with Parkinson’s disease across various post onset duration	
+                        </td>
+                        <td>-
+                        </td>
+                      </tr>
+                      <tr>
+                       
+                        <td>A pediatric case report on dysphagia in a De Novo Mutant Axonal Motor Neuropathy	
+                        </td>
+                        <td>-
+                        </td>
+                      </tr>
+                      <tr>
+                       
+                        <td>Salience of swallow assessment post fitting of Tracheo-Esophageal Prosthesis in Total Laryngectomy	
+                        </td>
+                        <td>3rd Best Oral Presentation
+
+                        </td>
+                      </tr>
+        
+                    </tbody>
+                  </table>
+                </div>
+
+                <div>
+                    <strong class="testimonial_faculty_title">PG Dissertation:</strong>
+                   <span>Adaptation and Validation of Voice Activity and Participation Profile in Tamil (VAPP-T)</span>
+                  </div>
+                  <div>
+                    <strong class="testimonial_faculty_title">Published Articles:
+
+                    </strong>
+                  <ol>
+                    <li>A Single Case Study on Palatal Palsy; International Journal of Health Sciences and Research (July 2019, vol. 9; Issue 7)
+                    </li>
+                    <li>Dyslexia awareness among school teachers; Indian journal of public health research and development (Nov 2019, vol. 10, No. 11)
+                    </li>
+                    <li>Voice Profile and Prognosis in Pediatric Penetrating Vocal Injury; International Journal of Research and Analytic Reviews
+                    </li>
+                  </ol>
+                  </div>
+
+                  <div>
+                    <strong class="testimonial_faculty_title">Ongoing Researches
+
+
+                    </strong>
+                  <ol>
+                    <li>Adaptation and Validation of Voice Activity and Participation Profile in Tamil (VAPP-T)
+
+                    </li>
+                    <li>Knowledge on indications of Hearing loss among non-medical students: A survey study
+
+                    </li>
+                    <li>Comparison of acoustic characteristics of nasal and oral segments in hearing aid and cochlear implant users – A preliminary study
+
+                    </li>
+                    <li>LittlEARS Speech Production Questionnaire Validation in children with Normal Hearing: Tamil
+                    </li>
+                    <li>Impact of pandemic on socio pragmatic skills in young adults
+                    </li>
+                    <li>Assessing quality of life of children with Auditory Brainstem Implant: A Parental Perspective
+                    </li>
+                    <li>Profiling learning difficulties in children using cochlear implant
+                    </li>
+                  </ol>
+                  </div>
+                  <div>
+                    <strong class="testimonial_faculty_title">Dissertations Co-guided:
+
+
+
+                    </strong>
+                  <ol>
+                    <li>Knowledge on indications of Hearing loss among non-medical students: A survey study; 2022
+
+                    </li>
+                   
+                  </ol>
                   </div>
               </div>
         </div>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ms. Ramya</title>
-    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="../css/Style.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body class="container">
   <div class="header_nav">
@@ -14,75 +15,140 @@
      </div>
    </div>
    <div class="header">
-     <div class="header_logo">
-       <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
-     </div>
-     <div class="header_menu">
-       <div class="header_options">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">courses</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a class="header_btn research_btn">research</a>
-           <ul class="research_drop_down" id="research_drop_down" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
- 
- 
-     </div>
-     <div class="dropdown">
-       <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-         <div class="bar1"></div>
-         <div class="bar2"></div>
-         <div class="bar3"></div>
-       </div>
-       <div id="myDropdown" class="dropdown-content">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">academics</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a  class="header_btn research_btn">research</a>
-           <ul id="mobile_research_dropDown" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
-     </div>
-   </div>
+    <div class="header_logo">
+      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    </div>
+    <div class="header_menu">
+      <div class="header_options">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">courses</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul
+            class="research_drop_down"
+            id="research_drop_down"
+            style="display: none"
+          >
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn ">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">academics</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul id="mobile_research_dropDown" style="display: none">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
     
     <div class="body_view body_faculty">
         <div class="faculty_details_container" id="faculty-details-container">
           <div class="faculty_details_container_logo">
             <img src="../assets/faculty/Ms. Ramya.png" alt="" srcset="">
-            <strong>Ms. Ramya</strong>
-           <div>Qualification- BASLP <br>Designation- Clinical supervisor <br> CRR No.- A71976</div>
+            <strong>Ms. Ramya Sri C H</strong>
+           <div>Qualification  - BASLP <br><br>Designation  - Clinical supervisor <br><br> CRR No.  - A71976</div>
             
           </div>
           <div class="faculty_details_container_about">
             <div class="faculty_about_bar">About</div>
             <div>Ms. Aishwarya, with an experience of 1+ year in the field post MASLP is a Clinical Incharge / clinical supervisor at MERF-ISH in the Department of Audiology. Her major interest is in Diagnostic Audiology and Implant Audiology.</div>
+            
             <div>
-                <strong>Published Articles</strong>
+              <strong  class="testimonial_faculty_title">Conferences / workshops attended</strong>
+              <ul>
+                <li>TASLPACON, 2023</li>
+               <li>3rd Fitting & objective measures in cochlear Implants, 2023</li>
+              </ul>
+            </div>
+
+            <div>
+              <strong class="testimonial_faculty_title">ACHIEVEMENTS / RESEARCH PAPERS PRESENTED</strong>
+              <table class="research_audiology_table" style="width: 100%">
+                <thead>
+                  <th>CONFERENCE ATTENDED	</th>
+                  <th>YEAR	</th>
+                  <th>TITLE OF THE PAPER PRESENTED	</th>
+                  <th>AWARD
+                  </th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>TASLPACON</td>
+                    <td>2023</td>
+                    <td>Audiological findings and aided performance in individuals with ANSD	</td>
+                    <td>3 Prize
+                    </td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+
+            <div>
+                <strong  class="testimonial_faculty_title">Published Articles</strong>
                 <ul>
                   <li>Development of Eustachian tube dysfunction questionnaire-child edition, Otolaryngology open access.2023.</li>
                  <li>Audiologist perception in JCIH 2019 positional statement, International journal of research and analytical reviews,2023</li>
@@ -95,15 +161,9 @@
                  <li>Analysis of phonology in Tamil speaking cochlear Implantees, World wide journal of multidisciplinary research and development, 2020</li>
                 </ul>
               </div>
+            
             <div>
-              <strong>Conferences / workshops attended</strong>
-              <ul>
-                <li>TASLPACON, 2023</li>
-               <li>3rd Fitting & objective measures in cochlear Implants, 2023</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Ongoing Research</strong>
+              <strong  class="testimonial_faculty_title">Ongoing Research</strong>
               <ul>
                 <li>Clinical features and hearing outcomes of sudden sensorineural hearing loss in diabetic patients.
                 </li>

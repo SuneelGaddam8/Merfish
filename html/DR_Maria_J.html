@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Maria J</title>
     <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body class="container">
   <div class="header_nav">
@@ -14,88 +16,160 @@
      </div>
    </div>
    <div class="header">
-     <div class="header_logo">
-       <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
-     </div>
-     <div class="header_menu">
-       <div class="header_options">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">courses</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a class="header_btn research_btn">research</a>
-           <ul class="research_drop_down" id="research_drop_down" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
- 
- 
-     </div>
-     <div class="dropdown">
-       <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-         <div class="bar1"></div>
-         <div class="bar2"></div>
-         <div class="bar3"></div>
-       </div>
-       <div id="myDropdown" class="dropdown-content">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">academics</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a  class="header_btn research_btn">research</a>
-           <ul id="mobile_research_dropDown" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
-     </div>
-   </div>
+    <div class="header_logo">
+      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    </div>
+    <div class="header_menu">
+      <div class="header_options">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">courses</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul
+            class="research_drop_down"
+            id="research_drop_down"
+            style="display: none"
+          >
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn ">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">academics</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul id="mobile_research_dropDown" style="display: none">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
     
     <div class="body_view body_faculty">
         <div class="faculty_details_container" id="faculty-details-container">
           <div class="faculty_details_container_logo">
             <img src="../assets/faculty/dr_maria_j.png" alt="" srcset="">
             <strong>Dr. Maria J</strong>
-            <span>Qualification- BASLP, MASLP, M.A (Ling), Ph.D (Linguistics (Interdisciplinary)) <br> Designation- Associate Professor (SLP) / Academic Co-ordinator (B.ASLP) <br> CRR No.- A34685</span>
+            <span>Qualification  - BASLP, MASLP, M.A (Ling), Ph.D (Linguistics (Interdisciplinary)) <br><br> Designation  - Associate Professor (SLP) / Academic Co-ordinator (B.ASLP) <br><br> CRR No  - A34685</span>
           </div>
           <div class="faculty_details_container_about">
             <div class="faculty_about_bar">About</div>
             <div>Dr. Maria J, presently an Associate Professor in the department of Speech – Language Pathology and the Academic Co-ordinator for the B.ASLP course conducted at MERF-ISH has an experience of over 9 years in the field. Her major area of interest lies in the field of Discourse Analysis in various Communication Disorders, exploring innovative teaching methods and developing Indianized Assessment materials, Intervention manuals and Tele-Therapy Materials.</div>
+            
             <div>
-              <strong>Work Experience</strong>
+              <strong class="testimonial_faculty_title">PG Dissertation:</strong>
+              <span>
+                An Intervention Programme for Improving Phonological Sensitivity in Children – Dissertation submitted to The TN DR MGR Medical University – June 2013
+              </span>
+            </div>
+
+            <div>
+              <strong class="testimonial_faculty_title">PhD Thesis</strong>
+              <span>
+                ‘Discourse Analysis in Individuals with Neuro-communication Disorders – A Compilation Study’ submitted at Department of CAS Linguistics; Annamalai University – Awarded Ph.D degree in January 2023.
+              </span>
+            </div>
+            
+            
+            
+            
+            <div>
+              <strong class="testimonial_faculty_title">Work Experience</strong>
               <ul>
-                <li>Associate Professor - MERF Institute of Speech and Hearing (November 2021 – till date)
+                <li><strong>Associate Professor </strong>- MERF Institute of Speech and Hearing (November 2021 – till date)
                 </li>
-                <li>Assistant Professor / Clinical In charge - MERF Institute of Speech and Hearing (October 2019 – November 2021)</li>
-                <li>Private Practice – Home Visits and online services for Stroke Clients (January 2019 – December 2021)</li>
-                <li>Chitra Speech and Hearing Clinic (January 2017 – December 2019)-Designation:- Consultant Speech Language Pathologist</li>
-                <li>Madras ENT Research Foundation (MERF) (July 2015 – April 2016) - Designation:- Assistant Professor (Feb 2016 – April 2016), Lecturer & Clinical coordinator (July 2015 – Feb 2016)
+                <li><strong>Assistant Professor / Clinical In charge</strong> - MERF Institute of Speech and Hearing (October 2019 – November 2021)</li>
+                <li><strong>Private Practice</strong> – Home Visits and online services for Stroke Clients (January 2019 – December 2021)</li>
+                <li><strong>strongChitra Speech and Hearing Clinic (January 2017 – December 2019)</strong> - <br> &nbsp;&nbsp; Designation:- Consultant Speech Language Pathologist</li>
+                <li><strong>Madras ENT Research Foundation (MERF) (July 2015 – April 2016)</strong> - <br> &nbsp;&nbsp; Designation:- Assistant Professor (Feb 2016 – April 2016), Lecturer & Clinical coordinator (July 2015 – Feb 2016)
                 </li>
-                <li>SRM Medical College (2013 - 2015) - Designation:- Grade I Audiologist and Speech-Language Pathologist (April 2014 – July 2015) Grade II Audiologist and Speech- Language Pathologist (November 2013 – April 2014)</li>
+                <li><strong>SRM Medical College (2013 - 2015) </strong>- <br> &nbsp;&nbsp; Designation:- <br> &nbsp;&nbsp;&nbsp;&nbsp; <strong>Grade I</strong> Audiologist and Speech-Language Pathologist (April 2014 – July 2015) <br> &nbsp;&nbsp;&nbsp;&nbsp;<strong> Grade II  </strong>Audiologist and Speech- Language Pathologist (November 2013 – April 2014)</li>
+                
+              </ul>
+            </div>
+
+            <div>
+              <strong class="testimonial_faculty_title">Subjects of Interest</strong>
+              <ul>
+                <li>Linguistics
+                </li>
+                <li>Adult Language Disorders
+                </li>
+                <li>Childhood Language Disorders
+                </li>
+                <li>Motor Speech Disorders
+ </li>
+                <li>Speech Sound Disorders
+
+                </li>
+                <li>Speech and Language Processing
+                </li>
                 
               </ul>
             </div>
             <div>
-              <strong>Conferences / workshops attended</strong>
+              <strong class="testimonial_faculty_title">Conferences / workshops attended</strong>
               <ol>
                 <li>2nd International Webinar on Dementia and Dementia Care, Scientex Conferences, November 2022
                 </li>
@@ -107,6 +181,72 @@
                 <li>41st ISHA CON, January 2009</li>
             </ol>
             </div>
+
+
+            <div>
+              <strong class="testimonial_faculty_title">Published Articles:
+
+              </strong>
+              <ol>
+                <li>Procedural Discourse production in children with Specific Learning Disorder (SLD); Journal of Child Language Acquisition and Development – JCLAD
+
+                </li>
+                <li>Discourse Analysis in Tamil Speaking Individuals with Parkinson’s Disease; International Journal of Science and Healthcare Research; DOI: <a href=" https://doi.org/10.52403/ijshr.20211003"> https://doi.org/10.52403/ijshr.20211003</a> ; Vol.6; Issue: 4; Oct.-Dec. 2021; Website: <a href="https://ijshr.com/">ijshr.com</a>; ISSN: 2455-7587</li>
+                <li>Conversational Discourse Analysis In Tamil Speaking Individuals – A Comparison Across Age Range; International Journal of Research and Analytical Reviews (IJRAR) <a href="https://www.ijrar.org/">www.ijrar.org</a> September 2021, Volume 8, Issue 3; (E-ISSN 2348-1269, P- ISSN 2349-5138)
+                </li>
+                <li>Macro linguistic and Micro linguistic Performance in Individuals with Parkinson’s Disease - A Comparison Based on Duration after Onset; Journal of Neurosurgery Imaging and Techniques JNSIT, 6(S1): 10 <a href="https://www.scitcentral.com/">www.scitcentral.com</a>; April 2021
+                </li>
+                <li>Macrostructural and microstructural discourse abilities in children with hearing impairment; Journal of Child Language Acquisition and Development – JCLAD Vol: 9 Issue: 1 176-188, 2021, March
+                </li>
+                <li>Communication Challenges and Implementation of Tele-practice for Children with Hearing Impairment during Lockdown - A Parental Perspective; Journal of Clinical and Diagnostic Research. 2021 Apr, Vol-15(4): MC06-MC11
+                </li>
+                <li>Efficacy of vocabulary bombardment in a client with Broca's aphasia - a single case study. Volume - 9 | Issue - 12 | December - 2020 | PRINT ISSN No. 2277 - 8179 | DOI : <a href="https://www.worldwidejournals.com/international-journal-of-scientific-research-(IJSR)/">10.36106/ijsr</a> 
+                </li>
+                <li>Autism spectrum disorder and lockdown – a parental survey on communication and related aspects - The International Journal of Indian Psychology ISSN 2348-5396 (Online) | ISSN: 2349-3429 (Print), Volume 8, Issue 4, Oct- Dec, 2020
+                </li>
+                <li>Development of Bilingual Ambiguity Resolution – IJSRP – July 2020, Volume 10, Issue 7
+                </li>
+            </ol>
+            </div>
+            <div>
+              <strong class="testimonial_faculty_title">Ongoing Researches
+
+              </strong>
+              <ol>
+                <li>Discourse Analysis in children with Specific Learning Disorder
+
+                </li>
+                <li>Semantic Feature Production in neuro-typical individuals across age range
+                </li>
+                <li>Lexical diversity and Grammatical complexity in individuals with Post Stroke Aphasia
+                </li>
+                <li>Morphological Analysis using discourse samples of Individuals with Fluent and Non-Fluent Aphasia
+                </li>
+                <li>Discourse Performance in Individuals with Parkinson’s Disease using Structured Stimuli
+                </li>
+              
+            </ol>
+            </div>
+            <div>
+              <strong class="testimonial_faculty_title">Dissertations Guided:
+
+              </strong>
+              <ol>
+                <li>Microstructural Analysis of Aided Vs Unaided Narratives in individuals with Post Stroke Aphasia – A comparative study – (Ms. Nikhila) 2022
+
+                </li>
+                <li>Macrostructural and Microstructural Analysis in Individuals with Parkinson’s Disease – (Ms. Yuva Yoga Shree) 2022
+                </li>
+                <li>Semantic Feature Production – A comparison between Tamil Speaking Young Adults and Geriatrics (Ms. Shruti R) 2022
+                </li>
+                <li>Development and Validation of Cognition and Language Assessment tool in Tamil (CLAT-T) for Adults and Geriatrics – (Mr. Akshay Krishnan) 2021
+                </li>
+                <li>Macrolinguistic and Microlinguistic Performance of Discourse Abilities in Tamil Speaking Adults and Geriatrics – Across Age range – (Ms. Kousika Devi Baskar) 2021
+                </li>
+            </ol>
+            </div>
+
+
           </div>
         </div>
 

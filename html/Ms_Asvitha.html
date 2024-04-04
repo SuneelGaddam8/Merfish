@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ms. Asvitha</title>
     <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body class="container">
   <div class="header_nav">
@@ -14,61 +16,95 @@
      </div>
    </div>
    <div class="header">
-     <div class="header_logo">
-       <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
-     </div>
-     <div class="header_menu">
-       <div class="header_options">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">courses</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a class="header_btn research_btn">research</a>
-           <ul class="research_drop_down" id="research_drop_down" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
- 
- 
-     </div>
-     <div class="dropdown">
-       <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-         <div class="bar1"></div>
-         <div class="bar2"></div>
-         <div class="bar3"></div>
-       </div>
-       <div id="myDropdown" class="dropdown-content">
-         <a href="../index.html"  class="header_btn ">home</a>
-         <a href="./about.html"  class="header_btn header_active">about us</a>
-         <a href="./management.html"  class="header_btn">management</a>
-         <a href="./academics.html"  class="header_btn">academics</a>
-         <a href="./admission.html"  class="header_btn">admission</a>
-         <a href="./gallery.html"  class="header_btn">gallery</a>
-         <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
-           <a  class="header_btn research_btn">research</a>
-           <ul id="mobile_research_dropDown" style="display: none;">
-             <li><a href="./ResearchAudiology.html">Audiology</a></li>
-             <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-             <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-           </ul>
-         </div>
-         <a href="./faculty.html" class="header_btn">faculty</a>
-         <a href="./clinicApp.html"  class="header_btn">clinic app</a>
-         <a href="./testimonial.html"  class="header_btn">Testimonial</a>
-         <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for Admission</button></a>
-       </div>
-     </div>
-   </div>
+    <div class="header_logo">
+      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    </div>
+    <div class="header_menu">
+      <div class="header_options">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">courses</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul
+            class="research_drop_down"
+            id="research_drop_down"
+            style="display: none"
+          >
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html" class="header_btn">home</a>
+        <a href="./about.html" class="header_btn ">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">academics</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+        <a href="./gallery.html" class="header_btn">gallery</a>
+        <div
+          class="research_div"
+          onclick="showResearchDropDown()"
+          onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()"
+          style="width: fit-content"
+        >
+          <a class="header_btn research_btn">research</a>
+          <ul id="mobile_research_dropDown" style="display: none">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li>
+              <a href="./ResearchSLP.html">Speech Language Pathology</a>
+            </li>
+            <li>
+              <a href="./ListOfDissertations.html"
+                >List of Dissertations Done</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn header_active">faculty</a>
+        <a href="./clinicApp.html" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"
+          ><button class="button_style apply_admission">
+            Apply Now for Admission
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
 
 
     <div class="body_view body_faculty">
@@ -76,20 +112,21 @@
             <div class="faculty_details_container_logo">
                 <img src="../assets/faculty/Ms. Asvitha.png" alt="" srcset="">
                 <strong>Ms. Asvitha</strong>
-                <div>Qualification- MASLP <br> Designation- Lecturer/Clinical supervisor <br>CRR No.- A68791</div>
+                <div>Qualification  - MASLP <br><br> Designation   - Lecturer/Clinical supervisor <br><br>CRR No.- A68791</div>
       
               </div>
               <div class="faculty_details_container_about">
                 <div class="faculty_about_bar">About</div>
                 <div>Mr. Mathew Nishanth, with an experience of 2 years in the field has been involved in conducting Camps at various places in Tamil Nadu which is organized by MERF-ISH. He is also incharge of various students’ welfare activities at the institute. He is exclusively involved in New Born Hearing Screening. His major area of interest is in Electrophysiological tests, to explore more on ANSD, and Vestibular assessment.</div>
-                <div>
-                  <strong>ACHIEVEMENTS / RESEARCH PAPERS PRESENTED</strong>
-                  <ul><li>CIGICON-2022 Tone and speech evoked ESRT in individuals with Cochlear Implants-CIGICON in 2022</li>
-                <li>Won 3rd prize CIGICON-2022 Quality of sound in post -lingual cochlear implantees</li></ul>
-                </div>
                
                 <div>
-                    <strong>Conferences / workshops attended</strong>
+                  <strong class="testimonial_faculty_title">PG Dissertation:</strong>
+                  <ul>
+                    <li>Relationship between tone and speech evoked ESRT measured in both ipsilateral and contralateral ear</li>  
+                  </ul>
+                </div>
+                <div>
+                    <strong class="testimonial_faculty_title">Conferences / workshops attended</strong>
                     <ul>
                       <li>CIGICON, 2022</li>
                      
@@ -97,19 +134,44 @@
                     </ul>
                   </div>
                   <div>
-                    <strong>Ongoing Researches</strong>
+                    <strong class="testimonial_faculty_title">ACHIEVEMENTS / RESEARCH PAPERS PRESENTED</strong>
+                    <table class="research_audiology_table" style="width: 100%">
+                      <thead>
+                        <th>CONFERENCE ATTENDED	</th>
+                        <th>YEAR	</th>
+                        <th>TITLE OF THE PAPER PRESENTED	</th>
+                        <th>AWARD
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>CIGICON</td>
+                          <td>2022</td>
+                          <td>Tone and speech evoked ESRT in individuals with Cochlear Implants	</td>
+                          <td>-
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>CIGICON</td>
+                          <td>2022</td>
+                          <td>Quality of sound in post -lingual cochlear implantees	</td>
+                          <td>3rd prize
+
+                          </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                  <div>
+                    <strong class="testimonial_faculty_title">Ongoing Researches</strong>
                     <ul>
                       <li>Relationship between ECAP,ESRT with behavioral MAP in individual with cochlear implants</li>
                      <li>Tone and speech evoked ESRT in individuals with cochlear implants</li>
                      <li>Electrically evoked Compound Action Potential in different cochlear regions</li>
                     </ul>
                   </div>
-                  <div>
-                    <strong>PG Dissertation:</strong>
-                    <ul>
-                      <li>Relationship between tone and speech evoked ESRT measured in both ipsilateral and contralateral ear</li>  
-                    </ul>
-                  </div>
+                  
               </div>
         </div>
 

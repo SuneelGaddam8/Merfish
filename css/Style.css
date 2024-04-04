@@ -3060,20 +3060,21 @@ margin-top: 300px;
   border-right: 1px solid black;
   line-height: 20px;
 }
+
 .faculty_details_container_logo img {
   width: 180px;
   height: 200px;
 }
 .faculty_details_container_logo span {
-  width: 150px;
-  text-align: center;
+  width: 270px;
+  text-align: left;
 }
 .faculty_details_container_about {
   width: 800px;
   display: flex;
   flex-direction: column;
-  font-size: 13px;
-  gap: 5px;
+  font-size: 10px;
+  gap: 20px;
   padding: 10px;
   padding-left: 20px;
   line-height: 25px;
@@ -3084,6 +3085,10 @@ margin-top: 300px;
   background-color: var(--bg-orange);
   color: var(--bg-white);
   text-align: center;
+}
+.testimonial_faculty_title{
+  font-size: 13px ;
+  text-decoration: underline;
 }
 @media screen and (max-width: 1160px) {
   .faculty_details_container_logo,
@@ -3102,15 +3107,19 @@ margin-top: 300px;
 /* research audiology style components */
 .research_audiology_table{
  width: 95%;
- font-size: 13px;
+ font-size: 10px;
  border-collapse: collapse;
 }
 .research_audiology_table td,.research_audiology_table th{
   border: 1px solid black;
   padding: 8px;
-  text-align: center;
+  text-align: left;
   min-width: 50px;
-  
+  max-width: 300px;
+}
+.research_audiology_table th{
+  text-align: center;
+  text-transform: capitalize;
 }
 .research_audiology_table tbody tr td a{
   text-decoration: none;
@@ -3121,10 +3130,7 @@ margin-top: 300px;
   line-height: 25px;
   font-size: 0.7rem;
 }
-.research_audiology_table tbody tr td:nth-child(4){
-  text-align: left;
-  max-width: 400px;
-}
+
 .research_audiology_table tbody tr td:nth-child(1){
   text-align: center;
 }
@@ -3137,4 +3143,8 @@ margin-top: 300px;
   color: brown;
   text-decoration: underline;
   padding: 10px;
+}
+.research_audiology_table td li{
+  margin-left: 10px;
+  text-align: left;
 }
