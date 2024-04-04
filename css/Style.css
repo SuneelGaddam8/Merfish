@@ -2796,6 +2796,7 @@ margin-top: 300px;
   border-radius: 10px;
   background-color: #ecf3f3;
 }
+
 @media screen and (max-width:595px) {
   .faculty-image-card {
     width: 260px;
