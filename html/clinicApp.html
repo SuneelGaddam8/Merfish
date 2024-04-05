@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merf-ish</title>
+  <link rel="stylesheet" href="../css/Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body class="container">
+  <div class="header_nav">
+    <div></div>
+    <div>
+      <span><a href="./Contact.html">Contact</a></span>
+    </div>
+  </div>
+  <div class="header">
+    <div class="header_logo">
+      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    </div>
+    <div class="header_menu">
+      <div class="header_options">
+        <a href="../index.html" class="header_btn ">home</a>
+        <a href="./about.html" class="header_btn ">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">academics</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+
+        <a href="./gallery.html" class="header_btn">gallery</a>
+         <a href="./clinicApp.html" class="header_btn header_active">clinical
+          Services</a>
+
+          <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
+            <a class="header_btn research_btn">research</a>
+            <ul class="research_drop_down" id="research_drop_down" style="display: none;">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
+            <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn">faculty</a>
+        <a href="https://techietet.com/merf/clinic/#/login" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for
+            Admission</button></a>
+      </div>
+
+
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html" class="header_btn ">home</a>
+        <a href="./about.html" class="header_btn ">about us</a>
+        <a href="./management.html" class="header_btn">management</a>
+        <a href="./academics.html" class="header_btn">academics</a>
+        <a href="./admission.html" class="header_btn">admission</a>
+
+        <a href="./gallery.html" class="header_btn">gallery</a>
+         <a href="./clinicApp.html" class="header_btn">clinical
+          Services</a>
+
+        <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()"
+          onmouseenter="showResearchDropDown()" style="width: fit-content;">
+          <a class="header_btn research_btn">research</a>
+          <ul id="mobile_research_dropDown" style="display: none;">
+            <li><a href="./ResearchAudiology.html">Audiology</a></li>
+            <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
+            <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
+          </ul>
+        </div>
+        <a href="./faculty.html" class="header_btn">faculty</a>
+        <a href="https://techietet.com/merf/clinic/#/login" class="header_btn">clinic app</a>
+        <a href="./testimonial.html" class="header_btn">Testimonial</a>
+        <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for
+            Admission</button></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="body_view">
+    <div class="main_body main_body_bg_color">
+      <div class="clinical_service_views">
+        <h3>Clinic Services</h3>
+        <div class="clinical_service_view_cards">
+          <div class="clinical_sevice_card active_clinical_service " onclick="viewActiveClinicalService('1')">Centre for
+            Hearing Evaluation, Conservation & Restoration</div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('2')">Center for Auditory habilitation
+          </div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('3')">Speech and Language Pathology
+          </div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('4')">Hearing Implant Clinic</div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('5')">Child language clinic</div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('6')">Voice care clinic</div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('7')">Neuro clinic</div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('8')">Fluency enhancement clinic</div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('9')">Community based Hearing Health
+            Care</div>
+          <div class="clinical_sevice_card " onclick="viewActiveClinicalService('10')">Vestibular/ Balance Clinic</div>
+        </div>
+        <div class="clinical_service_details ">
+          <div class="clinical_service_details_title">Centre for Hearing Evaluation, Conservation & Restoration</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              Hearing restoration is a process of restoring hearing in patients (very young children to adults- any age
+              group) even with total hearing loss. MERF ISH is one of the leading centers for hearing restoration in the
+              world. The clinic functions at different levels of assessment, treatment and management of disorders
+              related hearing. The “state of the art” infrastructure with cutting-edge technology symbiozed with
+              customized protocols, uncompromised ethics, work culture and professional expertise makes this clinic
+              unique and one of the best in the world. Students and patients from all over the world visit MERF and MERF
+              ISH for both learning and treatment. MERF & MERF ISH has established implantation centers across India and
+              rest of the world
+              <br>First surgery for hearing restoration was performed in 1997 in MERF using Cochlear Implant, since then
+              MERF has performed several thousands of Cochlear Implants to restore hearing in very young children and
+              adults with hearing loss. MERF and MERF ISH have pioneered the art of hearing restoration in all kinds of
+              anomalies causing hearing loss from moderately severe to profound degree. This made MERF & MERF ISH as
+              center of excellence in hearing restoration. MERF & MERF ISH has been the trend setter in hearing
+              restoration in this part of the world
+            </p>
+            <ul>
+              <li>First to perform and publish CI in older pre-lingual with JLN syndrome, since then several patients
+                with JLN syndrome were restored with hearing.</li>
+              <li>In India, first to perform, introduce and demonstrate a new technology and technique using “Contour
+                Implant”</li>
+              <li>First to restore hearing in patients with assymetric hearing loss.</li>
+              <li>First in India and South & South East Asia to perform Auditory Brainstem Implant to restore hearing in
+                patients with NF2.</li>
+              <li>First in Asia to perform Auditory Brainstem Implant (ABI) in children with absent inner ear/nerve, and
+                now the pioneering center for ABI in children. MERF ISH & MERF is the third biggest ABI center in the
+                world. Students of MERF ISH are the only students to have opportunity to observe, earn and experience
+                this most sophisticated procedure. This experience and exposure makes them one of the sought after
+                professionals in the country. MERF ISH has produced by far the best results in children with ABI</li>
+            </ul>
+            <br>
+            <strong>Newborn Hearing Screening:</strong><br><span>MERF ISH has established Universal Newborn Hearing
+              Screening programs in many hospitals in Chennai and other cities in India. MERF ISH UNHS program is
+              customized to suite the population, culture and the system to meet the standards in NHS.
+              <br><br><strong>Facilities for Diagnosis of Hearing Disorders:</strong>
+              <span>
+                MERFISH is equipped with all the cutting edge technology to assess and evaluate the degree of hearing
+                loss , type of hearing loss and auditory disorders.
+                <br><br>
+                <strong>Subjective Test:Psycho acoustic test:-</strong> Pure Tone Audiometry ( BOA, Play Audiometry,
+                VRA, Functional gain assessment).,
+                <br>
+                <br>
+                <strong>Objective Test:Electrophysiological Test:</strong> ECochG, Acoustic ABR, Electrically Evoked ABR
+                -Trans tympanic/Promontary stimulation, Intra Cochlear Electro-Cochlear Graphy, Cortical Auditory
+                Response)
+                <br><br>
+                <strong> Physiological Test: </strong>( Wide band Tympanometry, OAE, Acoustic & Non-acoustic
+                reflexometry)
+              </span>
+            </span>
+            <br><br>
+            <strong>Hearing Aid Fitting /Optimization:</strong><br>
+            <span>Hearing Aid Optimization is an art which is blended with data, technique, procedure, life style and
+              counseling to make the best out of the hearing aids. MERF ISH has the infrastructure, expertise and
+              technology to fit the hearing to suit your needs. We are equipped with the latest technology hearing aid
+              analyzer which can assess the functioning of the hearing in all parameters including in-situ measurement.
+              At the same time the information from the analyzer will provide adequate information to optimize the
+              parameters to suit your hearing needs. MERF ISH also has other measures to assess the benefit of the
+              hearing aid using both psycho acoustical, electrophysiological data. Cortical Auditory Evoked Potentials
+              (HEAR Lab) developed at National Acoustic Laboratory (NAL), Australia is used to verify the hearing aid
+              benefit in very young children, based on the data the hearing aid can be programmed adequately to suit the
+              need of the child.</span>
+            <br><br>
+            <span>HEAR Lab is a fantastic tool used widely in many countries, MERF IS is the only institute which ahs
+              HEAR Lab in India.</span> <br><br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Center for Auditory habilitation:</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              This is first and one of the best Center for re/habilitating children and adults with Cochlear Implant in
+              India. This unique center was established in 2000, since then this had been the referral and training
+              center for many teachers across the globe. Very active center with annual patient load of 150 and total
+              number of therapy session per year around 14,500. The quality control of the center is monitored by
+              experts from USA and Europe.
+              <br>Auditory habilitation refers to the plan to improve the communication with younger children who have
+              not yet attained spoken language following hearing loss. Rehabilitation focuses on restoring a skill of
+              listening which was not acquired due to hearing loss. In children the skills may not be there so it has to
+              be taught, hence it is called habilitation.
+            </p>
+            <br>
+            <br>
+            <strong>Habilitation includes:</strong>
+            <ul>
+              <li>Finding a way for your child to communicate</li>
+              <li>Learning Speech and language</li>
+              <li>Learning to listen to different sounds</li>
+              <li>Training on how to take care of hearing aids and other amplification devices</li>
+
+            </ul>
+            <br>
+            <p>The goal of auditory rehabilitation clinic at MERF– ISH is not only to focus on child rehabilitation but
+              also rehabilitation for adolescents and adults both prelingual and post lingual. <br><br>The services are
+              provided by specially trained and skilled auditory habiltationist who are trained under different domains
+              to treat children, adolescents and adults and those children with complex needs who have undergone
+              <br><br>MERF ISH is the first center to establish satellite auditory habilitation center in India to cater
+              to children across the state of Tamil Nadu. MERF ISH & MERF has developed a sustainable and successful
+              model of re/habilitation for the developing nations; this model is well appreciated by experts all over
+              the world and attracted invitation to present in many international meetings, forums and recently in WHO.
+              Satellite centers across Tamil Nadu are located in Coimbatore, Tiruchirapally, Madurai and also
+              Tirunelveli, which also have experienced habilitationist’s who provide firsthand habilitation service.
+              <br><br>All the clients are assessed by a speech-language pathologist and auditory habilitationist in one
+              to one sessions and all consultation are done on appointment basis.
+            </p> <br><br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Speech and Language Pathology</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              MERF Institute of Speech and Hearing (P) Ltd. is rendering services for individuals with speech and
+              language difficulties. The Speech and Language clinic offers speech-language pathology services for all
+              ages with communication difficulties. We work throughout the week from Monday to Saturday for 8.30 am to
+              8.00 pm. The clinic provides diagnostics and therapeutic services for these individuals. During the
+              initial visit an in depth speech and language assessment is carried out. Once the diagnostic assessment is
+              completed, patient will be enrolled for therapeutic program on appointment basis. We are equipped with the
+              most advanced state of art testing equipment and sophisticated software to provide customized treatment to
+              every patient. We offer individual and group speech and language therapy.
+            </p>
+            <br>
+            <br>
+            <strong>Speech and language clinic also runs special clinic for specific speech and language problems such
+              as;</strong>
+            <ul>
+              <li>Child language clinic</li>
+              <li>Voice care clinic</li>
+              <li>Fluency enhancement clinic</li>
+              <li>Neuro clinic</li>
+              <li>Swallowing clinic</li>
+            </ul>
+            <br>
+            <p>The goal of auditory rehabilitation clinic at MERF– ISH is not only to focus on child rehabilitation but
+              also rehabilitation for adolescents and adults both prelingual and post lingual. <br><br>The services are
+              provided by specially trained and skilled auditory habiltationist who are trained under different domains
+              to treat children, adolescents and adults and those children with complex needs who have undergone
+              <br><br>MERF ISH is the first center to establish satellite auditory habilitation center in India to cater
+              to children across the state of Tamil Nadu. MERF ISH & MERF has developed a sustainable and successful
+              model of re/habilitation for the developing nations; this model is well appreciated by experts all over
+              the world and attracted invitation to present in many international meetings, forums and recently in WHO.
+              Satellite centers across Tamil Nadu are located in Coimbatore, Tiruchirapally, Madurai and also
+              Tirunelveli, which also have experienced habilitationist’s who provide firsthand habilitation service.
+              <br><br>All the clients are assessed by a speech-language pathologist and auditory habilitationist in one
+              to one sessions and all consultation are done on appointment basis.
+            </p> <br><br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Hearing Implant Clinic:</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              <strong>Cochlear Implant:</strong> <br>
+              Cochlear Implant (CI) is a bio-electronic device implanted in the inner ear to restore hearing in children
+              and adult with permanent hearing loss of various degrees. CI is recommended only for patients who do get
+              adequate functional benefit from conventional hearing aids.
+
+              <br>
+              MERF and MERF ISH are forerunner in this treatment since 1997. MERF ISH has revolutionized the CI
+              treatment in India and SAARC Countries. Prof.Mohan Kameswaran and Prof.Ranjith Rajeswaran has developed
+              the center as one of the most sophisticated with “state of the art” infra-structure with the latest
+              cutting edge technology and impeccable serve to the patients. The Model of MERF & MERF ISH is been adopted
+              in any developing countries.One of the biggest and busiest Cochlear Implant clinic with at least 250 to
+              300 cochlear implants every year. It has the best facilities to manage and treat the most challenging with
+              cochlear implants. MERF & MERF ISH is the first to develop a comprehensive CI center, the protocols and
+              procedures developed in this clinic are very unique and customized to the needs of the patient and their
+              disorders., this was possible with experience, precision in clinical care, protocols developed based on
+              evidences & research , ethics and extending the boundaries in hearing health care. MERF & MERF ISH has
+              been the trend setter in hearing restoration in this part of the world. The mission is “Hearing for All”-
+              creating a society free of deafness.
+              <br><br> MERF & MERF ISH are the first to perform hearing preservation surgery with Cochlear Implant.
+            </p>
+            <strong>Cochlear Implants are performed for children and Adults with:</strong>
+            <ul>
+              <li>Bilateral Severe to Profound Hearing Loss</li>
+              <li>Auditory Neuropathy Spectrum Disorder</li>
+              <li>Single Sided Deafness</li>
+              <li>Bilateral Assymmetric Hearing Loss</li>
+              <li>Hearing Preservation Technique for Ski sloping hearing loss.</li>
+
+            </ul>
+            <br>
+            <p>
+              <strong>Auditory Brainstem Implant:</strong><br>
+
+
+              ABI is the most advanced sophisticated and challenging procedure in hearing restoration. The TEAM is the
+              most experienced team in the world. On an average almost 5 to 7 children undergo ABI in MERF & MERF ISH
+              per year, making us the third biggest ABI clinic in the world. We have patients from all over the world
+              undergoing ABI since this is the only center in Asia with best outcomes. The Government of Tamil Nadu
+              under the “The Chief Minister Comprehensive Health Insurance Scheme” approved MERF & MERF ISH for
+              performing ABI.
+              <br><br>
+              Professionals and students from all over the world visit MERF & MERF ISH to learn the procedure, since
+              MERF ISH is the only teaching institution with ABI clinic, the students of MERF ISH are well exposed &
+              experienced with this procedure, making them one of the sought after professionals in the country.
+              <br><br>
+              <strong>Implantable Bone Conduction Hearing Devices (IBCHD):</strong> <br>
+              Bone Conduction hearing devices are implanted in children and adults with atresia of external ear/ear
+              canal, Single Sided Deafness and active middle ear diseases were conventional hearing aids cannot be used.
+              We have a large series of patients with IBCHD. MERF & MERF ISH has very unique protocols to assess these
+              patients and optimize hearing for these individuals.
+              <br><br>
+              <strong>Totally Implantable Hearing Device:</strong> <br>MERF & MERF ISH are the first to try the Totally
+              Implantable Hearing Device in adults with permanent hearing loss.
+            </p> <br><br>
+
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Child language clinic</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              The child language clinic at MERF-ISH is dedicated exclusively to the diagnosis and treatment of child
+              language disorders. The goal of child language clinic is to understand and delineate various child
+              language disorders and its associated conditions. The clinic also aims to provide early intervention and
+              to improve the child’s communication skills with the help of qualified and skilled clinicians.
+              <br>The clinic has sophisticated and child friendly cubicles and materials which will help the children to
+              improve their communication skills.
+            </p>
+            <br>
+            <br>
+            <strong>Services offered:</strong>
+            <ul>
+              <li>Early identification</li>
+              <li>Early intervention</li>
+              <li>Parent training</li>
+              <li>Home training</li>
+
+            </ul>
+            <br><br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Voice care clinic</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              The voice care clinic is dedicated exclusively to the diagnosis and treatment of laryngeal and voice
+              disorders. The goal of the voice care clinic is to understand and improve its quality and care.
+              <br>The voice evaluation typically includes comprehensive perceptual and acoustic evaluation using state
+              of the art voice analyzing software (Computerized speech Lab, PRAAT, Dr. Speech) Treatment options are
+              tailored to the individual patient needs to correct vocal misuse and overuse behaviors. Services are
+              available across different age groups.
+            </p>
+            <br>
+            <br>
+            <strong>Services offered:</strong>
+            <ul>
+              <li>Voice evaluation</li>
+              <li>Voice therapy</li>
+              <li>Counseling on vocal hygiene tips</li>
+              <li>Voice care for professional voice users (Singers, teachers, etc.)</li>
+              <li>Voice awareness campaigns/programs</li>
+
+            </ul>
+            <br><br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Neuro clinic</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              The neuro clinic provide dedicated services for the assessment and management of various congenital and
+              acquired neurological communication disorders which includes cerebral palsy, childhood Apraxia of speech,
+              adult language disorders, motor speech disorders and dysphagia. The services are provided with the help of
+              well trained speech language pathologist with the use of highly sophiscated materials like Western Aphasia
+              Battery, Frenchey Dysarthria Assessment, Manipal Manual of Cognitive Linguistic Assessment, Manipal Manual
+              Of Swallowing Assessment, Minimental State Examination, Quick Neurological Screening test
+            </p>
+            <br>
+            <br>
+            <strong>Services offered:</strong>
+            <ul>
+              <li>In depth assessment and diagnosis of various neuro communication disorders.</li>
+              <li>Early intervention for various neuro communication disorder.</li>
+              <li>Caretaker training.</li>
+              <li>Home training</li>
+
+            </ul>
+            <br>
+            <br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Fluency enhancement clinic</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              The fluency enhancement clinic provides services for individuals (children and adult) with fluency
+              disorders such as stuttering, cluttering, neurogenic and psychogenic stuttering. These disorders are
+              assessed and diagnosed using standardized test materials (SSI, SPI, OASES, CALMS rating scale, etc).
+              Subsequent therapy protocols are framed based upon the client’s diagnosis.
+            </p>
+            <br>
+            <br>
+            <strong>Services offered:</strong>
+            <ul>
+              <li>Fluency evaluation</li>
+              <li>Fluency therapy</li>
+              <li>Counseling</li>
+              <li>Stuttering self-support group</li>
+              <li>Stuttering awareness</li>
+            </ul>
+            <br>
+            <br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Community based Hearing Health Care:</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              MERF & MERF ISH have a very active Community Medicine Department were at least 300 children and adults are
+              screened, diagnosed and treated with all types ENT diseases and communication disorders. Students have the
+              opportunity to visit villages, were no health awareness and facilities are available. The students are
+              accompanied by professionals, were they learn the methods of screening and managing patients were the
+              facilities are very minimal. As the part of the visit they also do awareness program to the people in the
+              village.
+              <br>As a result we have restored hearing for more than 1500 children living in villages, were there is no
+              medical facilities are available. Now these children have their normal hearing, age matched speech and
+              language skills and leading a normal life. All most all the kids are in normal school, few older children
+              are in universities performing their higher educations. Some of our children who received CI in early
+              years are working Government sector, Private sector, Multi-National Companies And few have them have their
+              own establishment.
+            </p>
+            <br>
+            <br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+       
+        <div class="clinical_service_details clinical_service_details_hide">
+          <div class="clinical_service_details_title">Vestibular / Balance Clinic</div>
+          <br>
+          <div class="clinical_service_details_info">
+            <p>
+              The Vestibular system is one of the integral systems which helps in the maintenance of balance in the
+              three dimensional space. There are various peripheral and central disorders of the vestibular system that
+              leads to various symptoms like imbalance, vertigo and dizziness. Dizziness is a symptom that can vary from
+              mild unsteadiness to a severe whirling sensation accompanied by nausea and vomiting.  The treatment of
+              dizziness depends on its cause(s) and may consist of medicine, surgery, counseling, and/or rehabilitative
+              measures. After the diagnosis is made, patients are managed with a wide variety of medical, surgical,
+              and/or rehabilitative treatments. The clinic is headed by Dr SathyaMurali and a team of doctors and
+              skilled audiologists perform the tests. The goal of the vestibular / balance clinic at MERF is to work
+              with the family, primary health care provider, other professionals and also with the patient to improve
+              their quality of life and help them to return to their maximum level of activity. The vestibular / balance
+              clinic consists of the state of the art facility for appropriate diagnosis and management of these
+              conditions. The vestibular test battery carried out here consists of the subjective tests and objective
+              tests. The procedures carried out include Vestibular Evoked Myogenic Potentials (VEMP), Videonystomography
+              (VNG), Head Impulse Test (vHIT) and caloric testing.Patients are diagnosed and treated effectively in the
+              most cost-efficient manner possible.The test results are also compared with the other audiological
+              findings to give a holistic treatment to the patient.
+            </p>
+            <br>
+            <br>
+            <div class="clinical_service_details_info_images">
+              <img src="../assets/clinical_logos/child_discussion.png" alt=""><img
+                src="../assets/clinical_logos/treatMent.png" alt=""><img
+                src="../assets/clinical_logos/explain_child.png" alt=""><img
+                src="../assets/clinical_logos/parent-discussion.png" alt=""><img
+                src="../assets/clinical_logos/system_operator.png" alt=""><img>
+            </div>
+          </div>
+        </div>
+       
+
+      </div>
+    </div>
+
+    <div class="footer_view">
+      <div class="footer_view_home">
+        <div class="footer_view_service">
+          <div class="footer_view_logo">
+            <img src="../assets/merfsh-logo.png" alt="">
+          </div>
+          <div class="footer_view_options">
+            <span class="footer_option"><a href="../index.html" class="anchor_link_tag">Home</a> </span>
+            <span class="footer_option"><a href="./gallery.html" class="anchor_link_tag">Gallery</a></span>
+            <span class="footer_option"><a href="./about.html" class="anchor_link_tag"> About us </a></span>
+            <span class="footer_option"><a href="./management.html" class="anchor_link_tag"> management </a> </span>
+            <span class="footer_option"><a href="./clinicApp.html" class="anchor_link_tag"> Clinical Services </a></span>
+
+            <span class="footer_option"><a href="./Contact.html" class="anchor_link_tag"> contact</a></span>
+            <span class="footer_option"><a href="./academics.html" class="anchor_link_tag"> academics </a></span>
+            <span class="footer_option"><a href="https://techietet.com/merf/clinic/#/login" class="anchor_link_tag"> clinic app </a></span>
+            <span class="footer_option"><a href="./admission.html" class="anchor_link_tag"> admission </a></span>
+            <span class="footer_option"><a href="./testimonial.html" class="anchor_link_tag">testimonial</a></span>
+            <span class="footer_option"><a href="./faculty.html" class="anchor_link_tag"> faculty </a></span>
+            <span class="footer_option"><a href="./ResearchAudiology.html" class="anchor_link_tag">research </a></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="footer_view_social_media_body">
+          <h4>Connect with us : </h4>
+          <div class="footer_view_social_media">
+            <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
+            <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+              class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer_view_copy_rights">
+        <span>MERF-ISH &copy; copyright
+          <script>document.write(new Date().getFullYear());</script>.Incl.,All right reserved
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/clinicalService.js"></script>
+
+</html>
