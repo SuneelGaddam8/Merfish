@@ -1,206 +1,1666 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prof. Ranjith Rajeswaran</title>
     <link rel="stylesheet" href="../css/Style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-</head>
-<body class="container">
-  <div class="header_nav">
-    <div></div>
-     <div>
-    <span><a href="./Contact.html">Contact</a></span>
-     </div>
-   </div>
-   <div class="header">
-    <div class="header_logo">
-      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="container">
+    <div class="header_nav">
+      <div></div>
+      <div>
+        <span><a href="./Contact.html">Contact</a></span>
+      </div>
     </div>
-    <div class="header_menu">
-      <div class="header_options">
-        <a href="../index.html" class="header_btn ">home</a>
-        <a href="./about.html" class="header_btn ">about us</a>
-        <a href="./management.html" class="header_btn">management</a>
-        <a href="./academics.html" class="header_btn">courses</a>
-        <a href="./admission.html" class="header_btn">admission</a>
+    <div class="header">
+      <div class="header_logo">
+        <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+      </div>
+      <div class="header_menu">
+        <div class="header_options">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">courses</a>
+          <a href="./admission.html" class="header_btn">admission</a>
 
-        <a href="./gallery.html" class="header_btn">gallery</a>
-         <a href="./clinicApp.html" class="header_btn">clinical
-          Services</a>
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <a href="./clinicApp.html" class="header_btn">clinical Services</a>
 
-          <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()" onmouseenter="showResearchDropDown()" style="width: fit-content;">
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
             <a class="header_btn research_btn">research</a>
-            <ul class="research_drop_down" id="research_drop_down" style="display: none;">
-            <li><a href="./ResearchAudiology.html">Audiology</a></li>
-            <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-            <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-          </ul>
+            <ul
+              class="research_drop_down"
+              id="research_drop_down"
+              style="display: none"
+            >
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn header_active">faculty</a>
+          <a href="https://techietet.com/merf/clinic/#/login" class="header_btn"
+            >clinic app</a
+          >
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
         </div>
-        <a href="./faculty.html" class="header_btn  header_active">faculty</a>
-        <a href="https://techietet.com/merf/clinic/#/login" class="header_btn">clinic app</a>
-        <a href="./testimonial.html" class="header_btn">Testimonial</a>
-        <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for
-            Admission</button></a>
       </div>
-
-
-    </div>
-    <div class="dropdown">
-      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="../index.html" class="header_btn ">home</a>
-        <a href="./about.html" class="header_btn ">about us</a>
-        <a href="./management.html" class="header_btn">management</a>
-        <a href="./academics.html" class="header_btn">courses</a>
-        <a href="./admission.html" class="header_btn">admission</a>
-
-        <a href="./gallery.html" class="header_btn">gallery</a>
-         <a href="./clinicApp.html" class="header_btn">clinical
-          Services</a>
-
-        <div class="research_div" onclick="showResearchDropDown()" onmouseleave="hideResearchDropDown()"
-          onmouseenter="showResearchDropDown()" style="width: fit-content;">
-          <a class="header_btn research_btn">research</a>
-          <ul id="mobile_research_dropDown" style="display: none;">
-            <li><a href="./ResearchAudiology.html">Audiology</a></li>
-            <li><a href="./ResearchSLP.html">Speech Language Pathology</a></li>
-            <li><a href="./ListOfDissertations.html">List of Dissertations Done</a></li>
-          </ul>
+      <div class="dropdown">
+        <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-        <a href="./faculty.html" class="header_btn">faculty</a>
-        <a href="https://techietet.com/merf/clinic/#/login" class="header_btn">clinic app</a>
-        <a href="./testimonial.html" class="header_btn">Testimonial</a>
-        <a href="https://merfish.org/online/#/admission-new"><button class="button_style apply_admission">Apply Now for
-            Admission</button></a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html" class="header_btn">home</a>
+          <a href="./about.html" class="header_btn">about us</a>
+          <a href="./management.html" class="header_btn">management</a>
+          <a href="./academics.html" class="header_btn">courses</a>
+          <a href="./admission.html" class="header_btn">admission</a>
+
+          <a href="./gallery.html" class="header_btn">gallery</a>
+          <a href="./clinicApp.html" class="header_btn">clinical Services</a>
+
+          <div
+            class="research_div"
+            onclick="showResearchDropDown()"
+            onmouseleave="hideResearchDropDown()"
+            onmouseenter="showResearchDropDown()"
+            style="width: fit-content"
+          >
+            <a class="header_btn research_btn">research</a>
+            <ul id="mobile_research_dropDown" style="display: none">
+              <li><a href="./ResearchAudiology.html">Audiology</a></li>
+              <li>
+                <a href="./ResearchSLP.html">Speech Language Pathology</a>
+              </li>
+              <li>
+                <a href="./ListOfDissertations.html"
+                  >List of Dissertations Done</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./faculty.html" class="header_btn">faculty</a>
+          <a href="https://techietet.com/merf/clinic/#/login" class="header_btn"
+            >clinic app</a
+          >
+          <a href="./testimonial.html" class="header_btn">Testimonial</a>
+          <a href="https://merfish.org/online/#/admission-new"
+            ><button class="button_style apply_admission">
+              Apply Now for Admission
+            </button></a
+          >
+        </div>
       </div>
     </div>
-  </div>
 
     <div class="body_view body_faculty">
-        <div class="faculty_details_container" id="faculty-details-container">
-          <div class="faculty_details_container_logo">
-            <img src="../assets/faculty/Prof. Ranjith Rajeswaran.png" alt="" srcset="">
-            <strong>Prof. Ranjith Rajeswaran</strong>
-            <span>Principal & Managing Director</span>
-            <div style="width: 90%;">
-              <strong>Membership:</strong>
-              <ul>
-                <li>Life member of “Indian Speech and Hearing Association”</li>
-                <li>Member of “International Society of Audiology”</li>
-                <li>One of the founder member of “Cochlear Implant Group of India”</li>
-                <li>One of the founder member of “HEARRING” Group.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="faculty_details_container_about">
-            <div class="faculty_about_bar">About</div>
-            <div>Prof. Ranjith Rajeswaran, the Principal / Managing Director of MERF-Institute of Speech and Hearing;
-              Chief Audiologist at Madras ENT Research Foundation and the Founder of Hearing for Life Foundation, a
-              charitable trust working on Prevention, Restoration and Rehabilitation for persons with Communication
-              Disorders has an experience of 25 years in the field of Audiology and Speech – Language Pathology. He is
-              specialized in the field of Hearing Implants. He is one of the founder members of Cochlear Implant Group of
-              India and HEARRING (Comprehensive Hearing Implant Centres) for research and development. Expert Advisory
-              Committee Member: Rehabilitation Council of India. Executive Committee Member: Anna University. Member of
-              Board of studies: The Tamil Nadu Dr.MGR Medical University. President: Indian Speech and Hearing Association
-              – Tamil Nadu. Vice President: Cochlear Implant Group of India. Global Ambassador: International Smiling
-              Crocodile.</div>
-            <div>
-              <strong>Countries visited for training</strong>
-              <ul>
-                <li>Underwent training in Cochlear Implants at Bionic Ear Institute, Melbourne, Australia in March 2000.
-                </li>
-                <li>Underwent training in current technologies in Hearing Aids at Widex Academy, Copenhagen, Denmark in
-                  June 2002.</li>
-                <li>Underwent training in ASSR and Evoked Potentials at Intelligent Hearing Systems, University of Miami,
-                  USA in September 2003</li>
-                <li>Underwent training in Middle Ear Implants in Ospedale Civil, Rovoretto, Italy in February 2007.</li>
-                <li>Underwent training in Implant electrophysiology at University of Wurzburg, Germany in February 2007.
-                </li>
-                <li>Underwent training in Recent Implant Technologies at Med-El electronics, Innsbrook, Austria in
-                  February 2007.</li>
-                <li>Underwent Training in “Advanced Troubleshooting and Problem solving in Cochlear Implants’ at Bionic
-                  Ear Institute, Melbourne, Australia in July 2007.</li>
-                <li>Underwent training in “Advanced Bionics Hi-Res” workshop at Advanced Bionics Europe, Frankfurt,
-                  Germany in April 2008.</li>
-                <li>Underwent Training in “Auditory Brainstem Implantation” at The Royal Victorian Eye and Ear Hospital”
-                  Melbourne in June 2008.</li>
-                <li>Underwent training and passed in distinction on “Advanced Course in Implantable Hearing Devices”
-                  Med-El Academy, Innsbruck, Austria in October 2010.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Honors</strong>
-              <ul>
-                <li>Expert Committee Member- Rehabilitation Council of India
-                </li>
-                <li>Member of Board of Studies – The Tamil Nadu Dr MGR Medical Univrsity.</li>
-                <li>Member of the Apex Advisory Committee – Rehabilitation Council of India.</li>
-                <li>Member of Academic Council – Jerusalem College of Engineering.</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Research Grants:</strong>
-              <ul>
-                <li>Department of Science and Technology, under National Hub for Health care Instrumentation and
-                  Development for Design and Development of Web/Mobile based Audiometer.
-                </li>
-                <li>HEARRING for ABI in Non NF2 –Long Term Outcomes and Device Safety</li>
-                <li>Department of Science and Technology for Visual Evoked Potentials in children with Hearing Impairment
-                  and Cochlear Implant.</li>
-              </ul>
-            </div>
+      <div class="faculty_details_container" id="faculty-details-container">
+        <div class="faculty_details_container_logo">
+          <img
+            src="../assets/faculty/Prof. Ranjith Rajeswaran.png"
+            alt=""
+            srcset=""
+          />
+          <strong>Prof. Ranjith Rajeswaran</strong>
+          <strong>Principal & Managing Director</strong> <br>
+          <div style="width: 90%">
+            <span
+              ><strong>Qualification</strong> &nbsp;&nbsp;: MASLP (Master of
+              Audiology and Speech-Language Pathology)</span
+            ><br /><br />
+            <span
+              ><strong>Pursuing</strong> &nbsp;&nbsp;: Ph.D in Application of
+              Auditory Potentials in Auditory Brainstem</span
+            ><br /><br />
+            <span
+              ><strong>Present Position</strong> &nbsp;: Director / Principal;
+              MERF-Institute of Speech &amp; Hearing (P) Ltd Chief Audiologist;
+              Madras ENT Research Foundation (P) Ltd., Chennai</span
+            ><br /><br />
+            <span
+              ><strong>Specialisation</strong> &nbsp;: Implantation Audiology,
+              Auditory Habilitation, Auditory Neuro Science</span
+            ><br /><br />
+            <span
+              ><strong>Current Research Focus</strong> : Translation Research in
+              Auditory Science</span
+            ><br /><br />
+            <span
+              ><strong>AWARDS</strong> &nbsp;&nbsp;: “BEST TEACHER AWARD”
+              awarded by Hon. Minister for Health &amp; Family Welfare &amp; the
+              Pro Chancellor of The Tamil Nadu Dr.MGR Medical University. “Most
+              Distinguished Alumni” award on the Founders day by The Chancellor,
+              Sri Ramachandra University.</span
+            >
           </div>
         </div>
+        <div class="faculty_details_container_about">
+          <div class="faculty_about_bar">About</div>
+          <div>
+            Prof. Ranjith Rajeswaran, the Principal / Managing Director of
+            MERF-Institute of Speech and Hearing; Chief Audiologist at Madras
+            ENT Research Foundation and the Founder of Hearing for Life
+            Foundation, a charitable trust working on Prevention, Restoration
+            and Rehabilitation for persons with Communication Disorders has an
+            experience of 25 years in the field of Audiology and Speech –
+            Language Pathology. He is specialized in the field of Hearing
+            Implants. He is one of the founder members of Cochlear Implant Group
+            of India and HEARRING (Comprehensive Hearing Implant Centres) for
+            research and development. Expert Advisory Committee Member:
+            Rehabilitation Council of India. Executive Committee Member: Anna
+            University. Member of Board of studies: The Tamil Nadu Dr.MGR
+            Medical University. President: Indian Speech and Hearing Association
+            – Tamil Nadu. Vice President: Cochlear Implant Group of India.
+            Global Ambassador: International Smiling Crocodile. Field of
+            Interest: Auditory Neuroscience. Awards: Best Teacher Award by the
+            “The Tamil Nadu Dr.MGR Medical University”. “Outstanding Alumni”
+            Award for Research &amp; Academics by Sri Ramachandra University.
+            Establishment: Established Hearing Restoration centres in SAAARC
+            Countries &amp; Africa. Guided more than 63 Thesis. Research Grants:
+            Department of Science and Technology., NHHID &amp; HEARRING.
+            Research publication: More than 25 papers in International and
+            National Journals. Invited Speaker: More than 30 Major International
+            Conferences &amp; Seminars. First in India to introduce Auditory
+            Steady State Response (Objective Test for frequency specific Hearing
+            Sensitivity) in 2002. First in India to perform Electrically Evoked
+            Auditory Brainstem Implant for Cochlear Implants. First Audiologist
+            in India and South East Asia to perform Auditory Brainstem Implant
+            to restore hearing in children with absent inner ear and auditory
+            nerve. Introduced the first formal Training for Auditory
+            Habilitationist in India. Community Service: Involved in Community
+            services to create awareness on Hearing Restoration. Established
+            network of rehabilitation centres across the state of Tamil Nadu to
+            facilitate rehabilitation after hearing restoration for
+            underprivileged children. The services are extended in the name of
+            PROJECT CHITHRA.
+          </div>
 
-        <div class="footer_view">
-          <div class="footer_view_home">
-            <div class="footer_view_service">
-              <div class="footer_view_logo">
-                <img src="../assets/merfsh-logo.png" alt="">
-              </div>
-              <div class="footer_view_options">
-                <span class="footer_option"><a href="../index.html" class="anchor_link_tag">Home</a> </span>
-                <span class="footer_option"><a href="./gallery.html" class="anchor_link_tag">Gallery</a></span>
-                <span class="footer_option"><a href="./about.html" class="anchor_link_tag"> About us </a></span>
-                <span class="footer_option"><a href="./management.html" class="anchor_link_tag"> management </a> </span>
-                <span class="footer_option"><a href="./clinicApp.html" class="anchor_link_tag"> Clinical Services </a></span>
-    
-                <span class="footer_option"><a href="./Contact.html" class="anchor_link_tag"> contact</a></span>
-                <span class="footer_option"><a href="./academics.html" class="anchor_link_tag"> academics </a></span>
-                <span class="footer_option"><a href="https://techietet.com/merf/clinic/#/login" class="anchor_link_tag"> clinic app </a></span>
-                <span class="footer_option"><a href="./admission.html" class="anchor_link_tag"> admission </a></span>
-                <span class="footer_option"><a href="./testimonial.html" class="anchor_link_tag">testimonial</a></span>
-                <span class="footer_option"><a href="./faculty.html" class="anchor_link_tag"> faculty </a></span>
-                <span class="footer_option"><a href="./ResearchAudiology.html" class="anchor_link_tag">research </a></span>
-                <span></span>
-              </div>
-            </div>
-            <div class="footer_view_social_media_body">
-              <h4>Connect with us : </h4>
-              <div class="footer_view_social_media">
-                <a href="https://www.facebook.com/MERFISH1" class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg" class="fa fa-play"></a>
-                <a href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
-                  class="fa fa-linkedin"></a>
-                <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
-              </div>
-            </div>
-    
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Countries visited for training:</strong
+            >
+            <ol>
+              <li>
+                Underwent training in Cochlear Implants at Bionic Ear Institute,
+                Melbourne, Australia in March 2000.
+              </li>
+              <li>
+                Underwent training in current technologies in Hearing Aids at
+                Widex Academy, Copenhagen, Denmark in June 2002.
+              </li>
+              <li>
+                Underwent training in ASSR and Evoked Potentials at Intelligent
+                Hearing Systems, University of Miami, USA in September 2003
+              </li>
+              <li>
+                Underwent training in Middle Ear Implants in Ospedale Civil,
+                Rovoretto, Italy in February 2007.
+              </li>
+              <li>
+                Underwent training in Implant electrophysiology at University of
+                Wurzburg, Germany in February 2007.
+              </li>
+              <li>
+                Underwent training in Recent Implant Technologies at Med-El
+                electronics, Innsbrook, Austria in February 2007.
+              </li>
+              <li>
+                Underwent Training in “Advanced Troubleshooting and Problem
+                solving in Cochlear Implants’ at Bionic Ear Institute,
+                Melbourne, Australia in July 2007.
+              </li>
+              <li>
+                Underwent training in “Advanced Bionics Hi-Res” workshop at
+                Advanced Bionics Europe, Frankfurt, Germany in April 2008.
+              </li>
+              <li>
+                Underwent Training in “Auditory Brainstem Implantation” at The
+                Royal Victorian Eye and Ear Hospital” Melbourne in June 2008.
+              </li>
+              <li>
+                Underwent training and passed in distinction on “Advanced Course
+                in Implantable Hearing Devices” Med-El Academy, Innsbruck,
+                Austria in October 2010.
+              </li>
+            </ol>
           </div>
-          <div class="footer_view_copy_rights">
-            <span>MERF-ISH &copy; copyright
-              <script>document.write(new Date().getFullYear());</script>.Incl.,All right reserved
-            </span>
+
+          <div>
+            <strong class="testimonial_faculty_title">Membership:</strong>
+            <ul>
+              <li>
+                Life member of <strong
+                  >“Indian Speech and Hearing Association”</strong
+                >
+              </li>
+              <li>
+                Member of <strong>“International Society of Audiology”</strong>
+              </li>
+              <li>
+                One of the founder member of <strong
+                  >“Cochlear Implant Group of India”</strong
+                >
+              </li>
+              <li>
+                One of the founder member of <strong>“HEARRING”</strong> Group.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title">Honors</strong>
+            <ul>
+              <li>
+                <strong>Expert Committee Member</strong>- Rehabilitation Council
+                of India
+              </li>
+              <li>
+                <strong> Member of Board of Studies</strong> – The Tamil Nadu Dr
+                MGR Medical Univrsity.
+              </li>
+              <li>
+                <strong>Member of the Apex Advisory Committee</strong> –
+                Rehabilitation Council of India.
+              </li>
+              <li>
+                <strong> Member of Academic Council</strong> – Jerusalem College
+                of Engineering.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <strong class="testimonial_faculty_title">Research Grants:</strong>
+            <ul>
+              <li>
+                <strong> Department of Science and Technology</strong>,
+                under <strong
+                  >National Hub for Health care Instrumentation and
+                  Development</strong
+                > <span style="font-style: italic"
+                  >for Design and Development of Web/Mobile based
+                  Audiometer.</span
+                >
+              </li>
+              <li>
+                <strong>HEARRING </strong
+                ><span style="font-style: italic"
+                  >for ABI in Non NF2 –Long Term Outcomes and Device
+                  Safety</span
+                >
+              </li>
+              <li>
+                <strong> Department of Science and Technology</strong> for
+                Visual Evoked Potentials in children with Hearing Impairment and
+                Cochlear Implant.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Research Thesis Completed:</strong
+            >
+            <br />
+            <span
+              >&nbsp;&nbsp;&nbsp;The entire listed thesis are conceived and
+              guided by Prof. R. Ranjith, for students as a part of Fulfillment
+              of Masters in Audiology and Speech Language Pathology.</span
+            >
+            <ol>
+              <li>
+                Temporal processing in individuals using cochlear implant.
+              </li>
+              <li>
+                Co-relation between behavioral PTA Thresholds and CAEP
+                thresholds.
+              </li>
+              <li>
+                Amplitude changes in electrically evoked compound action
+                potential (ECAP) at different cochlear regions.
+              </li>
+              <li>
+                Clinical applications of aided cortical auditory evoked
+                potentials in pediatric Auditory Brainstem Implanters – a
+                preliminary study.
+              </li>
+              <li>
+                Refractory properties of auditory never Fiber at different
+                regions in the cochlea
+              </li>
+              <li>
+                Standardization of the screening tool for identifying children
+                with deviant voice characteristics in Indian population.
+              </li>
+              <li>
+                Changes in response characteristics of cortical auditory evoked
+                potentials in bilateral cochlear Implanters.
+              </li>
+              <li>
+                Predicting Electrode placement using cortical auditory evoked
+                potentials in children with auditory brainstem implant
+              </li>
+              <li>
+                Electrically evoked auditory brainstem response in complete
+                cochlear coverage.
+              </li>
+              <li>Music perception using IOS based Hearing aids</li>
+              <li>
+                Effect of auditory deprivation on auditory visual integration in
+                cochlear implants users.
+              </li>
+              <li>
+                Comparison of speech perception in noise with different noise
+                reduction programs in cochlear implant users
+              </li>
+              <li>
+                Satisfaction with hearing aid-A self-reporting questionnaire in
+                Tamil
+              </li>
+              <li>
+                Relationship between Intra-operative &amp; post-Operative &amp;
+                ABR in subjects with auditory brainstem implant
+              </li>
+              <li>
+                Effect Of Rate On Electrically Evoked Auditory Brainstem
+                Response In Different Cochlear Regions
+              </li>
+              <li>
+                Outcomes Of Children With Auditory Brain Stem Implantation-An
+                Indian Perspective
+              </li>
+              <li>
+                Monitoring Maturation Of Auditory Cortex In Children With
+                Cochlear Implantation Under Tamilnadu Chief Minister’s
+                Comprehensive Health Insurance Scheme
+              </li>
+              <li>
+                Tamilnadu Chief Minister’s Comprehensive Health Insurance
+                Scheme-First Outcome Audit On Cochlear Implantation
+              </li>
+              <li>
+                A comparative study between early and conventional switch-on
+                dates for subjects with cochlear – a plot study
+              </li>
+              <li>
+                Profiling outcomes in subject with single sided deafness (SSD)
+                using cochlear implant
+              </li>
+              <li>Visual evoked potential – A Normative study</li>
+              <li>
+                Investigating Differential limen for frequency and intensity in
+                normal hearing subject.
+              </li>
+              <li>
+                Measuring cross modal plasticity Using Visual evoked
+                potentials(VEP) in children with cochlear implant
+              </li>
+              <li>
+                Perception Of just noticeable difference in Children with
+                cochlear Implant.
+              </li>
+              <li>Visual evoked potentials in Congenitally Deaf Children</li>
+              <li>
+                Correlation between ABR and CAEP In Auditory Brainstem Implants
+              </li>
+              <li>
+                Long-term outcomes of CI in children with inner ear
+                malformations and cochlear nerve anomalies
+              </li>
+              <li>Psychophysical tuning curves in CI children</li>
+              <li>Profiling outcomes in clients with bimodal hearing</li>
+              <li>Dichotic word testing in Tamil speaking children</li>
+              <li>P300 in children with CI</li>
+              <li>
+                Correlation between EABR and communication outcomes in children
+                with ABI
+              </li>
+              <li>Binaural summation in B/ L CI using objective measures</li>
+              <li>Profiling outcomes in children with B/l CI</li>
+              <li>
+                Development of associative and scene prime target stimulus
+                material for visual confrontation naming in Tamil
+              </li>
+              <li>
+                Role of Fine Structure Processing in speech perception in CI
+              </li>
+              <li>
+                Profiling vestibular function in children with cochlear
+                anomalies
+              </li>
+              <li>
+                Outcomes in children with CI: Parental perspectives in Indian
+                context
+              </li>
+              <li>
+                Investigating the VOR gain function in normal hearing subjects
+              </li>
+              <li>
+                Second formant transition of stop consonant vowel production in
+                children with normal hearing and children using CI
+              </li>
+              <li>
+                Profile of Physiological And Psychophysical Measures In Single
+                Sided Deafness With Cochlear Implant
+              </li>
+              <li>
+                Development of Confrontation Naming Task in Tamil for Children
+                between 3 To 8 Years of Age.
+              </li>
+              <li>
+                Intra Operative Monitoring of Cochlear Function Using Advance
+                Art- A Preliminary Study On Feasibility And Possibility.
+              </li>
+              <li>
+                A Preliminary Study On Frequency Resolution Using Psychophysical
+                Tuning Curves And Differential Limen For Frequency In Post
+                Lingual Cochlear Implant Users.
+              </li>
+              <li>
+                Factors Influencing Long Term Outcomes of Cochlear Implant under
+                State (TNCMCHIS) and Self-Funded Scheme.
+              </li>
+              <li>Subjective Assessment Of Vestibular Function In Children</li>
+              <li>
+                Auditory and Visual Working Memory in Children Using Cochlear
+                Implants: A Preliminary Investigation.
+              </li>
+              <li>
+                Auditory and Visual Working Memory in Children Using Cochlear
+                Implants: A Preliminary Investigation.
+              </li>
+              <li>
+                Subjective Assessment of Vestibular Function in Children with
+                Cochlear Implant- A Preliminary Study.
+              </li>
+              <li>
+                Pre and Post Comparison of Fine Structure DPOAE on Music
+                Listening In Young Adults.
+              </li>
+              <li>Adaptation of Littlears Auditory Questionnaire in Tamil.</li>
+              <li>
+                Acoustic Analysis of Stop Consonant Vowel (CV) Production in
+                Children Using Cochlear Implants and Normal Hearing Children.
+              </li>
+              <li>Test Retest Reliability of Absolute Amplitude in DPOAE.</li>
+              <li>
+                Barriers Faced By Audiologist In Practicing Auditory
+                Habilitation Through Tele- rehabilitation
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Research Projects- International Multicenter Research</strong
+            >
+            <ol>
+              <li>
+                “ART Study of Hearring”- Auditory Nerve Response Telemetry.
+              </li>
+              <li>“Auditory Brainstem Implantation in Non NF2 cases”</li>
+              <li>
+                “FOX Study”- Fitting Outcome Experts- a study for automated
+                fitting of the implants
+              </li>
+              <li>“Hi Res 90K”- Speech Perception and Hearing Quality .</li>
+              <li>“AAST”- in Indian Languages.</li>
+              <li>Timing Study” in Cochlear Implant Procedures.</li>
+              <li>“ CP802”- Validation study in India.</li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Research Projects- Independent</strong
+            >
+            <ol>
+              <li>
+                “Electrophysiological Evidences to stimulate the Apical Region
+                in the Cochlea”
+              </li>
+              <li>“Comprehensive Language Processing Model”</li>
+              <li>“Optimizing Electrical stimulation methods for Brainstem.</li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Papers Presented: National and International Conferences:</strong
+            >
+            <ol>
+              <li>
+                <span style="font-style: italic"
+                  >“Development of new Spondee Word list in Tamil”</span
+                >
+                at 29 th National convention of Indian Speech and Hearing
+                Association, Coimbatore, February 1997.
+              </li>
+
+              <li>
+                <span style="font-style: italic"
+                  >”Development of new PB wordlist in Tamil”</span
+                >
+                at 30 th National Convention of Indian Speech and Hearing
+                association”, Puri in January 1998.
+              </li>
+
+              <li>
+                ”Cochlear Implants- MERF Experience” at National Convention of
+                Indian Speech and Hearing Association, Hyderabad in January
+                2000.
+              </li>
+
+              <li>
+                ”Peadiatric Cochlear Implantation – MERF Experience” Workshop
+                conducted by Clarke School for the Deaf and Institute Vordoven,
+                The Netherlands , Chennai in March 2000
+              </li>
+
+              <li>
+                <span style="font-style: italic"
+                  >“Cochlear Implant in Older Pre-linguals”</span
+                >
+                at 1 st Cochlear Implant Group of India Conference at Mumbai in
+                November 2003.
+              </li>
+
+              <li>
+                <span style="font-style: italic"
+                  >”Correlation between ECAP and T &amp; C levels in Nucleus 24
+                  Cochlear Implant Recipient”</span
+                >
+                at 2 nd Cochlear Implant group of India Conference, in October
+                2004.
+              </li>
+              <li>
+                <span style="font-style: italic"
+                  >”Auditory Brainstem Implant – MERF Experience”</span
+                >
+                at Indian Speech and Hearing Association National Conference,
+                Indore in January 2005.
+              </li>
+              <li>
+                <span style="font-style: italic">“Trends in Audiology” </span>at
+                Workshop on Recent Tends and beyond cochlea at Madras ENT
+                research Foundation, Chennai in 2006.
+              </li>
+              <li>
+                <span style="font-style: italic"
+                  >”Outcomes and challenges in Auditory Brainstem implant”</span
+                >
+                at 5 th Cochlear Implant Group of India Conference, Pune in
+                2007.
+              </li>
+              <li>
+                Poster Presentation on
+                <span> “Cochlear implantation in Corpuscollosal Agenesis”</span>
+                at 5 th Cochlear Implant Group of India Conference, Pune in
+                2007.
+              </li>
+              <li>
+                <span style="font-style: italic"
+                  >”Correlation between EAP and Behavioural T &amp; C levels in
+                  Nucleus Freedom Cochlear Implantees – A preliminary
+                  study.”</span
+                >
+                at 39 th Indian Speech and Hearing Association National
+                Conference at Calicut in January 2007.
+              </li>
+              <li>
+                “Oto Acoustic Emission –Principles and Application” at
+                International Update on Electrophysiology and Implantation
+                Audiology” conducted by Madras ENT Research Foundation and MERF-
+                Institute of Speech and Hearing, Chennai in March 2007.
+              </li>
+              <li>
+                “A Rare case of Auditory Dys-Synchrony” at Clinical Audiological
+                Conference at Madras ENT research Foundation, Chennai in
+                February 2007.
+              </li>
+              <li>
+                “Electrically Evoked auditory Brainstem Implant” at
+                International Update on Electrophysiology and Implantation
+                Audiology” conducted by Madras ENT Research Foundation and MERF-
+                Institute of Speech and Hearing, Chennai in March 2007.
+              </li>
+              <li>
+                “Congenital Atresia- A Rare Dilemma” at Clinical Audiological
+                Conference at Madras ENT Research Foundation, Chennai in
+                September 2007.
+              </li>
+              <li>
+                “Device Failures in Cochlear Implants” at Clinical Audiological
+                Conference at Madras ENT research Foundation, Chennai in
+                September 2007.
+              </li>
+              <li>
+                “Outcomes in Auditory Brainstem Implants” at Cochlear Implant
+                Group of India Conference, Pune in November 2007.
+              </li>
+              <li>
+                ”Outcomes in Totally Implantable Hearing Device” at Cochlear
+                Implant Group of India Conference, Bangalore, in November 2008.
+              </li>
+              <li>
+                “Frequency Following Responses in different processing
+                techniques in Cochlear Implants” at Cochlear Implant Group of
+                India Conference, Bangalore, in November 2008.
+              </li>
+              <li>
+                “ABI in NF2 and Non NF2” at Cochlear Implant Group of India
+                National Conference, Hyderabad, in November 2009.
+              </li>
+              <li>
+                ”Steps to measure ECAP in cochlea and nerve anomalies” at
+                Cochlear Implant Group of India National Conference, Hyderabad,
+                in November 2009.
+              </li>
+              <li>
+                “Early steps in pediatric Auditory Brainstem Implantation-Indian
+                Experience” at Cochlear Implant Group of India National
+                Conference, Chandigarh, in Nov.2010
+              </li>
+              <li>
+                “Electrophysiological evidences to stimulate the Apical region
+                in the Cochlea” at Cochlear Implant Group of India National
+                Conference, Chandigarh, in November 2010.
+              </li>
+              <li>
+                Relationship between ECAP, ESRT with behavioral MAP in
+                individuals with Cochlear implants; 16th Annual conference of
+                cochlear to implant group of India, 29th November 2018 to 1st
+                December 2018 at Deltin, Daman.
+              </li>
+              <li>
+                Little ears Auditory Questionnaire in early and late Cochlear
+                implantees, 16th Annual conference of cochlear to implant group
+                of India, 29th November 2018 to 1st December 2018 at Deltin,
+                Daman.
+              </li>
+              <li>
+                Exploring the recovery properties of the auditory nerve fibres
+                at different cochlear regions using ECAP, 51st ISHACON, 10th -
+                12th February 2019, conducted by Indian Speech &amp; Hearing
+                Association at NIMHANS, Bengaluru
+              </li>
+              <li>
+                Refractory property of the auditory nerve in pre lingual
+                cochlear implantee, 17 TH CIGICON, Annual conference of cochlear
+                to implant group of India 11 th to 13 th October 2019, Mumbai.
+              </li>
+              <li>
+                P300 in cochlear implantees, 17 TH CIGICON, Annual conference of
+                cochlear to implant group of India 11 th to 13 th October 2019,
+                Mumbai.
+              </li>
+              <li>
+                Refractory Properties of Auditory nerve in the post lingual
+                cochlear Implantees, CIGICON 2021
+              </li>
+              <li>
+                Hearing &amp; Mitochondriopathy – A single case report,
+                AUDISHCON, 2021
+              </li>
+              <li>
+                Optimization of frequency band table in adult using cochlear
+                implant, CIGICON 2021 (virtual) – 12 – 14 November 2021.
+              </li>
+              <li>
+                E-Poster The relationship between the tone and speech evoked
+                ESRT Measures in both ipsilateral &amp; Contra lateral ear,
+                CIGICON 2021 (virtual)
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Papers Presented in International Conferences:</strong
+            >
+            <ol>
+              <li>
+                “First step in Pediatric Auditory Brainstem Implantation- Indian
+                Experience” at Asia Pacific Symposium on Cochlear Implants and
+                Related Sciences, Singapore in December 2009.
+              </li>
+              <li>
+                “Hi Res 90K- Outcomes” at investigators conference, Amsterdam,
+                the Netherlands in March 2010.
+              </li>
+              <li>
+                “First Step in Pediatric ABI” at 11 th International Conference
+                on Cochlear Implants, Stockholm in July 2010.
+              </li>
+              <li>
+                “Early experiences in Pediatric Auditory Brainstem implants” at
+                Implantes Cochleares y Ciencias Afines 2 nd Congreso
+                Iberoamericano, Cartagena, Colombia in December 2010.
+              </li>
+              <li>
+                “Electrophysiological Evidences to stimulate Apical Region” at
+                Implantes Cochlear Ciencias Afines 2 nd Congreso Iberoamericano,
+                Cartagena, Colombia in December 2010.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title">Invited Speaker:</strong>
+            <ol>
+              <li>
+                Seminar on
+                <span style="font-style: italic"
+                  >“ Early Detection and Management Strategies for Hearing
+                  Impaired”</span
+                >
+                organised by Srilankan Deaf Association, Colombo, Srilanka in
+                June 2002.
+              </li>
+              <li>
+                Workshop on
+                <span style="font-style: italic"
+                  >“Auditory-Verbal Approach &amp; Cochlear Implants for
+                  Multiple handicapp in the education of the Hearing
+                  Impaired”</span
+                >, Sponsored by The Clarke School for the Deaf, Chennai &amp;
+                Institute Voor Doven, The Netherlands, at Madras ENT Research
+                Foundation, Chennai in March 2003.
+              </li>
+              <li>
+                Workshop on
+                <span style="font-style: italic"
+                  >“Management of children with Hearing Hearing Loss”</span
+                >
+                organised by Little flower Convent for the Deaf, Chennai in
+                2003.
+              </li>
+              <li>
+                Workshop on Cochlear Implantation organised by Thilak ENT
+                Hospital, Trichy in Novenber 2003.
+              </li>
+              <li>
+                Seminar on
+                <span style="font-style: italic"
+                  >“Detection, Management and Empowerment of Hearing
+                  Handicap”</span
+                >
+                conducted by Ajay School for the Hearing Habdicap, Chennai in
+                April 2004.
+              </li>
+              <li>
+                CME on
+                <span style="font-style: italic">‘Cochlear Implantation’</span>
+                at Christian Medical College, Vellore, February. 2004.
+              </li>
+              <li>
+                CME on
+                <span style="font-style: italic"
+                  >“Early diagnosis, Intrevention and Management Strategies for
+                  Hearing Loss”</span
+                >
+                at NKP Salvee Institute of Medical Sciences, Nagpur in December
+                2007.
+              </li>
+              <li>
+                CME on “Audiology for ENT Surgeons” at Calicut Medical College,
+                Calicut in January 2008.
+              </li>
+              <li>
+                Seminar on “ Hearing Processes and Hearing Prosthesis” at
+                College of Allied Health Sciences, University of Manipal in
+                January 2008.
+              </li>
+              <li>
+                CRE on “Perspectives in Diagnosis of Auditory Disorders &amp;
+                Contemporary Advances in the Management of Laryngectomy” at AWH
+                Special College, Calicut inMarch 2008.
+              </li>
+              <li>
+                Workshop on “Med-El Implants and Hearing Challenges” at Med-El,
+                India, Delhi in April 2008.
+              </li>
+              <li>
+                Seminar in “Trends in Audiological Diagnosis and Management”
+                organized by Hearing Aid Center, Coimbatore in 2009.
+              </li>
+              <li>
+                Workshop on “ Recent Trends in Pediatric Audiology” organized by
+                Samvaad institute of Speech and Hearing, Bangalore in September
+                2009.
+              </li>
+              <li>
+                Seminar in “Hearing Aid technology and HearingSciences”
+                organized by Phonak India, chennai in April 2009.
+              </li>
+              <li>
+                Seminar “Audiology for ENT” organized by Dr.Mohan Kumaramangalam
+                Medical College, Salem in December 2009.
+              </li>
+              <li>
+                Pre-Conference Workshop on Cochlear Implants at CIGI CON 09,
+                Hyderabad in November 2009.
+              </li>
+              <li>
+                Workshop on “Audiological aspects in Cochlear and Brainstem
+                Implants” organized by Sir Gangaram hospital, Delhi in October
+                2010.
+              </li>
+              <li>
+                1 st Pediatic Audiology Conference, organized by ISHA Kerala
+                Branch, Allepy in November 2010.
+              </li>
+              <li>
+                Implantes Cochleares y Ciencias Afines 2 nd Congreso
+                Iberoamericano as a panelist in Round Table Discussion in
+                “Auditory Brainstem Implants” at Cartagena, Colombia in December
+                2010.
+              </li>
+              <li>
+                “Pre-Congress Audiology Workshop” organized by AOI, in January
+                2011.
+              </li>
+              <li>
+                “Med-EL Symposium” in AOI National Conference, Chennai, January
+                2011.
+              </li>
+              <li>
+                Workshop on “Diagnostic Procedures in Pediatric Audiology”
+                organized by Ephatha Speech and Hearing Institute, Cochin,
+                February 2011.
+              </li>
+              <li>
+                Workshop on “Audiology for Otolaryngologist” organized by
+                Institute of ORL, Madras Medical College, Chennai in February
+                2011.
+              </li>
+              <li>
+                Workshop on Recent Trends in Management of Hearing Loss”
+                organized by Somani Speech and hearing Centre and Association of
+                the Pediatricians of India, Nagpur in March 2011.
+              </li>
+              <li>
+                Seminar on “Cortical Evoked Potentials” organized by HAC,
+                Hyderabad in April 2011.
+              </li>
+              <li>
+                Workshop on “Recent Advances in Cochlear Implants” organized by
+                Apollo Hospitals, Hyderabad in September 2011.
+              </li>
+              <li>
+                Seminar on “Audiological Assessments in Hearing Fitting”
+                organized by AOI, Hyderabad branch, Hyderabad in September 2011.
+              </li>
+              <li>
+                Lecture on CAEP-Understanding the Principles?” at the 4 th KSB
+                ISHA, Pala, Kerala in October 2011.
+              </li>
+              <li>
+                Lecture on “Factors predicting outcomes in Cochlear Implants” in
+                workshop organized by All India Institute of Speech and Hearing,
+                Mysore in November 2011.
+              </li>
+              <li>
+                Lecture on “Overview of Aoditory Brainstem Implant” in 1 st
+                TAN-ISHA conference at Tiruchirapalli, Tamil Nadu in November
+                2011.
+              </li>
+              <li>
+                Lecture on “Principles and Fundamentals in Auditory Diagnosis”
+                at the first International Cochlear Implant Conference of the
+                West Africa, Katsina, Nigeria in November 2011.
+              </li>
+              <li>
+                Lecture on “Candidacy selection- Cochlear Implants” at the first
+                International Cochlear Implant Conference of the West Africa,
+                Katsina, Nigeria in November 2011.
+              </li>
+              <li>
+                Lecture on “applications of CAEP in CI and ABI” in Hearing
+                Implants meeting at Goa, in February 2012.
+              </li>
+              <li>
+                Moderated a session on “Cross Fire – Implants” in 9 th National
+                Convention of Cochlear Implant Group of India, at Lucknow, UP in
+                November 2011.
+              </li>
+              <li>
+                Moderated a session on “Programming CI” in 1 st International
+                Debate on CI fitting at Antwerp, Belgium in October 2012.
+              </li>
+              <li>
+                Lecture on “ Electrophysiological and other objective measures
+                in CI” at 10 th National Convention of Cochlear Implant Group of
+                India in Ahamadabad, November 2012.
+              </li>
+              <li>
+                Lecture on “Application of CAEP in Hearing Implants” at 10 th
+                National Convention of Cochlear Implant Group of India in
+                Ahamadabad, November 2012.
+              </li>
+              <li></li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Participation in International Conferences and Meetings:</strong
+            >
+            <ol>
+              <li>
+                “9 th European Symposium on Pediatric Cochlear Implants” at
+                Warsaw, Poland in May 2009.
+              </li>
+              <li>
+                “Founder members meeting of the HEARRING Group” at Warsaw,
+                Poland in May 2009.
+              </li>
+              <li>
+                “Investigators meeting on Auditory Brainstem implants in NF2 and
+                Non NF2 Cases” at Frankfurt, Germany in February 2010.
+              </li>
+              <li>
+                “2 nd HEARRING Group Meeting” at Antwerp, Belgium in February
+                2010.
+              </li>
+              <li>
+                “9 th European Investigators Conference” at Amsterdam, the
+                Netherlands in March 2010
+              </li>
+              <li>
+                “American Academy of Audiology” at San Diego, California, USA in
+                April 2010.
+              </li>
+              <li>
+                “ FOX study investigators meeting” at Antwerp, Belgium in march
+                2010.
+              </li>
+              <li>
+                “International Symposium on Auditory Brainstem implants” at
+                Uppsala, Sweeden in June 2010.
+              </li>
+              <li>
+                “11 th International Conference on Cochlear Implants” in
+                Stockholm, Sweden in July 2010.
+              </li>
+              <li>
+                “3 rd HEARRING group Meeting” at St.Petersberg, Russia in
+                September 2010.
+              </li>
+              <li>
+                “1 st Russian Federation Congress on Implantable Hearing
+                Devices” at St.petersberg in October 2010.
+              </li>
+              <li>
+                “Cochleares y Ciencias Afines 2 nd Congreso Iberoamericano” at
+                Cartagena, Colombia in December 2010.
+              </li>
+              <li>
+                “American academy of Audiology” at Chicago, USA. In April 2011.
+              </li>
+              <li>
+                “9 th European Symposium on Cochlear Implants” in Athens, Greece
+                ,May 2011.
+              </li>
+              <li>
+                “BELLS” – Research meeting at University of Cologne, Germany,
+                September 2011.
+              </li>
+              <li>“4 th Hearring meeting” in London, UK in October 2011.</li>
+              <li>“EUHA”- at Nuremberg, Germany in October 2011.</li>
+              <li>
+                “First Cochlear Implant Conference of the Western Africa”
+                organized by the Federal Medical Center,Katsina, Nigeria in
+                November 2011.
+              </li>
+              <li>“CTRL”- meeting at Sydney in December 2011.</li>
+              <li>
+                “American Acsdemy of Audiology” at Boston, USA in April 2012.
+              </li>
+              <li>
+                “5 th Hearring meeting” in London, Canada in October 2012.
+              </li>
+              <li>
+                “International Debate on Fitting Cochlear Implants” organized by
+                Ear Group, Antwerpen, Belgium in October 2012.
+              </li>
+              <li>“EUHA” – at Frankfurt, Germany in October 2012.</li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >PAPERS PUBLISHED <br />
+              Under HEARRING Group:</strong
+            >
+            <ul>
+              <li>Hearing Preservation Classification</li>
+              <li>
+                Towards a consensus on a hearing preservation classification
+                system
+              </li>
+              <li>
+                Patient management for cochlear implant recipients in audiology
+                departments: A practice review
+              </li>
+              <li>
+                Electrically evoked compound action potentials are different
+                depending on the site of cochlear stimulation
+              </li>
+              <li>
+                Hearing preservation cochlear implantation in children: The
+                HEARRING Group consensus and practice guide
+              </li>
+            </ul>
+          </div>
+          <div>
+            <strong class="testimonial_faculty_title"
+              >OTHER PUBLICATIONS:</strong
+            >
+            <ul>
+              <li>
+                Jayachandran, D., &amp; Rajeswaran, R. (2023). Quality of sound
+                in post-lingual cochlear implant users.
+              </li>
+              <li>
+                <strong>Chandarsekaran P</strong>, Rexton V,
+                <strong>Ranjith R</strong>, Varshini P, Prabhavathi B, and
+                <strong>Ramyasri Cherukuri</strong>; Development of Eustachian
+                tube dysfunction questionnaire-child edition, Otolaryngology
+                open access; 2023.
+              </li>
+              <li>
+                Aster Franz Miranda,<strong>
+                  Saranyaa G, Divya S, Ranjith R, Deepika J</strong
+                >; The Role Of Audiologists And Speech Language Pathologists In
+                The Assessment And Management Of Neonates: Neonatologists
+                Perspective; International Journal of Research and Analytical
+                Reviews (IJRAR),Vol.9, Issue 4, 839-844, October 2022
+              </li>
+              <li>
+                <strong
+                  >Deepika Jayachandran, Ranjith Rajeswaran, Saranyaa
+                  Gunalan</strong
+                >; Quality of Sound in Post - Lingual Cochlear Implantees;
+                International Journal of Science and Research (IJSR) Volume 11
+                Issue 11, November 2022
+              </li>
+              <li>
+                <strong>Rajeswaran, R.</strong>, Tavora-Vieira, D., Mertens, G.,
+                Dillon, M., Narayan, S., Kameswaran, M., &amp; Kurz,
+                A. Audiological practice and COVID‐19: recommendations that
+                audiological centers can use to maintain the safety and quality
+                of service—expert opinion; European Archives of
+                Oto-Rhino-Laryngology; 2021
+              </li>
+              <li>
+                Vijayakumar, K., <strong>Gunalan, S.</strong>, &amp; Rajeswaran,
+                R; Development of Minimal Pair Test in Tamil (MPT-T); Journal of
+                Clinical and Diagnostic Research., 15(9), MC01-MC04, 2021
+              </li>
+              <li>
+                <strong>Pachaiappan Chandrasekaran, Ranjith Rajeswaran</strong>,
+                Amritha, Maryum Thabassum, Elakiya Elango; Outcomes in Children
+                with Cochlear Implants: Parental Perspectives in Indian Context;
+                International Journal of Research and Analytical Reviews; 2020
+              </li>
+              <li>
+                Armstrong, S.,
+                <strong>Gunalan, S., &amp; Rajeswaran, R</strong>; Investigating
+                The VOR Gain Function In Normal Hearing, Indian Journal Of
+                Applied Research, 28-29, 2019
+              </li>
+              <li>
+                <strong>Ranjith R, Kameswaran, M;</strong> Auditory brainstem
+                implantation (ABI) in children without neurofibromatosis type II
+                (NF2): communication performance and safety after 24 months of
+                use; Cochlear Implants International; 2019
+              </li>
+              <li>
+                <strong>Ranjith Rajeswaran</strong>, Yetisurya Sasikumar,
+                <strong
+                  >Jennifer Ramesh, Pachaiappan Chandrasekaran, Mohan
+                  Kameswaran</strong
+                >; Correlation between eABR and CAEP in children with Auditory
+                Brainstem Implant; International Journal of Scientific and
+                Research Publications; Volume 9, Issue 12; 2019
+              </li>
+              <li>
+                KR Rahul ,<strong>
+                  Deepika Jayachandran , Ranjith Rajeswaran</strong
+                >, Abishek Umashankar , Auditory and preverbal skill improvement
+                between early and late cochlear implantees: evidence from little
+                ear questionnaire;<span style="font-style: italic">
+                  Journal of Clinical and Diagnostic Research, Volume 13, Issue
+                  1, 2019</span
+                >
+              </li>
+              <li>
+                <strong>Deepika Jayachandran , Ranjith Rajeswaran</strong>,
+                Abishek Umashankar &amp; Rahul (2019), Adaptation of LITTLEARS
+                auditory Questionnaire in Tamil,
+                <span style="font-style: italic"
+                  >European Journal of Special Education Research, Volume 4,
+                  Issue 4; 2019</span
+                >
+              </li>
+              <li>
+                <strong>Ranjith Rajeswaran</strong>, Oviya Kalai,<strong>
+                  Deepika Jayachandran</strong
+                >, Profiling Long-term Outcomes in children with Auditory
+                Brainstem Implant,
+                <span style="font-style: italic"
+                  >International Journal of Scientific and Research
+                  Publications. Volume 9, Issue 12; 2019</span
+                >
+              </li>
+              <li>
+                Selvaraj, A.,<strong>
+                  Rajeswaran, R., &amp; Jayachandran, D.</strong
+                >
+                Development of Dichotic Word Test in Tamil Speaking Children;
+                <span style="font-style: italic"
+                  >Languages In India 13-24, 2018</span
+                >
+              </li>
+              <li>
+                <strong>Ranjith R, Kameswaran, M</strong>; Relationship between
+                eABR and communication outcomes in children with auditory
+                brainstem implant; Journal of Hearing Sciences; 2018
+              </li>
+              <li>
+                <a
+                  href="https://pubmed.ncbi.nlm.nih.gov/?term=Rajan+G&amp;cauthor_id=29073844"
+                  >Gunesh Rajan </a
+                > , <strong>Ranjith R, Kameswaran, M</strong> et al., Hearing
+                preservation cochlear implantation in children: The HEARRING
+                Group consensus and practice guide; 2017
+              </li>
+              <li>
+                <a
+                  href="https://pubmed.ncbi.nlm.nih.gov/?term=T%C3%A1vora-Vieira+D&amp;cauthor_id=28319951"
+                  >Dayse Távora-Vieira</a
+                >
+                , <strong>Ranjith R, Kameswaran, M</strong> et al., Towards a
+                unified testing framework for single sided deafness studies – A
+                Consensus paper; Audiology and Neurotology; 2017
+              </li>
+              <li>
+                Jeyaraman, J., Rebecca, C. G., Pokala, P., Ramamoorthy, R.,
+                Punniyaraj, P., Dhinakaran, P., ...
+                <strong> Rajeswaran, R</strong> , &amp; Kameswaran, M. (2017).
+                Auditory, Speech, and Language Outcomes in Paediatric Auditory
+                Brainstem Implant Users: an Indian Experience. <span
+                  style="font-style: italic"
+                  >Journal of the All India Institute of Speech &amp;
+                  Hearing, 36.</span
+                >
+              </li>
+              <li>
+                Lorens, A., Skarzynski, H., Rivas, A., Rivas, J. A., Zimmermann,
+                K., <strong>Rajeswaran, R</strong>; Parnes, L., ... &amp;
+                Pulibalathingal, S. (2016). Patient management for cochlear
+                implant recipients in audiology departments: A practice
+                review. <span style="font-style: italic"
+                  >Cochlear Implants International, 17(3), 123-128.</span
+                >
+              </li>
+              <li>
+                Van de Heyning, P., Adunka, O., Arauz, S. L., Atlas, M.,
+                Baumgartner, <strong>Rajeswaran, R</strong>, W. D., Brill, S.,
+                ... &amp; Skarzynski, H. (2013). Standards of practice in the
+                field of hearing implants.
+                <span style="font-style: italic"
+                  > Cochlear implants international, 14(sup2), S1-S5.</span
+                >
+              </li>
+              <li>
+                Skarzynski, H., Van de Heyning, P., Agrawal, S., Arauz, S. L.,
+                Atlas, M., Baumgartner, <strong>Rajeswaran, R</strong>; W., ...
+                &amp; Mertens, G. (2013). Towards a consensus on a hearing
+                preservation classification system. <span
+                  style="font-style: italic"
+                  >Acta Oto-Laryngologica, 133(sup564), 3-13.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >Projects Undertaken:</strong
+            >
+            <ol>
+              <li>
+                Neonatal Hearing Screening Program in Corporation Maternity
+                Hospitals.
+              </li>
+              <li>Nationwide Hearing Screening Program.</li>
+              <li>National Networking of Rehabilitation Centers.</li>
+              <li>Auditory Habilitation Certification in India.</li>
+              <li>ABI Study in Non –NF2 cases</li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title"
+              >COCHLEAR IMPLANT EDUCATION PROGRAMMES (CIEP)</strong
+            > <br>
+            <span
+              >&nbsp;&nbsp;&nbsp;&nbsp;Cochlear Implant Education programme is
+              an ongoing activity initiated by Madras ENT Research Foundation to
+              educate the people and professionals about the Cochlear implant
+              and management strategies for the hearing impaired. A team of
+              professional will travel to different parts of the country and
+              conduct free seminars and free hearing screening, candidate
+              selection for CI and counseling).</span
+            >
+            <ol>
+              <li>
+                Conducted CIEP in colloboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Madras ENT research
+                Foundation , Chennai in 2002.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Pondicherry in
+                2003.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Nellore in 2003
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Trichy in November
+                2003.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Salem in March
+                2004.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Thirunelveli in
+                January 2004.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Madurai in 2004
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Thirunelveli in
+                January 2004.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Theni in February
+                2005.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Thirunelveli in
+                December 2006.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Kodambakkam,
+                Chennai in January 2007.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Salem in August
+                2007.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Vishakapattinam in
+                April 2007.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Med-El India (P) Ltd, at
+                Pondicherry in December 2007.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Pika Medicals, Bangalore,
+                India and Cochlear Corporation, Australia at Thirunelveli in May
+                2008.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Med-El India, Delhi at
+                Madurai in March 2009.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Med-El India, Delhi at
+                Kanyakumari in June 2009.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Med-El India, Delhi at
+                Trichy in September 2010.
+              </li>
+              <li>
+                Conducted CIEP in collaboration with Med-El India, Delhi at
+                Madurai in September 2011.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <strong class="testimonial_faculty_title">COMMUNITY SERVICES / CAMPS</strong>
+            <table class="research_audiology_table" style="width: 100%">
+              <thead>
+                <th>S.No</th>
+                <th>DATE</th>
+                <th>VENUE</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style="text-align: center" colspan="3">2020</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>25/01/2020</td>
+                  <td>CAMP- CSM Higher Secondary School, Pillaiyarpalayam,
+
+                    Kancheepuram</td>
+                </tr>
+                
+                <tr>
+                  <td>2</td>
+                  <td>20/02/2020</td>
+                  <td>CAMP - Commissioner Office</td>
+                </tr>
+                
+                <tr>
+                  <td>3</td>
+                  <td>27/02/2020</td>
+                  <td>CAMP - Commissioner’s Office</td>
+                </tr>
+              
+                <tr>
+                  <td>4</td>
+                  <td>03/03/2020</td>
+                  <td>CAMP – Vani Vidhyasharam Nursery and Primary SCHOOL,
+
+                    Neelankarai, Chennai.</td>
+                </tr>
+               
+                <tr>
+                  <td>5</td>
+                  <td>03/03/2020</td>
+                  <td>CAMP – Ashraya Therapy Centre, Moore Street, Parrys.</td>
+                </tr>
+                
+                <tr>
+                  <td>6</td>
+                  <td>03/03/2020</td>
+                  <td>CAMP – Lotus Petals Kids Play School, Maraimalai Nagar.</td>
+                </tr>
+               
+                <tr>
+                  <td>7</td>
+                  <td>09/03/2020</td>
+                  <td>CAMP- Chennai Primary School, Saidapet.</td>
+                </tr>
+                <tr>
+                  <th style="text-align: center" colspan="3">2021</th>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>29-31/06/2021</td>
+                  <td>CAMP - Dr MGR School for the Speech and Hearing Impaired</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>31/07/2021</td>
+                  <td>CAMP - Minerva Higher Secondary School. Kumbakonam</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>21/08/2021</td>
+                  <td>CAMP - Rotary Club of Kumbakonam</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>08/10/2021</td>
+                  <td>CAMP - Ashok Leyland – Foundry Division, Sriperumbudur</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>04-05/12/2021</td>
+                  <td>CAMP - The Sound of Music, Mettupalayam.</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>21-22/12/2021</td>
+                  <td>CAMP - The Directorate of Education, Pondicherry</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>22/12/2021</td>
+                  <td>CAMP - Government High School for the Hearing Impaired,
+
+                    Kanchipuram.</td>
+                </tr>
+                <tr>
+                  <th style="text-align: center" colspan="3">2022</th>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>07/01/2022</td>
+                  <td>CAMP – District Collector Office, Ranipet.</td>
+                </tr> 
+                <tr>
+                  <td>16</td>
+                  <td>03/03/2022</td>
+                  <td>Guild of Services, Anna Nagar</td>
+                </tr> <tr>
+                  <td>17</td>
+                  <td>07-08/03/2022</td>
+                  <td>CAMP – Lincoln Electric – Mahindra City.</td>
+                </tr> <tr>
+                  <td>18</td>
+                  <td>11/08/2022</td>
+                  <td>CAMP – ITC Ltd. – SBU Packaging and Printing,
+
+                    Thiruvottriyur.</td>
+                </tr> <tr>
+                  <td>19</td>
+                  <td>17/04/2022</td>
+                  <td>CAMP – New Bharath Matriculation Higher Secondary School.</td>
+                </tr> <tr>
+                  <td>20</td>
+                  <td>2-3/06/2022</td>
+                  <td>CAMP – Vallam</td>
+                </tr> <tr>
+                  <td>21</td>
+                  <td>07/10/2022</td>
+                  <td>Clark school for HI</td>
+                </tr> <tr>
+                  <td>22</td>
+                  <td>10/10/2022</td>
+                  <td>MGR School, Ramapuram</td>
+                </tr>
+
+                <tr>
+                  <th style="text-align: center" colspan="3">2023</th>
+                </tr>
+
+                <tr>
+                <td>23</td>
+                <td>26/02/2023</td>
+                <td>Thiruvannamalai</td>
+              </tr>
+              <tr>
+                  <td>24</td>
+                  <td>17/03/2023</td>
+                  <td>MGR School, Ramapuram</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>19/03/2023</td>
+                  <td>Panruti</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>26/03/2023</td>
+                  <td>Thiruvaarur</td>
+                </tr>
+
+
+                <tr>
+                  <th style="text-align: center" colspan="3">2024</th>
+                </tr>
+               <tr>
+                  <td>27</td>
+                  <td>09/03/2024 –
+                    10/03/2024</td>
+                  <td>Speech and Hearing Screening Camp organized by Mrs.
+                    Kanimozhi Karunanidhi – Thoothukudi MP</td>
+                </tr><tr>
+                <td>28</td>
+                <td>12/03/2024</td>
+                <td>Old Washermenpet – VITHAI ILLAM TRUST</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+      </div>
+
+      <div class="footer_view">
+        <div class="footer_view_home">
+          <div class="footer_view_service">
+            <div class="footer_view_logo">
+              <img src="../assets/merfsh-logo.png" alt="" />
+            </div>
+            <div class="footer_view_options">
+              <span class="footer_option"
+                ><a href="../index.html" class="anchor_link_tag">Home</a>
+              </span>
+              <span class="footer_option"
+                ><a href="./gallery.html" class="anchor_link_tag"
+                  >Gallery</a
+                ></span
+              >
+              <span class="footer_option"
+                ><a href="./about.html" class="anchor_link_tag">
+                  About us
+                </a></span
+              >
+              <span class="footer_option"
+                ><a href="./management.html" class="anchor_link_tag">
+                  management
+                </a>
+              </span>
+              <span class="footer_option"
+                ><a href="./clinicApp.html" class="anchor_link_tag">
+                  Clinical Services
+                </a></span
+              >
+
+              <span class="footer_option"
+                ><a href="./Contact.html" class="anchor_link_tag">
+                  contact</a
+                ></span
+              >
+              <span class="footer_option"
+                ><a href="./academics.html" class="anchor_link_tag">
+                  academics
+                </a></span
+              >
+              <span class="footer_option"
+                ><a
+                  href="https://techietet.com/merf/clinic/#/login"
+                  class="anchor_link_tag"
+                >
+                  clinic app
+                </a></span
+              >
+              <span class="footer_option"
+                ><a href="./admission.html" class="anchor_link_tag">
+                  admission
+                </a></span
+              >
+              <span class="footer_option"
+                ><a href="./testimonial.html" class="anchor_link_tag"
+                  >testimonial</a
+                ></span
+              >
+              <span class="footer_option"
+                ><a href="./faculty.html" class="anchor_link_tag">
+                  faculty
+                </a></span
+              >
+              <span class="footer_option"
+                ><a href="./ResearchAudiology.html" class="anchor_link_tag"
+                  >research
+                </a></span
+              >
+              <span></span>
+            </div>
+          </div>
+          <div class="footer_view_social_media_body">
+            <h4>Connect with us :</h4>
+            <div class="footer_view_social_media">
+              <a
+                href="https://www.facebook.com/MERFISH1"
+                class="fa fa-facebook"
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCiFQgyy76H1xrnxpKVaclCg"
+                class="fa fa-play"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/merf-institute-of-speech-and-hearing-p-ltd-merfish-b7267a248"
+                class="fa fa-linkedin"
+              ></a>
+              <a href="https://twitter.com/Merfish4" class="fa fa-twitter"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_view_copy_rights">
+          <span
+            >MERF-ISH &copy; copyright
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            .Incl.,All right reserved
+          </span>
+        </div>
+      </div>
     </div>
-</body>
-<script src="../js/header.js"></script>
+  </body>
+  <script src="../js/header.js"></script>
 </html>

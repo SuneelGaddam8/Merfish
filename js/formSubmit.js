@@ -46,9 +46,22 @@
           mobile:document.getElementById('mobile').value,
           programList:document.getElementById('programList').value
         }
-        console.log(params);
-      //  document.getElementById('error-message').style.display = 'none';
-  
+        // console.log(params);
+        fetch("mail.php", {
+          method: "POST",
+          body: params
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Failed to send email.");
+          }
+          alert("Email sent successfully!");
+          this.reset();
+        })
+        .catch(error => {
+          console.error(error);
+          alert("Failed to send email. Please try again later.");
+        });  
     } else {
       document.getElementById('captcha-error-message').style.display = 'block';
       enteredCaptcha.value="";

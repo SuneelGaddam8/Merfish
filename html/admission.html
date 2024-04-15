@@ -16,7 +16,7 @@
     />
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
+      
     ></script>
   </head>
 
@@ -111,9 +111,23 @@
               >Apply Now</a
             >
           </div>
+          <?php
+          if(array_key_exists('button1', $_POST)) { 
+              button1(); 
+          } 
+          else if(array_key_exists('button2', $_POST)) { 
+              button2(); 
+          } 
+          function button1() { 
+              echo "This is Button1 that is selected"; 
+          } 
+          function button2() { 
+              echo "This is Button2 that is selected"; 
+          } 
+      ?> 
           <div id="admissionForm" class="admission_view_form">
             <div class="admission_view_form_box">
-              <div class="admission_form">
+              <form  method="post" class="admission_form">
                 <input id="name" type="text" placeholder="Enter Name" />
                 <input
                   id="email"
@@ -125,8 +139,7 @@
                 <input
                   id="mobile"
                   type="tel"
-                  name="telphone"
-                  pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                  name="mobile"
                   maxlength="12"
                   title="Enter valid contact number"
                   placeholder="Enter your contact number"
@@ -192,7 +205,6 @@
 
                 <div style="width: 100%;">
                   <div
-                  onclick="admissionSubmitHandler()"
                   class="button_style"
                   style="
                     width: max-content;
@@ -204,7 +216,7 @@
                   Submit Query
                 </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -274,7 +286,7 @@
           </a>
           <a href="./academics.html#Msc.audiology">
             <div class="admission_view_flow_offeredPrograms">
-              Master of Science in Audiology (MSC.AUDIOLOGY)
+              Master of Science (Audiology) (MSc.AUDIOLOGY)
             </div>
           </a>
           <a href="./academics.html#Msc.slp">
@@ -289,12 +301,12 @@
             </a>
             <a href="./academics.html#phd.audiology">
             <div class="admission_view_flow_offeredPrograms">
-              Doctor of Philosophy in Audiology (PHD.AUDIOLOGY)
+              Doctor of Philosophy in Audiology (Ph.D in AUDIOLOGY)
             </div>
             </a>
             <a href="./academics.html#phd.slp">
             <div class="admission_view_flow_offeredPrograms">
-              Doctor of Philosophy degree in Speech-Language Pathology (PHD.SLP)
+              Doctor of Philosophy in Speech-Language Pathology (Ph.D in SLP)
             </div>
             </a>
           </div>
@@ -328,15 +340,11 @@
             Cancellation policy: Once the admission form is submitted it cannot
             be cancelled by the candidate. In such scenario candidate can
             contact the admin.
-            <!-- <ul>
-            <li>For BASLP, MASLP, MSc Audiology, PGDAVT, MSc SLP <a href="#">click here</a></li>
-            <li>For Undergraduate Course B.ASLP <a href="#">click here</a></li>
-            <li>For Post Graduate Course M.sc Audiology <a href="#">click here</a></li>
-          </ul> -->
+            
           </div>
         </div>
         <div class="why_choose_merfish">
-          <h2><strong>Why to choose Merf-ish</strong></h2>
+          <h2><strong>Why to choose MERF-ISH</strong></h2>
           <div class="why_choose_merfish_cards">
             <div class="why_choose_merfish_card">
               <div class="why_choose_bg">
@@ -347,7 +355,7 @@
                 />
               </div>
               <span
-                >One of the Leading Centers in the world for “Hearing
+                >One of the Leading Centers in the world for “HEARRING
                 Restoration”</span
               >
             </div>
@@ -512,9 +520,6 @@
   </body>
 
   <script src="../js/statesAndCities.js"></script>
-  <script src="../js/degreeAndPrograms"></script>
   <script src="../js/formSubmit.js"></script>
   <script src="../js/header.js"></script>
- 
-  </script>
 </html>

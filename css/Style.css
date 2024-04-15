@@ -408,8 +408,8 @@
 .slide_card_in {
   background: rgba(87, 122, 100, 1);
   height: 100%;
-  width: 90%;
-  clip-path: circle(100% at 0% 50%);
+  width: 100%;
+  clip-path: circle(110% at 0% 55%);
 
 }
 
@@ -454,6 +454,7 @@
 }
 
 .slide_content {
+
   height: 60%;
   width: 300%;
   display: flex;
@@ -462,7 +463,7 @@
   justify-content: center;
   align-items: center;
   gap: 4px;
-  padding: 20px;
+  padding: 20px 20px 20px 16px;
 }
 
 .slide_card_img {
@@ -2986,7 +2987,6 @@
 
 .faculty-details-image {
   width: 30%;
-  /* Image takes 30% width */
   padding: 10px;
   margin-top: 20px;
   width: 100%;
@@ -3158,12 +3158,18 @@
   padding-bottom: 0;
   width: 100%;
   height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: 35% 65%;
+
   background-color: var(--bg-light-green-transparent);
   padding: 0;
+}
+@media screen and (max-width:1024px) {
+  #faculty-details-container{
+    width: 100%;
+    grid-template-columns: 100%;
+
+  }
 }
 
 .back_arrow_btn {
@@ -3178,7 +3184,7 @@
 
 .view_faculty_info {
   display: block;
-  width: 100%;
+  width: 95%;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -3186,13 +3192,12 @@
 }
 
 .faculty_details_container_logo {
-  width: 300px;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 13px;
   gap: 5px;
-  padding: 20px;
   border-right: 1px solid black;
   line-height: 20px;
 }
@@ -3203,12 +3208,22 @@
 }
 
 .faculty_details_container_logo span {
-  width: 270px;
+  width:90%;
   text-align: left;
 }
-
+.faculty_qualifications_view{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.designatio_view{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 5% 55%;
+}
 .faculty_details_container_about {
-  width: 800px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   font-size: 10px;
@@ -3238,7 +3253,6 @@
     width: 100%;
     border: none;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -3279,9 +3293,9 @@
   font-size: 0.7rem;
 }
 
-.research_audiology_table tbody tr td:nth-child(1) {
+/* .research_audiology_table tbody tr td:nth-child(1) {
   text-align: center;
-}
+} */
 
 .research_audiology_table tbody tr td a:hover {
   text-decoration: underline;
@@ -3403,3 +3417,4 @@
 .clinical_service_details_hide{
   display: none;
 }
+
