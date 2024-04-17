@@ -3153,6 +3153,7 @@ text-transform: capitalize;
   height: 100%;
   width: 100%;
   padding-bottom: 0;
+  padding: 0;
  overflow-x: auto;
   background-color: var(--bg-light-green-transparent);
 
@@ -3331,10 +3332,10 @@ text-transform: capitalize;
 }
 
 .research_body_view {
+  overflow-x: auto;
   width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 .research_body_view_ol{
@@ -3343,7 +3344,9 @@ text-transform: capitalize;
   flex-direction: column;
   gap: 15px;
   font-size: 13px;
+
 }
+
 
 
 /* clinical service components */
@@ -3392,7 +3395,6 @@ text-transform: capitalize;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 10px; */
 }
 .clinical_service_details_title{
   width: 100%;
