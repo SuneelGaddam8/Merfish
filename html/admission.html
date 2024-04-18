@@ -128,10 +128,11 @@
           <div id="admissionForm" class="admission_view_form">
             <div class="admission_view_form_box">
               <form action="https://formsubmit.co/gaddamsuneel8688@gmail.com"  method="post" class="admission_form">
-                <input id="name" type="text" placeholder="Enter Name" />
+                <input id="name" name="name" type="text" placeholder="Enter Name" />
                 <input
                   id="email"
-                  type="email"
+                  type="email" 
+                  name="email"
                   pattern="[^ @]*@[^ @]*"
                   required
                   placeholder="Enter e-mail address"
@@ -179,7 +180,20 @@
                     "
                     readonly
                   />
+                  <input type="hidden" name="_captcha" value="false" />
 
+                  <input type="hidden" name="_template" value="box" />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New message from Merfish.org Website"
+                  />
+                  <a
+                    type="hidden"
+                    name="_next"
+                  
+                  href="./about.html"
+                  />
                   <input
                     type="text"
                     id="enteredCaptcha"
